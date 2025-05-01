@@ -73,188 +73,23 @@ void MainTask(void);
 int home(void);
 void configure_rtc_tick(void);
 int fsmState;
-volatile bool isr_flag;
-CY_ISR(isr_1)
+void MainTask(void);
+
+int main()
 {
-    // Clear PSoC GPIO interrupt first
-    
-
-    Timer_1_ReadStatusRegister();
-    DateTime now = RTC_now();
-    char line[24];
-    sprintf(line, "%02u-%02u %02u:%02u:%02u",
-            now.m, now.d, now.hh, now.mm, now.ss);
-    LCD_Char_1_Position(1, 0);
-    LCD_Char_1_PrintString("                    ");			// clean up the previous display
-    
-	LCD_Char_1_Position(1, 0);
-    LCD_Char_1_PrintString(line);
-    
-   
-}
-int main(){
-    
-    tick_isr_ClearPending();
-    
-    //timer_clock_Start();      // Start the timer
-    tick_isr_StartEx(isr_1); // Link ISR
-    Timer_1_Start();       // Start the 1 MHz clock
-    CyGlobalIntEnable;            // 1. Global interrupts first!
-    
-    
-    
-
-    I2CRTC_Start();                  // 2. Start I²C for RTC
-//    SPIM_1_Start();                  // 2. Start SPI for TFT
-    LCD_Char_1_Start();              // 2. Start Character LCD
-    LCD_Char_1_ClearDisplay();
-    
-    DateTime now = {
-        25, ///< Year offset from 2000
-        05,    ///< Month 1-12
-        1,    ///< Day 1-31
-        2,   ///< Hours 0-23
-        10,   ///< Minutes 0-59
-        50   ///< Seconds 0-59
-    };
-
-    //RTC_setTime(now);
-    LCD_Char_1_ClearDisplay();
-    LCD_Char_1_PrintString("Time: "); // 6. Print basic layout
-    
-    //int status = RTC_setAlarmTime(0,0,0,0,0,1,1,1,1,DS3231_ALARM1);
-    //i2c_status(status);
-    //CyDelay(1000);
-    
-    for (;;)
-    {
-        
-        // char line[24];
-        
-        // uint8_t data = RTC_readRegister(DS3231_ALARM1, 0);
-        
-        // // print the status register 
-        // sprintf(line, "REG:%02X VAL: %02X",
-        //         DS3231_ALARM1, data);
-        // LCD_Char_1_Position(0, 0);
-        // LCD_Char_1_PrintString("                    ");			// clean up the previous display
-        
-    	// LCD_Char_1_Position(0, 0);
-        // LCD_Char_1_PrintString(line);
-        // CyDelay(50);
-        // DateTime now = RTC_now();
-        
-        // sprintf(line, "%02u-%02u %02u:%02u:%02u",
-        //         now.m, now.d, now.hh, now.mm, now.ss);
-        // LCD_Char_1_Position(1, 0);
-        // LCD_Char_1_PrintString("                    ");			// clean up the previous display
-        
-    	// LCD_Char_1_Position(1, 0);
-        // LCD_Char_1_PrintString(line);
-        // CyDelay(50);
-
-    }
-}
-//int main()
-//{
-//    CyGlobalIntEnable;                      // Enable global interrupts
-//    I2CRTC_Start(); 
-//    configure_rtc_tick();
-//    tick_isr_ClearPending() ;
-//    tick_isr_StartEx(sw_isr) ;
-//    
-//    
-//    LCD_Char_1_Start();					// initialize lcd
-//	LCD_Char_1_ClearDisplay();
-//	
-//   
-//    SPIM_1_Start();                         // initialize SPIM component 
-////    MainTask();
-//    
-//    
-//    LCD_Char_1_PrintString("Time: ");
-//
-//
-//    
-////    this code is for initalizing the timer module, only need once 
-////    DateTime now = {25, 4, 27, 22, 49, 40};
-////    RTC_setTime(now);
-//
-////    GUI_Init();                             // initilize graphics library
-////    GUI_SetFont(&GUI_Font8x16);
-////    GUI_Clear();
-////    MainTask();
-//    for (;;)
-//    {
-//         
-//        MainTask();
-////        CyDelay(j);		
-////        print(smth);
-//
-////        CyDelay(1000);                /* or wait for SQW interrupt */
-//    }
-////    fsmState = HOME;
-////    
-////    for(;;) {
-////        switch(fsmState){
-////            case START:
-////                fsmState = start();
-////                break;
-////            case HOME:
-////                fsmState = home();
-////                break;
-////            case ERROR:
-////                break;
-////               
-////        }
-////    }                              // loop
-//}
-// CY_ISR(any) 
-
-int home()
-{
-    MainTask();
-    for(;;){
-        if (FORWARD_BTN_Read() == 0){
-            return START;
-        }
-    }
-    return ERROR;
+    CyGlobalIntEnable;                      // Enable global interrupts
+    SPIM_1_Start();                         // initialize SPIM component 
+    MainTask();                             // all of the emWin exmples use MainTask() as the entry point
+    for(;;) {}                              // loop
 }
 
-int error(char* message)
-{
-    print(message);
-    CyDelay(1000);
-    return ERROR;
-}
-void print(char* message)
-{
-    
-    LCD_Char_1_Position(0, 0);
-    LCD_Char_1_PrintString("                    ");	
-    LCD_Char_1_Position(0, 0);
-    LCD_Char_1_PrintString(message);
-    CyDelay(1000);
-//    GUI_Clear();
-//    GUI_SetFont(&GUI_Font8x16);
-//    GUI_DispStringHCenterAt(message, 5,5);
-}
 void MainTask()
 {
     GUI_Init();                             // initilize graphics library
     GUI_Clear();
     GUI_SetFont(&GUI_Font8x16);
-    GUI_DispStringAt("lineeeee", 50, 50);
-    
+    GUI_DispStringAt("peepee doodoo", 50, 50);
 }
-
-void configure_rtc_tick(){
-    int status = RTC_setAlarmTime(0,0,0,0,0,1,1,1,1,DS3231_ALARM1);
-    i2c_status(status);
-    status = tick_isr_init();
-    
-}
-/*************************** End of file ****************************/
 
 /* [] END OF FILE */
+
