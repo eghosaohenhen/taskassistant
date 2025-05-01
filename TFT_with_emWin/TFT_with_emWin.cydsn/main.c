@@ -102,15 +102,17 @@ int main(){
 //    SPIM_1_Start();                  // 2. Start SPI for TFT
     LCD_Char_1_Start();              // 2. Start Character LCD
     LCD_Char_1_ClearDisplay();
-//    GUI_Init();                      // 2. Start GUI (emWin)
+    
+    DateTime now = {
+        25, ///< Year offset from 2000
+        05,    ///< Month 1-12
+        1,    ///< Day 1-31
+        2,   ///< Hours 0-23
+        10,   ///< Minutes 0-59
+        50   ///< Seconds 0-59
+    };
 
-    tick_isr_ClearPending();         // 4. Clear and start RTC INT ISR
-    tick_isr_StartEx(sw_isr);
-
-    configure_rtc_tick();            // 3. Program RTC alarm 1 to fire every second (after I²C is alive!)
-
-//    GUI_SetFont(&GUI_Font8x16);       // 5. Setup fonts
-//    GUI_Clear();                     // 5. Clear screen ready
+    //RTC_setTime(now);
     LCD_Char_1_ClearDisplay();
     LCD_Char_1_PrintString("Time: "); // 6. Print basic layout
     
@@ -118,8 +120,9 @@ int main(){
     {
         
         char line[24];
-        uint8_t status = RTC_readRegister(DS3231_STATUSREG, 0);
+        uint8_t status = RTC_readRegister(DS3231_ALARM2, 0);
         
+        // print the status register 
         sprintf(line, "Flags:%02X",
                 status);
         LCD_Char_1_Position(0, 0);
@@ -138,7 +141,7 @@ int main(){
     	LCD_Char_1_Position(1, 0);
         LCD_Char_1_PrintString(line);
         CyDelay(50);
-//        CyDelay(1000); // TEMPORARY if no true sleep yet
+
     }
 }
 //int main()

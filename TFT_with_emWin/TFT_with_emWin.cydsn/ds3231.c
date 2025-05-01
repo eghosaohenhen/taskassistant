@@ -328,8 +328,8 @@ int tick_isr_init(){
     return status;
 }
 /*
-*   Reads numBytes (must be less than 10) from the DS3231 address (address).
-*   Returns a numBytes long uint8 buffer with read bytes.
+*   Reads 1 byte from the specified RTC register address. 
+*   Returns the read byte
 *
 */
 uint8_t RTC_readRegister(uint8 address, int offset){
@@ -345,6 +345,18 @@ uint8_t RTC_readRegister(uint8 address, int offset){
     
     return RTC_read_buff[offset];
 }
+int RTC_writeRegister(uint8 address, uint8* data, int num_bytes){
+    // first write the register address we want to send data to
+    uint8 tx_buff[1] = {address};
+    I2CRTC_MasterWriteBuf(DS3231_ADDRESS,tx_buff,1,I2CRTC_MODE_COMPLETE_XFER );   // Send read start
+    while(0u == (I2CRTC_MasterStatus() & I2CRTC_MSTAT_WR_CMPLT));      // Waiting for writing
+    I2CRTC_MasterClearStatus();  
+    
+ 
+    int status = I2CRTC_MasterWriteBuf(DS3231_ADDRESS,data,num_bytes,I2CRTC_MODE_COMPLETE_XFER );   // Send data bytes
+    while(0u == (I2CRTC_MasterStatus() & I2CRTC_MSTAT_WR_CMPLT));      // Waiting for writing
+    return status;
+}
 int RTC_clearAlarmFlags()
 {
     
@@ -356,11 +368,8 @@ int RTC_clearAlarmFlags()
     status &= ~(0x03);   // Clear bits 0 and 1
 
     // 4. Write the cleared value back
-    uint8_t tx_buff[2] = {DS3231_STATUSREG, status};
-    int success = I2CRTC_MasterWriteBuf(DS3231_ADDRESS, tx_buff, 2, I2CRTC_MODE_COMPLETE_XFER);
-    while(0u == (I2CRTC_MasterStatus() & I2CRTC_MSTAT_WR_CMPLT));
-    i2c_status();
-    I2CRTC_MasterClearStatus();
+    uint8_t data_buff[1] = {status};
+    int success = RTC_writeRegister(DS3231_STATUSREG, data_buff,1);
     
     return success;
 }
