@@ -49,6 +49,8 @@
 #include "RTC_PIN_INT_aliases.h"
 #include "RTC_PIN_INT.h"
 #include "tick_isr.h"
+#include "timer_clock.h"
+#include "Timer_1.h"
 #include "SPIM_1_IntClock.h"
 #include "LCD_Char_1_LCDPort_aliases.h"
 #include "LCD_Char_1_LCDPort.h"

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
   29:.\Generated_Source\PSoC5/SPIM_1_PM.c **** ********************************************************************************
   30:.\Generated_Source\PSoC5/SPIM_1_PM.c **** *
   31:.\Generated_Source\PSoC5/SPIM_1_PM.c **** * Summary:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/SPIM_1_PM.c **** *  Empty function. Included for consistency with other components.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
   50              		.cfi_endproc
   51              	.LFE1:
   52              		.size	SPIM_1_RestoreConfig, .-SPIM_1_RestoreConfig
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 3
 
 
   53 0002 00BF     		.section	.text.SPIM_1_Sleep,"ax",%progbits
@@ -178,13 +178,13 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
   77 000e FFF7FEFF 		bl	SPIM_1_Stop
   78              	.LVL0:
   79 0012 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 4
 
 
   80              	.L6:
   81              		.align	2
   82              	.L5:
-  83 0014 92640040 		.word	1073767570
+  83 0014 91640040 		.word	1073767569
   84 0018 00000000 		.word	.LANCHOR0
   85              		.cfi_endproc
   86              	.LFE2:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  101              		.cfi_def_cfa_offset 8
  102              		.cfi_offset 3, -8
  103              		.cfi_offset 14, -4
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 5
 
 
  126:.\Generated_Source\PSoC5/SPIM_1_PM.c ****     #if(SPIM_1_RX_SOFTWARE_BUF_ENABLED)
@@ -298,36 +298,36 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  139 0006 00000000 		.4byte	.Ldebug_abbrev0
  140 000a 04       		.byte	0x4
  141 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 6
 
 
- 142 000c A5000000 		.4byte	.LASF25
+ 142 000c 28010000 		.4byte	.LASF25
  143 0010 01       		.byte	0x1
  144 0011 0E000000 		.4byte	.LASF26
- 145 0015 04020000 		.4byte	.LASF27
+ 145 0015 A5000000 		.4byte	.LASF27
  146 0019 00000000 		.4byte	.Ldebug_ranges0+0
  147 001d 00000000 		.4byte	0
  148 0021 00000000 		.4byte	.Ldebug_line0
  149 0025 02       		.uleb128 0x2
  150 0026 01       		.byte	0x1
  151 0027 06       		.byte	0x6
- 152 0028 AC010000 		.4byte	.LASF0
+ 152 0028 2F020000 		.4byte	.LASF0
  153 002c 02       		.uleb128 0x2
  154 002d 01       		.byte	0x1
  155 002e 08       		.byte	0x8
- 156 002f 33010000 		.4byte	.LASF1
+ 156 002f B6010000 		.4byte	.LASF1
  157 0033 02       		.uleb128 0x2
  158 0034 02       		.byte	0x2
  159 0035 05       		.byte	0x5
- 160 0036 DE010000 		.4byte	.LASF2
+ 160 0036 61020000 		.4byte	.LASF2
  161 003a 02       		.uleb128 0x2
  162 003b 02       		.byte	0x2
  163 003c 07       		.byte	0x7
- 164 003d 99010000 		.4byte	.LASF3
+ 164 003d 1C020000 		.4byte	.LASF3
  165 0041 02       		.uleb128 0x2
  166 0042 04       		.byte	0x4
  167 0043 05       		.byte	0x5
- 168 0044 53010000 		.4byte	.LASF4
+ 168 0044 D6010000 		.4byte	.LASF4
  169 0048 02       		.uleb128 0x2
  170 0049 04       		.byte	0x4
  171 004a 07       		.byte	0x7
@@ -356,20 +356,20 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  194 0076 02       		.uleb128 0x2
  195 0077 04       		.byte	0x4
  196 0078 04       		.byte	0x4
- 197 0079 D8010000 		.4byte	.LASF9
+ 197 0079 5B020000 		.4byte	.LASF9
  198 007d 02       		.uleb128 0x2
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 7
 
 
  199 007e 08       		.byte	0x8
  200 007f 04       		.byte	0x4
- 201 0080 68010000 		.4byte	.LASF10
+ 201 0080 EB010000 		.4byte	.LASF10
  202 0084 02       		.uleb128 0x2
  203 0085 01       		.byte	0x1
  204 0086 08       		.byte	0x8
- 205 0087 4E010000 		.4byte	.LASF11
+ 205 0087 D1010000 		.4byte	.LASF11
  206 008b 05       		.uleb128 0x5
- 207 008c E8010000 		.4byte	.LASF13
+ 207 008c 6B020000 		.4byte	.LASF13
  208 0090 02       		.byte	0x2
  209 0091 6C01     		.2byte	0x16c
  210 0093 97000000 		.4byte	0x97
@@ -378,20 +378,20 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  213 009c 02       		.uleb128 0x2
  214 009d 04       		.byte	0x4
  215 009e 07       		.byte	0x7
- 216 009f FB010000 		.4byte	.LASF14
+ 216 009f 7E020000 		.4byte	.LASF14
  217 00a3 07       		.uleb128 0x7
  218 00a4 02       		.byte	0x2
  219 00a5 03       		.byte	0x3
  220 00a6 46       		.byte	0x46
  221 00a7 C4000000 		.4byte	0xc4
  222 00ab 08       		.uleb128 0x8
- 223 00ac 5C010000 		.4byte	.LASF15
+ 223 00ac DF010000 		.4byte	.LASF15
  224 00b0 03       		.byte	0x3
  225 00b1 48       		.byte	0x48
  226 00b2 6B000000 		.4byte	0x6b
  227 00b6 00       		.byte	0
  228 00b7 08       		.uleb128 0x8
- 229 00b8 8E010000 		.4byte	.LASF16
+ 229 00b8 11020000 		.4byte	.LASF16
  230 00bc 03       		.byte	0x3
  231 00bd 49       		.byte	0x49
  232 00be 6B000000 		.4byte	0x6b
@@ -403,7 +403,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  238 00ca 4A       		.byte	0x4a
  239 00cb A3000000 		.4byte	0xa3
  240 00cf 09       		.uleb128 0x9
- 241 00d0 C6010000 		.4byte	.LASF18
+ 241 00d0 49020000 		.4byte	.LASF18
  242 00d4 01       		.byte	0x1
  243 00d5 29       		.byte	0x29
  244 00d6 00000000 		.4byte	.LFB0
@@ -418,11 +418,11 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  253 00eb 02000000 		.4byte	.LFE1-.LFB1
  254 00ef 01       		.uleb128 0x1
  255 00f0 9C       		.byte	0x9c
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 8
 
 
  256 00f1 0A       		.uleb128 0xa
- 257 00f2 41010000 		.4byte	.LASF20
+ 257 00f2 C4010000 		.4byte	.LASF20
  258 00f6 01       		.byte	0x1
  259 00f7 57       		.byte	0x57
  260 00f8 00000000 		.4byte	.LFB2
@@ -435,7 +435,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  267 010b 49010000 		.4byte	0x149
  268 010f 00       		.byte	0
  269 0110 0A       		.uleb128 0xa
- 270 0111 80010000 		.4byte	.LASF21
+ 270 0111 03020000 		.4byte	.LASF21
  271 0115 01       		.byte	0x1
  272 0116 7C       		.byte	0x7c
  273 0117 00000000 		.4byte	.LFB3
@@ -451,7 +451,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  283 0133 57010000 		.4byte	0x157
  284 0137 00       		.byte	0
  285 0138 0C       		.uleb128 0xc
- 286 0139 ED010000 		.4byte	.LASF28
+ 286 0139 70020000 		.4byte	.LASF28
  287 013d 01       		.byte	0x1
  288 013e 14       		.byte	0x14
  289 013f C4000000 		.4byte	0xc4
@@ -463,11 +463,11 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  295 014e 03       		.byte	0x3
  296 014f 54       		.byte	0x54
  297 0150 0D       		.uleb128 0xd
- 298 0151 6F010000 		.4byte	.LASF23
+ 298 0151 F2010000 		.4byte	.LASF23
  299 0155 03       		.byte	0x3
  300 0156 6C       		.byte	0x6c
  301 0157 0D       		.uleb128 0xd
- 302 0158 B8010000 		.4byte	.LASF24
+ 302 0158 3B020000 		.4byte	.LASF24
  303 015c 03       		.byte	0x3
  304 015d 52       		.byte	0x52
  305 015e 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  310 0002 01       		.byte	0x1
  311 0003 25       		.uleb128 0x25
  312 0004 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 9
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 9
 
 
  313 0005 13       		.uleb128 0x13
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  367 003b 3A       		.uleb128 0x3a
  368 003c 0B       		.uleb128 0xb
  369 003d 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 10
 
 
  370 003e 05       		.uleb128 0x5
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  424 0074 01       		.uleb128 0x1
  425 0075 12       		.uleb128 0x12
  426 0076 06       		.uleb128 0x6
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 11
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 11
 
 
  427 0077 40       		.uleb128 0x40
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  481 00b1 00       		.byte	0
  482 00b2 0D       		.uleb128 0xd
  483 00b3 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 12
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 12
 
 
  484 00b4 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  534 0000 6C6F6E67 		.ascii	"long long int\000"
  534      206C6F6E 
  534      6720696E 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 13
 
 
  534      7400
@@ -764,124 +764,121 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 1
  550      41434B55 
  550      505F5354 
  550      52554354 
- 551              	.LASF25:
- 552 00a5 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 552      4320342E 
- 552      392E3320 
- 552      32303135 
- 552      30333033 
- 553 00d8 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 553      20726576 
- 553      6973696F 
- 553      6E203232 
- 553      31323230 
- 554 010b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 554      66756E63 
- 554      74696F6E 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 14
+ 551              	.LASF27:
+ 552 00a5 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 552      73657273 
+ 552      5C6A616F 
+ 552      68655C45 
+ 552      67686F73 
+ 553 00d3 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 553      7072696E 
+ 553      67203230 
+ 553      32355C36 
+ 553      2E313135 
+ 554 0102 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 554      545F7769 
+ 554      74685F65 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 14
 
 
- 554      2D736563 
- 554      74696F6E 
- 555              	.LASF1:
- 556 0133 756E7369 		.ascii	"unsigned char\000"
- 556      676E6564 
- 556      20636861 
- 556      7200
- 557              	.LASF20:
- 558 0141 5350494D 		.ascii	"SPIM_1_Sleep\000"
- 558      5F315F53 
- 558      6C656570 
- 558      00
- 559              	.LASF11:
- 560 014e 63686172 		.ascii	"char\000"
- 560      00
- 561              	.LASF4:
- 562 0153 6C6F6E67 		.ascii	"long int\000"
- 562      20696E74 
+ 554      6D57696E 
+ 554      5C544654 
+ 555              	.LASF25:
+ 556 0128 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 556      4320342E 
+ 556      392E3320 
+ 556      32303135 
+ 556      30333033 
+ 557 015b 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 557      20726576 
+ 557      6973696F 
+ 557      6E203232 
+ 557      31323230 
+ 558 018e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 558      66756E63 
+ 558      74696F6E 
+ 558      2D736563 
+ 558      74696F6E 
+ 559              	.LASF1:
+ 560 01b6 756E7369 		.ascii	"unsigned char\000"
+ 560      676E6564 
+ 560      20636861 
+ 560      7200
+ 561              	.LASF20:
+ 562 01c4 5350494D 		.ascii	"SPIM_1_Sleep\000"
+ 562      5F315F53 
+ 562      6C656570 
  562      00
- 563              	.LASF15:
- 564 015c 656E6162 		.ascii	"enableState\000"
- 564      6C655374 
- 564      61746500 
- 565              	.LASF10:
- 566 0168 646F7562 		.ascii	"double\000"
- 566      6C6500
- 567              	.LASF23:
- 568 016f 5350494D 		.ascii	"SPIM_1_ClearFIFO\000"
- 568      5F315F43 
- 568      6C656172 
- 568      4649464F 
- 568      00
- 569              	.LASF21:
- 570 0180 5350494D 		.ascii	"SPIM_1_Wakeup\000"
- 570      5F315F57 
- 570      616B6575 
- 570      7000
- 571              	.LASF16:
- 572 018e 636E7472 		.ascii	"cntrPeriod\000"
- 572      50657269 
- 572      6F6400
- 573              	.LASF3:
- 574 0199 73686F72 		.ascii	"short unsigned int\000"
- 574      7420756E 
- 574      7369676E 
- 574      65642069 
- 574      6E7400
- 575              	.LASF0:
- 576 01ac 7369676E 		.ascii	"signed char\000"
- 576      65642063 
- 576      68617200 
- 577              	.LASF24:
- 578 01b8 5350494D 		.ascii	"SPIM_1_Enable\000"
- 578      5F315F45 
- 578      6E61626C 
- 578      6500
- 579              	.LASF18:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccbeQvKY.s 			page 15
+ 563              	.LASF11:
+ 564 01d1 63686172 		.ascii	"char\000"
+ 564      00
+ 565              	.LASF4:
+ 566 01d6 6C6F6E67 		.ascii	"long int\000"
+ 566      20696E74 
+ 566      00
+ 567              	.LASF15:
+ 568 01df 656E6162 		.ascii	"enableState\000"
+ 568      6C655374 
+ 568      61746500 
+ 569              	.LASF10:
+ 570 01eb 646F7562 		.ascii	"double\000"
+ 570      6C6500
+ 571              	.LASF23:
+ 572 01f2 5350494D 		.ascii	"SPIM_1_ClearFIFO\000"
+ 572      5F315F43 
+ 572      6C656172 
+ 572      4649464F 
+ 572      00
+ 573              	.LASF21:
+ 574 0203 5350494D 		.ascii	"SPIM_1_Wakeup\000"
+ 574      5F315F57 
+ 574      616B6575 
+ 574      7000
+ 575              	.LASF16:
+ 576 0211 636E7472 		.ascii	"cntrPeriod\000"
+ 576      50657269 
+ 576      6F6400
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cclGQOS0.s 			page 15
 
 
- 580 01c6 5350494D 		.ascii	"SPIM_1_SaveConfig\000"
- 580      5F315F53 
- 580      61766543 
- 580      6F6E6669 
- 580      6700
- 581              	.LASF9:
- 582 01d8 666C6F61 		.ascii	"float\000"
- 582      7400
- 583              	.LASF2:
- 584 01de 73686F72 		.ascii	"short int\000"
- 584      7420696E 
- 584      7400
- 585              	.LASF13:
- 586 01e8 72656738 		.ascii	"reg8\000"
- 586      00
- 587              	.LASF28:
- 588 01ed 5350494D 		.ascii	"SPIM_1_backup\000"
- 588      5F315F62 
- 588      61636B75 
- 588      7000
- 589              	.LASF14:
- 590 01fb 73697A65 		.ascii	"sizetype\000"
- 590      74797065 
+ 577              	.LASF3:
+ 578 021c 73686F72 		.ascii	"short unsigned int\000"
+ 578      7420756E 
+ 578      7369676E 
+ 578      65642069 
+ 578      6E7400
+ 579              	.LASF0:
+ 580 022f 7369676E 		.ascii	"signed char\000"
+ 580      65642063 
+ 580      68617200 
+ 581              	.LASF24:
+ 582 023b 5350494D 		.ascii	"SPIM_1_Enable\000"
+ 582      5F315F45 
+ 582      6E61626C 
+ 582      6500
+ 583              	.LASF18:
+ 584 0249 5350494D 		.ascii	"SPIM_1_SaveConfig\000"
+ 584      5F315F53 
+ 584      61766543 
+ 584      6F6E6669 
+ 584      6700
+ 585              	.LASF9:
+ 586 025b 666C6F61 		.ascii	"float\000"
+ 586      7400
+ 587              	.LASF2:
+ 588 0261 73686F72 		.ascii	"short int\000"
+ 588      7420696E 
+ 588      7400
+ 589              	.LASF13:
+ 590 026b 72656738 		.ascii	"reg8\000"
  590      00
- 591              	.LASF27:
- 592 0204 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
- 592      73657273 
- 592      5C6A616F 
- 592      68655C45 
- 592      67686F73 
- 593 0232 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\TFT_Tutorial"
- 593      7072696E 
- 593      67203230 
- 593      32355C36 
- 593      2E313135 
- 594 0261 5F323032 		.ascii	"_2022\\TFT_Tutorial_2022\\TFT_with_emWin\\TFT_with_"
- 594      325C5446 
- 594      545F5475 
- 594      746F7269 
- 594      616C5F32 
- 595 0291 656D5769 		.ascii	"emWin.cydsn\000"
- 595      6E2E6379 
- 595      64736E00 
- 596              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 591              	.LASF28:
+ 592 0270 5350494D 		.ascii	"SPIM_1_backup\000"
+ 592      5F315F62 
+ 592      61636B75 
+ 592      7000
+ 593              	.LASF14:
+ 594 027e 73697A65 		.ascii	"sizetype\000"
+ 594      74797065 
+ 594      00
+ 595              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

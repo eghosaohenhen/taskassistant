@@ -19,6 +19,7 @@
 #include <project.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "stdio.h"
 
 #include <ds3231.h>
 #include "screens.h"
@@ -340,7 +341,6 @@ uint8_t RTC_readRegister(uint8 address, int offset){
     
     I2CRTC_MasterReadBuf(DS3231_ADDRESS,  RTC_read_buff, 1, I2CRTC_MODE_COMPLETE_XFER);
     while(0u == (I2CRTC_MasterStatus() & I2CRTC_MSTAT_RD_CMPLT));      // Wait for read to finish
-    i2c_status();
     I2CRTC_MasterClearStatus();
     
     return RTC_read_buff[offset];
@@ -373,19 +373,38 @@ int RTC_clearAlarmFlags()
     
     return success;
 }
-void i2c_status(){
-    int status = I2CRTC_MasterStatus();
+void i2c_status(int status){
+    
+    switch (status) {
+        case I2CRTC_MSTR_NO_ERROR:
+            print("I2C: W/R success");
+            break;
 
-    if (status & I2CRTC_MSTAT_ERR_MASK) {
-        // Error occurred
-        if (status & I2CRTC_MSTAT_ERR_ADDR_NAK) {
-            // NAK during address phase
-            error("I2C NAK");
-        } else if (status & I2CRTC_MSTAT_ERR_ARB_LOST) {
-            // Lost arbitration
-            error("I2C Arb lost");
-        } else {
-            error("I2C Unknownr");
+        case I2CRTC_MSTR_BUS_BUSY:
+            error("I2C Error: Bus busy");
+            break;
+
+        case I2CRTC_MSTR_NOT_READY:
+            error("I2C Error: Master not ready");
+            break;
+
+        case I2CRTC_MSTR_ERR_LB_NAK:
+            error("I2C Error: Last byte NAKed");
+            break;
+
+        case I2CRTC_MSTR_ERR_ARB_LOST:
+            error("I2C Error: Arbitration lost");
+            break;
+
+        case I2CRTC_MSTR_ERR_ABORT_START_GEN:
+            error("I2C Error: Start condition aborted");
+            break;
+
+        default: {
+            char msg[32];
+            sprintf(msg, "I2C: Unknown error 0x%02X", status);
+            error(msg);
+            break;
         }
     }
 }
@@ -402,16 +421,17 @@ int RTC_setAlarmTime(uint8_t sec, uint8_t min, uint8_t hr,
                        uint8_t dayDate, bool dayOrDate,
                        bool m1, bool m2, bool m3, bool m4, uint16_t address)
 {
-    uint8_t tx_buff[6] = {
-        address,              // specify the start location (07h for A1)
+    
+    uint8_t tx_buff[5] = {
         (bin2bcd(sec) | (m1 ? 0x80 : 0)),  //
         (bin2bcd(min) | (m2 ? 0x80 : 0)),
         (bin2bcd(hr)  | (m3 ? 0x80 : 0)),
-        (bin2bcd(dayDate) | (dayOrDate ? 0x40 : 0) | (m4 ? 0x80 : 0)),
-        0
+        (bin2bcd(dayDate) | (dayOrDate ? 0x40 : 0) | (m4 ? 0x80 : 0))
     };
-    int status = I2CRTC_MasterWriteBuf(DS3231_ADDRESS,tx_buff,6,I2CRTC_MODE_COMPLETE_XFER );   // Send read start
-    while(0u == (I2CRTC_MasterStatus() & I2CRTC_MSTAT_WR_CMPLT));      // Waiting for writing
-    I2CRTC_MasterClearStatus(); 
+    char line[24];
+    sprintf(line, "tx0: %02X", tx_buff[0]);
+    error(line);
+    int status = RTC_writeRegister( address, tx_buff, 5);
+    
     return status;
 }

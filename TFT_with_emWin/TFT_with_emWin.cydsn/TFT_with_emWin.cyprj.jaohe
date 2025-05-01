@@ -711,6 +711,58 @@
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_isr_v1_70\Custom\custom.cs</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_isr_v1_70\PSoC5\API\intc.c</v>
 <v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_isr_v1_70\PSoC5\API\intc.h</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.cystate</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cyprimitive</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\cy_clock_v2_20.cystate</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\API\clk.c</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\API\clk.h</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_clock_v2_20\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Timer_v2_70.cycdx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Timer_v2_70.cysym</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Timer_v2_70.pdf</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Timer_v2_70.cystate</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\API\Timer.c</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\API\Timer.h</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\API\Timer_PM.c</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\cytimercontrol.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\cytimercontrol.Designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\CyTimerCustomizer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\TimerParameters.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\Resources.Designer.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\cytimercontrol.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\Custom\Resources.resx</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70\PSoC5\Timer_v2_70.cysch</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Timer_v2_70</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\ZeroTerminal\ZeroTerminal.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.cysym</v>
+<v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\B_Timer_v2_70\B_Timer_v2_70.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.cysym</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.pdf</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v</v>
+<v>${CyRoot}\psoc\content\cyprimitives\CyPrimitives.cylib\cy_virtualmux_v1_0\Custom\custom.cs</v>
 <v>.\TFT_with_emWin.cydwr</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_20\PSoC5\API\cm3gcc.ld</v>
 <v>${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_20\PSoC5\API\Cm3RealView.scat</v>
@@ -864,6 +916,11 @@
 <v>.\Generated_Source\PSoC5\RTC_PIN_INT.h</v>
 <v>.\Generated_Source\PSoC5\tick_isr.c</v>
 <v>.\Generated_Source\PSoC5\tick_isr.h</v>
+<v>.\Generated_Source\PSoC5\timer_clock.c</v>
+<v>.\Generated_Source\PSoC5\timer_clock.h</v>
+<v>.\Generated_Source\PSoC5\Timer_1.c</v>
+<v>.\Generated_Source\PSoC5\Timer_1.h</v>
+<v>.\Generated_Source\PSoC5\Timer_1_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -873,7 +930,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="133905917289873730" />
+<deps_time v="133906068162359417" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
@@ -884,7 +941,7 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM3\ARM_GCC_493\Debug\main.o">
+<file name=".\CortexM3\ARM_GCC_493\Debug\GUI_X.o">
 <dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
 <dep name=".\Generated_Source\PSoC5\BACK_BTN_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -921,6 +978,7 @@
 <dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <dep name=".\Generated_Source\PSoC5\SS.h" />
 <dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
@@ -935,53 +993,15 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\tick_isr.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\BUTTON.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CALENDAR.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHECKBOX.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSECOLOR.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSEFILE.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG_Intern.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DROPDOWN.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\EDIT.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\FRAMEWIN.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GRAPH.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_ConfDefaults.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Debug.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Private.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Type.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Version.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\Global.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\HEADER.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\ICONVIEW.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\IMAGE.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\KNOB.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD_Protected.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTBOX.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTVIEW.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTWHEEL.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MENU.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIEDIT.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIPAGE.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\PROGBAR.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\RADIO.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SCROLLBAR.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SLIDER.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SPINBOX.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SWIPELIST.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TEXT.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TREEVIEW.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WIDGET.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_GUI.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_Intern.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts\GUIConf.h" />
-<dep name=".\ds3231.h" />
-<dep name=".\main.c" />
-<dep name=".\screens.h" />
-<dep name=".\tft.h" />
+<dep name=".\GUI_X.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\BACK_BTN.h" />
 <file name=".\Generated_Source\PSoC5\BACK_BTN_aliases.h" />
@@ -1019,6 +1039,7 @@
 <file name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <file name=".\Generated_Source\PSoC5\SS.h" />
 <file name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<file name=".\Generated_Source\PSoC5\Timer_1.h" />
 <file name=".\Generated_Source\PSoC5\core_cm3.h" />
 <file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <file name=".\Generated_Source\PSoC5\core_cmFunc.h" />
@@ -1033,52 +1054,81 @@
 <file name=".\Generated_Source\PSoC5\cytypes.h" />
 <file name=".\Generated_Source\PSoC5\project.h" />
 <file name=".\Generated_Source\PSoC5\tick_isr.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\BUTTON.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CALENDAR.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHECKBOX.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSECOLOR.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSEFILE.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG_Intern.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DROPDOWN.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\EDIT.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\FRAMEWIN.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GRAPH.h" />
+<file name=".\Generated_Source\PSoC5\timer_clock.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_ConfDefaults.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Debug.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Private.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Type.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Version.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\Global.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\HEADER.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\ICONVIEW.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\IMAGE.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\KNOB.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD_Protected.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTBOX.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTVIEW.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTWHEEL.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MENU.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIEDIT.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIPAGE.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\PROGBAR.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\RADIO.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SCROLLBAR.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SLIDER.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SPINBOX.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SWIPELIST.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TEXT.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TREEVIEW.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WIDGET.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_GUI.h" />
-<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_Intern.h" />
 <file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts\GUIConf.h" />
-<file name=".\ds3231.h" />
-<file name=".\main.c" />
-<file name=".\screens.h" />
+<file name=".\GUI_X.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\LCDConf.o">
+<dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
+<dep name=".\Generated_Source\PSoC5\BACK_BTN_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\DC.h" />
+<dep name=".\Generated_Source\PSoC5\DC_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\FORWARD_BTN.h" />
+<dep name=".\Generated_Source\PSoC5\FORWARD_BTN_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\I2CRTC.h" />
+<dep name=".\Generated_Source\PSoC5\I2CRTC_PVT.h" />
+<dep name=".\Generated_Source\PSoC5\LCD_Char_1.h" />
+<dep name=".\Generated_Source\PSoC5\LCD_Char_1_LCDPort.h" />
+<dep name=".\Generated_Source\PSoC5\LCD_Char_1_LCDPort_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LED.h" />
+<dep name=".\Generated_Source\PSoC5\LED_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MISO.h" />
+<dep name=".\Generated_Source\PSoC5\MISO_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\MOSI.h" />
+<dep name=".\Generated_Source\PSoC5\MOSI_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RESET.h" />
+<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RTC_PIN_INT.h" />
+<dep name=".\Generated_Source\PSoC5\RTC_PIN_INT_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SCL.h" />
+<dep name=".\Generated_Source\PSoC5\SCLK.h" />
+<dep name=".\Generated_Source\PSoC5\SCLK_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SCL_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SDA.h" />
+<dep name=".\Generated_Source\PSoC5\SDA_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
+<dep name=".\Generated_Source\PSoC5\SS.h" />
+<dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cmInstr.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\tick_isr.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_ConfDefaults.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Type.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Version.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\Global.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts\GUIConf.h" />
+<dep name=".\GUIDRV_FlexColor.h" />
+<dep name=".\LCDConf.c" />
+<dep name=".\tft.h" />
+</file>
+<file name=".\GUIDRV_FlexColor.h" />
+<file name=".\LCDConf.c" />
 <file name=".\tft.h" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\ds3231.o">
 <dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
@@ -1117,6 +1167,7 @@
 <dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <dep name=".\Generated_Source\PSoC5\SS.h" />
 <dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
@@ -1131,6 +1182,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\tick_isr.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\BUTTON.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CALENDAR.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHECKBOX.h" />
@@ -1179,8 +1231,46 @@
 <dep name=".\screens.h" />
 <dep name=".\tft.h" />
 </file>
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\BUTTON.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CALENDAR.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHECKBOX.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSECOLOR.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSEFILE.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG_Intern.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DROPDOWN.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\EDIT.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\FRAMEWIN.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GRAPH.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Debug.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Private.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\HEADER.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\ICONVIEW.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\IMAGE.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\KNOB.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD_Protected.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTBOX.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTVIEW.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTWHEEL.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MENU.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIEDIT.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIPAGE.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\PROGBAR.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\RADIO.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SCROLLBAR.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SLIDER.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SPINBOX.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SWIPELIST.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TEXT.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TREEVIEW.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WIDGET.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_GUI.h" />
+<file name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_Intern.h" />
 <file name=".\ds3231.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\GUI_X.o">
+<file name=".\ds3231.h" />
+<file name=".\screens.h" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\main.o">
 <dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
 <dep name=".\Generated_Source\PSoC5\BACK_BTN_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -1217,6 +1307,7 @@
 <dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <dep name=".\Generated_Source\PSoC5\SS.h" />
 <dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
@@ -1231,80 +1322,56 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\tick_isr.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\BUTTON.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CALENDAR.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHECKBOX.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSECOLOR.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHOOSEFILE.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG_Intern.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DROPDOWN.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\EDIT.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\FRAMEWIN.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GRAPH.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_ConfDefaults.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Debug.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Private.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Type.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Version.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\Global.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\HEADER.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\ICONVIEW.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\IMAGE.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\KNOB.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD_Protected.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTBOX.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTVIEW.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LISTWHEEL.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MENU.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIEDIT.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\MULTIPAGE.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\PROGBAR.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\RADIO.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SCROLLBAR.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SLIDER.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SPINBOX.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\SWIPELIST.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TEXT.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\TREEVIEW.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WIDGET.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_GUI.h" />
+<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\WM_Intern.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts\GUIConf.h" />
-<dep name=".\GUI_X.c" />
-</file>
-<file name=".\GUI_X.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\LCDConf.o">
-<dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
-<dep name=".\Generated_Source\PSoC5\BACK_BTN_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\DC.h" />
-<dep name=".\Generated_Source\PSoC5\DC_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\FORWARD_BTN.h" />
-<dep name=".\Generated_Source\PSoC5\FORWARD_BTN_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\I2CRTC.h" />
-<dep name=".\Generated_Source\PSoC5\I2CRTC_PVT.h" />
-<dep name=".\Generated_Source\PSoC5\LCD_Char_1.h" />
-<dep name=".\Generated_Source\PSoC5\LCD_Char_1_LCDPort.h" />
-<dep name=".\Generated_Source\PSoC5\LCD_Char_1_LCDPort_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\LED.h" />
-<dep name=".\Generated_Source\PSoC5\LED_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MISO.h" />
-<dep name=".\Generated_Source\PSoC5\MISO_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\MOSI.h" />
-<dep name=".\Generated_Source\PSoC5\MOSI_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\RESET.h" />
-<dep name=".\Generated_Source\PSoC5\RESET_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\RTC_PIN_INT.h" />
-<dep name=".\Generated_Source\PSoC5\RTC_PIN_INT_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SCL.h" />
-<dep name=".\Generated_Source\PSoC5\SCLK.h" />
-<dep name=".\Generated_Source\PSoC5\SCLK_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SCL_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SDA.h" />
-<dep name=".\Generated_Source\PSoC5\SDA_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
-<dep name=".\Generated_Source\PSoC5\SS.h" />
-<dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cmInstr.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name=".\Generated_Source\PSoC5\tick_isr.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_ConfDefaults.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Type.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI_Version.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\Global.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\LCD.h" />
-<dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts\GUIConf.h" />
-<dep name=".\GUIDRV_FlexColor.h" />
-<dep name=".\LCDConf.c" />
+<dep name=".\ds3231.h" />
+<dep name=".\main.c" />
+<dep name=".\screens.h" />
 <dep name=".\tft.h" />
 </file>
-<file name=".\GUIDRV_FlexColor.h" />
-<file name=".\LCDConf.c" />
+<file name=".\main.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\start.o">
 <dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
 <dep name=".\Generated_Source\PSoC5\BACK_BTN_aliases.h" />
@@ -1342,6 +1409,7 @@
 <dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <dep name=".\Generated_Source\PSoC5\SS.h" />
 <dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
@@ -1356,6 +1424,7 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\tick_isr.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\BUTTON.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CALENDAR.h" />
 <dep name="..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\CHECKBOX.h" />
@@ -1441,6 +1510,7 @@
 <dep name=".\Generated_Source\PSoC5\SPIM_1_PVT.h" />
 <dep name=".\Generated_Source\PSoC5\SS.h" />
 <dep name=".\Generated_Source\PSoC5\SS_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3.h" />
 <dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
 <dep name=".\Generated_Source\PSoC5\core_cmFunc.h" />
@@ -1455,10 +1525,61 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
 <dep name=".\Generated_Source\PSoC5\tick_isr.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
 <dep name=".\tft.c" />
 <dep name=".\tft.h" />
 </file>
 <file name=".\tft.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\Timer_1.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.c" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Timer_1.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\Timer_1_PM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_1_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Timer_1_PM.c" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\tick_isr.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\tick_isr.c" />
+<dep name=".\Generated_Source\PSoC5\tick_isr.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\tick_isr.c" />
+<file name=".\cyapicallbacks.h" />
+<file name=".\CortexM3\ARM_GCC_493\Debug\timer_clock.o">
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.c" />
+<dep name=".\Generated_Source\PSoC5\timer_clock.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\timer_clock.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\BACK_BTN.o">
 <dep name=".\Generated_Source\PSoC5\BACK_BTN.c" />
 <dep name=".\Generated_Source\PSoC5\BACK_BTN.h" />
@@ -1485,7 +1606,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Cm3Start.c" />
-<file name=".\cyapicallbacks.h" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\CyDmac.o">
 <dep name=".\Generated_Source\PSoC5\CyDmac.c" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -1880,20 +2000,6 @@
 <dep name=".\Generated_Source\PSoC5\cyutils.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\cyutils.c" />
-<file name=".\CortexM3\ARM_GCC_493\Debug\tick_isr.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\tick_isr.c" />
-<dep name=".\Generated_Source\PSoC5\tick_isr.h" />
-<dep name=".\cyapicallbacks.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\tick_isr.c" />
 <file name=".\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o">
 <dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
 <dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
@@ -2155,6 +2261,9 @@
 <dep name=".\CortexM3\ARM_GCC_493\Debug\LCD_Char_1_LCDPort.o" />
 <dep name=".\CortexM3\ARM_GCC_493\Debug\RTC_PIN_INT.o" />
 <dep name=".\CortexM3\ARM_GCC_493\Debug\tick_isr.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\timer_clock.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Timer_1.o" />
+<dep name=".\CortexM3\ARM_GCC_493\Debug\Timer_1_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_493\Debug\TFT_with_emWin.a" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" />
 </file>
@@ -2227,6 +2336,9 @@
 <name_val_pair name=".\Generated_Source\PSoC5\RTC_PIN_INT.c" v="-mcpu=cortex-m3 -mthumb -Wno-main -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name=".\Generated_Source\PSoC5\tick_isr.c" v="-mcpu=cortex-m3 -mthumb -Wno-main -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\CortexM3\ARM_GCC_493\Debug\TFT_with_emWin.hex" v="-mcpu=cortex-m3 -mthumb -g -ffunction-sections -Og -ffat-lto-objects -l m -L Generated_Source\PSoC5 -L ..\..\emWinGraphics_v5_46\LinkLibrary\PSoC5\GCC ..\..\emWinGraphics_v5_46\LinkLibrary\PSoC5\GCC\libemWin_nosnts_cm3_gcc.a -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections" />
+<name_val_pair name=".\Generated_Source\PSoC5\timer_clock.c" v="-mcpu=cortex-m3 -mthumb -Wno-main -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC5\Timer_1.c" v="-mcpu=cortex-m3 -mthumb -Wno-main -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name=".\Generated_Source\PSoC5\Timer_1_PM.c" v="-mcpu=cortex-m3 -mthumb -Wno-main -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5\nosnts -I..\..\emWinGraphics_v5_46\Code\Include\PSoC4_5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\jaohe\AppData\Local\Cypress Semiconductor\PSoC Creator\3.3&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p &quot;C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\TFT_with_emWin.cyprj&quot; -d CY8C5868AXI-LP035 -s &quot;C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\Generated_Source\PSoC5&quot; -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -2234,7 +2346,7 @@
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="133905968166475713" />
+<deps_time v="133906068220326865" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 <dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
@@ -2253,7 +2365,7 @@
 <v>Off-Chip</v>
 </tree_states_tab_names>
 <tree_states>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\System">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\System\Clock [v2.20]">
 <ExpandedNodeIds>
 <v>Cypress Component Catalog</v>
 <v>Cypress Component Catalog\Communications</v>
@@ -2267,30 +2379,30 @@
 <v>Cypress Component Catalog\System</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Cypress Component Catalog\Display</v>
-<v>Cypress Component Catalog\Filters</v>
-<v>Cypress Component Catalog\Ports and Pins</v>
-<v>Cypress Component Catalog\Ports and Pins\Analog Pin [v2.20]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Bidirectional Pin [v2.20]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Input Pin [v2.20]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Output Pin [v2.20]</v>
-<v>Cypress Component Catalog\Power Supervision</v>
-<v>Cypress Component Catalog\System</v>
-<v>Cypress Component Catalog\System\Boost Converter [v5.0]</v>
-<v>Cypress Component Catalog\System\Bootloadable [v1.50]</v>
-<v>Cypress Component Catalog\System\Bootloader [v1.50]</v>
-<v>Cypress Component Catalog\System\Clock [v2.20]</v>
-<v>Cypress Component Catalog\System\Die Temperature [v2.0]</v>
-<v>Cypress Component Catalog\System\DMA [v1.70]</v>
-<v>Cypress Component Catalog\System\EEPROM [v3.0]</v>
-<v>Cypress Component Catalog\System\Emulated EEPROM [v1.10]</v>
-<v>Cypress Component Catalog\System\External Memory Interface</v>
-<v>Cypress Component Catalog\System\Global Signal Reference [v2.0]</v>
-<v>Cypress Component Catalog\System\ILO Trim [v2.0]</v>
-<v>Cypress Component Catalog\System\Interrupt [v1.70]</v>
-<v>Cypress Component Catalog\System\RTC [v2.0]</v>
-<v>Cypress Component Catalog\System\SleepTimer [v3.20]</v>
-<v>Cypress Component Catalog\Thermal Management</v>
+<v>Cypress Component Catalog\Digital\Functions</v>
+<v>Cypress Component Catalog\Digital\Functions\Counter [v3.0]</v>
+<v>Cypress Component Catalog\Digital\Functions\CRC [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\PrISM [v2.20]</v>
+<v>Cypress Component Catalog\Digital\Functions\PRS [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\PWM [v3.30]</v>
+<v>Cypress Component Catalog\Digital\Functions\Quadrature Decoder [v3.0]</v>
+<v>Cypress Component Catalog\Digital\Functions\Shift Register [v2.30]</v>
+<v>Cypress Component Catalog\Digital\Functions\Timer [v2.70]</v>
+<v>Cypress Component Catalog\Digital\Logic</v>
+<v>Cypress Component Catalog\Digital\Logic\And [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Bufoe [v1.10]</v>
+<v>Cypress Component Catalog\Digital\Logic\D Flip Flop [v1.30]</v>
+<v>Cypress Component Catalog\Digital\Logic\D Flip Flop w/ Enable [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\De-Multiplexer [v1.10]</v>
+<v>Cypress Component Catalog\Digital\Logic\Digital Constant [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Logic High '1' [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Logic Low '0' [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Lookup Table [v1.50]</v>
+<v>Cypress Component Catalog\Digital\Logic\Multiplexer [v1.10]</v>
+<v>Cypress Component Catalog\Digital\Logic\Nand [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Nor [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Not [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Or [v1.0]</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">

@@ -73,16 +73,13 @@ void MainTask(void);
 int home(void);
 void configure_rtc_tick(void);
 int fsmState;
-void print();
 volatile bool isr_flag;
-CY_ISR(sw_isr)
+CY_ISR(isr_1)
 {
     // Clear PSoC GPIO interrupt first
-    RTC_PIN_INT_ClearInterrupt();
-
-    // Clear A1F flag inside RTC
-    RTC_clearAlarmFlags();
     
+
+    Timer_1_ReadStatusRegister();
     DateTime now = RTC_now();
     char line[24];
     sprintf(line, "%02u-%02u %02u:%02u:%02u",
@@ -96,7 +93,16 @@ CY_ISR(sw_isr)
    
 }
 int main(){
+    
+    tick_isr_ClearPending();
+    
+    //timer_clock_Start();      // Start the timer
+    tick_isr_StartEx(isr_1); // Link ISR
+    Timer_1_Start();       // Start the 1 MHz clock
     CyGlobalIntEnable;            // 1. Global interrupts first!
+    
+    
+    
 
     I2CRTC_Start();                  // 2. Start I²C for RTC
 //    SPIM_1_Start();                  // 2. Start SPI for TFT
@@ -116,31 +122,36 @@ int main(){
     LCD_Char_1_ClearDisplay();
     LCD_Char_1_PrintString("Time: "); // 6. Print basic layout
     
+    //int status = RTC_setAlarmTime(0,0,0,0,0,1,1,1,1,DS3231_ALARM1);
+    //i2c_status(status);
+    //CyDelay(1000);
+    
     for (;;)
     {
         
-        char line[24];
-        uint8_t status = RTC_readRegister(DS3231_ALARM2, 0);
+        // char line[24];
         
-        // print the status register 
-        sprintf(line, "Flags:%02X",
-                status);
-        LCD_Char_1_Position(0, 0);
-        LCD_Char_1_PrintString("                    ");			// clean up the previous display
+        // uint8_t data = RTC_readRegister(DS3231_ALARM1, 0);
         
-    	LCD_Char_1_Position(0, 0);
-        LCD_Char_1_PrintString(line);
-        CyDelay(50);
-        DateTime now = RTC_now();
+        // // print the status register 
+        // sprintf(line, "REG:%02X VAL: %02X",
+        //         DS3231_ALARM1, data);
+        // LCD_Char_1_Position(0, 0);
+        // LCD_Char_1_PrintString("                    ");			// clean up the previous display
         
-        sprintf(line, "%02u-%02u %02u:%02u:%02u",
-                now.m, now.d, now.hh, now.mm, now.ss);
-        LCD_Char_1_Position(1, 0);
-        LCD_Char_1_PrintString("                    ");			// clean up the previous display
+    	// LCD_Char_1_Position(0, 0);
+        // LCD_Char_1_PrintString(line);
+        // CyDelay(50);
+        // DateTime now = RTC_now();
         
-    	LCD_Char_1_Position(1, 0);
-        LCD_Char_1_PrintString(line);
-        CyDelay(50);
+        // sprintf(line, "%02u-%02u %02u:%02u:%02u",
+        //         now.m, now.d, now.hh, now.mm, now.ss);
+        // LCD_Char_1_Position(1, 0);
+        // LCD_Char_1_PrintString("                    ");			// clean up the previous display
+        
+    	// LCD_Char_1_Position(1, 0);
+        // LCD_Char_1_PrintString(line);
+        // CyDelay(50);
 
     }
 }
@@ -214,7 +225,7 @@ int home()
 int error(char* message)
 {
     print(message);
-   
+    CyDelay(1000);
     return ERROR;
 }
 void print(char* message)
@@ -224,6 +235,7 @@ void print(char* message)
     LCD_Char_1_PrintString("                    ");	
     LCD_Char_1_Position(0, 0);
     LCD_Char_1_PrintString(message);
+    CyDelay(1000);
 //    GUI_Clear();
 //    GUI_SetFont(&GUI_Font8x16);
 //    GUI_DispStringHCenterAt(message, 5,5);
@@ -238,10 +250,8 @@ void MainTask()
 }
 
 void configure_rtc_tick(){
-    int status = RTC_setAlarmTime(DS3231_ALARM1, 0,0,0,
-                   0, false,
-                   0,0,0,1);
-    i2c_status();
+    int status = RTC_setAlarmTime(0,0,0,0,0,1,1,1,1,DS3231_ALARM1);
+    i2c_status(status);
     status = tick_isr_init();
     
 }

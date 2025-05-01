@@ -1,5 +1,5 @@
 -- Project:   TFT_with_emWin
--- Generated: 05/01/2025 12:48:40
+-- Generated: 05/01/2025 17:00:06
 -- PSoC Creator  3.3 CP3
 
 ENTITY TFT_with_emWin IS
@@ -53,13 +53,17 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
     SIGNAL MISO(0)__PA : bit;
     SIGNAL MOSI(0)__PA : bit;
     SIGNAL Net_10 : bit;
-    ATTRIBUTE placement_force OF Net_10 : SIGNAL IS "U(3,4,B)3";
+    ATTRIBUTE placement_force OF Net_10 : SIGNAL IS "U(3,4,A)0";
+    SIGNAL Net_101 : bit;
     SIGNAL Net_11 : bit;
-    ATTRIBUTE placement_force OF Net_11 : SIGNAL IS "U(3,5,B)1";
+    ATTRIBUTE placement_force OF Net_11 : SIGNAL IS "U(3,5,B)0";
     SIGNAL Net_12 : bit;
-    ATTRIBUTE placement_force OF Net_12 : SIGNAL IS "U(3,5,B)3";
+    ATTRIBUTE placement_force OF Net_12 : SIGNAL IS "U(3,5,A)3";
     SIGNAL Net_13 : bit;
-    SIGNAL Net_92 : bit;
+    SIGNAL Net_169 : bit;
+    ATTRIBUTE udbclken_assigned OF Net_169 : SIGNAL IS "True";
+    ATTRIBUTE global_signal OF Net_169 : SIGNAL IS true;
+    SIGNAL Net_169_local : bit;
     SIGNAL RESET(0)__PA : bit;
     SIGNAL RTC_PIN_INT(0)__PA : bit;
     SIGNAL SCL(0)__PA : bit;
@@ -79,7 +83,7 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
     SIGNAL \\\LCD_Char_1:LCDPort(5)\\__PA\ : bit;
     SIGNAL \\\LCD_Char_1:LCDPort(6)\\__PA\ : bit;
     SIGNAL \SPIM_1:BSPIM:cnt_enable\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:cnt_enable\ : SIGNAL IS "U(2,4,A)2";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:cnt_enable\ : SIGNAL IS "U(2,3,B)0";
     SIGNAL \SPIM_1:BSPIM:cnt_tc\ : bit;
     SIGNAL \SPIM_1:BSPIM:count_0\ : bit;
     SIGNAL \SPIM_1:BSPIM:count_1\ : bit;
@@ -89,34 +93,47 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
     SIGNAL \SPIM_1:BSPIM:count_5\ : bit;
     SIGNAL \SPIM_1:BSPIM:count_6\ : bit;
     SIGNAL \SPIM_1:BSPIM:ld_ident\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:ld_ident\ : SIGNAL IS "U(3,4,A)1";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:ld_ident\ : SIGNAL IS "U(3,3,A)1";
     SIGNAL \SPIM_1:BSPIM:load_cond\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:load_cond\ : SIGNAL IS "U(2,5,A)1";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:load_cond\ : SIGNAL IS "U(2,5,A)0";
     SIGNAL \SPIM_1:BSPIM:load_rx_data\ : bit;
     ATTRIBUTE placement_force OF \SPIM_1:BSPIM:load_rx_data\ : SIGNAL IS "U(3,5,A)2";
     SIGNAL \SPIM_1:BSPIM:mosi_from_dp\ : bit;
     SIGNAL \SPIM_1:BSPIM:rx_status_4\ : bit;
     SIGNAL \SPIM_1:BSPIM:rx_status_5\ : bit;
     SIGNAL \SPIM_1:BSPIM:rx_status_6\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:rx_status_6\ : SIGNAL IS "U(3,5,B)2";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:rx_status_6\ : SIGNAL IS "U(3,3,B)3";
     SIGNAL \SPIM_1:BSPIM:state_0\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:state_0\ : SIGNAL IS "U(2,5,B)2";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:state_0\ : SIGNAL IS "U(2,4,B)1";
     SIGNAL \SPIM_1:BSPIM:state_1\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:state_1\ : SIGNAL IS "U(3,4,A)0";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:state_1\ : SIGNAL IS "U(2,3,A)1";
     SIGNAL \SPIM_1:BSPIM:state_2\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:state_2\ : SIGNAL IS "U(2,4,A)3";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:state_2\ : SIGNAL IS "U(2,4,A)0";
     SIGNAL \SPIM_1:BSPIM:tx_status_0\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:tx_status_0\ : SIGNAL IS "U(3,4,B)0";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:tx_status_0\ : SIGNAL IS "U(3,4,B)3";
     SIGNAL \SPIM_1:BSPIM:tx_status_1\ : bit;
     SIGNAL \SPIM_1:BSPIM:tx_status_2\ : bit;
     SIGNAL \SPIM_1:BSPIM:tx_status_4\ : bit;
-    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:tx_status_4\ : SIGNAL IS "U(3,5,B)0";
+    ATTRIBUTE placement_force OF \SPIM_1:BSPIM:tx_status_4\ : SIGNAL IS "U(2,5,B)2";
     SIGNAL \SPIM_1:Net_276\ : bit;
     ATTRIBUTE udbclken_assigned OF \SPIM_1:Net_276\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \SPIM_1:Net_276\ : SIGNAL IS true;
     SIGNAL \SPIM_1:Net_276_local\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_0\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_1\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_2\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_3\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_4\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_5\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_6\ : bit;
+    SIGNAL \Timer_1:TimerUDB:control_7\ : bit;
+    SIGNAL \Timer_1:TimerUDB:per_zero\ : bit;
+    SIGNAL \Timer_1:TimerUDB:status_2\ : bit;
+    SIGNAL \Timer_1:TimerUDB:status_3\ : bit;
+    SIGNAL \Timer_1:TimerUDB:status_tc\ : bit;
+    ATTRIBUTE placement_force OF \Timer_1:TimerUDB:status_tc\ : SIGNAL IS "U(2,4,B)2";
     SIGNAL __ONE__ : bit;
-    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(1,1,B)0";
+    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(3,3,A)2";
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
     ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
@@ -125,6 +142,19 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
     SIGNAL zero : bit;
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     SIGNAL \ClockBlock.clk_bus_glb_ff__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.ce0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.cl0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.z0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.ff0__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.ce1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.cl1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.z1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.ff1__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.co_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.sol_msb__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u0.cfbo__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u1.sor__sig\ : bit;
+    SIGNAL \Timer_1:TimerUDB:sT16:timerdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF MOSI(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF MOSI(0) : LABEL IS "P4[4]";
@@ -139,7 +169,7 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
     ATTRIBUTE lib_model OF RESET(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF RESET(0) : LABEL IS "P4[6]";
     ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF LED(0) : LABEL IS "iocell7";
     ATTRIBUTE Location OF LED(0) : LABEL IS "P4[2]";
     ATTRIBUTE lib_model OF FORWARD_BTN(0) : LABEL IS "iocell8";
@@ -171,36 +201,46 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:tx_status_0\ : LABEL IS "macrocell3";
     ATTRIBUTE Location OF \SPIM_1:BSPIM:tx_status_0\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:tx_status_4\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:tx_status_4\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:tx_status_4\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:rx_status_6\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:rx_status_6\ : LABEL IS "U(3,5)";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:BitCounter\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:rx_status_6\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "macrocell6";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:status_tc\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:BitCounter\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:TxStsReg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:TxStsReg\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:TxStsReg\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:RxStsReg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:RxStsReg\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:RxStsReg\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \SPIM_1:BSPIM:sR8:Dp:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE Location OF \SPIM_1:BSPIM:sR8:Dp:u0\ : LABEL IS "U(3,5)";
     ATTRIBUTE Location OF \I2CRTC:I2C_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(15)]";
     ATTRIBUTE Location OF \I2CRTC:I2C_FF\ : LABEL IS "F(I2C,0)";
     ATTRIBUTE Location OF tick_isr : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
-    ATTRIBUTE lib_model OF Net_10 : LABEL IS "macrocell6";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "statusicell3";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:rstSts:stsreg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT16:timerdp:u0\ : LABEL IS "datapathcell2";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT16:timerdp:u0\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \Timer_1:TimerUDB:sT16:timerdp:u1\ : LABEL IS "datapathcell3";
+    ATTRIBUTE Location OF \Timer_1:TimerUDB:sT16:timerdp:u1\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF Net_10 : LABEL IS "macrocell7";
     ATTRIBUTE Location OF Net_10 : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_2\ : LABEL IS "macrocell7";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_2\ : LABEL IS "macrocell8";
     ATTRIBUTE Location OF \SPIM_1:BSPIM:state_2\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_1\ : LABEL IS "macrocell8";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:state_1\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_0\ : LABEL IS "macrocell9";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:state_0\ : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF Net_12 : LABEL IS "macrocell10";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_1\ : LABEL IS "macrocell9";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:state_1\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:state_0\ : LABEL IS "macrocell10";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:state_0\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF Net_12 : LABEL IS "macrocell11";
     ATTRIBUTE Location OF Net_12 : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_cond\ : LABEL IS "macrocell11";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:load_cond\ : LABEL IS "macrocell12";
     ATTRIBUTE Location OF \SPIM_1:BSPIM:load_cond\ : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:ld_ident\ : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:ld_ident\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:cnt_enable\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \SPIM_1:BSPIM:cnt_enable\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF Net_11 : LABEL IS "macrocell14";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:ld_ident\ : LABEL IS "macrocell13";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:ld_ident\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \SPIM_1:BSPIM:cnt_enable\ : LABEL IS "macrocell14";
+    ATTRIBUTE Location OF \SPIM_1:BSPIM:cnt_enable\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF Net_11 : LABEL IS "macrocell15";
     ATTRIBUTE Location OF Net_11 : LABEL IS "U(3,5)";
     COMPONENT clockblockcell
         PORT (
@@ -281,6 +321,21 @@ ARCHITECTURE __DEFAULT__ OF TFT_with_emWin IS
             dclk_glb_ff_5 : OUT std_ulogic;
             dclk_glb_ff_6 : OUT std_ulogic;
             dclk_glb_ff_7 : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT controlcell
+        PORT (
+            control_0 : OUT std_ulogic;
+            control_1 : OUT std_ulogic;
+            control_2 : OUT std_ulogic;
+            control_3 : OUT std_ulogic;
+            control_4 : OUT std_ulogic;
+            control_5 : OUT std_ulogic;
+            control_6 : OUT std_ulogic;
+            control_7 : OUT std_ulogic;
+            clock : IN std_ulogic;
+            reset : IN std_ulogic;
+            clk_en : IN std_ulogic;
+            busclk : IN std_ulogic);
     END COMPONENT;
     COMPONENT count7cell
         PORT (
@@ -517,6 +572,8 @@ BEGIN
             dsi_glb_div => open,
             dclk_glb_0 => \SPIM_1:Net_276\,
             dclk_0 => \SPIM_1:Net_276_local\,
+            dclk_glb_1 => Net_169,
+            dclk_1 => Net_169_local,
             clk_bus_glb_ff => \ClockBlock.clk_bus_glb_ff__sig\);
 
     MOSI:logicalport
@@ -1818,11 +1875,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "RTC_PIN_INT",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => RTC_PIN_INT(0)__PA,
             oe => open,
-            fb => Net_92,
             pad_in => RTC_PIN_INT(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -1875,6 +1931,15 @@ BEGIN
             main_3 => \SPIM_1:BSPIM:count_1\,
             main_4 => \SPIM_1:BSPIM:count_0\,
             main_5 => \SPIM_1:BSPIM:rx_status_4\);
+
+    \Timer_1:TimerUDB:status_tc\:macrocell
+        GENERIC MAP(
+            eqn_main => "(main_0 * main_1)",
+            clken_mode => 1)
+        PORT MAP(
+            q => \Timer_1:TimerUDB:status_tc\,
+            main_0 => \Timer_1:TimerUDB:control_7\,
+            main_1 => \Timer_1:TimerUDB:per_zero\);
 
     \SPIM_1:BSPIM:BitCounter\:count7cell
         GENERIC MAP(
@@ -1994,10 +2059,144 @@ BEGIN
 
     tick_isr:interrupt
         GENERIC MAP(
-            int_type => "10")
+            int_type => "01")
         PORT MAP(
-            interrupt => Net_92,
+            interrupt => Net_101,
             clock => ClockBlock_BUS_CLK);
+
+    \Timer_1:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:controlcell
+        GENERIC MAP(
+            cy_ctrl_mode_0 => "11111111",
+            cy_ctrl_mode_1 => "00000000",
+            cy_ext_reset => 0,
+            cy_force_order => 1,
+            cy_init_value => "00000000",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_169,
+            control_7 => \Timer_1:TimerUDB:control_7\,
+            control_6 => \Timer_1:TimerUDB:control_6\,
+            control_5 => \Timer_1:TimerUDB:control_5\,
+            control_4 => \Timer_1:TimerUDB:control_4\,
+            control_3 => \Timer_1:TimerUDB:control_3\,
+            control_2 => \Timer_1:TimerUDB:control_2\,
+            control_1 => \Timer_1:TimerUDB:control_1\,
+            control_0 => \Timer_1:TimerUDB:control_0\,
+            busclk => ClockBlock_BUS_CLK);
+
+    \Timer_1:TimerUDB:rstSts:stsreg\:statusicell
+        GENERIC MAP(
+            cy_force_order => 1,
+            cy_int_mask => "1111111",
+            cy_md_select => "0000011",
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_169,
+            status_6 => open,
+            status_5 => open,
+            status_4 => open,
+            status_3 => \Timer_1:TimerUDB:status_3\,
+            status_2 => \Timer_1:TimerUDB:status_2\,
+            status_1 => open,
+            status_0 => \Timer_1:TimerUDB:status_tc\,
+            interrupt => Net_101);
+
+    \Timer_1:TimerUDB:sT16:timerdp:u0\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_169,
+            cs_addr_1 => \Timer_1:TimerUDB:control_7\,
+            cs_addr_0 => \Timer_1:TimerUDB:per_zero\,
+            busclk => ClockBlock_BUS_CLK,
+            ce0 => \Timer_1:TimerUDB:sT16:timerdp:u0.ce0__sig\,
+            cl0 => \Timer_1:TimerUDB:sT16:timerdp:u0.cl0__sig\,
+            z0 => \Timer_1:TimerUDB:sT16:timerdp:u0.z0__sig\,
+            ff0 => \Timer_1:TimerUDB:sT16:timerdp:u0.ff0__sig\,
+            ce1 => \Timer_1:TimerUDB:sT16:timerdp:u0.ce1__sig\,
+            cl1 => \Timer_1:TimerUDB:sT16:timerdp:u0.cl1__sig\,
+            z1 => \Timer_1:TimerUDB:sT16:timerdp:u0.z1__sig\,
+            ff1 => \Timer_1:TimerUDB:sT16:timerdp:u0.ff1__sig\,
+            co_msb => \Timer_1:TimerUDB:sT16:timerdp:u0.co_msb__sig\,
+            sol_msb => \Timer_1:TimerUDB:sT16:timerdp:u0.sol_msb__sig\,
+            cfbo => \Timer_1:TimerUDB:sT16:timerdp:u0.cfbo__sig\,
+            sil => \Timer_1:TimerUDB:sT16:timerdp:u1.sor__sig\,
+            cmsbi => \Timer_1:TimerUDB:sT16:timerdp:u1.cmsbo__sig\);
+
+    \Timer_1:TimerUDB:sT16:timerdp:u1\:datapathcell
+        GENERIC MAP(
+            a0_init => "00000000",
+            a1_init => "00000000",
+            ce0_sync => 1,
+            ce1_sync => 1,
+            cl0_sync => 1,
+            cl1_sync => 1,
+            cmsb_sync => 1,
+            co_msb_sync => 1,
+            cy_dpconfig => "0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111100000110000000000000001000000110000000000011000",
+            d0_init => "00000000",
+            d1_init => "00000000",
+            f0_blk_sync => 1,
+            f0_bus_sync => 1,
+            f1_blk_sync => 1,
+            f1_bus_sync => 1,
+            ff0_sync => 1,
+            ff1_sync => 1,
+            ov_msb_sync => 1,
+            so_sync => 1,
+            z0_sync => 1,
+            z1_sync => 1,
+            uses_p_in => '0',
+            uses_p_out => '0',
+            clk_inv => '0',
+            clken_mode => 1)
+        PORT MAP(
+            clock => Net_169,
+            cs_addr_1 => \Timer_1:TimerUDB:control_7\,
+            cs_addr_0 => \Timer_1:TimerUDB:per_zero\,
+            z0_comb => \Timer_1:TimerUDB:per_zero\,
+            f0_bus_stat_comb => \Timer_1:TimerUDB:status_3\,
+            f0_blk_stat_comb => \Timer_1:TimerUDB:status_2\,
+            busclk => ClockBlock_BUS_CLK,
+            ce0i => \Timer_1:TimerUDB:sT16:timerdp:u0.ce0__sig\,
+            cl0i => \Timer_1:TimerUDB:sT16:timerdp:u0.cl0__sig\,
+            z0i => \Timer_1:TimerUDB:sT16:timerdp:u0.z0__sig\,
+            ff0i => \Timer_1:TimerUDB:sT16:timerdp:u0.ff0__sig\,
+            ce1i => \Timer_1:TimerUDB:sT16:timerdp:u0.ce1__sig\,
+            cl1i => \Timer_1:TimerUDB:sT16:timerdp:u0.cl1__sig\,
+            z1i => \Timer_1:TimerUDB:sT16:timerdp:u0.z1__sig\,
+            ff1i => \Timer_1:TimerUDB:sT16:timerdp:u0.ff1__sig\,
+            ci => \Timer_1:TimerUDB:sT16:timerdp:u0.co_msb__sig\,
+            sir => \Timer_1:TimerUDB:sT16:timerdp:u0.sol_msb__sig\,
+            cfbi => \Timer_1:TimerUDB:sT16:timerdp:u0.cfbo__sig\,
+            sor => \Timer_1:TimerUDB:sT16:timerdp:u1.sor__sig\,
+            cmsbo => \Timer_1:TimerUDB:sT16:timerdp:u1.cmsbo__sig\);
 
     Net_10:macrocell
         GENERIC MAP(

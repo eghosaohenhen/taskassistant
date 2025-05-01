@@ -24,6 +24,7 @@ int start (void);
 //helper functions 
 
 int error(char*);
+void print(char*);
 
 
 //screen related globals
