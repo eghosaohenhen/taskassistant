@@ -1,0 +1,1054 @@
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"RTC_PIN_INT.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.RTC_PIN_INT_Write,"ax",%progbits
+  19              		.align	2
+  20              		.global	RTC_PIN_INT_Write
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	RTC_PIN_INT_Write, %function
+  24              	RTC_PIN_INT_Write:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\RTC_PIN_INT.c"
+   1:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * File Name: RTC_PIN_INT.c  
+   3:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Version 2.20
+   4:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+   5:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Description:
+   6:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+   8:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Note:
+   9:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  10:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** ********************************************************************************
+  11:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  17:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** #include "cytypes.h"
+  18:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** #include "RTC_PIN_INT.h"
+  19:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  20:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** #if !(CY_PSOC5A &&\
+  22:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 	 RTC_PIN_INT__PORT == 15 && ((RTC_PIN_INT__MASK & 0xC0) != 0))
+  23:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  24:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  25:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /*******************************************************************************
+  26:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Function Name: RTC_PIN_INT_Write
+  27:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** ****************************************************************************//**
+  28:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  29:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \brief Writes the value to the physical port (data output register), masking
+  30:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  and shifting the bits appropriately. 
+  31:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * The data output register controls the signal applied to the physical pin in 
+  33:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  34:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  35:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * bit banding).
+  36:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  37:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  38:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * as it is driven by the hardware signal attached to it.
+  39:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  40:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \param value
+  41:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  Value to write to the component instance.
+  42:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  43:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \return 
+  44:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  None 
+  45:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  46:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \sideeffect
+  47:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+  48:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+  49:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  interrupts this function and performs writes to the Pins component data 
+  50:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+  51:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+  52:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  this function.
+  53:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  54:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \funcusage
+  55:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  \snippet RTC_PIN_INT_SUT.c usage_RTC_PIN_INT_Write
+  56:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *******************************************************************************/
+  57:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** void RTC_PIN_INT_Write(uint8 value)
+  58:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** {
+  27              		.loc 1 58 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              	.LVL0:
+  59:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     uint8 staticBits = (RTC_PIN_INT_DR & (uint8)(~RTC_PIN_INT_MASK));
+  33              		.loc 1 59 0
+  34 0000 044A     		ldr	r2, .L2
+  35 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  36 0004 03F0FE03 		and	r3, r3, #254
+  37              	.LVL1:
+  60:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     RTC_PIN_INT_DR = staticBits | ((uint8)(value << RTC_PIN_INT_SHIFT) & RTC_PIN_INT_MASK);
+  38              		.loc 1 60 0
+  39 0008 00F00100 		and	r0, r0, #1
+  40              	.LVL2:
+  41 000c 1843     		orrs	r0, r0, r3
+  42 000e 1070     		strb	r0, [r2]
+  43 0010 7047     		bx	lr
+  44              	.L3:
+  45 0012 00BF     		.align	2
+  46              	.L2:
+  47 0014 60510040 		.word	1073762656
+  48              		.cfi_endproc
+  49              	.LFE0:
+  50              		.size	RTC_PIN_INT_Write, .-RTC_PIN_INT_Write
+  51              		.section	.text.RTC_PIN_INT_SetDriveMode,"ax",%progbits
+  52              		.align	2
+  53              		.global	RTC_PIN_INT_SetDriveMode
+  54              		.thumb
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 3
+
+
+  55              		.thumb_func
+  56              		.type	RTC_PIN_INT_SetDriveMode, %function
+  57              	RTC_PIN_INT_SetDriveMode:
+  58              	.LFB1:
+  61:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** }
+  62:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  63:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  64:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /*******************************************************************************
+  65:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Function Name: RTC_PIN_INT_SetDriveMode
+  66:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** ****************************************************************************//**
+  67:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  68:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \brief Sets the drive mode for each of the Pins component's pins.
+  69:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * 
+  70:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  71:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Per-Pin APIs if you wish to control individual pin's drive modes.
+  72:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  73:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \param mode
+  74:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  Mode for the selected signals. Valid options are documented in 
+  75:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  \ref driveMode.
+  76:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  77:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \return
+  78:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  None
+  79:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  80:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \sideeffect
+  81:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  If you use read-modify-write operations that are not atomic, the ISR can
+  82:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  cause corruption of this function. An ISR that interrupts this function 
+  83:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  and performs writes to the Pins component Drive Mode registers can cause 
+  84:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  85:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  APIs (primary method) or disable interrupts around this function.
+  86:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+  87:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \funcusage
+  88:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  \snippet RTC_PIN_INT_SUT.c usage_RTC_PIN_INT_SetDriveMode
+  89:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *******************************************************************************/
+  90:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** void RTC_PIN_INT_SetDriveMode(uint8 mode)
+  91:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** {
+  59              		.loc 1 91 0
+  60              		.cfi_startproc
+  61              		@ args = 0, pretend = 0, frame = 0
+  62              		@ frame_needed = 0, uses_anonymous_args = 0
+  63              		@ link register save eliminated.
+  64              	.LVL3:
+  92:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 	CyPins_SetPinDriveMode(RTC_PIN_INT_0, mode);
+  65              		.loc 1 92 0
+  66 0000 044A     		ldr	r2, .L5
+  67 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  68 0004 03F0F103 		and	r3, r3, #241
+  69 0008 00F00E00 		and	r0, r0, #14
+  70              	.LVL4:
+  71 000c 1843     		orrs	r0, r0, r3
+  72 000e 1070     		strb	r0, [r2]
+  73 0010 7047     		bx	lr
+  74              	.L6:
+  75 0012 00BF     		.align	2
+  76              	.L5:
+  77 0014 30500040 		.word	1073762352
+  78              		.cfi_endproc
+  79              	.LFE1:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 4
+
+
+  80              		.size	RTC_PIN_INT_SetDriveMode, .-RTC_PIN_INT_SetDriveMode
+  81              		.section	.text.RTC_PIN_INT_Read,"ax",%progbits
+  82              		.align	2
+  83              		.global	RTC_PIN_INT_Read
+  84              		.thumb
+  85              		.thumb_func
+  86              		.type	RTC_PIN_INT_Read, %function
+  87              	RTC_PIN_INT_Read:
+  88              	.LFB2:
+  93:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** }
+  94:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  95:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+  96:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /*******************************************************************************
+  97:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Function Name: RTC_PIN_INT_Read
+  98:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** ****************************************************************************//**
+  99:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 100:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 101:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  the required bits according to the width and bit position of the component
+ 102:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  instance. 
+ 103:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 104:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * The pin's status register returns the current logic level present on the 
+ 105:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * physical pin.
+ 106:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 107:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \return 
+ 108:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  The current value for the pins in the component as a right justified number.
+ 109:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 110:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \funcusage
+ 111:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  \snippet RTC_PIN_INT_SUT.c usage_RTC_PIN_INT_Read  
+ 112:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *******************************************************************************/
+ 113:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** uint8 RTC_PIN_INT_Read(void)
+ 114:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** {
+  89              		.loc 1 114 0
+  90              		.cfi_startproc
+  91              		@ args = 0, pretend = 0, frame = 0
+  92              		@ frame_needed = 0, uses_anonymous_args = 0
+  93              		@ link register save eliminated.
+ 115:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     return (RTC_PIN_INT_PS & RTC_PIN_INT_MASK) >> RTC_PIN_INT_SHIFT;
+  94              		.loc 1 115 0
+  95 0000 024B     		ldr	r3, .L8
+  96 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 116:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** }
+  97              		.loc 1 116 0
+  98 0004 00F00100 		and	r0, r0, #1
+  99 0008 7047     		bx	lr
+ 100              	.L9:
+ 101 000a 00BF     		.align	2
+ 102              	.L8:
+ 103 000c 61510040 		.word	1073762657
+ 104              		.cfi_endproc
+ 105              	.LFE2:
+ 106              		.size	RTC_PIN_INT_Read, .-RTC_PIN_INT_Read
+ 107              		.section	.text.RTC_PIN_INT_ReadDataReg,"ax",%progbits
+ 108              		.align	2
+ 109              		.global	RTC_PIN_INT_ReadDataReg
+ 110              		.thumb
+ 111              		.thumb_func
+ 112              		.type	RTC_PIN_INT_ReadDataReg, %function
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 5
+
+
+ 113              	RTC_PIN_INT_ReadDataReg:
+ 114              	.LFB3:
+ 117:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+ 118:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+ 119:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /*******************************************************************************
+ 120:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * Function Name: RTC_PIN_INT_ReadDataReg
+ 121:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** ****************************************************************************//**
+ 122:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 123:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \brief Reads the associated physical port's data output register and masks 
+ 124:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  the correct bits according to the width and bit position of the component 
+ 125:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  instance. 
+ 126:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 127:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * The data output register controls the signal applied to the physical pin in 
+ 128:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 129:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * preferred RTC_PIN_INT_Read() API because the 
+ 130:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * RTC_PIN_INT_ReadDataReg() reads the data register instead of the status 
+ 131:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * register. For output pins this is a useful function to determine the value 
+ 132:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * just written to the pin.
+ 133:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 134:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \return 
+ 135:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  The current value of the data register masked and shifted into a right 
+ 136:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  justified number for the component instance.
+ 137:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *
+ 138:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** * \funcusage
+ 139:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *  \snippet RTC_PIN_INT_SUT.c usage_RTC_PIN_INT_ReadDataReg 
+ 140:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** *******************************************************************************/
+ 141:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** uint8 RTC_PIN_INT_ReadDataReg(void)
+ 142:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** {
+ 115              		.loc 1 142 0
+ 116              		.cfi_startproc
+ 117              		@ args = 0, pretend = 0, frame = 0
+ 118              		@ frame_needed = 0, uses_anonymous_args = 0
+ 119              		@ link register save eliminated.
+ 143:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     return (RTC_PIN_INT_DR & RTC_PIN_INT_MASK) >> RTC_PIN_INT_SHIFT;
+ 120              		.loc 1 143 0
+ 121 0000 024B     		ldr	r3, .L11
+ 122 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 144:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** }
+ 123              		.loc 1 144 0
+ 124 0004 00F00100 		and	r0, r0, #1
+ 125 0008 7047     		bx	lr
+ 126              	.L12:
+ 127 000a 00BF     		.align	2
+ 128              	.L11:
+ 129 000c 60510040 		.word	1073762656
+ 130              		.cfi_endproc
+ 131              	.LFE3:
+ 132              		.size	RTC_PIN_INT_ReadDataReg, .-RTC_PIN_INT_ReadDataReg
+ 133              		.section	.text.RTC_PIN_INT_SetInterruptMode,"ax",%progbits
+ 134              		.align	2
+ 135              		.global	RTC_PIN_INT_SetInterruptMode
+ 136              		.thumb
+ 137              		.thumb_func
+ 138              		.type	RTC_PIN_INT_SetInterruptMode, %function
+ 139              	RTC_PIN_INT_SetInterruptMode:
+ 140              	.LFB4:
+ 145:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 6
+
+
+ 146:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+ 147:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** /* If interrupt is connected for this Pins component */ 
+ 148:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** #if defined(RTC_PIN_INT_INTSTAT) 
+ 149:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 
+ 150:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     /*******************************************************************************
+ 151:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * Function Name: RTC_PIN_INT_SetInterruptMode
+ 152:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     ****************************************************************************//**
+ 153:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 154:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \brief Configures the interrupt mode for each of the Pins component's
+ 155:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  pins. Alternatively you may set the interrupt mode for all the pins
+ 156:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  specified in the Pins component.
+ 157:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 158:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
+ 159:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  interrupt may trigger it.
+ 160:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 161:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \param position
+ 162:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  The pin position as listed in the Pins component. You may OR these to be 
+ 163:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  able to configure the interrupt mode of multiple pins within a Pins 
+ 164:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  component. Or you may use RTC_PIN_INT_INTR_ALL to configure the
+ 165:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  interrupt mode of all the pins in the Pins component.       
+ 166:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  - RTC_PIN_INT_0_INTR       (First pin in the list)
+ 167:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  - RTC_PIN_INT_1_INTR       (Second pin in the list)
+ 168:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  - ...
+ 169:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  - RTC_PIN_INT_INTR_ALL     (All pins in Pins component)
+ 170:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 171:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \param mode
+ 172:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  Interrupt mode for the selected pins. Valid options are documented in
+ 173:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  \ref intrMode.
+ 174:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 175:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \return 
+ 176:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  None
+ 177:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  
+ 178:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \sideeffect
+ 179:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  It is recommended that the interrupt be disabled before calling this 
+ 180:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  function to avoid unintended interrupt requests. Note that the interrupt
+ 181:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  type is port wide, and therefore will trigger for any enabled pin on the 
+ 182:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  port.
+ 183:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 184:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \funcusage
+ 185:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  \snippet RTC_PIN_INT_SUT.c usage_RTC_PIN_INT_SetInterruptMode
+ 186:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *******************************************************************************/
+ 187:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     void RTC_PIN_INT_SetInterruptMode(uint16 position, uint16 mode)
+ 188:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     {
+ 141              		.loc 1 188 0
+ 142              		.cfi_startproc
+ 143              		@ args = 0, pretend = 0, frame = 0
+ 144              		@ frame_needed = 0, uses_anonymous_args = 0
+ 145              		@ link register save eliminated.
+ 146              	.LVL5:
+ 189:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 		if((position & RTC_PIN_INT_0_INTR) != 0u) 
+ 147              		.loc 1 189 0
+ 148 0000 10F0010F 		tst	r0, #1
+ 149 0004 02D0     		beq	.L13
+ 190:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 		{ 
+ 191:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 			 RTC_PIN_INT_0_INTTYPE_REG = (uint8)mode; 
+ 150              		.loc 1 191 0
+ 151 0006 C9B2     		uxtb	r1, r1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 7
+
+
+ 152              	.LVL6:
+ 153 0008 014B     		ldr	r3, .L15
+ 154 000a 1970     		strb	r1, [r3]
+ 155              	.L13:
+ 156 000c 7047     		bx	lr
+ 157              	.L16:
+ 158 000e 00BF     		.align	2
+ 159              	.L15:
+ 160 0010 30450040 		.word	1073759536
+ 161              		.cfi_endproc
+ 162              	.LFE4:
+ 163              		.size	RTC_PIN_INT_SetInterruptMode, .-RTC_PIN_INT_SetInterruptMode
+ 164              		.section	.text.RTC_PIN_INT_ClearInterrupt,"ax",%progbits
+ 165              		.align	2
+ 166              		.global	RTC_PIN_INT_ClearInterrupt
+ 167              		.thumb
+ 168              		.thumb_func
+ 169              		.type	RTC_PIN_INT_ClearInterrupt, %function
+ 170              	RTC_PIN_INT_ClearInterrupt:
+ 171              	.LFB5:
+ 192:.\Generated_Source\PSoC5/RTC_PIN_INT.c **** 		}
+ 193:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     }
+ 194:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     
+ 195:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     
+ 196:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     /*******************************************************************************
+ 197:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * Function Name: RTC_PIN_INT_ClearInterrupt
+ 198:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     ****************************************************************************//**
+ 199:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 200:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \brief Clears any active interrupts attached with the component and returns 
+ 201:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  the value of the interrupt status register allowing determination of which
+ 202:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  pins generated an interrupt event.
+ 203:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 204:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \return 
+ 205:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  The right-shifted current value of the interrupt status register. Each pin 
+ 206:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  has one bit set if it generated an interrupt event. For example, bit 0 is 
+ 207:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  for pin 0 and bit 1 is for pin 1 of the Pins component.
+ 208:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  
+ 209:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \sideeffect
+ 210:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  Clears all bits of the physical port's interrupt status register, not just
+ 211:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  those associated with the Pins component.
+ 212:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *
+ 213:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     * \funcusage
+ 214:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *  \snippet RTC_PIN_INT_SUT.c usage_RTC_PIN_INT_ClearInterrupt
+ 215:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     *******************************************************************************/
+ 216:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     uint8 RTC_PIN_INT_ClearInterrupt(void)
+ 217:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     {
+ 172              		.loc 1 217 0
+ 173              		.cfi_startproc
+ 174              		@ args = 0, pretend = 0, frame = 0
+ 175              		@ frame_needed = 0, uses_anonymous_args = 0
+ 176              		@ link register save eliminated.
+ 218:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****         return (RTC_PIN_INT_INTSTAT & RTC_PIN_INT_MASK) >> RTC_PIN_INT_SHIFT;
+ 177              		.loc 1 218 0
+ 178 0000 024B     		ldr	r3, .L18
+ 179 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 219:.\Generated_Source\PSoC5/RTC_PIN_INT.c ****     }
+ 180              		.loc 1 219 0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 8
+
+
+ 181 0004 00F00100 		and	r0, r0, #1
+ 182 0008 7047     		bx	lr
+ 183              	.L19:
+ 184 000a 00BF     		.align	2
+ 185              	.L18:
+ 186 000c 86450040 		.word	1073759622
+ 187              		.cfi_endproc
+ 188              	.LFE5:
+ 189              		.size	RTC_PIN_INT_ClearInterrupt, .-RTC_PIN_INT_ClearInterrupt
+ 190              		.text
+ 191              	.Letext0:
+ 192              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 193              		.section	.debug_info,"",%progbits
+ 194              	.Ldebug_info0:
+ 195 0000 6C010000 		.4byte	0x16c
+ 196 0004 0400     		.2byte	0x4
+ 197 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 198 000a 04       		.byte	0x4
+ 199 000b 01       		.uleb128 0x1
+ 200 000c A8000000 		.4byte	.LASF24
+ 201 0010 01       		.byte	0x1
+ 202 0011 56000000 		.4byte	.LASF25
+ 203 0015 F0010000 		.4byte	.LASF26
+ 204 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 205 001d 00000000 		.4byte	0
+ 206 0021 00000000 		.4byte	.Ldebug_line0
+ 207 0025 02       		.uleb128 0x2
+ 208 0026 01       		.byte	0x1
+ 209 0027 06       		.byte	0x6
+ 210 0028 D3010000 		.4byte	.LASF0
+ 211 002c 02       		.uleb128 0x2
+ 212 002d 01       		.byte	0x1
+ 213 002e 08       		.byte	0x8
+ 214 002f 17000000 		.4byte	.LASF1
+ 215 0033 02       		.uleb128 0x2
+ 216 0034 02       		.byte	0x2
+ 217 0035 05       		.byte	0x5
+ 218 0036 9D010000 		.4byte	.LASF2
+ 219 003a 02       		.uleb128 0x2
+ 220 003b 02       		.byte	0x2
+ 221 003c 07       		.byte	0x7
+ 222 003d 3C000000 		.4byte	.LASF3
+ 223 0041 02       		.uleb128 0x2
+ 224 0042 04       		.byte	0x4
+ 225 0043 05       		.byte	0x5
+ 226 0044 CA010000 		.4byte	.LASF4
+ 227 0048 02       		.uleb128 0x2
+ 228 0049 04       		.byte	0x4
+ 229 004a 07       		.byte	0x7
+ 230 004b 2A000000 		.4byte	.LASF5
+ 231 004f 02       		.uleb128 0x2
+ 232 0050 08       		.byte	0x8
+ 233 0051 05       		.byte	0x5
+ 234 0052 71010000 		.4byte	.LASF6
+ 235 0056 02       		.uleb128 0x2
+ 236 0057 08       		.byte	0x8
+ 237 0058 07       		.byte	0x7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 9
+
+
+ 238 0059 43010000 		.4byte	.LASF7
+ 239 005d 03       		.uleb128 0x3
+ 240 005e 04       		.byte	0x4
+ 241 005f 05       		.byte	0x5
+ 242 0060 696E7400 		.ascii	"int\000"
+ 243 0064 02       		.uleb128 0x2
+ 244 0065 04       		.byte	0x4
+ 245 0066 07       		.byte	0x7
+ 246 0067 36010000 		.4byte	.LASF8
+ 247 006b 04       		.uleb128 0x4
+ 248 006c C4010000 		.4byte	.LASF9
+ 249 0070 02       		.byte	0x2
+ 250 0071 C2       		.byte	0xc2
+ 251 0072 2C000000 		.4byte	0x2c
+ 252 0076 04       		.uleb128 0x4
+ 253 0077 98000000 		.4byte	.LASF10
+ 254 007b 02       		.byte	0x2
+ 255 007c C3       		.byte	0xc3
+ 256 007d 3A000000 		.4byte	0x3a
+ 257 0081 02       		.uleb128 0x2
+ 258 0082 04       		.byte	0x4
+ 259 0083 04       		.byte	0x4
+ 260 0084 11000000 		.4byte	.LASF11
+ 261 0088 02       		.uleb128 0x2
+ 262 0089 08       		.byte	0x8
+ 263 008a 04       		.byte	0x4
+ 264 008b 4F000000 		.4byte	.LASF12
+ 265 008f 02       		.uleb128 0x2
+ 266 0090 01       		.byte	0x1
+ 267 0091 08       		.byte	0x8
+ 268 0092 98010000 		.4byte	.LASF13
+ 269 0096 05       		.uleb128 0x5
+ 270 0097 25000000 		.4byte	.LASF14
+ 271 009b 02       		.byte	0x2
+ 272 009c 6C01     		.2byte	0x16c
+ 273 009e A2000000 		.4byte	0xa2
+ 274 00a2 06       		.uleb128 0x6
+ 275 00a3 6B000000 		.4byte	0x6b
+ 276 00a7 07       		.uleb128 0x7
+ 277 00a8 5A010000 		.4byte	.LASF15
+ 278 00ac 01       		.byte	0x1
+ 279 00ad 39       		.byte	0x39
+ 280 00ae 00000000 		.4byte	.LFB0
+ 281 00b2 18000000 		.4byte	.LFE0-.LFB0
+ 282 00b6 01       		.uleb128 0x1
+ 283 00b7 9C       		.byte	0x9c
+ 284 00b8 D9000000 		.4byte	0xd9
+ 285 00bc 08       		.uleb128 0x8
+ 286 00bd 00000000 		.4byte	.LASF17
+ 287 00c1 01       		.byte	0x1
+ 288 00c2 39       		.byte	0x39
+ 289 00c3 6B000000 		.4byte	0x6b
+ 290 00c7 00000000 		.4byte	.LLST0
+ 291 00cb 09       		.uleb128 0x9
+ 292 00cc 06000000 		.4byte	.LASF27
+ 293 00d0 01       		.byte	0x1
+ 294 00d1 3B       		.byte	0x3b
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 10
+
+
+ 295 00d2 6B000000 		.4byte	0x6b
+ 296 00d6 01       		.uleb128 0x1
+ 297 00d7 53       		.byte	0x53
+ 298 00d8 00       		.byte	0
+ 299 00d9 07       		.uleb128 0x7
+ 300 00da 7F010000 		.4byte	.LASF16
+ 301 00de 01       		.byte	0x1
+ 302 00df 5A       		.byte	0x5a
+ 303 00e0 00000000 		.4byte	.LFB1
+ 304 00e4 18000000 		.4byte	.LFE1-.LFB1
+ 305 00e8 01       		.uleb128 0x1
+ 306 00e9 9C       		.byte	0x9c
+ 307 00ea FE000000 		.4byte	0xfe
+ 308 00ee 08       		.uleb128 0x8
+ 309 00ef 6C010000 		.4byte	.LASF18
+ 310 00f3 01       		.byte	0x1
+ 311 00f4 5A       		.byte	0x5a
+ 312 00f5 6B000000 		.4byte	0x6b
+ 313 00f9 21000000 		.4byte	.LLST1
+ 314 00fd 00       		.byte	0
+ 315 00fe 0A       		.uleb128 0xa
+ 316 00ff DF010000 		.4byte	.LASF19
+ 317 0103 01       		.byte	0x1
+ 318 0104 71       		.byte	0x71
+ 319 0105 6B000000 		.4byte	0x6b
+ 320 0109 00000000 		.4byte	.LFB2
+ 321 010d 10000000 		.4byte	.LFE2-.LFB2
+ 322 0111 01       		.uleb128 0x1
+ 323 0112 9C       		.byte	0x9c
+ 324 0113 0A       		.uleb128 0xa
+ 325 0114 89020000 		.4byte	.LASF20
+ 326 0118 01       		.byte	0x1
+ 327 0119 8D       		.byte	0x8d
+ 328 011a 6B000000 		.4byte	0x6b
+ 329 011e 00000000 		.4byte	.LFB3
+ 330 0122 10000000 		.4byte	.LFE3-.LFB3
+ 331 0126 01       		.uleb128 0x1
+ 332 0127 9C       		.byte	0x9c
+ 333 0128 07       		.uleb128 0x7
+ 334 0129 A7010000 		.4byte	.LASF21
+ 335 012d 01       		.byte	0x1
+ 336 012e BB       		.byte	0xbb
+ 337 012f 00000000 		.4byte	.LFB4
+ 338 0133 14000000 		.4byte	.LFE4-.LFB4
+ 339 0137 01       		.uleb128 0x1
+ 340 0138 9C       		.byte	0x9c
+ 341 0139 5A010000 		.4byte	0x15a
+ 342 013d 0B       		.uleb128 0xb
+ 343 013e 9F000000 		.4byte	.LASF22
+ 344 0142 01       		.byte	0x1
+ 345 0143 BB       		.byte	0xbb
+ 346 0144 76000000 		.4byte	0x76
+ 347 0148 01       		.uleb128 0x1
+ 348 0149 50       		.byte	0x50
+ 349 014a 08       		.uleb128 0x8
+ 350 014b 6C010000 		.4byte	.LASF18
+ 351 014f 01       		.byte	0x1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 11
+
+
+ 352 0150 BB       		.byte	0xbb
+ 353 0151 76000000 		.4byte	0x76
+ 354 0155 42000000 		.4byte	.LLST2
+ 355 0159 00       		.byte	0
+ 356 015a 0A       		.uleb128 0xa
+ 357 015b 7D000000 		.4byte	.LASF23
+ 358 015f 01       		.byte	0x1
+ 359 0160 D8       		.byte	0xd8
+ 360 0161 6B000000 		.4byte	0x6b
+ 361 0165 00000000 		.4byte	.LFB5
+ 362 0169 10000000 		.4byte	.LFE5-.LFB5
+ 363 016d 01       		.uleb128 0x1
+ 364 016e 9C       		.byte	0x9c
+ 365 016f 00       		.byte	0
+ 366              		.section	.debug_abbrev,"",%progbits
+ 367              	.Ldebug_abbrev0:
+ 368 0000 01       		.uleb128 0x1
+ 369 0001 11       		.uleb128 0x11
+ 370 0002 01       		.byte	0x1
+ 371 0003 25       		.uleb128 0x25
+ 372 0004 0E       		.uleb128 0xe
+ 373 0005 13       		.uleb128 0x13
+ 374 0006 0B       		.uleb128 0xb
+ 375 0007 03       		.uleb128 0x3
+ 376 0008 0E       		.uleb128 0xe
+ 377 0009 1B       		.uleb128 0x1b
+ 378 000a 0E       		.uleb128 0xe
+ 379 000b 55       		.uleb128 0x55
+ 380 000c 17       		.uleb128 0x17
+ 381 000d 11       		.uleb128 0x11
+ 382 000e 01       		.uleb128 0x1
+ 383 000f 10       		.uleb128 0x10
+ 384 0010 17       		.uleb128 0x17
+ 385 0011 00       		.byte	0
+ 386 0012 00       		.byte	0
+ 387 0013 02       		.uleb128 0x2
+ 388 0014 24       		.uleb128 0x24
+ 389 0015 00       		.byte	0
+ 390 0016 0B       		.uleb128 0xb
+ 391 0017 0B       		.uleb128 0xb
+ 392 0018 3E       		.uleb128 0x3e
+ 393 0019 0B       		.uleb128 0xb
+ 394 001a 03       		.uleb128 0x3
+ 395 001b 0E       		.uleb128 0xe
+ 396 001c 00       		.byte	0
+ 397 001d 00       		.byte	0
+ 398 001e 03       		.uleb128 0x3
+ 399 001f 24       		.uleb128 0x24
+ 400 0020 00       		.byte	0
+ 401 0021 0B       		.uleb128 0xb
+ 402 0022 0B       		.uleb128 0xb
+ 403 0023 3E       		.uleb128 0x3e
+ 404 0024 0B       		.uleb128 0xb
+ 405 0025 03       		.uleb128 0x3
+ 406 0026 08       		.uleb128 0x8
+ 407 0027 00       		.byte	0
+ 408 0028 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 12
+
+
+ 409 0029 04       		.uleb128 0x4
+ 410 002a 16       		.uleb128 0x16
+ 411 002b 00       		.byte	0
+ 412 002c 03       		.uleb128 0x3
+ 413 002d 0E       		.uleb128 0xe
+ 414 002e 3A       		.uleb128 0x3a
+ 415 002f 0B       		.uleb128 0xb
+ 416 0030 3B       		.uleb128 0x3b
+ 417 0031 0B       		.uleb128 0xb
+ 418 0032 49       		.uleb128 0x49
+ 419 0033 13       		.uleb128 0x13
+ 420 0034 00       		.byte	0
+ 421 0035 00       		.byte	0
+ 422 0036 05       		.uleb128 0x5
+ 423 0037 16       		.uleb128 0x16
+ 424 0038 00       		.byte	0
+ 425 0039 03       		.uleb128 0x3
+ 426 003a 0E       		.uleb128 0xe
+ 427 003b 3A       		.uleb128 0x3a
+ 428 003c 0B       		.uleb128 0xb
+ 429 003d 3B       		.uleb128 0x3b
+ 430 003e 05       		.uleb128 0x5
+ 431 003f 49       		.uleb128 0x49
+ 432 0040 13       		.uleb128 0x13
+ 433 0041 00       		.byte	0
+ 434 0042 00       		.byte	0
+ 435 0043 06       		.uleb128 0x6
+ 436 0044 35       		.uleb128 0x35
+ 437 0045 00       		.byte	0
+ 438 0046 49       		.uleb128 0x49
+ 439 0047 13       		.uleb128 0x13
+ 440 0048 00       		.byte	0
+ 441 0049 00       		.byte	0
+ 442 004a 07       		.uleb128 0x7
+ 443 004b 2E       		.uleb128 0x2e
+ 444 004c 01       		.byte	0x1
+ 445 004d 3F       		.uleb128 0x3f
+ 446 004e 19       		.uleb128 0x19
+ 447 004f 03       		.uleb128 0x3
+ 448 0050 0E       		.uleb128 0xe
+ 449 0051 3A       		.uleb128 0x3a
+ 450 0052 0B       		.uleb128 0xb
+ 451 0053 3B       		.uleb128 0x3b
+ 452 0054 0B       		.uleb128 0xb
+ 453 0055 27       		.uleb128 0x27
+ 454 0056 19       		.uleb128 0x19
+ 455 0057 11       		.uleb128 0x11
+ 456 0058 01       		.uleb128 0x1
+ 457 0059 12       		.uleb128 0x12
+ 458 005a 06       		.uleb128 0x6
+ 459 005b 40       		.uleb128 0x40
+ 460 005c 18       		.uleb128 0x18
+ 461 005d 9742     		.uleb128 0x2117
+ 462 005f 19       		.uleb128 0x19
+ 463 0060 01       		.uleb128 0x1
+ 464 0061 13       		.uleb128 0x13
+ 465 0062 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 13
+
+
+ 466 0063 00       		.byte	0
+ 467 0064 08       		.uleb128 0x8
+ 468 0065 05       		.uleb128 0x5
+ 469 0066 00       		.byte	0
+ 470 0067 03       		.uleb128 0x3
+ 471 0068 0E       		.uleb128 0xe
+ 472 0069 3A       		.uleb128 0x3a
+ 473 006a 0B       		.uleb128 0xb
+ 474 006b 3B       		.uleb128 0x3b
+ 475 006c 0B       		.uleb128 0xb
+ 476 006d 49       		.uleb128 0x49
+ 477 006e 13       		.uleb128 0x13
+ 478 006f 02       		.uleb128 0x2
+ 479 0070 17       		.uleb128 0x17
+ 480 0071 00       		.byte	0
+ 481 0072 00       		.byte	0
+ 482 0073 09       		.uleb128 0x9
+ 483 0074 34       		.uleb128 0x34
+ 484 0075 00       		.byte	0
+ 485 0076 03       		.uleb128 0x3
+ 486 0077 0E       		.uleb128 0xe
+ 487 0078 3A       		.uleb128 0x3a
+ 488 0079 0B       		.uleb128 0xb
+ 489 007a 3B       		.uleb128 0x3b
+ 490 007b 0B       		.uleb128 0xb
+ 491 007c 49       		.uleb128 0x49
+ 492 007d 13       		.uleb128 0x13
+ 493 007e 02       		.uleb128 0x2
+ 494 007f 18       		.uleb128 0x18
+ 495 0080 00       		.byte	0
+ 496 0081 00       		.byte	0
+ 497 0082 0A       		.uleb128 0xa
+ 498 0083 2E       		.uleb128 0x2e
+ 499 0084 00       		.byte	0
+ 500 0085 3F       		.uleb128 0x3f
+ 501 0086 19       		.uleb128 0x19
+ 502 0087 03       		.uleb128 0x3
+ 503 0088 0E       		.uleb128 0xe
+ 504 0089 3A       		.uleb128 0x3a
+ 505 008a 0B       		.uleb128 0xb
+ 506 008b 3B       		.uleb128 0x3b
+ 507 008c 0B       		.uleb128 0xb
+ 508 008d 27       		.uleb128 0x27
+ 509 008e 19       		.uleb128 0x19
+ 510 008f 49       		.uleb128 0x49
+ 511 0090 13       		.uleb128 0x13
+ 512 0091 11       		.uleb128 0x11
+ 513 0092 01       		.uleb128 0x1
+ 514 0093 12       		.uleb128 0x12
+ 515 0094 06       		.uleb128 0x6
+ 516 0095 40       		.uleb128 0x40
+ 517 0096 18       		.uleb128 0x18
+ 518 0097 9742     		.uleb128 0x2117
+ 519 0099 19       		.uleb128 0x19
+ 520 009a 00       		.byte	0
+ 521 009b 00       		.byte	0
+ 522 009c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 14
+
+
+ 523 009d 05       		.uleb128 0x5
+ 524 009e 00       		.byte	0
+ 525 009f 03       		.uleb128 0x3
+ 526 00a0 0E       		.uleb128 0xe
+ 527 00a1 3A       		.uleb128 0x3a
+ 528 00a2 0B       		.uleb128 0xb
+ 529 00a3 3B       		.uleb128 0x3b
+ 530 00a4 0B       		.uleb128 0xb
+ 531 00a5 49       		.uleb128 0x49
+ 532 00a6 13       		.uleb128 0x13
+ 533 00a7 02       		.uleb128 0x2
+ 534 00a8 18       		.uleb128 0x18
+ 535 00a9 00       		.byte	0
+ 536 00aa 00       		.byte	0
+ 537 00ab 00       		.byte	0
+ 538              		.section	.debug_loc,"",%progbits
+ 539              	.Ldebug_loc0:
+ 540              	.LLST0:
+ 541 0000 00000000 		.4byte	.LVL0
+ 542 0004 0C000000 		.4byte	.LVL2
+ 543 0008 0100     		.2byte	0x1
+ 544 000a 50       		.byte	0x50
+ 545 000b 0C000000 		.4byte	.LVL2
+ 546 000f 18000000 		.4byte	.LFE0
+ 547 0013 0400     		.2byte	0x4
+ 548 0015 F3       		.byte	0xf3
+ 549 0016 01       		.uleb128 0x1
+ 550 0017 50       		.byte	0x50
+ 551 0018 9F       		.byte	0x9f
+ 552 0019 00000000 		.4byte	0
+ 553 001d 00000000 		.4byte	0
+ 554              	.LLST1:
+ 555 0021 00000000 		.4byte	.LVL3
+ 556 0025 0C000000 		.4byte	.LVL4
+ 557 0029 0100     		.2byte	0x1
+ 558 002b 50       		.byte	0x50
+ 559 002c 0C000000 		.4byte	.LVL4
+ 560 0030 18000000 		.4byte	.LFE1
+ 561 0034 0400     		.2byte	0x4
+ 562 0036 F3       		.byte	0xf3
+ 563 0037 01       		.uleb128 0x1
+ 564 0038 50       		.byte	0x50
+ 565 0039 9F       		.byte	0x9f
+ 566 003a 00000000 		.4byte	0
+ 567 003e 00000000 		.4byte	0
+ 568              	.LLST2:
+ 569 0042 00000000 		.4byte	.LVL5
+ 570 0046 08000000 		.4byte	.LVL6
+ 571 004a 0100     		.2byte	0x1
+ 572 004c 51       		.byte	0x51
+ 573 004d 08000000 		.4byte	.LVL6
+ 574 0051 14000000 		.4byte	.LFE4
+ 575 0055 0400     		.2byte	0x4
+ 576 0057 F3       		.byte	0xf3
+ 577 0058 01       		.uleb128 0x1
+ 578 0059 51       		.byte	0x51
+ 579 005a 9F       		.byte	0x9f
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 15
+
+
+ 580 005b 00000000 		.4byte	0
+ 581 005f 00000000 		.4byte	0
+ 582              		.section	.debug_aranges,"",%progbits
+ 583 0000 44000000 		.4byte	0x44
+ 584 0004 0200     		.2byte	0x2
+ 585 0006 00000000 		.4byte	.Ldebug_info0
+ 586 000a 04       		.byte	0x4
+ 587 000b 00       		.byte	0
+ 588 000c 0000     		.2byte	0
+ 589 000e 0000     		.2byte	0
+ 590 0010 00000000 		.4byte	.LFB0
+ 591 0014 18000000 		.4byte	.LFE0-.LFB0
+ 592 0018 00000000 		.4byte	.LFB1
+ 593 001c 18000000 		.4byte	.LFE1-.LFB1
+ 594 0020 00000000 		.4byte	.LFB2
+ 595 0024 10000000 		.4byte	.LFE2-.LFB2
+ 596 0028 00000000 		.4byte	.LFB3
+ 597 002c 10000000 		.4byte	.LFE3-.LFB3
+ 598 0030 00000000 		.4byte	.LFB4
+ 599 0034 14000000 		.4byte	.LFE4-.LFB4
+ 600 0038 00000000 		.4byte	.LFB5
+ 601 003c 10000000 		.4byte	.LFE5-.LFB5
+ 602 0040 00000000 		.4byte	0
+ 603 0044 00000000 		.4byte	0
+ 604              		.section	.debug_ranges,"",%progbits
+ 605              	.Ldebug_ranges0:
+ 606 0000 00000000 		.4byte	.LFB0
+ 607 0004 18000000 		.4byte	.LFE0
+ 608 0008 00000000 		.4byte	.LFB1
+ 609 000c 18000000 		.4byte	.LFE1
+ 610 0010 00000000 		.4byte	.LFB2
+ 611 0014 10000000 		.4byte	.LFE2
+ 612 0018 00000000 		.4byte	.LFB3
+ 613 001c 10000000 		.4byte	.LFE3
+ 614 0020 00000000 		.4byte	.LFB4
+ 615 0024 14000000 		.4byte	.LFE4
+ 616 0028 00000000 		.4byte	.LFB5
+ 617 002c 10000000 		.4byte	.LFE5
+ 618 0030 00000000 		.4byte	0
+ 619 0034 00000000 		.4byte	0
+ 620              		.section	.debug_line,"",%progbits
+ 621              	.Ldebug_line0:
+ 622 0000 BA000000 		.section	.debug_str,"MS",%progbits,1
+ 622      02004A00 
+ 622      00000201 
+ 622      FB0E0D00 
+ 622      01010101 
+ 623              	.LASF17:
+ 624 0000 76616C75 		.ascii	"value\000"
+ 624      6500
+ 625              	.LASF27:
+ 626 0006 73746174 		.ascii	"staticBits\000"
+ 626      69634269 
+ 626      747300
+ 627              	.LASF11:
+ 628 0011 666C6F61 		.ascii	"float\000"
+ 628      7400
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 16
+
+
+ 629              	.LASF1:
+ 630 0017 756E7369 		.ascii	"unsigned char\000"
+ 630      676E6564 
+ 630      20636861 
+ 630      7200
+ 631              	.LASF14:
+ 632 0025 72656738 		.ascii	"reg8\000"
+ 632      00
+ 633              	.LASF5:
+ 634 002a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 634      20756E73 
+ 634      69676E65 
+ 634      6420696E 
+ 634      7400
+ 635              	.LASF3:
+ 636 003c 73686F72 		.ascii	"short unsigned int\000"
+ 636      7420756E 
+ 636      7369676E 
+ 636      65642069 
+ 636      6E7400
+ 637              	.LASF12:
+ 638 004f 646F7562 		.ascii	"double\000"
+ 638      6C6500
+ 639              	.LASF25:
+ 640 0056 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\RTC_PIN_INT.c\000"
+ 640      6E657261 
+ 640      7465645F 
+ 640      536F7572 
+ 640      63655C50 
+ 641              	.LASF23:
+ 642 007d 5254435F 		.ascii	"RTC_PIN_INT_ClearInterrupt\000"
+ 642      50494E5F 
+ 642      494E545F 
+ 642      436C6561 
+ 642      72496E74 
+ 643              	.LASF10:
+ 644 0098 75696E74 		.ascii	"uint16\000"
+ 644      313600
+ 645              	.LASF22:
+ 646 009f 706F7369 		.ascii	"position\000"
+ 646      74696F6E 
+ 646      00
+ 647              	.LASF24:
+ 648 00a8 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 648      4320342E 
+ 648      392E3320 
+ 648      32303135 
+ 648      30333033 
+ 649 00db 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 649      20726576 
+ 649      6973696F 
+ 649      6E203232 
+ 649      31323230 
+ 650 010e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 650      66756E63 
+ 650      74696F6E 
+ 650      2D736563 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 17
+
+
+ 650      74696F6E 
+ 651              	.LASF8:
+ 652 0136 756E7369 		.ascii	"unsigned int\000"
+ 652      676E6564 
+ 652      20696E74 
+ 652      00
+ 653              	.LASF7:
+ 654 0143 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 654      206C6F6E 
+ 654      6720756E 
+ 654      7369676E 
+ 654      65642069 
+ 655              	.LASF15:
+ 656 015a 5254435F 		.ascii	"RTC_PIN_INT_Write\000"
+ 656      50494E5F 
+ 656      494E545F 
+ 656      57726974 
+ 656      6500
+ 657              	.LASF18:
+ 658 016c 6D6F6465 		.ascii	"mode\000"
+ 658      00
+ 659              	.LASF6:
+ 660 0171 6C6F6E67 		.ascii	"long long int\000"
+ 660      206C6F6E 
+ 660      6720696E 
+ 660      7400
+ 661              	.LASF16:
+ 662 017f 5254435F 		.ascii	"RTC_PIN_INT_SetDriveMode\000"
+ 662      50494E5F 
+ 662      494E545F 
+ 662      53657444 
+ 662      72697665 
+ 663              	.LASF13:
+ 664 0198 63686172 		.ascii	"char\000"
+ 664      00
+ 665              	.LASF2:
+ 666 019d 73686F72 		.ascii	"short int\000"
+ 666      7420696E 
+ 666      7400
+ 667              	.LASF21:
+ 668 01a7 5254435F 		.ascii	"RTC_PIN_INT_SetInterruptMode\000"
+ 668      50494E5F 
+ 668      494E545F 
+ 668      53657449 
+ 668      6E746572 
+ 669              	.LASF9:
+ 670 01c4 75696E74 		.ascii	"uint8\000"
+ 670      3800
+ 671              	.LASF4:
+ 672 01ca 6C6F6E67 		.ascii	"long int\000"
+ 672      20696E74 
+ 672      00
+ 673              	.LASF0:
+ 674 01d3 7369676E 		.ascii	"signed char\000"
+ 674      65642063 
+ 674      68617200 
+ 675              	.LASF19:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccSi5l8c.s 			page 18
+
+
+ 676 01df 5254435F 		.ascii	"RTC_PIN_INT_Read\000"
+ 676      50494E5F 
+ 676      494E545F 
+ 676      52656164 
+ 676      00
+ 677              	.LASF26:
+ 678 01f0 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 678      73657273 
+ 678      5C6A616F 
+ 678      68655C45 
+ 678      67686F73 
+ 679 021e 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\TFT_Tutorial"
+ 679      7072696E 
+ 679      67203230 
+ 679      32355C36 
+ 679      2E313135 
+ 680 024d 5F323032 		.ascii	"_2022\\TFT_Tutorial_2022\\TFT_with_emWin\\TFT_with_"
+ 680      325C5446 
+ 680      545F5475 
+ 680      746F7269 
+ 680      616C5F32 
+ 681 027d 656D5769 		.ascii	"emWin.cydsn\000"
+ 681      6E2E6379 
+ 681      64736E00 
+ 682              	.LASF20:
+ 683 0289 5254435F 		.ascii	"RTC_PIN_INT_ReadDataReg\000"
+ 683      50494E5F 
+ 683      494E545F 
+ 683      52656164 
+ 683      44617461 
+ 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
