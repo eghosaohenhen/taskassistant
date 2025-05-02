@@ -80,7 +80,14 @@ int main()
     CyGlobalIntEnable;                      // Enable global interrupts
     SPIM_1_Start();                         // initialize SPIM component 
     MainTask();                             // all of the emWin exmples use MainTask() as the entry point
-    for(;;) {}                              // loop
+    for(;;) {
+        if (FORWARD_BTN_Read() == 0 || BACK_BTN_Read() == 0){
+            GUI_Clear();
+            GUI_DispStringHCenterAt("Dialog has been closed", CENTERX, 5);
+            GUI_Delay(1000);
+            action_select();
+        }
+    }                              // loop
 }
 
 void MainTask()
@@ -89,6 +96,10 @@ void MainTask()
     GUI_Clear();
     GUI_SetFont(&GUI_Font8x16);
     GUI_DispStringAt("peepee doodoo", 50, 50);
+    GUI_DispStringHCenterAt("Dialog has been closed", CENTERX, CENTERY);
+    GUI_RECT Rect = {CENTERX/2,  CENTERY*1/2,CENTERX *3/2 ,  CENTERY*3/2};
+    char acText[] = "Welcome to \nTask Buddy\0";
+    GUI_DispStringInRectEx(acText, &Rect, GUI_TA_HCENTER | GUI_TA_VCENTER, strlen(acText) - 1, GUI_ROTATE_0);
 }
 
 /* [] END OF FILE */

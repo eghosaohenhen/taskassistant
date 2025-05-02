@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
   29:.\GUIConf.c   **** Licensor:                 SEGGER Microcontroller Systems LLC
   30:.\GUIConf.c   **** Licensed to:              Cypress Semiconductor Corp, 198 Champion Ct., San Jose, CA 95134, USA
   31:.\GUIConf.c   **** Licensed SEGGER software: emWin
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 2
 
 
   32:.\GUIConf.c   **** License number:           GUI-00319
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
   78:.\GUIConf.c   ****   // Assign memory to emWin
   79:.\GUIConf.c   ****   //
   80:.\GUIConf.c   ****   GUI_ALLOC_AssignMemory(aMemory, GUI_NUMBYTES);
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 3
 
 
   35              		.loc 1 80 0
@@ -165,10 +165,10 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
   68 0006 00000000 		.4byte	.Ldebug_abbrev0
   69 000a 04       		.byte	0x4
   70 000b 01       		.uleb128 0x1
-  71 000c 85020000 		.4byte	.LASF63
+  71 000c 08030000 		.4byte	.LASF63
   72 0010 01       		.byte	0x1
-  73 0011 28010000 		.4byte	.LASF64
-  74 0015 32030000 		.4byte	.LASF65
+  73 0011 AB010000 		.4byte	.LASF64
+  74 0015 DA000000 		.4byte	.LASF65
   75 0019 00000000 		.4byte	.Ldebug_ranges0+0
   76 001d 00000000 		.4byte	0
   77 0021 00000000 		.4byte	.Ldebug_line0
@@ -178,15 +178,15 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
   81 0028 696E7400 		.ascii	"int\000"
   82 002c 03       		.uleb128 0x3
   83 002d 04       		.byte	0x4
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 4
 
 
   84 002e 07       		.byte	0x7
-  85 002f AF010000 		.4byte	.LASF0
+  85 002f 32020000 		.4byte	.LASF0
   86 0033 03       		.uleb128 0x3
   87 0034 04       		.byte	0x4
   88 0035 07       		.byte	0x7
-  89 0036 5F020000 		.4byte	.LASF1
+  89 0036 E2020000 		.4byte	.LASF1
   90 003a 03       		.uleb128 0x3
   91 003b 02       		.byte	0x2
   92 003c 05       		.byte	0x5
@@ -194,17 +194,17 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
   94 0041 03       		.uleb128 0x3
   95 0042 01       		.byte	0x1
   96 0043 08       		.byte	0x8
-  97 0044 F8010000 		.4byte	.LASF3
+  97 0044 7B020000 		.4byte	.LASF3
   98 0048 03       		.uleb128 0x3
   99 0049 01       		.byte	0x1
  100 004a 08       		.byte	0x8
- 101 004b 76010000 		.4byte	.LASF4
+ 101 004b F9010000 		.4byte	.LASF4
  102 004f 04       		.uleb128 0x4
  103 0050 04       		.byte	0x4
  104 0051 03       		.uleb128 0x3
  105 0052 04       		.byte	0x4
  106 0053 05       		.byte	0x5
- 107 0054 34010000 		.4byte	.LASF5
+ 107 0054 B7010000 		.4byte	.LASF5
  108 0058 05       		.uleb128 0x5
  109 0059 04       		.byte	0x4
  110 005a 5E000000 		.4byte	0x5e
@@ -222,7 +222,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  122 0075 03       		.uleb128 0x3
  123 0076 02       		.byte	0x2
  124 0077 07       		.byte	0x7
- 125 0078 E5010000 		.4byte	.LASF6
+ 125 0078 68020000 		.4byte	.LASF6
  126 007c 08       		.uleb128 0x8
  127 007d 04       		.byte	0x4
  128 007e 02       		.byte	0x2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  138 0090 633100   		.ascii	"c1\000"
  139 0093 02       		.byte	0x2
  140 0094 B8       		.byte	0xb8
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 5
 
 
  141 0095 3A000000 		.4byte	0x3a
@@ -255,13 +255,13 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  152 00a9 BB       		.byte	0xbb
  153 00aa D3000000 		.4byte	0xd3
  154 00ae 0B       		.uleb128 0xb
- 155 00af FD010000 		.4byte	.LASF7
+ 155 00af 80020000 		.4byte	.LASF7
  156 00b3 02       		.byte	0x2
  157 00b4 BC       		.byte	0xbc
  158 00b5 75000000 		.4byte	0x75
  159 00b9 00       		.byte	0
  160 00ba 0B       		.uleb128 0xb
- 161 00bb 2B040000 		.4byte	.LASF8
+ 161 00bb 15040000 		.4byte	.LASF8
  162 00bf 02       		.byte	0x2
  163 00c0 BD       		.byte	0xbd
  164 00c1 75000000 		.4byte	0x75
@@ -279,7 +279,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  176 00d9 06       		.uleb128 0x6
  177 00da 9B000000 		.4byte	0x9b
  178 00de 0A       		.uleb128 0xa
- 179 00df ED000000 		.4byte	.LASF11
+ 179 00df 70010000 		.4byte	.LASF11
  180 00e3 02       		.byte	0x2
  181 00e4 BF       		.byte	0xbf
  182 00e5 A6000000 		.4byte	0xa6
@@ -295,10 +295,10 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  192 00f8 48000000 		.4byte	0x48
  193 00fc 00       		.byte	0
  194 00fd 0B       		.uleb128 0xb
- 195 00fe A9010000 		.4byte	.LASF13
+ 195 00fe 2C020000 		.4byte	.LASF13
  196 0102 02       		.byte	0x2
  197 0103 C3       		.byte	0xc3
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 6
 
 
  198 0104 48000000 		.4byte	0x48
@@ -333,32 +333,32 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  227 013c 48000000 		.4byte	0x48
  228 0140 00       		.byte	0
  229 0141 0B       		.uleb128 0xb
- 230 0142 DF010000 		.4byte	.LASF17
+ 230 0142 62020000 		.4byte	.LASF17
  231 0146 02       		.byte	0x2
  232 0147 CA       		.byte	0xca
  233 0148 48000000 		.4byte	0x48
  234 014c 01       		.byte	0x1
  235 014d 0B       		.uleb128 0xb
- 236 014e DA000000 		.4byte	.LASF18
+ 236 014e 5D010000 		.4byte	.LASF18
  237 0152 02       		.byte	0x2
  238 0153 CB       		.byte	0xcb
  239 0154 7E010000 		.4byte	0x17e
  240 0158 02       		.byte	0x2
  241 0159 0B       		.uleb128 0xb
- 242 015a BC010000 		.4byte	.LASF19
+ 242 015a 3F020000 		.4byte	.LASF19
  243 015e 02       		.byte	0x2
  244 015f CC       		.byte	0xcc
  245 0160 7E010000 		.4byte	0x17e
  246 0164 03       		.byte	0x3
  247 0165 0B       		.uleb128 0xb
- 248 0166 A9010000 		.4byte	.LASF13
+ 248 0166 2C020000 		.4byte	.LASF13
  249 016a 02       		.byte	0x2
  250 016b CD       		.byte	0xcd
  251 016c 48000000 		.4byte	0x48
  252 0170 04       		.byte	0x4
  253 0171 0B       		.uleb128 0xb
  254 0172 1E000000 		.4byte	.LASF15
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 7
 
 
  255 0176 02       		.byte	0x2
@@ -369,38 +369,38 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  260 017e 03       		.uleb128 0x3
  261 017f 01       		.byte	0x1
  262 0180 06       		.byte	0x6
- 263 0181 9D010000 		.4byte	.LASF20
+ 263 0181 20020000 		.4byte	.LASF20
  264 0185 0A       		.uleb128 0xa
- 265 0186 3D010000 		.4byte	.LASF21
+ 265 0186 C0010000 		.4byte	.LASF21
  266 018a 02       		.byte	0x2
  267 018b CF       		.byte	0xcf
  268 018c 2D010000 		.4byte	0x12d
  269 0190 0C       		.uleb128 0xc
- 270 0191 44020000 		.4byte	.LASF26
+ 270 0191 C7020000 		.4byte	.LASF26
  271 0195 0C       		.byte	0xc
  272 0196 02       		.byte	0x2
  273 0197 D1       		.byte	0xd1
  274 0198 CD010000 		.4byte	0x1cd
  275 019c 0B       		.uleb128 0xb
- 276 019d 71020000 		.4byte	.LASF22
+ 276 019d F4020000 		.4byte	.LASF22
  277 01a1 02       		.byte	0x2
  278 01a2 D2       		.byte	0xd2
  279 01a3 75000000 		.4byte	0x75
  280 01a7 00       		.byte	0
  281 01a8 0B       		.uleb128 0xb
- 282 01a9 23010000 		.4byte	.LASF23
+ 282 01a9 A6010000 		.4byte	.LASF23
  283 01ad 02       		.byte	0x2
  284 01ae D3       		.byte	0xd3
  285 01af 75000000 		.4byte	0x75
  286 01b3 02       		.byte	0x2
  287 01b4 0B       		.uleb128 0xb
- 288 01b5 0A010000 		.4byte	.LASF24
+ 288 01b5 8D010000 		.4byte	.LASF24
  289 01b9 02       		.byte	0x2
  290 01ba D4       		.byte	0xd4
  291 01bb CD010000 		.4byte	0x1cd
  292 01bf 04       		.byte	0x4
  293 01c0 0B       		.uleb128 0xb
- 294 01c1 15010000 		.4byte	.LASF25
+ 294 01c1 98010000 		.4byte	.LASF25
  295 01c5 02       		.byte	0x2
  296 01c6 D5       		.byte	0xd5
  297 01c7 D8010000 		.4byte	0x1d8
@@ -417,8 +417,8 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  308 01de 06       		.uleb128 0x6
  309 01df 90010000 		.4byte	0x190
  310 01e3 0A       		.uleb128 0xa
- 311 01e4 44020000 		.4byte	.LASF26
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 8
+ 311 01e4 C7020000 		.4byte	.LASF26
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 8
 
 
  312 01e8 02       		.byte	0x2
@@ -431,25 +431,25 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  319 01f5 D8       		.byte	0xd8
  320 01f6 2B020000 		.4byte	0x22b
  321 01fa 0B       		.uleb128 0xb
- 322 01fb 71020000 		.4byte	.LASF22
+ 322 01fb F4020000 		.4byte	.LASF22
  323 01ff 02       		.byte	0x2
  324 0200 D9       		.byte	0xd9
  325 0201 75000000 		.4byte	0x75
  326 0205 00       		.byte	0
  327 0206 0B       		.uleb128 0xb
- 328 0207 23010000 		.4byte	.LASF23
+ 328 0207 A6010000 		.4byte	.LASF23
  329 020b 02       		.byte	0x2
  330 020c DA       		.byte	0xda
  331 020d 75000000 		.4byte	0x75
  332 0211 02       		.byte	0x2
  333 0212 0B       		.uleb128 0xb
- 334 0213 0A010000 		.4byte	.LASF24
+ 334 0213 8D010000 		.4byte	.LASF24
  335 0217 02       		.byte	0x2
  336 0218 DB       		.byte	0xdb
  337 0219 2B020000 		.4byte	0x22b
  338 021d 04       		.byte	0x4
  339 021e 0B       		.uleb128 0xb
- 340 021f 15010000 		.4byte	.LASF25
+ 340 021f 98010000 		.4byte	.LASF25
  341 0223 02       		.byte	0x2
  342 0224 DC       		.byte	0xdc
  343 0225 36020000 		.4byte	0x236
@@ -478,14 +478,14 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  366 0254 0B       		.uleb128 0xb
  367 0255 1E000000 		.4byte	.LASF15
  368 0259 02       		.byte	0x2
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 9
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 9
 
 
  369 025a E0       		.byte	0xe0
  370 025b 58000000 		.4byte	0x58
  371 025f 00       		.byte	0
  372 0260 0B       		.uleb128 0xb
- 373 0261 4E010000 		.4byte	.LASF28
+ 373 0261 D1010000 		.4byte	.LASF28
  374 0265 02       		.byte	0x2
  375 0266 E1       		.byte	0xe1
  376 0267 58000000 		.4byte	0x58
@@ -497,13 +497,13 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  382 0273 B5020000 		.4byte	0x2b5
  383 0277 08       		.byte	0x8
  384 0278 0B       		.uleb128 0xb
- 385 0279 FD010000 		.4byte	.LASF7
+ 385 0279 80020000 		.4byte	.LASF7
  386 027d 02       		.byte	0x2
  387 027e E3       		.byte	0xe3
  388 027f 75000000 		.4byte	0x75
  389 0283 0C       		.byte	0xc
  390 0284 0B       		.uleb128 0xb
- 391 0285 2B040000 		.4byte	.LASF8
+ 391 0285 15040000 		.4byte	.LASF8
  392 0289 02       		.byte	0x2
  393 028a E4       		.byte	0xe4
  394 028b 75000000 		.4byte	0x75
@@ -515,7 +515,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  400 0297 48000000 		.4byte	0x48
  401 029b 10       		.byte	0x10
  402 029c 0B       		.uleb128 0xb
- 403 029d A9010000 		.4byte	.LASF13
+ 403 029d 2C020000 		.4byte	.LASF13
  404 02a1 02       		.byte	0x2
  405 02a2 E6       		.byte	0xe6
  406 02a3 48000000 		.4byte	0x48
@@ -533,12 +533,12 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  418 02bb 06       		.uleb128 0x6
  419 02bc DE000000 		.4byte	0xde
  420 02c0 0A       		.uleb128 0xa
- 421 02c1 77020000 		.4byte	.LASF30
+ 421 02c1 FA020000 		.4byte	.LASF30
  422 02c5 02       		.byte	0x2
  423 02c6 E8       		.byte	0xe8
  424 02c7 4C020000 		.4byte	0x24c
  425 02cb 08       		.uleb128 0x8
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 10
 
 
  426 02cc 06       		.byte	0x6
@@ -546,7 +546,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  428 02ce F1       		.byte	0xf1
  429 02cf 04030000 		.4byte	0x304
  430 02d3 0B       		.uleb128 0xb
- 431 02d4 DF000000 		.4byte	.LASF31
+ 431 02d4 62010000 		.4byte	.LASF31
  432 02d8 02       		.byte	0x2
  433 02d9 F2       		.byte	0xf2
  434 02da 75000000 		.4byte	0x75
@@ -564,19 +564,19 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  446 02f2 48000000 		.4byte	0x48
  447 02f6 03       		.byte	0x3
  448 02f7 0B       		.uleb128 0xb
- 449 02f8 E5000000 		.4byte	.LASF34
+ 449 02f8 68010000 		.4byte	.LASF34
  450 02fc 02       		.byte	0x2
  451 02fd F5       		.byte	0xf5
  452 02fe 48000000 		.4byte	0x48
  453 0302 04       		.byte	0x4
  454 0303 00       		.byte	0
  455 0304 0A       		.uleb128 0xa
- 456 0305 1E040000 		.4byte	.LASF35
+ 456 0305 08040000 		.4byte	.LASF35
  457 0309 02       		.byte	0x2
  458 030a F6       		.byte	0xf6
  459 030b CB020000 		.4byte	0x2cb
  460 030f 0D       		.uleb128 0xd
- 461 0310 29020000 		.4byte	.LASF36
+ 461 0310 AC020000 		.4byte	.LASF36
  462 0314 02       		.byte	0x2
  463 0315 1301     		.2byte	0x113
  464 0317 1B030000 		.4byte	0x31b
@@ -589,16 +589,16 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  471 032a 25000000 		.4byte	0x25
  472 032e 00       		.byte	0
  473 032f 0D       		.uleb128 0xd
- 474 0330 ED030000 		.4byte	.LASF37
+ 474 0330 D7030000 		.4byte	.LASF37
  475 0334 02       		.byte	0x2
  476 0335 1401     		.2byte	0x114
  477 0337 1B030000 		.4byte	0x31b
  478 033b 0D       		.uleb128 0xd
- 479 033c 11040000 		.4byte	.LASF38
+ 479 033c FB030000 		.4byte	.LASF38
  480 0340 02       		.byte	0x2
  481 0341 1501     		.2byte	0x115
  482 0343 47030000 		.4byte	0x347
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 11
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 11
 
 
  483 0347 10       		.uleb128 0x10
@@ -614,7 +614,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  493 035a 1701     		.2byte	0x117
  494 035c 88030000 		.4byte	0x388
  495 0360 12       		.uleb128 0x12
- 496 0361 07020000 		.4byte	.LASF39
+ 496 0361 8A020000 		.4byte	.LASF39
  497 0365 02       		.byte	0x2
  498 0366 1801     		.2byte	0x118
  499 0368 88030000 		.4byte	0x388
@@ -626,7 +626,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  505 0375 8E030000 		.4byte	0x38e
  506 0379 04       		.byte	0x4
  507 037a 12       		.uleb128 0x12
- 508 037b 92010000 		.4byte	.LASF41
+ 508 037b 15020000 		.4byte	.LASF41
  509 037f 02       		.byte	0x2
  510 0380 1A01     		.2byte	0x11a
  511 0382 94030000 		.4byte	0x394
@@ -647,33 +647,33 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  526 03a0 1B01     		.2byte	0x11b
  527 03a2 57030000 		.4byte	0x357
  528 03a6 0D       		.uleb128 0xd
- 529 03a7 3B020000 		.4byte	.LASF43
+ 529 03a7 BE020000 		.4byte	.LASF43
  530 03ab 02       		.byte	0x2
  531 03ac 2401     		.2byte	0x124
  532 03ae B2030000 		.4byte	0x3b2
  533 03b2 13       		.uleb128 0x13
- 534 03b3 3B020000 		.4byte	.LASF43
+ 534 03b3 BE020000 		.4byte	.LASF43
  535 03b7 24       		.byte	0x24
  536 03b8 02       		.byte	0x2
  537 03b9 B101     		.2byte	0x1b1
  538 03bb 74040000 		.4byte	0x474
  539 03bf 12       		.uleb128 0x12
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 12
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 12
 
 
- 540 03c0 DC030000 		.4byte	.LASF44
+ 540 03c0 C6030000 		.4byte	.LASF44
  541 03c4 02       		.byte	0x2
  542 03c5 B201     		.2byte	0x1b2
  543 03c7 7F050000 		.4byte	0x57f
  544 03cb 00       		.byte	0
  545 03cc 12       		.uleb128 0x12
- 546 03cd 13030000 		.4byte	.LASF45
+ 546 03cd 96030000 		.4byte	.LASF45
  547 03d1 02       		.byte	0x2
  548 03d2 B301     		.2byte	0x1b3
  549 03d4 85050000 		.4byte	0x585
  550 03d8 04       		.byte	0x4
  551 03d9 12       		.uleb128 0x12
- 552 03da 03040000 		.4byte	.LASF46
+ 552 03da ED030000 		.4byte	.LASF46
  553 03de 02       		.byte	0x2
  554 03df B401     		.2byte	0x1b4
  555 03e1 8B050000 		.4byte	0x58b
@@ -685,31 +685,31 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  561 03ee 91050000 		.4byte	0x591
  562 03f2 0C       		.byte	0xc
  563 03f3 12       		.uleb128 0x12
- 564 03f4 84010000 		.4byte	.LASF48
+ 564 03f4 07020000 		.4byte	.LASF48
  565 03f8 02       		.byte	0x2
  566 03f9 B601     		.2byte	0x1b6
  567 03fb 97050000 		.4byte	0x597
  568 03ff 10       		.byte	0x10
  569 0400 12       		.uleb128 0x12
- 570 0401 00010000 		.4byte	.LASF49
+ 570 0401 83010000 		.4byte	.LASF49
  571 0405 02       		.byte	0x2
  572 0406 B701     		.2byte	0x1b7
  573 0408 9D050000 		.4byte	0x59d
  574 040c 14       		.byte	0x14
  575 040d 12       		.uleb128 0x12
- 576 040e DF010000 		.4byte	.LASF17
+ 576 040e 62020000 		.4byte	.LASF17
  577 0412 02       		.byte	0x2
  578 0413 B801     		.2byte	0x1b8
  579 0415 48000000 		.4byte	0x48
  580 0419 18       		.byte	0x18
  581 041a 12       		.uleb128 0x12
- 582 041b E7030000 		.4byte	.LASF50
+ 582 041b D1030000 		.4byte	.LASF50
  583 041f 02       		.byte	0x2
  584 0420 B901     		.2byte	0x1b9
  585 0422 48000000 		.4byte	0x48
  586 0426 19       		.byte	0x19
  587 0427 12       		.uleb128 0x12
- 588 0428 D7030000 		.4byte	.LASF51
+ 588 0428 C1030000 		.4byte	.LASF51
  589 042c 02       		.byte	0x2
  590 042d BA01     		.2byte	0x1ba
  591 042f 48000000 		.4byte	0x48
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  594 0435 A6000000 		.4byte	.LASF52
  595 0439 02       		.byte	0x2
  596 043a BB01     		.2byte	0x1bb
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 13
 
 
  597 043c 48000000 		.4byte	0x48
@@ -742,14 +742,14 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  615 0461 48000000 		.4byte	0x48
  616 0465 21       		.byte	0x21
  617 0466 12       		.uleb128 0x12
- 618 0467 E5000000 		.4byte	.LASF34
+ 618 0467 68010000 		.4byte	.LASF34
  619 046b 02       		.byte	0x2
  620 046c C401     		.2byte	0x1c4
  621 046e 48000000 		.4byte	0x48
  622 0472 22       		.byte	0x22
  623 0473 00       		.byte	0
  624 0474 0D       		.uleb128 0xd
- 625 0475 69010000 		.4byte	.LASF53
+ 625 0475 EC010000 		.4byte	.LASF53
  626 0479 02       		.byte	0x2
  627 047a 2601     		.2byte	0x126
  628 047c 80040000 		.4byte	0x480
@@ -759,7 +759,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  632 0486 75000000 		.4byte	0x75
  633 048a 00       		.byte	0
  634 048b 0D       		.uleb128 0xd
- 635 048c C1010000 		.4byte	.LASF54
+ 635 048c 44020000 		.4byte	.LASF54
  636 0490 02       		.byte	0x2
  637 0491 2701     		.2byte	0x127
  638 0493 97040000 		.4byte	0x497
@@ -775,10 +775,10 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  648 04ac 04       		.byte	0x4
  649 04ad 25000000 		.4byte	0x25
  650 04b1 0D       		.uleb128 0xd
- 651 04b2 22030000 		.4byte	.LASF55
+ 651 04b2 A5030000 		.4byte	.LASF55
  652 04b6 02       		.byte	0x2
  653 04b7 2801     		.2byte	0x128
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 14
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 14
 
 
  654 04b9 BD040000 		.4byte	0x4bd
@@ -798,7 +798,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  668 04d9 04       		.byte	0x4
  669 04da 04030000 		.4byte	0x304
  670 04de 0D       		.uleb128 0xd
- 671 04df D2010000 		.4byte	.LASF56
+ 671 04df 55020000 		.4byte	.LASF56
  672 04e3 02       		.byte	0x2
  673 04e4 2901     		.2byte	0x129
  674 04e6 EA040000 		.4byte	0x4ea
@@ -811,7 +811,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  681 04f9 75000000 		.4byte	0x75
  682 04fd 00       		.byte	0
  683 04fe 0D       		.uleb128 0xd
- 684 04ff 59010000 		.4byte	.LASF57
+ 684 04ff DC010000 		.4byte	.LASF57
  685 0503 02       		.byte	0x2
  686 0504 2A01     		.2byte	0x12a
  687 0506 0A050000 		.4byte	0x50a
@@ -838,14 +838,14 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  708 0535 63000000 		.4byte	0x63
  709 0539 16       		.uleb128 0x16
  710 053a BA000000 		.4byte	.LASF59
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 15
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 15
 
 
  711 053e 02       		.byte	0x2
  712 053f BE01     		.2byte	0x1be
  713 0541 5E050000 		.4byte	0x55e
  714 0545 16       		.uleb128 0x16
- 715 0546 FD030000 		.4byte	.LASF60
+ 715 0546 E7030000 		.4byte	.LASF60
  716 054a 02       		.byte	0x2
  717 054b BF01     		.2byte	0x1bf
  718 054d 69050000 		.4byte	0x569
@@ -895,10 +895,10 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  762 05aa 07       		.byte	0x7
  763 05ab 38000000 		.4byte	.LASF62
  764 05af 17       		.uleb128 0x17
- 765 05b0 52020000 		.4byte	.LASF66
+ 765 05b0 D5020000 		.4byte	.LASF66
  766 05b4 01       		.byte	0x1
  767 05b5 48       		.byte	0x48
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 16
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 16
 
 
  768 05b6 00000000 		.4byte	.LFB0
@@ -907,7 +907,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  771 05bf 9C       		.byte	0x9c
  772 05c0 FD050000 		.4byte	0x5fd
  773 05c4 18       		.uleb128 0x18
- 774 05c5 1B010000 		.4byte	.LASF67
+ 774 05c5 9E010000 		.4byte	.LASF67
  775 05c9 01       		.byte	0x1
  776 05ca 4C       		.byte	0x4c
  777 05cb FD050000 		.4byte	0x5fd
@@ -943,7 +943,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  807 060b FF07     		.2byte	0x7ff
  808 060d 00       		.byte	0
  809 060e 1E       		.uleb128 0x1e
- 810 060f CB030000 		.4byte	.LASF68
+ 810 060f B5030000 		.4byte	.LASF68
  811 0613 03       		.byte	0x3
  812 0614 1908     		.2byte	0x819
  813 0616 D3040000 		.4byte	0x4d3
@@ -958,10 +958,10 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  822 062c 33000000 		.4byte	0x33
  823 0630 00       		.byte	0
  824 0631 20       		.uleb128 0x20
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 17
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 17
 
 
- 825 0632 16020000 		.4byte	.LASF70
+ 825 0632 99020000 		.4byte	.LASF70
  826 0636 03       		.byte	0x3
  827 0637 7801     		.2byte	0x178
  828 0639 0F       		.uleb128 0xf
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  879 002d 0B       		.uleb128 0xb
  880 002e 00       		.byte	0
  881 002f 00       		.byte	0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 18
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 18
 
 
  882 0030 05       		.uleb128 0x5
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  936 0066 3A       		.uleb128 0x3a
  937 0067 0B       		.uleb128 0xb
  938 0068 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 19
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 19
 
 
  939 0069 0B       		.uleb128 0xb
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  993 009f 13       		.uleb128 0x13
  994 00a0 01       		.uleb128 0x1
  995 00a1 13       		.uleb128 0x13
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 20
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 20
 
 
  996 00a2 00       		.byte	0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1050 00d8 0B       		.uleb128 0xb
  1051 00d9 3B       		.uleb128 0x3b
  1052 00da 05       		.uleb128 0x5
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 21
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 21
 
 
  1053 00db 01       		.uleb128 0x1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1107 0111 3B       		.uleb128 0x3b
  1108 0112 0B       		.uleb128 0xb
  1109 0113 27       		.uleb128 0x27
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 22
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 22
 
 
  1110 0114 19       		.uleb128 0x19
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1164 0152 13       		.uleb128 0x13
  1165 0153 00       		.byte	0
  1166 0154 00       		.byte	0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 23
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 23
 
 
  1167 0155 1C       		.uleb128 0x1c
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1221 018b 20       		.uleb128 0x20
  1222 018c 2E       		.uleb128 0x2e
  1223 018d 01       		.byte	0x1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 24
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 24
 
 
  1224 018e 3F       		.uleb128 0x3f
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1267      6100
  1268              	.LASF58:
  1269 0024 70466F6E 		.ascii	"pFontData\000"
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 25
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 25
 
 
  1269      74446174 
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1294              	.LASF59:
  1295 00ba 704D6F6E 		.ascii	"pMono\000"
  1295      6F00
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 26
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 26
 
 
  1296              	.LASF61:
@@ -1511,263 +1511,260 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 1
  1299      5F415049 
  1299      4C697374 
  1299      00
- 1300              	.LASF18:
- 1301 00da 58506F73 		.ascii	"XPos\000"
- 1301      00
- 1302              	.LASF31:
- 1303 00df 466C6167 		.ascii	"Flags\000"
- 1303      7300
- 1304              	.LASF34:
- 1305 00e5 43486569 		.ascii	"CHeight\000"
- 1305      67687400 
- 1306              	.LASF11:
- 1307 00ed 4755495F 		.ascii	"GUI_FONT_TRANSINFO\000"
- 1307      464F4E54 
- 1307      5F545241 
- 1307      4E53494E 
- 1307      464F00
- 1308              	.LASF49:
- 1309 0100 70616645 		.ascii	"pafEncode\000"
- 1309      6E636F64 
- 1309      6500
- 1310              	.LASF24:
- 1311 010a 70614368 		.ascii	"paCharInfo\000"
- 1311      6172496E 
- 1311      666F00
- 1312              	.LASF25:
- 1313 0115 704E6578 		.ascii	"pNext\000"
- 1313      7400
- 1314              	.LASF67:
- 1315 011b 614D656D 		.ascii	"aMemory\000"
- 1315      6F727900 
- 1316              	.LASF23:
- 1317 0123 4C617374 		.ascii	"Last\000"
- 1317      00
- 1318              	.LASF64:
- 1319 0128 2E5C4755 		.ascii	".\\GUIConf.c\000"
- 1319      49436F6E 
- 1319      662E6300 
- 1320              	.LASF5:
- 1321 0134 6C6F6E67 		.ascii	"long int\000"
- 1321      20696E74 
+ 1300              	.LASF65:
+ 1301 00da 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 1301      73657273 
+ 1301      5C6A616F 
+ 1301      68655C45 
+ 1301      67686F73 
+ 1302 0108 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 1302      7072696E 
+ 1302      67203230 
+ 1302      32355C36 
+ 1302      2E313135 
+ 1303 0137 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 1303      545F7769 
+ 1303      74685F65 
+ 1303      6D57696E 
+ 1303      5C544654 
+ 1304              	.LASF18:
+ 1305 015d 58506F73 		.ascii	"XPos\000"
+ 1305      00
+ 1306              	.LASF31:
+ 1307 0162 466C6167 		.ascii	"Flags\000"
+ 1307      7300
+ 1308              	.LASF34:
+ 1309 0168 43486569 		.ascii	"CHeight\000"
+ 1309      67687400 
+ 1310              	.LASF11:
+ 1311 0170 4755495F 		.ascii	"GUI_FONT_TRANSINFO\000"
+ 1311      464F4E54 
+ 1311      5F545241 
+ 1311      4E53494E 
+ 1311      464F00
+ 1312              	.LASF49:
+ 1313 0183 70616645 		.ascii	"pafEncode\000"
+ 1313      6E636F64 
+ 1313      6500
+ 1314              	.LASF24:
+ 1315 018d 70614368 		.ascii	"paCharInfo\000"
+ 1315      6172496E 
+ 1315      666F00
+ 1316              	.LASF25:
+ 1317 0198 704E6578 		.ascii	"pNext\000"
+ 1317      7400
+ 1318              	.LASF67:
+ 1319 019e 614D656D 		.ascii	"aMemory\000"
+ 1319      6F727900 
+ 1320              	.LASF23:
+ 1321 01a6 4C617374 		.ascii	"Last\000"
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 27
+
+
  1321      00
- 1322              	.LASF21:
- 1323 013d 4755495F 		.ascii	"GUI_CHARINFO_EXT\000"
- 1323      43484152 
- 1323      494E464F 
- 1323      5F455854 
- 1323      00
- 1324              	.LASF28:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 27
-
-
- 1325 014e 70547261 		.ascii	"pTransData\000"
- 1325      6E734461 
- 1325      746100
- 1326              	.LASF57:
- 1327 0159 4755495F 		.ascii	"GUI_GETCHARINFO\000"
- 1327      47455443 
- 1327      48415249 
- 1327      4E464F00 
- 1328              	.LASF53:
- 1329 0169 4755495F 		.ascii	"GUI_DISPCHAR\000"
- 1329      44495350 
- 1329      43484152 
- 1329      00
- 1330              	.LASF4:
- 1331 0176 756E7369 		.ascii	"unsigned char\000"
- 1331      676E6564 
- 1331      20636861 
- 1331      7200
- 1332              	.LASF48:
- 1333 0184 70664765 		.ascii	"pfGetCharInfo\000"
- 1333      74436861 
- 1333      72496E66 
- 1333      6F00
- 1334              	.LASF41:
- 1335 0192 70664469 		.ascii	"pfDispLine\000"
- 1335      73704C69 
- 1335      6E6500
- 1336              	.LASF20:
- 1337 019d 7369676E 		.ascii	"signed char\000"
- 1337      65642063 
- 1337      68617200 
- 1338              	.LASF13:
- 1339 01a9 58446973 		.ascii	"XDist\000"
- 1339      7400
- 1340              	.LASF0:
- 1341 01af 756E7369 		.ascii	"unsigned int\000"
- 1341      676E6564 
- 1341      20696E74 
- 1341      00
- 1342              	.LASF19:
- 1343 01bc 59506F73 		.ascii	"YPos\000"
- 1343      00
- 1344              	.LASF54:
- 1345 01c1 4755495F 		.ascii	"GUI_GETCHARDISTX\000"
- 1345      47455443 
- 1345      48415244 
- 1345      49535458 
+ 1322              	.LASF64:
+ 1323 01ab 2E5C4755 		.ascii	".\\GUIConf.c\000"
+ 1323      49436F6E 
+ 1323      662E6300 
+ 1324              	.LASF5:
+ 1325 01b7 6C6F6E67 		.ascii	"long int\000"
+ 1325      20696E74 
+ 1325      00
+ 1326              	.LASF21:
+ 1327 01c0 4755495F 		.ascii	"GUI_CHARINFO_EXT\000"
+ 1327      43484152 
+ 1327      494E464F 
+ 1327      5F455854 
+ 1327      00
+ 1328              	.LASF28:
+ 1329 01d1 70547261 		.ascii	"pTransData\000"
+ 1329      6E734461 
+ 1329      746100
+ 1330              	.LASF57:
+ 1331 01dc 4755495F 		.ascii	"GUI_GETCHARINFO\000"
+ 1331      47455443 
+ 1331      48415249 
+ 1331      4E464F00 
+ 1332              	.LASF53:
+ 1333 01ec 4755495F 		.ascii	"GUI_DISPCHAR\000"
+ 1333      44495350 
+ 1333      43484152 
+ 1333      00
+ 1334              	.LASF4:
+ 1335 01f9 756E7369 		.ascii	"unsigned char\000"
+ 1335      676E6564 
+ 1335      20636861 
+ 1335      7200
+ 1336              	.LASF48:
+ 1337 0207 70664765 		.ascii	"pfGetCharInfo\000"
+ 1337      74436861 
+ 1337      72496E66 
+ 1337      6F00
+ 1338              	.LASF41:
+ 1339 0215 70664469 		.ascii	"pfDispLine\000"
+ 1339      73704C69 
+ 1339      6E6500
+ 1340              	.LASF20:
+ 1341 0220 7369676E 		.ascii	"signed char\000"
+ 1341      65642063 
+ 1341      68617200 
+ 1342              	.LASF13:
+ 1343 022c 58446973 		.ascii	"XDist\000"
+ 1343      7400
+ 1344              	.LASF0:
+ 1345 0232 756E7369 		.ascii	"unsigned int\000"
+ 1345      676E6564 
+ 1345      20696E74 
  1345      00
- 1346              	.LASF56:
- 1347 01d2 4755495F 		.ascii	"GUI_ISINFONT\000"
- 1347      4953494E 
- 1347      464F4E54 
+ 1346              	.LASF19:
+ 1347 023f 59506F73 		.ascii	"YPos\000"
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 28
+
+
  1347      00
- 1348              	.LASF17:
- 1349 01df 5953697A 		.ascii	"YSize\000"
- 1349      6500
- 1350              	.LASF6:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 28
-
-
- 1351 01e5 73686F72 		.ascii	"short unsigned int\000"
- 1351      7420756E 
- 1351      7369676E 
- 1351      65642069 
- 1351      6E7400
- 1352              	.LASF3:
- 1353 01f8 63686172 		.ascii	"char\000"
- 1353      00
- 1354              	.LASF7:
- 1355 01fd 46697273 		.ascii	"FirstChar\000"
- 1355      74436861 
- 1355      7200
- 1356              	.LASF39:
- 1357 0207 70664765 		.ascii	"pfGetLineDistX\000"
- 1357      744C696E 
- 1357      65446973 
- 1357      745800
- 1358              	.LASF70:
- 1359 0216 4755495F 		.ascii	"GUI_SetDefaultFont\000"
- 1359      53657444 
- 1359      65666175 
- 1359      6C74466F 
- 1359      6E7400
- 1360              	.LASF36:
- 1361 0229 74475549 		.ascii	"tGUI_GetLineDistX\000"
- 1361      5F476574 
- 1361      4C696E65 
- 1361      44697374 
- 1361      5800
- 1362              	.LASF43:
- 1363 023b 4755495F 		.ascii	"GUI_FONT\000"
- 1363      464F4E54 
- 1363      00
- 1364              	.LASF26:
- 1365 0244 4755495F 		.ascii	"GUI_FONT_PROP\000"
- 1365      464F4E54 
- 1365      5F50524F 
- 1365      5000
- 1366              	.LASF66:
- 1367 0252 4755495F 		.ascii	"GUI_X_Config\000"
- 1367      585F436F 
- 1367      6E666967 
+ 1348              	.LASF54:
+ 1349 0244 4755495F 		.ascii	"GUI_GETCHARDISTX\000"
+ 1349      47455443 
+ 1349      48415244 
+ 1349      49535458 
+ 1349      00
+ 1350              	.LASF56:
+ 1351 0255 4755495F 		.ascii	"GUI_ISINFONT\000"
+ 1351      4953494E 
+ 1351      464F4E54 
+ 1351      00
+ 1352              	.LASF17:
+ 1353 0262 5953697A 		.ascii	"YSize\000"
+ 1353      6500
+ 1354              	.LASF6:
+ 1355 0268 73686F72 		.ascii	"short unsigned int\000"
+ 1355      7420756E 
+ 1355      7369676E 
+ 1355      65642069 
+ 1355      6E7400
+ 1356              	.LASF3:
+ 1357 027b 63686172 		.ascii	"char\000"
+ 1357      00
+ 1358              	.LASF7:
+ 1359 0280 46697273 		.ascii	"FirstChar\000"
+ 1359      74436861 
+ 1359      7200
+ 1360              	.LASF39:
+ 1361 028a 70664765 		.ascii	"pfGetLineDistX\000"
+ 1361      744C696E 
+ 1361      65446973 
+ 1361      745800
+ 1362              	.LASF70:
+ 1363 0299 4755495F 		.ascii	"GUI_SetDefaultFont\000"
+ 1363      53657444 
+ 1363      65666175 
+ 1363      6C74466F 
+ 1363      6E7400
+ 1364              	.LASF36:
+ 1365 02ac 74475549 		.ascii	"tGUI_GetLineDistX\000"
+ 1365      5F476574 
+ 1365      4C696E65 
+ 1365      44697374 
+ 1365      5800
+ 1366              	.LASF43:
+ 1367 02be 4755495F 		.ascii	"GUI_FONT\000"
+ 1367      464F4E54 
  1367      00
- 1368              	.LASF1:
- 1369 025f 6C6F6E67 		.ascii	"long unsigned int\000"
- 1369      20756E73 
- 1369      69676E65 
- 1369      6420696E 
- 1369      7400
- 1370              	.LASF22:
- 1371 0271 46697273 		.ascii	"First\000"
- 1371      7400
- 1372              	.LASF30:
- 1373 0277 4755495F 		.ascii	"GUI_FONT_MONO\000"
- 1373      464F4E54 
- 1373      5F4D4F4E 
- 1373      4F00
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 29
+ 1368              	.LASF26:
+ 1369 02c7 4755495F 		.ascii	"GUI_FONT_PROP\000"
+ 1369      464F4E54 
+ 1369      5F50524F 
+ 1369      5000
+ 1370              	.LASF66:
+ 1371 02d5 4755495F 		.ascii	"GUI_X_Config\000"
+ 1371      585F436F 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 29
 
 
- 1374              	.LASF63:
- 1375 0285 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1375      4320342E 
- 1375      392E3320 
- 1375      32303135 
- 1375      30333033 
- 1376 02b8 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1376      20726576 
- 1376      6973696F 
- 1376      6E203232 
- 1376      31323230 
- 1377 02eb 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1377      66756E63 
- 1377      74696F6E 
- 1377      2D736563 
- 1377      74696F6E 
- 1378              	.LASF45:
- 1379 0313 70664765 		.ascii	"pfGetCharDistX\000"
- 1379      74436861 
- 1379      72446973 
- 1379      745800
- 1380              	.LASF55:
- 1381 0322 4755495F 		.ascii	"GUI_GETFONTINFO\000"
- 1381      47455446 
- 1381      4F4E5449 
- 1381      4E464F00 
- 1382              	.LASF65:
- 1383 0332 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
- 1383      73657273 
- 1383      5C6A616F 
- 1383      68655C45 
- 1383      67686F73 
- 1384 0360 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\TFT_Tutorial"
- 1384      7072696E 
- 1384      67203230 
- 1384      32355C36 
- 1384      2E313135 
- 1385 038f 5F323032 		.ascii	"_2022\\TFT_Tutorial_2022\\TFT_with_emWin\\TFT_with_"
- 1385      325C5446 
- 1385      545F5475 
- 1385      746F7269 
- 1385      616C5F32 
- 1386 03bf 656D5769 		.ascii	"emWin.cydsn\000"
- 1386      6E2E6379 
- 1386      64736E00 
- 1387              	.LASF68:
- 1388 03cb 4755495F 		.ascii	"GUI_Font6x8\000"
- 1388      466F6E74 
- 1388      36783800 
- 1389              	.LASF51:
- 1390 03d7 584D6167 		.ascii	"XMag\000"
- 1390      00
- 1391              	.LASF44:
- 1392 03dc 70664469 		.ascii	"pfDispChar\000"
- 1392      73704368 
- 1392      617200
- 1393              	.LASF50:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\cctogmMS.s 			page 30
+ 1371      6E666967 
+ 1371      00
+ 1372              	.LASF1:
+ 1373 02e2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1373      20756E73 
+ 1373      69676E65 
+ 1373      6420696E 
+ 1373      7400
+ 1374              	.LASF22:
+ 1375 02f4 46697273 		.ascii	"First\000"
+ 1375      7400
+ 1376              	.LASF30:
+ 1377 02fa 4755495F 		.ascii	"GUI_FONT_MONO\000"
+ 1377      464F4E54 
+ 1377      5F4D4F4E 
+ 1377      4F00
+ 1378              	.LASF63:
+ 1379 0308 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1379      4320342E 
+ 1379      392E3320 
+ 1379      32303135 
+ 1379      30333033 
+ 1380 033b 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1380      20726576 
+ 1380      6973696F 
+ 1380      6E203232 
+ 1380      31323230 
+ 1381 036e 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1381      66756E63 
+ 1381      74696F6E 
+ 1381      2D736563 
+ 1381      74696F6E 
+ 1382              	.LASF45:
+ 1383 0396 70664765 		.ascii	"pfGetCharDistX\000"
+ 1383      74436861 
+ 1383      72446973 
+ 1383      745800
+ 1384              	.LASF55:
+ 1385 03a5 4755495F 		.ascii	"GUI_GETFONTINFO\000"
+ 1385      47455446 
+ 1385      4F4E5449 
+ 1385      4E464F00 
+ 1386              	.LASF68:
+ 1387 03b5 4755495F 		.ascii	"GUI_Font6x8\000"
+ 1387      466F6E74 
+ 1387      36783800 
+ 1388              	.LASF51:
+ 1389 03c1 584D6167 		.ascii	"XMag\000"
+ 1389      00
+ 1390              	.LASF44:
+ 1391 03c6 70664469 		.ascii	"pfDispChar\000"
+ 1391      73704368 
+ 1391      617200
+ 1392              	.LASF50:
+ 1393 03d1 59446973 		.ascii	"YDist\000"
+ 1393      7400
+ 1394              	.LASF37:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccY8Fec8.s 			page 30
 
 
- 1394 03e7 59446973 		.ascii	"YDist\000"
- 1394      7400
- 1395              	.LASF37:
- 1396 03ed 74475549 		.ascii	"tGUI_GetLineLen\000"
- 1396      5F476574 
- 1396      4C696E65 
- 1396      4C656E00 
- 1397              	.LASF60:
- 1398 03fd 7050726F 		.ascii	"pProp\000"
- 1398      7000
- 1399              	.LASF46:
- 1400 0403 70664765 		.ascii	"pfGetFontInfo\000"
- 1400      74466F6E 
- 1400      74496E66 
- 1400      6F00
- 1401              	.LASF38:
- 1402 0411 74474C5F 		.ascii	"tGL_DispLine\000"
- 1402      44697370 
- 1402      4C696E65 
- 1402      00
- 1403              	.LASF35:
- 1404 041e 4755495F 		.ascii	"GUI_FONTINFO\000"
- 1404      464F4E54 
- 1404      494E464F 
- 1404      00
- 1405              	.LASF8:
- 1406 042b 4C617374 		.ascii	"LastChar\000"
- 1406      43686172 
- 1406      00
- 1407              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1395 03d7 74475549 		.ascii	"tGUI_GetLineLen\000"
+ 1395      5F476574 
+ 1395      4C696E65 
+ 1395      4C656E00 
+ 1396              	.LASF60:
+ 1397 03e7 7050726F 		.ascii	"pProp\000"
+ 1397      7000
+ 1398              	.LASF46:
+ 1399 03ed 70664765 		.ascii	"pfGetFontInfo\000"
+ 1399      74466F6E 
+ 1399      74496E66 
+ 1399      6F00
+ 1400              	.LASF38:
+ 1401 03fb 74474C5F 		.ascii	"tGL_DispLine\000"
+ 1401      44697370 
+ 1401      4C696E65 
+ 1401      00
+ 1402              	.LASF35:
+ 1403 0408 4755495F 		.ascii	"GUI_FONTINFO\000"
+ 1403      464F4E54 
+ 1403      494E464F 
+ 1403      00
+ 1404              	.LASF8:
+ 1405 0415 4C617374 		.ascii	"LastChar\000"
+ 1405      43686172 
+ 1405      00
+ 1406              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
