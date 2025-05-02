@@ -1,5 +1,5 @@
-C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\TFT_with_emWin.cyprj|5ea10436-65c1-4fd9-9be2-54db7d6adff8
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|7f377056-e244-4cce-a89e-b6c55e844d2f
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f7ad71b3-b51a-4bd2-94ac-d8ea0379cb93
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|61479a0f-26df-4962-8fbe-9b04ca2686fd
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f614a81e-ad27-4942-bb01-d7353a2860d7
+C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\TFT_with_emWin.cyprj|e1e816b8-61ce-4e57-8cd8-d86fa31f0001
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|910683f0-572f-46b8-98f5-aa8fbf0b821c
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0ff63849-b956-4f95-8a3f-fad533a49413
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9c10a6db-a4ba-40e9-9d2e-225f5ebe178a
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0e624b5d-3990-44cf-8a5c-6f6d8c11f373
