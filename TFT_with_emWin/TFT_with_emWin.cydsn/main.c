@@ -79,17 +79,17 @@ CY_ISR(Timer_1_Handler)
     // Clear PSoC GPIO interrupt first
     LED_1_Write(~LED_1_Read());
     LCD_Char_1_Position(1, 0);
-    LCD_Char_1_PrintString("AAAAA");
+    //LCD_Char_1_PrintString("AAAAA");
     
     DateTime now = RTC_now();
-    // char line[24];
-    // sprintf(line, "%02u-%02u %02u:%02u:%02u",
-    //         now.m, now.d, now.hh, now.mm, now.ss);
-    // LCD_Char_1_Position(1, 0);
-    // LCD_Char_1_PrintString("                    ");			// clean up the previous display
+    char line[24];
+    sprintf(line, "%02u-%02u %02u:%02u:%02u",
+             now.m, now.d, now.hh, now.mm, now.ss);
+    LCD_Char_1_Position(1, 0);
+    LCD_Char_1_PrintString("                    ");			// clean up the previous display
     
-	// LCD_Char_1_Position(1, 0);
-    // LCD_Char_1_PrintString(line);
+	LCD_Char_1_Position(1, 0);
+    LCD_Char_1_PrintString(line);
     Timer_1_ReadStatusRegister();
     
    
@@ -101,8 +101,9 @@ int main(){
    Timer_1_Start();       // Start the 1 MHz clock
    tick_isr_StartEx(Timer_1_Handler); // Link ISR
    
-    
-    
+    /* Start VDAC */
+    VDAC8_1_Start();
+     
     
 
     I2CRTC_Start();                  // 2. Start I²C for RTC

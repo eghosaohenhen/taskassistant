@@ -165,6 +165,12 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DAC_OUT_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DAC_OUT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DAC_OUT.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\Export\ARM_GCC_Generic">
