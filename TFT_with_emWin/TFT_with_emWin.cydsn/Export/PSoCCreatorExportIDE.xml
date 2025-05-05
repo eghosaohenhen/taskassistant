@@ -44,6 +44,7 @@
           <File BuildType="BUILD" Toolchain="">.\start.c</File>
           <File BuildType="BUILD" Toolchain="">.\ds3231.c</File>
           <File BuildType="BUILD" Toolchain="">.\action_select.c</File>
+          <File BuildType="BUILD" Toolchain="">.\cute_mascot.c</File>
           <File BuildType="BUILD" Toolchain="">.\cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">.\tft.h</File>
           <File BuildType="BUILD" Toolchain="">.\GUIDRV_FlexColor.h</File>

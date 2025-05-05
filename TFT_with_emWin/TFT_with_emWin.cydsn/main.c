@@ -65,6 +65,7 @@ Requirements: WindowManager - (x)
 #include "screens.h"
 #include "stdio.h"
 #include "ds3231.h"
+extern GUI_CONST_STORAGE GUI_BITMAP bmcute_mascot;
 
 //#include "start.h"
 
@@ -83,9 +84,11 @@ int main()
     for(;;) {
         if (FORWARD_BTN_Read() == 0 || BACK_BTN_Read() == 0){
             GUI_Clear();
-            GUI_DispStringHCenterAt("Dialog has been closed", CENTERX, 5);
+            GUI_DispStringHCenterAt("Main Screen has been closed", CENTERX, 5);
             GUI_Delay(1000);
-            action_select();
+            GUI_Clear();
+            
+            // action_select();
         }
     }                              // loop
 }
@@ -95,12 +98,13 @@ void MainTask()
     GUI_Init();                             // initilize graphics library
     GUI_Clear();
     GUI_SetFont(&GUI_Font8x16);
-    GUI_DispStringAt("peepee doodoo", 50, 50);
-    GUI_DispStringHCenterAt("Dialog has been closed", CENTERX, CENTERY);
+    
+    
     GUI_SetBkColor(0x1a1932);
     GUI_RECT Rect = {CENTERX/2,  CENTERY*1/2,CENTERX *3/2 ,  CENTERY*3/2};
     char acText[] = "Welcome to \nTask Buddy\0";
     GUI_DispStringInRectEx(acText, &Rect, GUI_TA_HCENTER | GUI_TA_VCENTER, strlen(acText) - 1, GUI_ROTATE_0);
+    GUI_DrawBitmap( &bmcute_mascot, 5, 30);
 }
 
 /* [] END OF FILE */

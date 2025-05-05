@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin\TFT_with_emWin\Header Files\screens.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin">
 <ExpandedNodeIds>
 <v>TFT_with_emWin</v>
 <v>TFT_with_emWin\TFT_with_emWin</v>
@@ -28,6 +28,7 @@
 <v>TFT_with_emWin\TFT_with_emWin\Header Files\tft.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\action_select.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\cute_mascot.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\ds3231.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUI_X.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUIConf.c</v>
@@ -203,6 +204,7 @@
 <v>TFT_with_emWin\TFT_with_emWin\Header Files\tft.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\action_select.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\cute_mascot.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\ds3231.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUI_X.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUIConf.c</v>
@@ -259,6 +261,7 @@
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\BACK_BTN.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cute_mascot.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
@@ -315,6 +318,40 @@
 <VisibleNodeIds>
 <v>TFT_with_emWin</v>
 <v>TFT_with_emWin\TFT_with_emWin</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\action_select.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\BACK_BTN.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cute_mascot.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\DC.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ds3231.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\FORWARD_BTN.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\GUI_X.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\GUIConf.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_BOOT.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_INT.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_MASTER.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -383,11 +420,10 @@
 <name v=".\TFT_with_emWin.cydsn\start.c" />
 <name v=".\TFT_with_emWin.cydsn\screens.h" />
 <name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\SS.c" />
-<name v="..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
-<name v="..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG_Intern.h" />
 <name v=".\TFT_with_emWin.cydsn\tft.h" />
 <name v=".\TFT_with_emWin.cydsn\LCDConf.h" />
 <name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\SPIM_1.c" />
+<name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\tick_isr.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />
