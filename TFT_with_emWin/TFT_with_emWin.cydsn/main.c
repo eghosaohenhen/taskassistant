@@ -69,6 +69,7 @@ Requirements: WindowManager - (x)
 //#include "start.h"
 
 
+
 void MainTask(void);
 int home(void);
 void configure_rtc_tick(void);
@@ -103,7 +104,10 @@ int main(){
    
     /* Start VDAC */
     VDAC8_1_Start();
-     
+    
+
+    /* Set the value 200 in VDAC data register */
+    VDAC8_1_SetValue(200u); 
     
 
     I2CRTC_Start();                  // 2. Start I²C for RTC
@@ -130,7 +134,9 @@ int main(){
     
     for (;;)
     {
-        
+        LCD_Char_1_Position(0u, 0u);
+       
+        LCD_Char_1_PrintString("VDAC VAL: %02X");
         //  char line[24];
         
         //  uint8_t data = RTC_readRegister(DS3231_ALARM1, 0);

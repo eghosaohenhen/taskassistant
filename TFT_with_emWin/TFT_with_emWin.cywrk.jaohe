@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\timer_clock">
 <ExpandedNodeIds>
 <v>TFT_with_emWin</v>
 <v>TFT_with_emWin\TFT_with_emWin</v>
@@ -32,6 +32,7 @@
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUIConf.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\LCDConf.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\main.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\sound.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\start.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\tft.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source</v>
@@ -180,42 +181,42 @@
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>TFT_with_emWin</v>
-<v>TFT_with_emWin\TFT_with_emWin</v>
-<v>TFT_with_emWin\TFT_with_emWin\TopDesign</v>
-<v>TFT_with_emWin\TFT_with_emWin\TFT_with_emWin.cydwr</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files\cyapicallbacks.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files\ds3231.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files\GUIDRV_FlexColor.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files\LCDConf.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files\screens.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Header Files\tft.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\ds3231.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\GUI_X.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\GUIConf.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\LCDConf.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\main.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\start.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\tft.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN_aliases.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\I2CRTC\I2CRTC_SLAVE.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1\LCD_Char_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1\LCD_Char_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1\LCD_Char_1_CustChars.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1\LCD_Char_1_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1_LCDPort</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1_LCDPort\LCD_Char_1_LCDPort.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1_LCDPort\LCD_Char_1_LCDPort.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LCD_Char_1_LCDPort\LCD_Char_1_LCDPort_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED\LED.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED\LED.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED\LED_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1\LED_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1\LED_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1\LED_1_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO\MISO.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO\MISO.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO\MISO_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI\MOSI.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI\MOSI.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI\MOSI_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET\RESET.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET\RESET.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET\RESET_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT\RTC_PIN_INT.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT\RTC_PIN_INT.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT\RTC_PIN_INT_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SCL</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SCL\SCL.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin">
@@ -362,7 +363,7 @@
 <v>TFT_with_emWin\TFT_with_emWin\I2C_v3_50.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\SPI_Master_v2_50.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\Timer_v2_70.pdf</v>
-<v>TFT_with_emWin\TFT_with_emWin\VDAC8_v1_90.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\WaveDAC8_v2_10.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -384,17 +385,23 @@
 <v>TFT_with_emWin\TFT_with_emWin\I2C_v3_50.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\SPI_Master_v2_50.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\Timer_v2_70.pdf</v>
-<v>TFT_with_emWin\TFT_with_emWin\VDAC8_v1_90.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\WaveDAC8_v2_10.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
 </dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
+<name v=".\TFT_with_emWin.cydsn\cute_mascot.c" />
 <name v=".\TFT_with_emWin.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\TFT_with_emWin.cydsn\TFT_with_emWin.cydwr" />
 <name v=".\TFT_with_emWin.cydsn\main.c" />
@@ -407,7 +414,7 @@
 <name v=".\TFT_with_emWin.cydsn\LCDConf.h" />
 <name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\SPIM_1.c" />
 <name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\tick_isr.c" />
-<name v=".\TFT_with_emWin.cydsn\cute_mascot.c" />
+<name v=".\TFT_with_emWin.cydsn\sound.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />
