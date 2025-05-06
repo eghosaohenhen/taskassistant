@@ -43,12 +43,17 @@
           <File BuildType="BUILD" Toolchain="">.\LCDConf.c</File>
           <File BuildType="BUILD" Toolchain="">.\start.c</File>
           <File BuildType="BUILD" Toolchain="">.\ds3231.c</File>
+          <File BuildType="BUILD" Toolchain="">.\sound.c</File>
+          <File BuildType="BUILD" Toolchain="">.\action_select.c</File>
+          <File BuildType="BUILD" Toolchain="">.\cute_mascot.c</File>
+          <File BuildType="BUILD" Toolchain="">.\task.c</File>
           <File BuildType="BUILD" Toolchain="">.\cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">.\tft.h</File>
           <File BuildType="BUILD" Toolchain="">.\GUIDRV_FlexColor.h</File>
           <File BuildType="BUILD" Toolchain="">.\LCDConf.h</File>
           <File BuildType="BUILD" Toolchain="">.\screens.h</File>
           <File BuildType="BUILD" Toolchain="">.\ds3231.h</File>
+          <File BuildType="BUILD" Toolchain="">.\task.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\Generated_Source\PSoC5">
@@ -165,12 +170,48 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\LED_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DAC_OUT_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DAC_OUT.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DAC_OUT.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WAVE_SELECTOR_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WAVE_SELECTOR.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WAVE_SELECTOR.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_DacClk.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_DacClk.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_Wave1_DMA_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_Wave1_DMA_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_Wave2_DMA_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_Wave2_DMA_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_VDAC8.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_VDAC8.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\WaveDAC8_1_VDAC8_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_AMux.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_AMux.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_IRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_IRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_theACLK.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\ADC_DelSig_1_theACLK.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_IntClock.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_IntClock.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\isr_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\isr_1.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\Export\ARM_GCC_Generic">

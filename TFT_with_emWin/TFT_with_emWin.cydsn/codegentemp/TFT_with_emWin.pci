@@ -1,5 +1,5 @@
 # TFT_with_emWin
-# 2025-05-05 22:00:25Z
+# 2025-05-06 21:51:11Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -28,4 +28,8 @@ set_io "\LCD_Char_1:LCDPort(6)\" iocell 2 6
 set_io "RTC_PIN_INT(0)" iocell 6 0
 set_io "LED_1(0)" iocell 6 2
 set_io "DAC_OUT(0)" iocell 0 4
-set_location "\VDAC8_1:viDAC8\" vidaccell -1 -1 2
+set_io "Pin_1(0)" iocell 6 5
+set_io "Rx_1(0)" iocell 5 1
+set_io "Tx_1(0)" iocell 5 2
+set_location "\WaveDAC8_1:VDAC8:viDAC8\" vidaccell -1 -1 2
+set_location "\ADC_DelSig_1:DSM\" dsmodcell -1 -1 0

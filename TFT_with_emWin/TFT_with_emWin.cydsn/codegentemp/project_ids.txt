@@ -1,6 +1,5 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|910683f0-572f-46b8-98f5-aa8fbf0b821c
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|0ff63849-b956-4f95-8a3f-fad533a49413
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9c10a6db-a4ba-40e9-9d2e-225f5ebe178a
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|0e624b5d-3990-44cf-8a5c-6f6d8c11f373
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|1997afdd-aa53-44f3-9120-187d473f053d
-C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\TFT_with_emWin.cyprj|7be04dea-761b-4e7d-b3ba-936d6b31e4c5
+C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\TFT_with_emWin.cyprj|564dfcaa-d1dc-48fa-b346-8d5985fc5dda
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5966296a-32df-40c7-9411-6462ee775864
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ef6b6be7-c6d7-4947-9a10-b5b814f21628
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f4c67cf8-18e4-481f-82cf-81aec508d6da
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|dcbf6da8-e993-4269-a5e4-ca97962f9d9e

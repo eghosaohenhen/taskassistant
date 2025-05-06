@@ -1,0 +1,2091 @@
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cute_mascot.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	bmcute_mascot
+  19              		.section	.rodata
+  20              		.align	2
+  21              		.type	bmcute_mascot, %object
+  22              		.size	bmcute_mascot, 20
+  23              	bmcute_mascot:
+  24 0000 2000     		.short	32
+  25 0002 2000     		.short	32
+  26 0004 2000     		.short	32
+  27 0006 0800     		.short	8
+  28 0008 14000000 		.word	_accute_mascot
+  29 000c 14040000 		.word	_Palcute_mascot
+  30 0010 00000000 		.space	4
+  31              		.type	_accute_mascot, %object
+  32              		.size	_accute_mascot, 1024
+  33              	_accute_mascot:
+  34 0014 00       		.byte	0
+  35 0015 00       		.byte	0
+  36 0016 00       		.byte	0
+  37 0017 00       		.byte	0
+  38 0018 00       		.byte	0
+  39 0019 00       		.byte	0
+  40 001a 00       		.byte	0
+  41 001b 00       		.byte	0
+  42 001c 00       		.byte	0
+  43 001d 00       		.byte	0
+  44 001e 00       		.byte	0
+  45 001f 00       		.byte	0
+  46 0020 00       		.byte	0
+  47 0021 00       		.byte	0
+  48 0022 00       		.byte	0
+  49 0023 00       		.byte	0
+  50 0024 00       		.byte	0
+  51 0025 00       		.byte	0
+  52 0026 00       		.byte	0
+  53 0027 00       		.byte	0
+  54 0028 00       		.byte	0
+  55 0029 00       		.byte	0
+  56 002a 00       		.byte	0
+  57 002b 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 2
+
+
+  58 002c 00       		.byte	0
+  59 002d 00       		.byte	0
+  60 002e 00       		.byte	0
+  61 002f 00       		.byte	0
+  62 0030 00       		.byte	0
+  63 0031 00       		.byte	0
+  64 0032 00       		.byte	0
+  65 0033 00       		.byte	0
+  66 0034 00       		.byte	0
+  67 0035 00       		.byte	0
+  68 0036 00       		.byte	0
+  69 0037 00       		.byte	0
+  70 0038 00       		.byte	0
+  71 0039 00       		.byte	0
+  72 003a 00       		.byte	0
+  73 003b 00       		.byte	0
+  74 003c 00       		.byte	0
+  75 003d 00       		.byte	0
+  76 003e 00       		.byte	0
+  77 003f 00       		.byte	0
+  78 0040 02       		.byte	2
+  79 0041 02       		.byte	2
+  80 0042 02       		.byte	2
+  81 0043 02       		.byte	2
+  82 0044 02       		.byte	2
+  83 0045 02       		.byte	2
+  84 0046 02       		.byte	2
+  85 0047 02       		.byte	2
+  86 0048 02       		.byte	2
+  87 0049 02       		.byte	2
+  88 004a 02       		.byte	2
+  89 004b 00       		.byte	0
+  90 004c 00       		.byte	0
+  91 004d 00       		.byte	0
+  92 004e 00       		.byte	0
+  93 004f 00       		.byte	0
+  94 0050 00       		.byte	0
+  95 0051 00       		.byte	0
+  96 0052 00       		.byte	0
+  97 0053 00       		.byte	0
+  98 0054 00       		.byte	0
+  99 0055 00       		.byte	0
+ 100 0056 00       		.byte	0
+ 101 0057 00       		.byte	0
+ 102 0058 00       		.byte	0
+ 103 0059 00       		.byte	0
+ 104 005a 00       		.byte	0
+ 105 005b 00       		.byte	0
+ 106 005c 00       		.byte	0
+ 107 005d 00       		.byte	0
+ 108 005e 02       		.byte	2
+ 109 005f 02       		.byte	2
+ 110 0060 02       		.byte	2
+ 111 0061 00       		.byte	0
+ 112 0062 00       		.byte	0
+ 113 0063 00       		.byte	0
+ 114 0064 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 3
+
+
+ 115 0065 00       		.byte	0
+ 116 0066 00       		.byte	0
+ 117 0067 00       		.byte	0
+ 118 0068 00       		.byte	0
+ 119 0069 00       		.byte	0
+ 120 006a 02       		.byte	2
+ 121 006b 02       		.byte	2
+ 122 006c 00       		.byte	0
+ 123 006d 00       		.byte	0
+ 124 006e 00       		.byte	0
+ 125 006f 00       		.byte	0
+ 126 0070 00       		.byte	0
+ 127 0071 00       		.byte	0
+ 128 0072 00       		.byte	0
+ 129 0073 00       		.byte	0
+ 130 0074 00       		.byte	0
+ 131 0075 00       		.byte	0
+ 132 0076 00       		.byte	0
+ 133 0077 00       		.byte	0
+ 134 0078 00       		.byte	0
+ 135 0079 00       		.byte	0
+ 136 007a 00       		.byte	0
+ 137 007b 00       		.byte	0
+ 138 007c 00       		.byte	0
+ 139 007d 00       		.byte	0
+ 140 007e 02       		.byte	2
+ 141 007f 00       		.byte	0
+ 142 0080 00       		.byte	0
+ 143 0081 04       		.byte	4
+ 144 0082 04       		.byte	4
+ 145 0083 04       		.byte	4
+ 146 0084 04       		.byte	4
+ 147 0085 04       		.byte	4
+ 148 0086 04       		.byte	4
+ 149 0087 04       		.byte	4
+ 150 0088 04       		.byte	4
+ 151 0089 00       		.byte	0
+ 152 008a 00       		.byte	0
+ 153 008b 02       		.byte	2
+ 154 008c 00       		.byte	0
+ 155 008d 00       		.byte	0
+ 156 008e 00       		.byte	0
+ 157 008f 00       		.byte	0
+ 158 0090 00       		.byte	0
+ 159 0091 00       		.byte	0
+ 160 0092 00       		.byte	0
+ 161 0093 00       		.byte	0
+ 162 0094 00       		.byte	0
+ 163 0095 00       		.byte	0
+ 164 0096 00       		.byte	0
+ 165 0097 00       		.byte	0
+ 166 0098 00       		.byte	0
+ 167 0099 00       		.byte	0
+ 168 009a 00       		.byte	0
+ 169 009b 02       		.byte	2
+ 170 009c 02       		.byte	2
+ 171 009d 02       		.byte	2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 4
+
+
+ 172 009e 02       		.byte	2
+ 173 009f 00       		.byte	0
+ 174 00a0 00       		.byte	0
+ 175 00a1 04       		.byte	4
+ 176 00a2 00       		.byte	0
+ 177 00a3 00       		.byte	0
+ 178 00a4 00       		.byte	0
+ 179 00a5 00       		.byte	0
+ 180 00a6 00       		.byte	0
+ 181 00a7 00       		.byte	0
+ 182 00a8 00       		.byte	0
+ 183 00a9 00       		.byte	0
+ 184 00aa 00       		.byte	0
+ 185 00ab 02       		.byte	2
+ 186 00ac 00       		.byte	0
+ 187 00ad 00       		.byte	0
+ 188 00ae 00       		.byte	0
+ 189 00af 00       		.byte	0
+ 190 00b0 00       		.byte	0
+ 191 00b1 00       		.byte	0
+ 192 00b2 00       		.byte	0
+ 193 00b3 00       		.byte	0
+ 194 00b4 00       		.byte	0
+ 195 00b5 00       		.byte	0
+ 196 00b6 00       		.byte	0
+ 197 00b7 00       		.byte	0
+ 198 00b8 00       		.byte	0
+ 199 00b9 00       		.byte	0
+ 200 00ba 00       		.byte	0
+ 201 00bb 02       		.byte	2
+ 202 00bc 00       		.byte	0
+ 203 00bd 00       		.byte	0
+ 204 00be 00       		.byte	0
+ 205 00bf 00       		.byte	0
+ 206 00c0 00       		.byte	0
+ 207 00c1 00       		.byte	0
+ 208 00c2 00       		.byte	0
+ 209 00c3 00       		.byte	0
+ 210 00c4 04       		.byte	4
+ 211 00c5 04       		.byte	4
+ 212 00c6 04       		.byte	4
+ 213 00c7 04       		.byte	4
+ 214 00c8 04       		.byte	4
+ 215 00c9 05       		.byte	5
+ 216 00ca 00       		.byte	0
+ 217 00cb 02       		.byte	2
+ 218 00cc 02       		.byte	2
+ 219 00cd 00       		.byte	0
+ 220 00ce 00       		.byte	0
+ 221 00cf 00       		.byte	0
+ 222 00d0 00       		.byte	0
+ 223 00d1 00       		.byte	0
+ 224 00d2 00       		.byte	0
+ 225 00d3 00       		.byte	0
+ 226 00d4 00       		.byte	0
+ 227 00d5 00       		.byte	0
+ 228 00d6 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 5
+
+
+ 229 00d7 00       		.byte	0
+ 230 00d8 00       		.byte	0
+ 231 00d9 00       		.byte	0
+ 232 00da 00       		.byte	0
+ 233 00db 02       		.byte	2
+ 234 00dc 00       		.byte	0
+ 235 00dd 05       		.byte	5
+ 236 00de 05       		.byte	5
+ 237 00df 00       		.byte	0
+ 238 00e0 00       		.byte	0
+ 239 00e1 00       		.byte	0
+ 240 00e2 05       		.byte	5
+ 241 00e3 05       		.byte	5
+ 242 00e4 05       		.byte	5
+ 243 00e5 05       		.byte	5
+ 244 00e6 05       		.byte	5
+ 245 00e7 05       		.byte	5
+ 246 00e8 05       		.byte	5
+ 247 00e9 05       		.byte	5
+ 248 00ea 00       		.byte	0
+ 249 00eb 00       		.byte	0
+ 250 00ec 02       		.byte	2
+ 251 00ed 02       		.byte	2
+ 252 00ee 00       		.byte	0
+ 253 00ef 00       		.byte	0
+ 254 00f0 00       		.byte	0
+ 255 00f1 00       		.byte	0
+ 256 00f2 00       		.byte	0
+ 257 00f3 00       		.byte	0
+ 258 00f4 00       		.byte	0
+ 259 00f5 00       		.byte	0
+ 260 00f6 00       		.byte	0
+ 261 00f7 00       		.byte	0
+ 262 00f8 00       		.byte	0
+ 263 00f9 00       		.byte	0
+ 264 00fa 00       		.byte	0
+ 265 00fb 02       		.byte	2
+ 266 00fc 00       		.byte	0
+ 267 00fd 00       		.byte	0
+ 268 00fe 00       		.byte	0
+ 269 00ff 00       		.byte	0
+ 270 0100 00       		.byte	0
+ 271 0101 00       		.byte	0
+ 272 0102 00       		.byte	0
+ 273 0103 00       		.byte	0
+ 274 0104 00       		.byte	0
+ 275 0105 00       		.byte	0
+ 276 0106 00       		.byte	0
+ 277 0107 00       		.byte	0
+ 278 0108 00       		.byte	0
+ 279 0109 00       		.byte	0
+ 280 010a 00       		.byte	0
+ 281 010b 00       		.byte	0
+ 282 010c 00       		.byte	0
+ 283 010d 02       		.byte	2
+ 284 010e 00       		.byte	0
+ 285 010f 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 6
+
+
+ 286 0110 00       		.byte	0
+ 287 0111 00       		.byte	0
+ 288 0112 00       		.byte	0
+ 289 0113 00       		.byte	0
+ 290 0114 00       		.byte	0
+ 291 0115 00       		.byte	0
+ 292 0116 00       		.byte	0
+ 293 0117 00       		.byte	0
+ 294 0118 00       		.byte	0
+ 295 0119 00       		.byte	0
+ 296 011a 00       		.byte	0
+ 297 011b 02       		.byte	2
+ 298 011c 02       		.byte	2
+ 299 011d 02       		.byte	2
+ 300 011e 02       		.byte	2
+ 301 011f 00       		.byte	0
+ 302 0120 00       		.byte	0
+ 303 0121 01       		.byte	1
+ 304 0122 01       		.byte	1
+ 305 0123 01       		.byte	1
+ 306 0124 01       		.byte	1
+ 307 0125 01       		.byte	1
+ 308 0126 01       		.byte	1
+ 309 0127 01       		.byte	1
+ 310 0128 01       		.byte	1
+ 311 0129 01       		.byte	1
+ 312 012a 01       		.byte	1
+ 313 012b 01       		.byte	1
+ 314 012c 00       		.byte	0
+ 315 012d 02       		.byte	2
+ 316 012e 00       		.byte	0
+ 317 012f 00       		.byte	0
+ 318 0130 00       		.byte	0
+ 319 0131 00       		.byte	0
+ 320 0132 00       		.byte	0
+ 321 0133 00       		.byte	0
+ 322 0134 00       		.byte	0
+ 323 0135 00       		.byte	0
+ 324 0136 00       		.byte	0
+ 325 0137 00       		.byte	0
+ 326 0138 00       		.byte	0
+ 327 0139 00       		.byte	0
+ 328 013a 02       		.byte	2
+ 329 013b 02       		.byte	2
+ 330 013c 00       		.byte	0
+ 331 013d 00       		.byte	0
+ 332 013e 00       		.byte	0
+ 333 013f 00       		.byte	0
+ 334 0140 01       		.byte	1
+ 335 0141 01       		.byte	1
+ 336 0142 01       		.byte	1
+ 337 0143 01       		.byte	1
+ 338 0144 01       		.byte	1
+ 339 0145 01       		.byte	1
+ 340 0146 01       		.byte	1
+ 341 0147 01       		.byte	1
+ 342 0148 01       		.byte	1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 7
+
+
+ 343 0149 01       		.byte	1
+ 344 014a 01       		.byte	1
+ 345 014b 01       		.byte	1
+ 346 014c 00       		.byte	0
+ 347 014d 02       		.byte	2
+ 348 014e 00       		.byte	0
+ 349 014f 00       		.byte	0
+ 350 0150 00       		.byte	0
+ 351 0151 00       		.byte	0
+ 352 0152 00       		.byte	0
+ 353 0153 00       		.byte	0
+ 354 0154 00       		.byte	0
+ 355 0155 00       		.byte	0
+ 356 0156 00       		.byte	0
+ 357 0157 00       		.byte	0
+ 358 0158 00       		.byte	0
+ 359 0159 00       		.byte	0
+ 360 015a 02       		.byte	2
+ 361 015b 00       		.byte	0
+ 362 015c 03       		.byte	3
+ 363 015d 00       		.byte	0
+ 364 015e 00       		.byte	0
+ 365 015f 00       		.byte	0
+ 366 0160 01       		.byte	1
+ 367 0161 01       		.byte	1
+ 368 0162 01       		.byte	1
+ 369 0163 01       		.byte	1
+ 370 0164 00       		.byte	0
+ 371 0165 00       		.byte	0
+ 372 0166 01       		.byte	1
+ 373 0167 01       		.byte	1
+ 374 0168 01       		.byte	1
+ 375 0169 00       		.byte	0
+ 376 016a 00       		.byte	0
+ 377 016b 01       		.byte	1
+ 378 016c 00       		.byte	0
+ 379 016d 02       		.byte	2
+ 380 016e 02       		.byte	2
+ 381 016f 00       		.byte	0
+ 382 0170 00       		.byte	0
+ 383 0171 00       		.byte	0
+ 384 0172 00       		.byte	0
+ 385 0173 00       		.byte	0
+ 386 0174 00       		.byte	0
+ 387 0175 00       		.byte	0
+ 388 0176 00       		.byte	0
+ 389 0177 00       		.byte	0
+ 390 0178 00       		.byte	0
+ 391 0179 00       		.byte	0
+ 392 017a 02       		.byte	2
+ 393 017b 02       		.byte	2
+ 394 017c 00       		.byte	0
+ 395 017d 00       		.byte	0
+ 396 017e 00       		.byte	0
+ 397 017f 01       		.byte	1
+ 398 0180 01       		.byte	1
+ 399 0181 01       		.byte	1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 8
+
+
+ 400 0182 01       		.byte	1
+ 401 0183 01       		.byte	1
+ 402 0184 00       		.byte	0
+ 403 0185 00       		.byte	0
+ 404 0186 01       		.byte	1
+ 405 0187 01       		.byte	1
+ 406 0188 01       		.byte	1
+ 407 0189 00       		.byte	0
+ 408 018a 00       		.byte	0
+ 409 018b 01       		.byte	1
+ 410 018c 00       		.byte	0
+ 411 018d 00       		.byte	0
+ 412 018e 02       		.byte	2
+ 413 018f 02       		.byte	2
+ 414 0190 02       		.byte	2
+ 415 0191 00       		.byte	0
+ 416 0192 00       		.byte	0
+ 417 0193 00       		.byte	0
+ 418 0194 00       		.byte	0
+ 419 0195 00       		.byte	0
+ 420 0196 00       		.byte	0
+ 421 0197 00       		.byte	0
+ 422 0198 00       		.byte	0
+ 423 0199 00       		.byte	0
+ 424 019a 00       		.byte	0
+ 425 019b 00       		.byte	0
+ 426 019c 02       		.byte	2
+ 427 019d 00       		.byte	0
+ 428 019e 08       		.byte	8
+ 429 019f 00       		.byte	0
+ 430 01a0 01       		.byte	1
+ 431 01a1 01       		.byte	1
+ 432 01a2 01       		.byte	1
+ 433 01a3 07       		.byte	7
+ 434 01a4 07       		.byte	7
+ 435 01a5 01       		.byte	1
+ 436 01a6 01       		.byte	1
+ 437 01a7 01       		.byte	1
+ 438 01a8 01       		.byte	1
+ 439 01a9 01       		.byte	1
+ 440 01aa 07       		.byte	7
+ 441 01ab 07       		.byte	7
+ 442 01ac 00       		.byte	0
+ 443 01ad 00       		.byte	0
+ 444 01ae 00       		.byte	0
+ 445 01af 00       		.byte	0
+ 446 01b0 02       		.byte	2
+ 447 01b1 02       		.byte	2
+ 448 01b2 00       		.byte	0
+ 449 01b3 00       		.byte	0
+ 450 01b4 00       		.byte	0
+ 451 01b5 00       		.byte	0
+ 452 01b6 00       		.byte	0
+ 453 01b7 00       		.byte	0
+ 454 01b8 00       		.byte	0
+ 455 01b9 00       		.byte	0
+ 456 01ba 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 9
+
+
+ 457 01bb 02       		.byte	2
+ 458 01bc 00       		.byte	0
+ 459 01bd 00       		.byte	0
+ 460 01be 00       		.byte	0
+ 461 01bf 08       		.byte	8
+ 462 01c0 00       		.byte	0
+ 463 01c1 01       		.byte	1
+ 464 01c2 01       		.byte	1
+ 465 01c3 01       		.byte	1
+ 466 01c4 01       		.byte	1
+ 467 01c5 01       		.byte	1
+ 468 01c6 01       		.byte	1
+ 469 01c7 01       		.byte	1
+ 470 01c8 01       		.byte	1
+ 471 01c9 01       		.byte	1
+ 472 01ca 01       		.byte	1
+ 473 01cb 01       		.byte	1
+ 474 01cc 01       		.byte	1
+ 475 01cd 01       		.byte	1
+ 476 01ce 01       		.byte	1
+ 477 01cf 01       		.byte	1
+ 478 01d0 00       		.byte	0
+ 479 01d1 02       		.byte	2
+ 480 01d2 00       		.byte	0
+ 481 01d3 00       		.byte	0
+ 482 01d4 00       		.byte	0
+ 483 01d5 00       		.byte	0
+ 484 01d6 00       		.byte	0
+ 485 01d7 00       		.byte	0
+ 486 01d8 00       		.byte	0
+ 487 01d9 00       		.byte	0
+ 488 01da 02       		.byte	2
+ 489 01db 02       		.byte	2
+ 490 01dc 00       		.byte	0
+ 491 01dd 00       		.byte	0
+ 492 01de 00       		.byte	0
+ 493 01df 08       		.byte	8
+ 494 01e0 00       		.byte	0
+ 495 01e1 01       		.byte	1
+ 496 01e2 01       		.byte	1
+ 497 01e3 01       		.byte	1
+ 498 01e4 01       		.byte	1
+ 499 01e5 01       		.byte	1
+ 500 01e6 01       		.byte	1
+ 501 01e7 00       		.byte	0
+ 502 01e8 00       		.byte	0
+ 503 01e9 00       		.byte	0
+ 504 01ea 00       		.byte	0
+ 505 01eb 00       		.byte	0
+ 506 01ec 00       		.byte	0
+ 507 01ed 00       		.byte	0
+ 508 01ee 00       		.byte	0
+ 509 01ef 00       		.byte	0
+ 510 01f0 00       		.byte	0
+ 511 01f1 02       		.byte	2
+ 512 01f2 00       		.byte	0
+ 513 01f3 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 10
+
+
+ 514 01f4 00       		.byte	0
+ 515 01f5 00       		.byte	0
+ 516 01f6 00       		.byte	0
+ 517 01f7 00       		.byte	0
+ 518 01f8 00       		.byte	0
+ 519 01f9 02       		.byte	2
+ 520 01fa 02       		.byte	2
+ 521 01fb 00       		.byte	0
+ 522 01fc 00       		.byte	0
+ 523 01fd 00       		.byte	0
+ 524 01fe 00       		.byte	0
+ 525 01ff 00       		.byte	0
+ 526 0200 01       		.byte	1
+ 527 0201 01       		.byte	1
+ 528 0202 01       		.byte	1
+ 529 0203 01       		.byte	1
+ 530 0204 01       		.byte	1
+ 531 0205 01       		.byte	1
+ 532 0206 01       		.byte	1
+ 533 0207 01       		.byte	1
+ 534 0208 00       		.byte	0
+ 535 0209 02       		.byte	2
+ 536 020a 00       		.byte	0
+ 537 020b 06       		.byte	6
+ 538 020c 00       		.byte	0
+ 539 020d 02       		.byte	2
+ 540 020e 00       		.byte	0
+ 541 020f 02       		.byte	2
+ 542 0210 02       		.byte	2
+ 543 0211 02       		.byte	2
+ 544 0212 00       		.byte	0
+ 545 0213 00       		.byte	0
+ 546 0214 00       		.byte	0
+ 547 0215 00       		.byte	0
+ 548 0216 00       		.byte	0
+ 549 0217 00       		.byte	0
+ 550 0218 00       		.byte	0
+ 551 0219 02       		.byte	2
+ 552 021a 00       		.byte	0
+ 553 021b 03       		.byte	3
+ 554 021c 03       		.byte	3
+ 555 021d 03       		.byte	3
+ 556 021e 00       		.byte	0
+ 557 021f 01       		.byte	1
+ 558 0220 01       		.byte	1
+ 559 0221 01       		.byte	1
+ 560 0222 01       		.byte	1
+ 561 0223 01       		.byte	1
+ 562 0224 01       		.byte	1
+ 563 0225 01       		.byte	1
+ 564 0226 01       		.byte	1
+ 565 0227 01       		.byte	1
+ 566 0228 01       		.byte	1
+ 567 0229 00       		.byte	0
+ 568 022a 06       		.byte	6
+ 569 022b 06       		.byte	6
+ 570 022c 06       		.byte	6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 11
+
+
+ 571 022d 00       		.byte	0
+ 572 022e 01       		.byte	1
+ 573 022f 00       		.byte	0
+ 574 0230 02       		.byte	2
+ 575 0231 00       		.byte	0
+ 576 0232 00       		.byte	0
+ 577 0233 00       		.byte	0
+ 578 0234 00       		.byte	0
+ 579 0235 00       		.byte	0
+ 580 0236 02       		.byte	2
+ 581 0237 02       		.byte	2
+ 582 0238 02       		.byte	2
+ 583 0239 02       		.byte	2
+ 584 023a 02       		.byte	2
+ 585 023b 00       		.byte	0
+ 586 023c 00       		.byte	0
+ 587 023d 00       		.byte	0
+ 588 023e 00       		.byte	0
+ 589 023f 01       		.byte	1
+ 590 0240 01       		.byte	1
+ 591 0241 01       		.byte	1
+ 592 0242 01       		.byte	1
+ 593 0243 01       		.byte	1
+ 594 0244 01       		.byte	1
+ 595 0245 01       		.byte	1
+ 596 0246 01       		.byte	1
+ 597 0247 01       		.byte	1
+ 598 0248 01       		.byte	1
+ 599 0249 01       		.byte	1
+ 600 024a 00       		.byte	0
+ 601 024b 00       		.byte	0
+ 602 024c 00       		.byte	0
+ 603 024d 01       		.byte	1
+ 604 024e 00       		.byte	0
+ 605 024f 02       		.byte	2
+ 606 0250 02       		.byte	2
+ 607 0251 00       		.byte	0
+ 608 0252 00       		.byte	0
+ 609 0253 00       		.byte	0
+ 610 0254 00       		.byte	0
+ 611 0255 00       		.byte	0
+ 612 0256 02       		.byte	2
+ 613 0257 00       		.byte	0
+ 614 0258 00       		.byte	0
+ 615 0259 02       		.byte	2
+ 616 025a 02       		.byte	2
+ 617 025b 02       		.byte	2
+ 618 025c 02       		.byte	2
+ 619 025d 00       		.byte	0
+ 620 025e 01       		.byte	1
+ 621 025f 01       		.byte	1
+ 622 0260 01       		.byte	1
+ 623 0261 01       		.byte	1
+ 624 0262 01       		.byte	1
+ 625 0263 01       		.byte	1
+ 626 0264 01       		.byte	1
+ 627 0265 01       		.byte	1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 12
+
+
+ 628 0266 01       		.byte	1
+ 629 0267 01       		.byte	1
+ 630 0268 01       		.byte	1
+ 631 0269 00       		.byte	0
+ 632 026a 01       		.byte	1
+ 633 026b 01       		.byte	1
+ 634 026c 01       		.byte	1
+ 635 026d 01       		.byte	1
+ 636 026e 00       		.byte	0
+ 637 026f 02       		.byte	2
+ 638 0270 02       		.byte	2
+ 639 0271 00       		.byte	0
+ 640 0272 00       		.byte	0
+ 641 0273 00       		.byte	0
+ 642 0274 00       		.byte	0
+ 643 0275 00       		.byte	0
+ 644 0276 02       		.byte	2
+ 645 0277 00       		.byte	0
+ 646 0278 00       		.byte	0
+ 647 0279 00       		.byte	0
+ 648 027a 02       		.byte	2
+ 649 027b 02       		.byte	2
+ 650 027c 00       		.byte	0
+ 651 027d 01       		.byte	1
+ 652 027e 01       		.byte	1
+ 653 027f 01       		.byte	1
+ 654 0280 00       		.byte	0
+ 655 0281 01       		.byte	1
+ 656 0282 01       		.byte	1
+ 657 0283 00       		.byte	0
+ 658 0284 01       		.byte	1
+ 659 0285 01       		.byte	1
+ 660 0286 01       		.byte	1
+ 661 0287 01       		.byte	1
+ 662 0288 01       		.byte	1
+ 663 0289 01       		.byte	1
+ 664 028a 00       		.byte	0
+ 665 028b 00       		.byte	0
+ 666 028c 00       		.byte	0
+ 667 028d 00       		.byte	0
+ 668 028e 02       		.byte	2
+ 669 028f 02       		.byte	2
+ 670 0290 02       		.byte	2
+ 671 0291 00       		.byte	0
+ 672 0292 00       		.byte	0
+ 673 0293 00       		.byte	0
+ 674 0294 00       		.byte	0
+ 675 0295 00       		.byte	0
+ 676 0296 02       		.byte	2
+ 677 0297 00       		.byte	0
+ 678 0298 01       		.byte	1
+ 679 0299 00       		.byte	0
+ 680 029a 02       		.byte	2
+ 681 029b 02       		.byte	2
+ 682 029c 00       		.byte	0
+ 683 029d 01       		.byte	1
+ 684 029e 01       		.byte	1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 13
+
+
+ 685 029f 01       		.byte	1
+ 686 02a0 00       		.byte	0
+ 687 02a1 01       		.byte	1
+ 688 02a2 01       		.byte	1
+ 689 02a3 00       		.byte	0
+ 690 02a4 01       		.byte	1
+ 691 02a5 01       		.byte	1
+ 692 02a6 01       		.byte	1
+ 693 02a7 01       		.byte	1
+ 694 02a8 01       		.byte	1
+ 695 02a9 01       		.byte	1
+ 696 02aa 01       		.byte	1
+ 697 02ab 01       		.byte	1
+ 698 02ac 00       		.byte	0
+ 699 02ad 02       		.byte	2
+ 700 02ae 02       		.byte	2
+ 701 02af 02       		.byte	2
+ 702 02b0 00       		.byte	0
+ 703 02b1 00       		.byte	0
+ 704 02b2 00       		.byte	0
+ 705 02b3 00       		.byte	0
+ 706 02b4 00       		.byte	0
+ 707 02b5 00       		.byte	0
+ 708 02b6 02       		.byte	2
+ 709 02b7 00       		.byte	0
+ 710 02b8 01       		.byte	1
+ 711 02b9 00       		.byte	0
+ 712 02ba 00       		.byte	0
+ 713 02bb 02       		.byte	2
+ 714 02bc 00       		.byte	0
+ 715 02bd 01       		.byte	1
+ 716 02be 01       		.byte	1
+ 717 02bf 01       		.byte	1
+ 718 02c0 00       		.byte	0
+ 719 02c1 00       		.byte	0
+ 720 02c2 00       		.byte	0
+ 721 02c3 00       		.byte	0
+ 722 02c4 01       		.byte	1
+ 723 02c5 01       		.byte	1
+ 724 02c6 01       		.byte	1
+ 725 02c7 01       		.byte	1
+ 726 02c8 01       		.byte	1
+ 727 02c9 01       		.byte	1
+ 728 02ca 01       		.byte	1
+ 729 02cb 01       		.byte	1
+ 730 02cc 00       		.byte	0
+ 731 02cd 02       		.byte	2
+ 732 02ce 00       		.byte	0
+ 733 02cf 00       		.byte	0
+ 734 02d0 00       		.byte	0
+ 735 02d1 00       		.byte	0
+ 736 02d2 00       		.byte	0
+ 737 02d3 00       		.byte	0
+ 738 02d4 00       		.byte	0
+ 739 02d5 00       		.byte	0
+ 740 02d6 02       		.byte	2
+ 741 02d7 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 14
+
+
+ 742 02d8 03       		.byte	3
+ 743 02d9 01       		.byte	1
+ 744 02da 00       		.byte	0
+ 745 02db 00       		.byte	0
+ 746 02dc 00       		.byte	0
+ 747 02dd 00       		.byte	0
+ 748 02de 01       		.byte	1
+ 749 02df 01       		.byte	1
+ 750 02e0 00       		.byte	0
+ 751 02e1 03       		.byte	3
+ 752 02e2 03       		.byte	3
+ 753 02e3 00       		.byte	0
+ 754 02e4 01       		.byte	1
+ 755 02e5 01       		.byte	1
+ 756 02e6 01       		.byte	1
+ 757 02e7 01       		.byte	1
+ 758 02e8 01       		.byte	1
+ 759 02e9 01       		.byte	1
+ 760 02ea 01       		.byte	1
+ 761 02eb 01       		.byte	1
+ 762 02ec 00       		.byte	0
+ 763 02ed 02       		.byte	2
+ 764 02ee 00       		.byte	0
+ 765 02ef 00       		.byte	0
+ 766 02f0 00       		.byte	0
+ 767 02f1 00       		.byte	0
+ 768 02f2 00       		.byte	0
+ 769 02f3 00       		.byte	0
+ 770 02f4 00       		.byte	0
+ 771 02f5 00       		.byte	0
+ 772 02f6 02       		.byte	2
+ 773 02f7 02       		.byte	2
+ 774 02f8 00       		.byte	0
+ 775 02f9 01       		.byte	1
+ 776 02fa 01       		.byte	1
+ 777 02fb 01       		.byte	1
+ 778 02fc 01       		.byte	1
+ 779 02fd 00       		.byte	0
+ 780 02fe 01       		.byte	1
+ 781 02ff 01       		.byte	1
+ 782 0300 00       		.byte	0
+ 783 0301 00       		.byte	0
+ 784 0302 00       		.byte	0
+ 785 0303 00       		.byte	0
+ 786 0304 01       		.byte	1
+ 787 0305 01       		.byte	1
+ 788 0306 01       		.byte	1
+ 789 0307 01       		.byte	1
+ 790 0308 01       		.byte	1
+ 791 0309 01       		.byte	1
+ 792 030a 01       		.byte	1
+ 793 030b 01       		.byte	1
+ 794 030c 00       		.byte	0
+ 795 030d 02       		.byte	2
+ 796 030e 00       		.byte	0
+ 797 030f 00       		.byte	0
+ 798 0310 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 15
+
+
+ 799 0311 00       		.byte	0
+ 800 0312 00       		.byte	0
+ 801 0313 00       		.byte	0
+ 802 0314 00       		.byte	0
+ 803 0315 00       		.byte	0
+ 804 0316 00       		.byte	0
+ 805 0317 02       		.byte	2
+ 806 0318 00       		.byte	0
+ 807 0319 00       		.byte	0
+ 808 031a 03       		.byte	3
+ 809 031b 01       		.byte	1
+ 810 031c 03       		.byte	3
+ 811 031d 00       		.byte	0
+ 812 031e 01       		.byte	1
+ 813 031f 01       		.byte	1
+ 814 0320 01       		.byte	1
+ 815 0321 01       		.byte	1
+ 816 0322 00       		.byte	0
+ 817 0323 00       		.byte	0
+ 818 0324 01       		.byte	1
+ 819 0325 01       		.byte	1
+ 820 0326 01       		.byte	1
+ 821 0327 01       		.byte	1
+ 822 0328 01       		.byte	1
+ 823 0329 01       		.byte	1
+ 824 032a 01       		.byte	1
+ 825 032b 01       		.byte	1
+ 826 032c 00       		.byte	0
+ 827 032d 02       		.byte	2
+ 828 032e 00       		.byte	0
+ 829 032f 00       		.byte	0
+ 830 0330 00       		.byte	0
+ 831 0331 00       		.byte	0
+ 832 0332 00       		.byte	0
+ 833 0333 00       		.byte	0
+ 834 0334 00       		.byte	0
+ 835 0335 00       		.byte	0
+ 836 0336 00       		.byte	0
+ 837 0337 02       		.byte	2
+ 838 0338 02       		.byte	2
+ 839 0339 00       		.byte	0
+ 840 033a 00       		.byte	0
+ 841 033b 03       		.byte	3
+ 842 033c 03       		.byte	3
+ 843 033d 03       		.byte	3
+ 844 033e 00       		.byte	0
+ 845 033f 00       		.byte	0
+ 846 0340 03       		.byte	3
+ 847 0341 01       		.byte	1
+ 848 0342 01       		.byte	1
+ 849 0343 01       		.byte	1
+ 850 0344 01       		.byte	1
+ 851 0345 01       		.byte	1
+ 852 0346 01       		.byte	1
+ 853 0347 01       		.byte	1
+ 854 0348 01       		.byte	1
+ 855 0349 01       		.byte	1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 16
+
+
+ 856 034a 01       		.byte	1
+ 857 034b 00       		.byte	0
+ 858 034c 00       		.byte	0
+ 859 034d 02       		.byte	2
+ 860 034e 00       		.byte	0
+ 861 034f 00       		.byte	0
+ 862 0350 00       		.byte	0
+ 863 0351 00       		.byte	0
+ 864 0352 00       		.byte	0
+ 865 0353 00       		.byte	0
+ 866 0354 00       		.byte	0
+ 867 0355 00       		.byte	0
+ 868 0356 00       		.byte	0
+ 869 0357 00       		.byte	0
+ 870 0358 02       		.byte	2
+ 871 0359 02       		.byte	2
+ 872 035a 02       		.byte	2
+ 873 035b 00       		.byte	0
+ 874 035c 00       		.byte	0
+ 875 035d 00       		.byte	0
+ 876 035e 00       		.byte	0
+ 877 035f 00       		.byte	0
+ 878 0360 03       		.byte	3
+ 879 0361 01       		.byte	1
+ 880 0362 01       		.byte	1
+ 881 0363 03       		.byte	3
+ 882 0364 01       		.byte	1
+ 883 0365 01       		.byte	1
+ 884 0366 01       		.byte	1
+ 885 0367 01       		.byte	1
+ 886 0368 01       		.byte	1
+ 887 0369 03       		.byte	3
+ 888 036a 03       		.byte	3
+ 889 036b 00       		.byte	0
+ 890 036c 02       		.byte	2
+ 891 036d 02       		.byte	2
+ 892 036e 00       		.byte	0
+ 893 036f 00       		.byte	0
+ 894 0370 00       		.byte	0
+ 895 0371 00       		.byte	0
+ 896 0372 00       		.byte	0
+ 897 0373 00       		.byte	0
+ 898 0374 00       		.byte	0
+ 899 0375 00       		.byte	0
+ 900 0376 00       		.byte	0
+ 901 0377 00       		.byte	0
+ 902 0378 00       		.byte	0
+ 903 0379 00       		.byte	0
+ 904 037a 02       		.byte	2
+ 905 037b 02       		.byte	2
+ 906 037c 02       		.byte	2
+ 907 037d 02       		.byte	2
+ 908 037e 02       		.byte	2
+ 909 037f 02       		.byte	2
+ 910 0380 00       		.byte	0
+ 911 0381 03       		.byte	3
+ 912 0382 03       		.byte	3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 17
+
+
+ 913 0383 03       		.byte	3
+ 914 0384 01       		.byte	1
+ 915 0385 01       		.byte	1
+ 916 0386 01       		.byte	1
+ 917 0387 03       		.byte	3
+ 918 0388 03       		.byte	3
+ 919 0389 03       		.byte	3
+ 920 038a 00       		.byte	0
+ 921 038b 00       		.byte	0
+ 922 038c 02       		.byte	2
+ 923 038d 00       		.byte	0
+ 924 038e 00       		.byte	0
+ 925 038f 00       		.byte	0
+ 926 0390 00       		.byte	0
+ 927 0391 00       		.byte	0
+ 928 0392 00       		.byte	0
+ 929 0393 00       		.byte	0
+ 930 0394 00       		.byte	0
+ 931 0395 00       		.byte	0
+ 932 0396 00       		.byte	0
+ 933 0397 00       		.byte	0
+ 934 0398 00       		.byte	0
+ 935 0399 00       		.byte	0
+ 936 039a 00       		.byte	0
+ 937 039b 00       		.byte	0
+ 938 039c 00       		.byte	0
+ 939 039d 00       		.byte	0
+ 940 039e 00       		.byte	0
+ 941 039f 02       		.byte	2
+ 942 03a0 00       		.byte	0
+ 943 03a1 00       		.byte	0
+ 944 03a2 00       		.byte	0
+ 945 03a3 00       		.byte	0
+ 946 03a4 03       		.byte	3
+ 947 03a5 03       		.byte	3
+ 948 03a6 00       		.byte	0
+ 949 03a7 00       		.byte	0
+ 950 03a8 00       		.byte	0
+ 951 03a9 00       		.byte	0
+ 952 03aa 00       		.byte	0
+ 953 03ab 02       		.byte	2
+ 954 03ac 02       		.byte	2
+ 955 03ad 00       		.byte	0
+ 956 03ae 00       		.byte	0
+ 957 03af 00       		.byte	0
+ 958 03b0 00       		.byte	0
+ 959 03b1 00       		.byte	0
+ 960 03b2 00       		.byte	0
+ 961 03b3 00       		.byte	0
+ 962 03b4 00       		.byte	0
+ 963 03b5 00       		.byte	0
+ 964 03b6 00       		.byte	0
+ 965 03b7 00       		.byte	0
+ 966 03b8 00       		.byte	0
+ 967 03b9 00       		.byte	0
+ 968 03ba 00       		.byte	0
+ 969 03bb 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 18
+
+
+ 970 03bc 00       		.byte	0
+ 971 03bd 00       		.byte	0
+ 972 03be 00       		.byte	0
+ 973 03bf 02       		.byte	2
+ 974 03c0 00       		.byte	0
+ 975 03c1 00       		.byte	0
+ 976 03c2 02       		.byte	2
+ 977 03c3 02       		.byte	2
+ 978 03c4 00       		.byte	0
+ 979 03c5 00       		.byte	0
+ 980 03c6 00       		.byte	0
+ 981 03c7 02       		.byte	2
+ 982 03c8 00       		.byte	0
+ 983 03c9 02       		.byte	2
+ 984 03ca 02       		.byte	2
+ 985 03cb 02       		.byte	2
+ 986 03cc 00       		.byte	0
+ 987 03cd 00       		.byte	0
+ 988 03ce 00       		.byte	0
+ 989 03cf 00       		.byte	0
+ 990 03d0 00       		.byte	0
+ 991 03d1 00       		.byte	0
+ 992 03d2 00       		.byte	0
+ 993 03d3 00       		.byte	0
+ 994 03d4 00       		.byte	0
+ 995 03d5 00       		.byte	0
+ 996 03d6 00       		.byte	0
+ 997 03d7 00       		.byte	0
+ 998 03d8 00       		.byte	0
+ 999 03d9 00       		.byte	0
+ 1000 03da 00       		.byte	0
+ 1001 03db 00       		.byte	0
+ 1002 03dc 00       		.byte	0
+ 1003 03dd 00       		.byte	0
+ 1004 03de 00       		.byte	0
+ 1005 03df 02       		.byte	2
+ 1006 03e0 00       		.byte	0
+ 1007 03e1 00       		.byte	0
+ 1008 03e2 00       		.byte	0
+ 1009 03e3 00       		.byte	0
+ 1010 03e4 02       		.byte	2
+ 1011 03e5 02       		.byte	2
+ 1012 03e6 02       		.byte	2
+ 1013 03e7 02       		.byte	2
+ 1014 03e8 00       		.byte	0
+ 1015 03e9 00       		.byte	0
+ 1016 03ea 00       		.byte	0
+ 1017 03eb 02       		.byte	2
+ 1018 03ec 00       		.byte	0
+ 1019 03ed 00       		.byte	0
+ 1020 03ee 00       		.byte	0
+ 1021 03ef 00       		.byte	0
+ 1022 03f0 00       		.byte	0
+ 1023 03f1 00       		.byte	0
+ 1024 03f2 00       		.byte	0
+ 1025 03f3 00       		.byte	0
+ 1026 03f4 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 19
+
+
+ 1027 03f5 00       		.byte	0
+ 1028 03f6 00       		.byte	0
+ 1029 03f7 00       		.byte	0
+ 1030 03f8 00       		.byte	0
+ 1031 03f9 00       		.byte	0
+ 1032 03fa 00       		.byte	0
+ 1033 03fb 00       		.byte	0
+ 1034 03fc 00       		.byte	0
+ 1035 03fd 00       		.byte	0
+ 1036 03fe 00       		.byte	0
+ 1037 03ff 02       		.byte	2
+ 1038 0400 02       		.byte	2
+ 1039 0401 02       		.byte	2
+ 1040 0402 02       		.byte	2
+ 1041 0403 02       		.byte	2
+ 1042 0404 02       		.byte	2
+ 1043 0405 00       		.byte	0
+ 1044 0406 00       		.byte	0
+ 1045 0407 02       		.byte	2
+ 1046 0408 02       		.byte	2
+ 1047 0409 02       		.byte	2
+ 1048 040a 02       		.byte	2
+ 1049 040b 02       		.byte	2
+ 1050 040c 00       		.byte	0
+ 1051 040d 00       		.byte	0
+ 1052 040e 00       		.byte	0
+ 1053 040f 00       		.byte	0
+ 1054 0410 00       		.byte	0
+ 1055 0411 00       		.byte	0
+ 1056 0412 00       		.byte	0
+ 1057 0413 00       		.byte	0
+ 1058              		.type	_Palcute_mascot, %object
+ 1059              		.size	_Palcute_mascot, 12
+ 1060              	_Palcute_mascot:
+ 1061 0414 09000000 		.word	9
+ 1062 0418 00       		.byte	0
+ 1063 0419 000000   		.space	3
+ 1064 041c 20040000 		.word	_Colorscute_mascot
+ 1065              		.type	_Colorscute_mascot, %object
+ 1066              		.size	_Colorscute_mascot, 36
+ 1067              	_Colorscute_mascot:
+ 1068 0420 00000000 		.word	0
+ 1069 0424 D3F9BC00 		.word	12384723
+ 1070 0428 FFFFFF00 		.word	16777215
+ 1071 042c 798A8700 		.word	8882809
+ 1072 0430 FCD97700 		.word	7854588
+ 1073 0434 FFC20E00 		.word	967423
+ 1074 0438 99003000 		.word	3145881
+ 1075 043c FFA3B100 		.word	11641855
+ 1076 0440 46464600 		.word	4605510
+ 1077              		.text
+ 1078              	.Letext0:
+ 1079              		.file 1 "..\\..\\emWinGraphics_v5_46\\Code\\Include\\PSoC4_5/LCD.h"
+ 1080              		.file 2 "..\\..\\emWinGraphics_v5_46\\Code\\Include\\PSoC4_5/GUI_Type.h"
+ 1081              		.file 3 ".\\cute_mascot.c"
+ 1082              		.section	.debug_info,"",%progbits
+ 1083              	.Ldebug_info0:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 20
+
+
+ 1084 0000 82030000 		.4byte	0x382
+ 1085 0004 0400     		.2byte	0x4
+ 1086 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 1087 000a 04       		.byte	0x4
+ 1088 000b 01       		.uleb128 0x1
+ 1089 000c 00020000 		.4byte	.LASF45
+ 1090 0010 01       		.byte	0x1
+ 1091 0011 D1000000 		.4byte	.LASF46
+ 1092 0015 03030000 		.4byte	.LASF47
+ 1093 0019 00000000 		.4byte	.Ldebug_line0
+ 1094 001d 02       		.uleb128 0x2
+ 1095 001e 04       		.byte	0x4
+ 1096 001f 07       		.byte	0x7
+ 1097 0020 AA010000 		.4byte	.LASF0
+ 1098 0024 03       		.uleb128 0x3
+ 1099 0025 04       		.byte	0x4
+ 1100 0026 05       		.byte	0x5
+ 1101 0027 696E7400 		.ascii	"int\000"
+ 1102 002b 02       		.uleb128 0x2
+ 1103 002c 01       		.byte	0x1
+ 1104 002d 06       		.byte	0x6
+ 1105 002e 86030000 		.4byte	.LASF1
+ 1106 0032 02       		.uleb128 0x2
+ 1107 0033 01       		.byte	0x1
+ 1108 0034 08       		.byte	0x8
+ 1109 0035 F9000000 		.4byte	.LASF2
+ 1110 0039 02       		.uleb128 0x2
+ 1111 003a 02       		.byte	0x2
+ 1112 003b 05       		.byte	0x5
+ 1113 003c C1020000 		.4byte	.LASF3
+ 1114 0040 02       		.uleb128 0x2
+ 1115 0041 02       		.byte	0x2
+ 1116 0042 07       		.byte	0x7
+ 1117 0043 7A000000 		.4byte	.LASF4
+ 1118 0047 02       		.uleb128 0x2
+ 1119 0048 04       		.byte	0x4
+ 1120 0049 05       		.byte	0x5
+ 1121 004a E6020000 		.4byte	.LASF5
+ 1122 004e 02       		.uleb128 0x2
+ 1123 004f 04       		.byte	0x4
+ 1124 0050 07       		.byte	0x7
+ 1125 0051 12010000 		.4byte	.LASF6
+ 1126 0055 02       		.uleb128 0x2
+ 1127 0056 08       		.byte	0x8
+ 1128 0057 05       		.byte	0x5
+ 1129 0058 9C020000 		.4byte	.LASF7
+ 1130 005c 02       		.uleb128 0x2
+ 1131 005d 08       		.byte	0x8
+ 1132 005e 07       		.byte	0x7
+ 1133 005f B7010000 		.4byte	.LASF8
+ 1134 0063 02       		.uleb128 0x2
+ 1135 0064 04       		.byte	0x4
+ 1136 0065 07       		.byte	0x7
+ 1137 0066 F7010000 		.4byte	.LASF9
+ 1138 006a 04       		.uleb128 0x4
+ 1139 006b 04       		.byte	0x4
+ 1140 006c 02       		.uleb128 0x2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 21
+
+
+ 1141 006d 01       		.byte	0x1
+ 1142 006e 08       		.byte	0x8
+ 1143 006f AA020000 		.4byte	.LASF10
+ 1144 0073 05       		.uleb128 0x5
+ 1145 0074 7C010000 		.4byte	.LASF14
+ 1146 0078 01       		.byte	0x1
+ 1147 0079 6A       		.byte	0x6a
+ 1148 007a 4E000000 		.4byte	0x4e
+ 1149 007e 06       		.uleb128 0x6
+ 1150 007f 0C       		.byte	0xc
+ 1151 0080 01       		.byte	0x1
+ 1152 0081 73       		.byte	0x73
+ 1153 0082 AB000000 		.4byte	0xab
+ 1154 0086 07       		.uleb128 0x7
+ 1155 0087 24010000 		.4byte	.LASF11
+ 1156 008b 01       		.byte	0x1
+ 1157 008c 74       		.byte	0x74
+ 1158 008d 24000000 		.4byte	0x24
+ 1159 0091 00       		.byte	0
+ 1160 0092 07       		.uleb128 0x7
+ 1161 0093 2F000000 		.4byte	.LASF12
+ 1162 0097 01       		.byte	0x1
+ 1163 0098 75       		.byte	0x75
+ 1164 0099 6C000000 		.4byte	0x6c
+ 1165 009d 04       		.byte	0x4
+ 1166 009e 07       		.uleb128 0x7
+ 1167 009f B5020000 		.4byte	.LASF13
+ 1168 00a3 01       		.byte	0x1
+ 1169 00a4 76       		.byte	0x76
+ 1170 00a5 AB000000 		.4byte	0xab
+ 1171 00a9 08       		.byte	0x8
+ 1172 00aa 00       		.byte	0
+ 1173 00ab 08       		.uleb128 0x8
+ 1174 00ac 04       		.byte	0x4
+ 1175 00ad B1000000 		.4byte	0xb1
+ 1176 00b1 09       		.uleb128 0x9
+ 1177 00b2 73000000 		.4byte	0x73
+ 1178 00b6 05       		.uleb128 0x5
+ 1179 00b7 50010000 		.4byte	.LASF15
+ 1180 00bb 01       		.byte	0x1
+ 1181 00bc 77       		.byte	0x77
+ 1182 00bd 7E000000 		.4byte	0x7e
+ 1183 00c1 05       		.uleb128 0x5
+ 1184 00c2 86010000 		.4byte	.LASF16
+ 1185 00c6 01       		.byte	0x1
+ 1186 00c7 88       		.byte	0x88
+ 1187 00c8 CC000000 		.4byte	0xcc
+ 1188 00cc 0A       		.uleb128 0xa
+ 1189 00cd 73000000 		.4byte	0x73
+ 1190 00d1 DB000000 		.4byte	0xdb
+ 1191 00d5 0B       		.uleb128 0xb
+ 1192 00d6 4E000000 		.4byte	0x4e
+ 1193 00da 00       		.byte	0
+ 1194 00db 05       		.uleb128 0x5
+ 1195 00dc EF020000 		.4byte	.LASF17
+ 1196 00e0 01       		.byte	0x1
+ 1197 00e1 89       		.byte	0x89
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 22
+
+
+ 1198 00e2 E6000000 		.4byte	0xe6
+ 1199 00e6 0A       		.uleb128 0xa
+ 1200 00e7 4E000000 		.4byte	0x4e
+ 1201 00eb F5000000 		.4byte	0xf5
+ 1202 00ef 0B       		.uleb128 0xb
+ 1203 00f0 73000000 		.4byte	0x73
+ 1204 00f4 00       		.byte	0
+ 1205 00f5 05       		.uleb128 0x5
+ 1206 00f6 57000000 		.4byte	.LASF18
+ 1207 00fa 01       		.byte	0x1
+ 1208 00fb 8A       		.byte	0x8a
+ 1209 00fc 00010000 		.4byte	0x100
+ 1210 0100 0C       		.uleb128 0xc
+ 1211 0101 4E000000 		.4byte	0x4e
+ 1212 0105 05       		.uleb128 0x5
+ 1213 0106 05000000 		.4byte	.LASF19
+ 1214 010a 01       		.byte	0x1
+ 1215 010b 8C       		.byte	0x8c
+ 1216 010c 10010000 		.4byte	0x110
+ 1217 0110 0D       		.uleb128 0xd
+ 1218 0111 2A010000 		.4byte	0x12a
+ 1219 0115 0B       		.uleb128 0xb
+ 1220 0116 6A000000 		.4byte	0x6a
+ 1221 011a 0B       		.uleb128 0xb
+ 1222 011b 2A010000 		.4byte	0x12a
+ 1223 011f 0B       		.uleb128 0xb
+ 1224 0120 4E000000 		.4byte	0x4e
+ 1225 0124 0B       		.uleb128 0xb
+ 1226 0125 32000000 		.4byte	0x32
+ 1227 0129 00       		.byte	0
+ 1228 012a 08       		.uleb128 0x8
+ 1229 012b 04       		.byte	0x4
+ 1230 012c 73000000 		.4byte	0x73
+ 1231 0130 05       		.uleb128 0x5
+ 1232 0131 E1000000 		.4byte	.LASF20
+ 1233 0135 01       		.byte	0x1
+ 1234 0136 8D       		.byte	0x8d
+ 1235 0137 3B010000 		.4byte	0x13b
+ 1236 013b 0D       		.uleb128 0xd
+ 1237 013c 55010000 		.4byte	0x155
+ 1238 0140 0B       		.uleb128 0xb
+ 1239 0141 2A010000 		.4byte	0x12a
+ 1240 0145 0B       		.uleb128 0xb
+ 1241 0146 6A000000 		.4byte	0x6a
+ 1242 014a 0B       		.uleb128 0xb
+ 1243 014b 4E000000 		.4byte	0x4e
+ 1244 014f 0B       		.uleb128 0xb
+ 1245 0150 32000000 		.4byte	0x32
+ 1246 0154 00       		.byte	0
+ 1247 0155 06       		.uleb128 0x6
+ 1248 0156 18       		.byte	0x18
+ 1249 0157 01       		.byte	0x1
+ 1250 0158 93       		.byte	0x93
+ 1251 0159 A6010000 		.4byte	0x1a6
+ 1252 015d 07       		.uleb128 0x7
+ 1253 015e 5F010000 		.4byte	.LASF21
+ 1254 0162 01       		.byte	0x1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 23
+
+
+ 1255 0163 94       		.byte	0x94
+ 1256 0164 A6010000 		.4byte	0x1a6
+ 1257 0168 00       		.byte	0
+ 1258 0169 07       		.uleb128 0x7
+ 1259 016a D8020000 		.4byte	.LASF22
+ 1260 016e 01       		.byte	0x1
+ 1261 016f 95       		.byte	0x95
+ 1262 0170 AC010000 		.4byte	0x1ac
+ 1263 0174 04       		.byte	0x4
+ 1264 0175 07       		.uleb128 0x7
+ 1265 0176 41010000 		.4byte	.LASF23
+ 1266 017a 01       		.byte	0x1
+ 1267 017b 96       		.byte	0x96
+ 1268 017c B2010000 		.4byte	0x1b2
+ 1269 0180 08       		.byte	0x8
+ 1270 0181 07       		.uleb128 0x7
+ 1271 0182 74010000 		.4byte	.LASF24
+ 1272 0186 01       		.byte	0x1
+ 1273 0187 97       		.byte	0x97
+ 1274 0188 24000000 		.4byte	0x24
+ 1275 018c 0C       		.byte	0xc
+ 1276 018d 07       		.uleb128 0x7
+ 1277 018e 2F010000 		.4byte	.LASF25
+ 1278 0192 01       		.byte	0x1
+ 1279 0193 98       		.byte	0x98
+ 1280 0194 B8010000 		.4byte	0x1b8
+ 1281 0198 10       		.byte	0x10
+ 1282 0199 07       		.uleb128 0x7
+ 1283 019a 1D000000 		.4byte	.LASF26
+ 1284 019e 01       		.byte	0x1
+ 1285 019f 99       		.byte	0x99
+ 1286 01a0 BE010000 		.4byte	0x1be
+ 1287 01a4 14       		.byte	0x14
+ 1288 01a5 00       		.byte	0
+ 1289 01a6 08       		.uleb128 0x8
+ 1290 01a7 04       		.byte	0x4
+ 1291 01a8 DB000000 		.4byte	0xdb
+ 1292 01ac 08       		.uleb128 0x8
+ 1293 01ad 04       		.byte	0x4
+ 1294 01ae C1000000 		.4byte	0xc1
+ 1295 01b2 08       		.uleb128 0x8
+ 1296 01b3 04       		.byte	0x4
+ 1297 01b4 F5000000 		.4byte	0xf5
+ 1298 01b8 08       		.uleb128 0x8
+ 1299 01b9 04       		.byte	0x4
+ 1300 01ba 30010000 		.4byte	0x130
+ 1301 01be 08       		.uleb128 0x8
+ 1302 01bf 04       		.byte	0x4
+ 1303 01c0 05010000 		.4byte	0x105
+ 1304 01c4 05       		.uleb128 0x5
+ 1305 01c5 A9000000 		.4byte	.LASF27
+ 1306 01c9 01       		.byte	0x1
+ 1307 01ca 9A       		.byte	0x9a
+ 1308 01cb 55010000 		.4byte	0x155
+ 1309 01cf 08       		.uleb128 0x8
+ 1310 01d0 04       		.byte	0x4
+ 1311 01d1 D5010000 		.4byte	0x1d5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 24
+
+
+ 1312 01d5 09       		.uleb128 0x9
+ 1313 01d6 32000000 		.4byte	0x32
+ 1314 01da 05       		.uleb128 0x5
+ 1315 01db A0010000 		.4byte	.LASF28
+ 1316 01df 02       		.byte	0x2
+ 1317 01e0 3D       		.byte	0x3d
+ 1318 01e1 73000000 		.4byte	0x73
+ 1319 01e5 05       		.uleb128 0x5
+ 1320 01e6 38000000 		.4byte	.LASF29
+ 1321 01ea 02       		.byte	0x2
+ 1322 01eb 3E       		.byte	0x3e
+ 1323 01ec B6000000 		.4byte	0xb6
+ 1324 01f0 06       		.uleb128 0x6
+ 1325 01f1 10       		.byte	0x10
+ 1326 01f2 02       		.byte	0x2
+ 1327 01f3 42       		.byte	0x42
+ 1328 01f4 29020000 		.4byte	0x229
+ 1329 01f8 07       		.uleb128 0x7
+ 1330 01f9 6D010000 		.4byte	.LASF30
+ 1331 01fd 02       		.byte	0x2
+ 1332 01fe 43       		.byte	0x43
+ 1333 01ff 62020000 		.4byte	0x262
+ 1334 0203 00       		.byte	0
+ 1335 0204 07       		.uleb128 0x7
+ 1336 0205 D8020000 		.4byte	.LASF22
+ 1337 0209 02       		.byte	0x2
+ 1338 020a 4B       		.byte	0x4b
+ 1339 020b 77020000 		.4byte	0x277
+ 1340 020f 04       		.byte	0x4
+ 1341 0210 07       		.uleb128 0x7
+ 1342 0211 8D000000 		.4byte	.LASF31
+ 1343 0215 02       		.byte	0x2
+ 1344 0216 4C       		.byte	0x4c
+ 1345 0217 62020000 		.4byte	0x262
+ 1346 021b 08       		.byte	0x8
+ 1347 021c 07       		.uleb128 0x7
+ 1348 021d 8E020000 		.4byte	.LASF32
+ 1349 0221 02       		.byte	0x2
+ 1350 0222 54       		.byte	0x54
+ 1351 0223 7D020000 		.4byte	0x27d
+ 1352 0227 0C       		.byte	0xc
+ 1353 0228 00       		.byte	0
+ 1354 0229 0D       		.uleb128 0xd
+ 1355 022a 57020000 		.4byte	0x257
+ 1356 022e 0B       		.uleb128 0xb
+ 1357 022f 24000000 		.4byte	0x24
+ 1358 0233 0B       		.uleb128 0xb
+ 1359 0234 24000000 		.4byte	0x24
+ 1360 0238 0B       		.uleb128 0xb
+ 1361 0239 24000000 		.4byte	0x24
+ 1362 023d 0B       		.uleb128 0xb
+ 1363 023e 24000000 		.4byte	0x24
+ 1364 0242 0B       		.uleb128 0xb
+ 1365 0243 CF010000 		.4byte	0x1cf
+ 1366 0247 0B       		.uleb128 0xb
+ 1367 0248 57020000 		.4byte	0x257
+ 1368 024c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 25
+
+
+ 1369 024d 24000000 		.4byte	0x24
+ 1370 0251 0B       		.uleb128 0xb
+ 1371 0252 24000000 		.4byte	0x24
+ 1372 0256 00       		.byte	0
+ 1373 0257 08       		.uleb128 0x8
+ 1374 0258 04       		.byte	0x4
+ 1375 0259 5D020000 		.4byte	0x25d
+ 1376 025d 09       		.uleb128 0x9
+ 1377 025e B6000000 		.4byte	0xb6
+ 1378 0262 08       		.uleb128 0x8
+ 1379 0263 04       		.byte	0x4
+ 1380 0264 29020000 		.4byte	0x229
+ 1381 0268 0A       		.uleb128 0xa
+ 1382 0269 DA010000 		.4byte	0x1da
+ 1383 026d 77020000 		.4byte	0x277
+ 1384 0271 0B       		.uleb128 0xb
+ 1385 0272 4E000000 		.4byte	0x4e
+ 1386 0276 00       		.byte	0
+ 1387 0277 08       		.uleb128 0x8
+ 1388 0278 04       		.byte	0x4
+ 1389 0279 68020000 		.4byte	0x268
+ 1390 027d 08       		.uleb128 0x8
+ 1391 027e 04       		.byte	0x4
+ 1392 027f 83020000 		.4byte	0x283
+ 1393 0283 09       		.uleb128 0x9
+ 1394 0284 C4010000 		.4byte	0x1c4
+ 1395 0288 05       		.uleb128 0x5
+ 1396 0289 DB010000 		.4byte	.LASF33
+ 1397 028d 02       		.byte	0x2
+ 1398 028e 55       		.byte	0x55
+ 1399 028f F0010000 		.4byte	0x1f0
+ 1400 0293 06       		.uleb128 0x6
+ 1401 0294 14       		.byte	0x14
+ 1402 0295 02       		.byte	0x2
+ 1403 0296 57       		.byte	0x57
+ 1404 0297 F0020000 		.4byte	0x2f0
+ 1405 029b 07       		.uleb128 0x7
+ 1406 029c 9A010000 		.4byte	.LASF34
+ 1407 02a0 02       		.byte	0x2
+ 1408 02a1 58       		.byte	0x58
+ 1409 02a2 40000000 		.4byte	0x40
+ 1410 02a6 00       		.byte	0
+ 1411 02a7 07       		.uleb128 0x7
+ 1412 02a8 AF020000 		.4byte	.LASF35
+ 1413 02ac 02       		.byte	0x2
+ 1414 02ad 59       		.byte	0x59
+ 1415 02ae 40000000 		.4byte	0x40
+ 1416 02b2 02       		.byte	0x2
+ 1417 02b3 07       		.uleb128 0x7
+ 1418 02b4 CE010000 		.4byte	.LASF36
+ 1419 02b8 02       		.byte	0x2
+ 1420 02b9 5A       		.byte	0x5a
+ 1421 02ba 40000000 		.4byte	0x40
+ 1422 02be 04       		.byte	0x4
+ 1423 02bf 07       		.uleb128 0x7
+ 1424 02c0 CB020000 		.4byte	.LASF37
+ 1425 02c4 02       		.byte	0x2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 26
+
+
+ 1426 02c5 5B       		.byte	0x5b
+ 1427 02c6 40000000 		.4byte	0x40
+ 1428 02ca 06       		.byte	0x6
+ 1429 02cb 07       		.uleb128 0x7
+ 1430 02cc BC000000 		.4byte	.LASF38
+ 1431 02d0 02       		.byte	0x2
+ 1432 02d1 5C       		.byte	0x5c
+ 1433 02d2 CF010000 		.4byte	0x1cf
+ 1434 02d6 08       		.byte	0x8
+ 1435 02d7 07       		.uleb128 0x7
+ 1436 02d8 00000000 		.4byte	.LASF39
+ 1437 02dc 02       		.byte	0x2
+ 1438 02dd 5D       		.byte	0x5d
+ 1439 02de F0020000 		.4byte	0x2f0
+ 1440 02e2 0C       		.byte	0xc
+ 1441 02e3 07       		.uleb128 0x7
+ 1442 02e4 EE010000 		.4byte	.LASF40
+ 1443 02e8 02       		.byte	0x2
+ 1444 02e9 5E       		.byte	0x5e
+ 1445 02ea FB020000 		.4byte	0x2fb
+ 1446 02ee 10       		.byte	0x10
+ 1447 02ef 00       		.byte	0
+ 1448 02f0 08       		.uleb128 0x8
+ 1449 02f1 04       		.byte	0x4
+ 1450 02f2 F6020000 		.4byte	0x2f6
+ 1451 02f6 09       		.uleb128 0x9
+ 1452 02f7 E5010000 		.4byte	0x1e5
+ 1453 02fb 08       		.uleb128 0x8
+ 1454 02fc 04       		.byte	0x4
+ 1455 02fd 01030000 		.4byte	0x301
+ 1456 0301 09       		.uleb128 0x9
+ 1457 0302 88020000 		.4byte	0x288
+ 1458 0306 05       		.uleb128 0x5
+ 1459 0307 07010000 		.4byte	.LASF41
+ 1460 030b 02       		.byte	0x2
+ 1461 030c 5F       		.byte	0x5f
+ 1462 030d 93020000 		.4byte	0x293
+ 1463 0311 09       		.uleb128 0x9
+ 1464 0312 06030000 		.4byte	0x306
+ 1465 0316 0E       		.uleb128 0xe
+ 1466 0317 DA010000 		.4byte	0x1da
+ 1467 031b 26030000 		.4byte	0x326
+ 1468 031f 0F       		.uleb128 0xf
+ 1469 0320 63000000 		.4byte	0x63
+ 1470 0324 08       		.byte	0x8
+ 1471 0325 00       		.byte	0
+ 1472 0326 10       		.uleb128 0x10
+ 1473 0327 96000000 		.4byte	.LASF42
+ 1474 032b 03       		.byte	0x3
+ 1475 032c 3D       		.byte	0x3d
+ 1476 032d 37030000 		.4byte	0x337
+ 1477 0331 05       		.uleb128 0x5
+ 1478 0332 03       		.byte	0x3
+ 1479 0333 20040000 		.4byte	_Colorscute_mascot
+ 1480 0337 09       		.uleb128 0x9
+ 1481 0338 16030000 		.4byte	0x316
+ 1482 033c 10       		.uleb128 0x10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 27
+
+
+ 1483 033d 47000000 		.4byte	.LASF43
+ 1484 0341 03       		.byte	0x3
+ 1485 0342 4A       		.byte	0x4a
+ 1486 0343 F6020000 		.4byte	0x2f6
+ 1487 0347 05       		.uleb128 0x5
+ 1488 0348 03       		.byte	0x3
+ 1489 0349 14040000 		.4byte	_Palcute_mascot
+ 1490 034d 0E       		.uleb128 0xe
+ 1491 034e 32000000 		.4byte	0x32
+ 1492 0352 5E030000 		.4byte	0x35e
+ 1493 0356 11       		.uleb128 0x11
+ 1494 0357 63000000 		.4byte	0x63
+ 1495 035b FF03     		.2byte	0x3ff
+ 1496 035d 00       		.byte	0
+ 1497 035e 10       		.uleb128 0x10
+ 1498 035f C2000000 		.4byte	.LASF44
+ 1499 0363 03       		.byte	0x3
+ 1500 0364 50       		.byte	0x50
+ 1501 0365 6F030000 		.4byte	0x36f
+ 1502 0369 05       		.uleb128 0x5
+ 1503 036a 03       		.byte	0x3
+ 1504 036b 14000000 		.4byte	_accute_mascot
+ 1505 036f 09       		.uleb128 0x9
+ 1506 0370 4D030000 		.4byte	0x34d
+ 1507 0374 12       		.uleb128 0x12
+ 1508 0375 6C000000 		.4byte	.LASF48
+ 1509 0379 03       		.byte	0x3
+ 1510 037a 73       		.byte	0x73
+ 1511 037b 11030000 		.4byte	0x311
+ 1512 037f 05       		.uleb128 0x5
+ 1513 0380 03       		.byte	0x3
+ 1514 0381 00000000 		.4byte	bmcute_mascot
+ 1515 0385 00       		.byte	0
+ 1516              		.section	.debug_abbrev,"",%progbits
+ 1517              	.Ldebug_abbrev0:
+ 1518 0000 01       		.uleb128 0x1
+ 1519 0001 11       		.uleb128 0x11
+ 1520 0002 01       		.byte	0x1
+ 1521 0003 25       		.uleb128 0x25
+ 1522 0004 0E       		.uleb128 0xe
+ 1523 0005 13       		.uleb128 0x13
+ 1524 0006 0B       		.uleb128 0xb
+ 1525 0007 03       		.uleb128 0x3
+ 1526 0008 0E       		.uleb128 0xe
+ 1527 0009 1B       		.uleb128 0x1b
+ 1528 000a 0E       		.uleb128 0xe
+ 1529 000b 10       		.uleb128 0x10
+ 1530 000c 17       		.uleb128 0x17
+ 1531 000d 00       		.byte	0
+ 1532 000e 00       		.byte	0
+ 1533 000f 02       		.uleb128 0x2
+ 1534 0010 24       		.uleb128 0x24
+ 1535 0011 00       		.byte	0
+ 1536 0012 0B       		.uleb128 0xb
+ 1537 0013 0B       		.uleb128 0xb
+ 1538 0014 3E       		.uleb128 0x3e
+ 1539 0015 0B       		.uleb128 0xb
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 28
+
+
+ 1540 0016 03       		.uleb128 0x3
+ 1541 0017 0E       		.uleb128 0xe
+ 1542 0018 00       		.byte	0
+ 1543 0019 00       		.byte	0
+ 1544 001a 03       		.uleb128 0x3
+ 1545 001b 24       		.uleb128 0x24
+ 1546 001c 00       		.byte	0
+ 1547 001d 0B       		.uleb128 0xb
+ 1548 001e 0B       		.uleb128 0xb
+ 1549 001f 3E       		.uleb128 0x3e
+ 1550 0020 0B       		.uleb128 0xb
+ 1551 0021 03       		.uleb128 0x3
+ 1552 0022 08       		.uleb128 0x8
+ 1553 0023 00       		.byte	0
+ 1554 0024 00       		.byte	0
+ 1555 0025 04       		.uleb128 0x4
+ 1556 0026 0F       		.uleb128 0xf
+ 1557 0027 00       		.byte	0
+ 1558 0028 0B       		.uleb128 0xb
+ 1559 0029 0B       		.uleb128 0xb
+ 1560 002a 00       		.byte	0
+ 1561 002b 00       		.byte	0
+ 1562 002c 05       		.uleb128 0x5
+ 1563 002d 16       		.uleb128 0x16
+ 1564 002e 00       		.byte	0
+ 1565 002f 03       		.uleb128 0x3
+ 1566 0030 0E       		.uleb128 0xe
+ 1567 0031 3A       		.uleb128 0x3a
+ 1568 0032 0B       		.uleb128 0xb
+ 1569 0033 3B       		.uleb128 0x3b
+ 1570 0034 0B       		.uleb128 0xb
+ 1571 0035 49       		.uleb128 0x49
+ 1572 0036 13       		.uleb128 0x13
+ 1573 0037 00       		.byte	0
+ 1574 0038 00       		.byte	0
+ 1575 0039 06       		.uleb128 0x6
+ 1576 003a 13       		.uleb128 0x13
+ 1577 003b 01       		.byte	0x1
+ 1578 003c 0B       		.uleb128 0xb
+ 1579 003d 0B       		.uleb128 0xb
+ 1580 003e 3A       		.uleb128 0x3a
+ 1581 003f 0B       		.uleb128 0xb
+ 1582 0040 3B       		.uleb128 0x3b
+ 1583 0041 0B       		.uleb128 0xb
+ 1584 0042 01       		.uleb128 0x1
+ 1585 0043 13       		.uleb128 0x13
+ 1586 0044 00       		.byte	0
+ 1587 0045 00       		.byte	0
+ 1588 0046 07       		.uleb128 0x7
+ 1589 0047 0D       		.uleb128 0xd
+ 1590 0048 00       		.byte	0
+ 1591 0049 03       		.uleb128 0x3
+ 1592 004a 0E       		.uleb128 0xe
+ 1593 004b 3A       		.uleb128 0x3a
+ 1594 004c 0B       		.uleb128 0xb
+ 1595 004d 3B       		.uleb128 0x3b
+ 1596 004e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 29
+
+
+ 1597 004f 49       		.uleb128 0x49
+ 1598 0050 13       		.uleb128 0x13
+ 1599 0051 38       		.uleb128 0x38
+ 1600 0052 0B       		.uleb128 0xb
+ 1601 0053 00       		.byte	0
+ 1602 0054 00       		.byte	0
+ 1603 0055 08       		.uleb128 0x8
+ 1604 0056 0F       		.uleb128 0xf
+ 1605 0057 00       		.byte	0
+ 1606 0058 0B       		.uleb128 0xb
+ 1607 0059 0B       		.uleb128 0xb
+ 1608 005a 49       		.uleb128 0x49
+ 1609 005b 13       		.uleb128 0x13
+ 1610 005c 00       		.byte	0
+ 1611 005d 00       		.byte	0
+ 1612 005e 09       		.uleb128 0x9
+ 1613 005f 26       		.uleb128 0x26
+ 1614 0060 00       		.byte	0
+ 1615 0061 49       		.uleb128 0x49
+ 1616 0062 13       		.uleb128 0x13
+ 1617 0063 00       		.byte	0
+ 1618 0064 00       		.byte	0
+ 1619 0065 0A       		.uleb128 0xa
+ 1620 0066 15       		.uleb128 0x15
+ 1621 0067 01       		.byte	0x1
+ 1622 0068 27       		.uleb128 0x27
+ 1623 0069 19       		.uleb128 0x19
+ 1624 006a 49       		.uleb128 0x49
+ 1625 006b 13       		.uleb128 0x13
+ 1626 006c 01       		.uleb128 0x1
+ 1627 006d 13       		.uleb128 0x13
+ 1628 006e 00       		.byte	0
+ 1629 006f 00       		.byte	0
+ 1630 0070 0B       		.uleb128 0xb
+ 1631 0071 05       		.uleb128 0x5
+ 1632 0072 00       		.byte	0
+ 1633 0073 49       		.uleb128 0x49
+ 1634 0074 13       		.uleb128 0x13
+ 1635 0075 00       		.byte	0
+ 1636 0076 00       		.byte	0
+ 1637 0077 0C       		.uleb128 0xc
+ 1638 0078 15       		.uleb128 0x15
+ 1639 0079 00       		.byte	0
+ 1640 007a 27       		.uleb128 0x27
+ 1641 007b 19       		.uleb128 0x19
+ 1642 007c 49       		.uleb128 0x49
+ 1643 007d 13       		.uleb128 0x13
+ 1644 007e 00       		.byte	0
+ 1645 007f 00       		.byte	0
+ 1646 0080 0D       		.uleb128 0xd
+ 1647 0081 15       		.uleb128 0x15
+ 1648 0082 01       		.byte	0x1
+ 1649 0083 27       		.uleb128 0x27
+ 1650 0084 19       		.uleb128 0x19
+ 1651 0085 01       		.uleb128 0x1
+ 1652 0086 13       		.uleb128 0x13
+ 1653 0087 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 30
+
+
+ 1654 0088 00       		.byte	0
+ 1655 0089 0E       		.uleb128 0xe
+ 1656 008a 01       		.uleb128 0x1
+ 1657 008b 01       		.byte	0x1
+ 1658 008c 49       		.uleb128 0x49
+ 1659 008d 13       		.uleb128 0x13
+ 1660 008e 01       		.uleb128 0x1
+ 1661 008f 13       		.uleb128 0x13
+ 1662 0090 00       		.byte	0
+ 1663 0091 00       		.byte	0
+ 1664 0092 0F       		.uleb128 0xf
+ 1665 0093 21       		.uleb128 0x21
+ 1666 0094 00       		.byte	0
+ 1667 0095 49       		.uleb128 0x49
+ 1668 0096 13       		.uleb128 0x13
+ 1669 0097 2F       		.uleb128 0x2f
+ 1670 0098 0B       		.uleb128 0xb
+ 1671 0099 00       		.byte	0
+ 1672 009a 00       		.byte	0
+ 1673 009b 10       		.uleb128 0x10
+ 1674 009c 34       		.uleb128 0x34
+ 1675 009d 00       		.byte	0
+ 1676 009e 03       		.uleb128 0x3
+ 1677 009f 0E       		.uleb128 0xe
+ 1678 00a0 3A       		.uleb128 0x3a
+ 1679 00a1 0B       		.uleb128 0xb
+ 1680 00a2 3B       		.uleb128 0x3b
+ 1681 00a3 0B       		.uleb128 0xb
+ 1682 00a4 49       		.uleb128 0x49
+ 1683 00a5 13       		.uleb128 0x13
+ 1684 00a6 02       		.uleb128 0x2
+ 1685 00a7 18       		.uleb128 0x18
+ 1686 00a8 00       		.byte	0
+ 1687 00a9 00       		.byte	0
+ 1688 00aa 11       		.uleb128 0x11
+ 1689 00ab 21       		.uleb128 0x21
+ 1690 00ac 00       		.byte	0
+ 1691 00ad 49       		.uleb128 0x49
+ 1692 00ae 13       		.uleb128 0x13
+ 1693 00af 2F       		.uleb128 0x2f
+ 1694 00b0 05       		.uleb128 0x5
+ 1695 00b1 00       		.byte	0
+ 1696 00b2 00       		.byte	0
+ 1697 00b3 12       		.uleb128 0x12
+ 1698 00b4 34       		.uleb128 0x34
+ 1699 00b5 00       		.byte	0
+ 1700 00b6 03       		.uleb128 0x3
+ 1701 00b7 0E       		.uleb128 0xe
+ 1702 00b8 3A       		.uleb128 0x3a
+ 1703 00b9 0B       		.uleb128 0xb
+ 1704 00ba 3B       		.uleb128 0x3b
+ 1705 00bb 0B       		.uleb128 0xb
+ 1706 00bc 49       		.uleb128 0x49
+ 1707 00bd 13       		.uleb128 0x13
+ 1708 00be 3F       		.uleb128 0x3f
+ 1709 00bf 19       		.uleb128 0x19
+ 1710 00c0 02       		.uleb128 0x2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 31
+
+
+ 1711 00c1 18       		.uleb128 0x18
+ 1712 00c2 00       		.byte	0
+ 1713 00c3 00       		.byte	0
+ 1714 00c4 00       		.byte	0
+ 1715              		.section	.debug_aranges,"",%progbits
+ 1716 0000 14000000 		.4byte	0x14
+ 1717 0004 0200     		.2byte	0x2
+ 1718 0006 00000000 		.4byte	.Ldebug_info0
+ 1719 000a 04       		.byte	0x4
+ 1720 000b 00       		.byte	0
+ 1721 000c 0000     		.2byte	0
+ 1722 000e 0000     		.2byte	0
+ 1723 0010 00000000 		.4byte	0
+ 1724 0014 00000000 		.4byte	0
+ 1725              		.section	.debug_line,"",%progbits
+ 1726              	.Ldebug_line0:
+ 1727 0000 72000000 		.section	.debug_str,"MS",%progbits,1
+ 1727      02006C00 
+ 1727      00000201 
+ 1727      FB0E0D00 
+ 1727      01010101 
+ 1728              	.LASF39:
+ 1729 0000 7050616C 		.ascii	"pPal\000"
+ 1729      00
+ 1730              	.LASF19:
+ 1731 0005 744C4344 		.ascii	"tLCDDEV_Index2ColorBulk\000"
+ 1731      4445565F 
+ 1731      496E6465 
+ 1731      7832436F 
+ 1731      6C6F7242 
+ 1732              	.LASF26:
+ 1733 001d 7066496E 		.ascii	"pfIndex2ColorBulk\000"
+ 1733      64657832 
+ 1733      436F6C6F 
+ 1733      7242756C 
+ 1733      6B00
+ 1734              	.LASF12:
+ 1735 002f 48617354 		.ascii	"HasTrans\000"
+ 1735      72616E73 
+ 1735      00
+ 1736              	.LASF29:
+ 1737 0038 4755495F 		.ascii	"GUI_LOGPALETTE\000"
+ 1737      4C4F4750 
+ 1737      414C4554 
+ 1737      544500
+ 1738              	.LASF43:
+ 1739 0047 5F50616C 		.ascii	"_Palcute_mascot\000"
+ 1739      63757465 
+ 1739      5F6D6173 
+ 1739      636F7400 
+ 1740              	.LASF18:
+ 1741 0057 744C4344 		.ascii	"tLCDDEV_GetIndexMask\000"
+ 1741      4445565F 
+ 1741      47657449 
+ 1741      6E646578 
+ 1741      4D61736B 
+ 1742              	.LASF48:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 32
+
+
+ 1743 006c 626D6375 		.ascii	"bmcute_mascot\000"
+ 1743      74655F6D 
+ 1743      6173636F 
+ 1743      7400
+ 1744              	.LASF4:
+ 1745 007a 73686F72 		.ascii	"short unsigned int\000"
+ 1745      7420756E 
+ 1745      7369676E 
+ 1745      65642069 
+ 1745      6E7400
+ 1746              	.LASF31:
+ 1747 008d 70664472 		.ascii	"pfDrawHW\000"
+ 1747      61774857 
+ 1747      00
+ 1748              	.LASF42:
+ 1749 0096 5F436F6C 		.ascii	"_Colorscute_mascot\000"
+ 1749      6F727363 
+ 1749      7574655F 
+ 1749      6D617363 
+ 1749      6F7400
+ 1750              	.LASF27:
+ 1751 00a9 4C43445F 		.ascii	"LCD_API_COLOR_CONV\000"
+ 1751      4150495F 
+ 1751      434F4C4F 
+ 1751      525F434F 
+ 1751      4E5600
+ 1752              	.LASF38:
+ 1753 00bc 70446174 		.ascii	"pData\000"
+ 1753      6100
+ 1754              	.LASF44:
+ 1755 00c2 5F616363 		.ascii	"_accute_mascot\000"
+ 1755      7574655F 
+ 1755      6D617363 
+ 1755      6F7400
+ 1756              	.LASF46:
+ 1757 00d1 2E5C6375 		.ascii	".\\cute_mascot.c\000"
+ 1757      74655F6D 
+ 1757      6173636F 
+ 1757      742E6300 
+ 1758              	.LASF20:
+ 1759 00e1 744C4344 		.ascii	"tLCDDEV_Color2IndexBulk\000"
+ 1759      4445565F 
+ 1759      436F6C6F 
+ 1759      7232496E 
+ 1759      64657842 
+ 1760              	.LASF2:
+ 1761 00f9 756E7369 		.ascii	"unsigned char\000"
+ 1761      676E6564 
+ 1761      20636861 
+ 1761      7200
+ 1762              	.LASF41:
+ 1763 0107 4755495F 		.ascii	"GUI_BITMAP\000"
+ 1763      4249544D 
+ 1763      415000
+ 1764              	.LASF6:
+ 1765 0112 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1765      20756E73 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 33
+
+
+ 1765      69676E65 
+ 1765      6420696E 
+ 1765      7400
+ 1766              	.LASF11:
+ 1767 0124 4E756D45 		.ascii	"NumEntries\000"
+ 1767      6E747269 
+ 1767      657300
+ 1768              	.LASF25:
+ 1769 012f 7066436F 		.ascii	"pfColor2IndexBulk\000"
+ 1769      6C6F7232 
+ 1769      496E6465 
+ 1769      7842756C 
+ 1769      6B00
+ 1770              	.LASF23:
+ 1771 0141 70664765 		.ascii	"pfGetIndexMask\000"
+ 1771      74496E64 
+ 1771      65784D61 
+ 1771      736B00
+ 1772              	.LASF15:
+ 1773 0150 4C43445F 		.ascii	"LCD_LOGPALETTE\000"
+ 1773      4C4F4750 
+ 1773      414C4554 
+ 1773      544500
+ 1774              	.LASF21:
+ 1775 015f 7066436F 		.ascii	"pfColor2Index\000"
+ 1775      6C6F7232 
+ 1775      496E6465 
+ 1775      7800
+ 1776              	.LASF30:
+ 1777 016d 70664472 		.ascii	"pfDraw\000"
+ 1777      617700
+ 1778              	.LASF24:
+ 1779 0174 4E6F416C 		.ascii	"NoAlpha\000"
+ 1779      70686100 
+ 1780              	.LASF14:
+ 1781 017c 4C43445F 		.ascii	"LCD_COLOR\000"
+ 1781      434F4C4F 
+ 1781      5200
+ 1782              	.LASF16:
+ 1783 0186 744C4344 		.ascii	"tLCDDEV_Index2Color\000"
+ 1783      4445565F 
+ 1783      496E6465 
+ 1783      7832436F 
+ 1783      6C6F7200 
+ 1784              	.LASF34:
+ 1785 019a 5853697A 		.ascii	"XSize\000"
+ 1785      6500
+ 1786              	.LASF28:
+ 1787 01a0 4755495F 		.ascii	"GUI_COLOR\000"
+ 1787      434F4C4F 
+ 1787      5200
+ 1788              	.LASF0:
+ 1789 01aa 756E7369 		.ascii	"unsigned int\000"
+ 1789      676E6564 
+ 1789      20696E74 
+ 1789      00
+ 1790              	.LASF8:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 34
+
+
+ 1791 01b7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1791      206C6F6E 
+ 1791      6720756E 
+ 1791      7369676E 
+ 1791      65642069 
+ 1792              	.LASF36:
+ 1793 01ce 42797465 		.ascii	"BytesPerLine\000"
+ 1793      73506572 
+ 1793      4C696E65 
+ 1793      00
+ 1794              	.LASF33:
+ 1795 01db 4755495F 		.ascii	"GUI_BITMAP_METHODS\000"
+ 1795      4249544D 
+ 1795      41505F4D 
+ 1795      4554484F 
+ 1795      445300
+ 1796              	.LASF40:
+ 1797 01ee 704D6574 		.ascii	"pMethods\000"
+ 1797      686F6473 
+ 1797      00
+ 1798              	.LASF9:
+ 1799 01f7 73697A65 		.ascii	"sizetype\000"
+ 1799      74797065 
+ 1799      00
+ 1800              	.LASF45:
+ 1801 0200 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1801      4320342E 
+ 1801      392E3320 
+ 1801      32303135 
+ 1801      30333033 
+ 1802 0233 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1802      20726576 
+ 1802      6973696F 
+ 1802      6E203232 
+ 1802      31323230 
+ 1803 0266 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1803      66756E63 
+ 1803      74696F6E 
+ 1803      2D736563 
+ 1803      74696F6E 
+ 1804              	.LASF32:
+ 1805 028e 70436F6C 		.ascii	"pColorConvAPI\000"
+ 1805      6F72436F 
+ 1805      6E764150 
+ 1805      4900
+ 1806              	.LASF7:
+ 1807 029c 6C6F6E67 		.ascii	"long long int\000"
+ 1807      206C6F6E 
+ 1807      6720696E 
+ 1807      7400
+ 1808              	.LASF10:
+ 1809 02aa 63686172 		.ascii	"char\000"
+ 1809      00
+ 1810              	.LASF35:
+ 1811 02af 5953697A 		.ascii	"YSize\000"
+ 1811      6500
+ 1812              	.LASF13:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccmhxYvc.s 			page 35
+
+
+ 1813 02b5 7050616C 		.ascii	"pPalEntries\000"
+ 1813      456E7472 
+ 1813      69657300 
+ 1814              	.LASF3:
+ 1815 02c1 73686F72 		.ascii	"short int\000"
+ 1815      7420696E 
+ 1815      7400
+ 1816              	.LASF37:
+ 1817 02cb 42697473 		.ascii	"BitsPerPixel\000"
+ 1817      50657250 
+ 1817      6978656C 
+ 1817      00
+ 1818              	.LASF22:
+ 1819 02d8 7066496E 		.ascii	"pfIndex2Color\000"
+ 1819      64657832 
+ 1819      436F6C6F 
+ 1819      7200
+ 1820              	.LASF5:
+ 1821 02e6 6C6F6E67 		.ascii	"long int\000"
+ 1821      20696E74 
+ 1821      00
+ 1822              	.LASF17:
+ 1823 02ef 744C4344 		.ascii	"tLCDDEV_Color2Index\000"
+ 1823      4445565F 
+ 1823      436F6C6F 
+ 1823      7232496E 
+ 1823      64657800 
+ 1824              	.LASF47:
+ 1825 0303 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 1825      73657273 
+ 1825      5C6A616F 
+ 1825      68655C45 
+ 1825      67686F73 
+ 1826 0331 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 1826      7072696E 
+ 1826      67203230 
+ 1826      32355C36 
+ 1826      2E313135 
+ 1827 0360 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 1827      545F7769 
+ 1827      74685F65 
+ 1827      6D57696E 
+ 1827      5C544654 
+ 1828              	.LASF1:
+ 1829 0386 7369676E 		.ascii	"signed char\000"
+ 1829      65642063 
+ 1829      68617200 
+ 1830              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

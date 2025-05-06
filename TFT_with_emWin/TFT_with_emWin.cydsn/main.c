@@ -68,6 +68,7 @@ Requirements: WindowManager - (x)
 
 //#include "start.h"
 
+extern GUI_CONST_STORAGE GUI_BITMAP bmcute_mascot;
 
 
 void MainTask(void);
@@ -78,9 +79,8 @@ volatile bool isr_flag;
 CY_ISR(Timer_1_Handler)
 {
     // Clear PSoC GPIO interrupt first
-    LED_1_Write(~LED_1_Read());
+   
     LCD_Char_1_Position(1, 0);
-    //LCD_Char_1_PrintString("AAAAA");
     
     DateTime now = RTC_now();
     char line[24];
@@ -102,67 +102,79 @@ int main(){
    Timer_1_Start();       // Start the 1 MHz clock
    tick_isr_StartEx(Timer_1_Handler); // Link ISR
    
-    /* Start VDAC */
-    VDAC8_1_Start();
     
-
-    /* Set the value 200 in VDAC data register */
-    VDAC8_1_SetValue(200u); 
     
 
     I2CRTC_Start();                  // 2. Start I²C for RTC
-//    SPIM_1_Start();                  // 2. Start SPI for TFT
+    SPIM_1_Start();                  // 2. Start SPI for TFT
     LCD_Char_1_Start();              // 2. Start Character LCD
+    
+    
     LCD_Char_1_ClearDisplay();
     
-    DateTime now = {
-        25, ///< Year offset from 2000
-        05,    ///< Month 1-12
-        1,    ///< Day 1-31
-        2,   ///< Hours 0-23
-        10,   ///< Minutes 0-59
-        50   ///< Seconds 0-59
-    };
-
-    //RTC_setTime(now);
+    
     LCD_Char_1_ClearDisplay();
     LCD_Char_1_PrintString("Time: "); // 6. Print basic layout
-    
+    UART_1_Init();
+    UART_1_Start();
+
     // int status = RTC_setAlarmTime(0,0,0,0,0,1,1,1,1,DS3231_ALARM1);
     // i2c_status(status);
     // CyDelay(1000);
+    GUI_Init();                             // initilize graphics library
+    GUI_Clear();
+    GUI_SetFont(&GUI_Font8x16);
     
-    for (;;)
-    {
-        LCD_Char_1_Position(0u, 0u);
-       
-        LCD_Char_1_PrintString("VDAC VAL: %02X");
-        //  char line[24];
+    fsmState = HOME;
+    
+    for(;;) {
         
-        //  uint8_t data = RTC_readRegister(DS3231_ALARM1, 0);
-        
-        //  // print the status register 
-        //  sprintf(line, "REG:%02X VAL: %02X",
-        //          DS3231_ALARM1, data);
-        //  LCD_Char_1_Position(0, 0);
-        //  LCD_Char_1_PrintString("                    ");			// clean up the previous display
-        
-    	//  LCD_Char_1_Position(0, 0);
-        //  LCD_Char_1_PrintString(line);
-        //  CyDelay(50);
-        //  DateTime now = RTC_now();
-        
-        //  sprintf(line, "%02u-%02u %02u:%02u:%02u",
-        //          now.m, now.d, now.hh, now.mm, now.ss);
-        //  LCD_Char_1_Position(1, 0);
-        //  LCD_Char_1_PrintString("                    ");			// clean up the previous display
-        
-    	//  LCD_Char_1_Position(1, 0);
-        //  LCD_Char_1_PrintString(line);
-        //  CyDelay(50);
-
-    }
+        switch(fsmState){
+            case START:
+                fsmState = start();
+                break;
+            case HOME:
+                fsmState = home();
+                break;
+            case ERROR:
+                break;
+               
+        }
+    }                              // loop
 }
+int home(){
+    GUI_SetBkColor(0x1a1932);
+    GUI_RECT Rect = {CENTERX/2,  CENTERY*1/2,CENTERX *3/2 ,  CENTERY*3/2};
+    GUI_SetColor(0x1a1932);
+    GUI_FillRect(CENTERX/2,  CENTERY*1/2,CENTERX *3/2 ,  CENTERY*3/2);
+    GUI_SetColor(GUI_WHITE);
+    char acText[] = "Welcome to \nTask Buddy\0";
+    GUI_DispStringInRectEx(acText, &Rect, GUI_TA_HCENTER | GUI_TA_VCENTER, strlen(acText) - 1, GUI_ROTATE_0);
+    uint8_t x = 5;
+    uint8_t y = 30;
+    
+    int8_t a = -1; 
+    
+    for(;;){
+        if(UART_1_GetRxBufferSize() > 0){
+            uint8 c = UART_1_GetChar();
+            UART_1_PutChar(c);
+            LCD_Char_1_Position(0, 0);
+            LCD_Char_1_PrintString((char *) &c);
+        }
+        x = (x + 1)%240;
+        y += a;
+        
+        GUI_DrawBitmap( &bmcute_mascot, x, y);
+        if (FORWARD_BTN_Read() == 0){
+            return START;
+        }
+        
+        a *= -1;
+    }
+    return ERROR;
+}
+
 //int main()
 //{
 //    CyGlobalIntEnable;                      // Enable global interrupts
@@ -219,16 +231,7 @@ int main(){
 //}
 // CY_ISR(any) 
 
-int home()
-{
-    MainTask();
-    for(;;){
-        if (FORWARD_BTN_Read() == 0){
-            return START;
-        }
-    }
-    return ERROR;
-}
+\
 
 int error(char* message)
 {
