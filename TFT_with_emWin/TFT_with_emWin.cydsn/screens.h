@@ -19,16 +19,18 @@
 enum {START, HOME, TASK_SELECT, TASK_START, ERROR};
 
 int start (void);
+int action_select(void);
 
 
 //helper functions 
 
 int error(char*);
 void print(char*);
+int mainTask(void);
 
 
 //screen related globals
 
 // since TFT is 240 by 360 pixels 
 #define CENTERX 120
-#define CENTERY 180
+#define CENTERY 160

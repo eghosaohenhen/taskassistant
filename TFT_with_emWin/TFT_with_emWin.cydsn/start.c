@@ -18,7 +18,7 @@
 #include "tft.h"
 #include "screens.h"
 #include "WM.h"
-int mainTask(void);
+
 int start(){
     return mainTask();
 }
