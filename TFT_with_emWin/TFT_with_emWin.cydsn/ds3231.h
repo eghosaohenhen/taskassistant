@@ -94,8 +94,9 @@ int RTC_setAlarmTime(uint8_t sec, uint8_t min, uint8_t hr,
                        uint8_t dayDate, bool dayOrDate,
                        bool m1, bool m2, bool m3, bool m4, uint16_t address);
 uint8_t RTC_readRegister(uint8 address, int numBytes);
+int RTC_writeRegister(uint8 address, uint8* data, int num_bytes);
 int RTC_clearAlarmFlags();
-void i2c_status();
+void i2c_status(int status);
 #endif
 
 /* [] END OF FILE */

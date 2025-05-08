@@ -165,7 +165,7 @@ CY_ISR(tick_isr_Interrupt)
 
     /*  Place your Interrupt code here. */
     /* `#START tick_isr_Interrupt` */
-
+    
     /* `#END` */
 }
 

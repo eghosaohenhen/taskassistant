@@ -6,14 +6,14 @@
 <CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
 <userData>
 <dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
-<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Datasheet">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
 <TreeKeys>
 <v>Source</v>
 <v>Components</v>
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin\TFT_with_emWin\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin\TFT_with_emWin\Source Files\start_menu.c">
 <ExpandedNodeIds>
 <v>TFT_with_emWin</v>
 <v>TFT_with_emWin\TFT_with_emWin</v>
@@ -25,21 +25,47 @@
 <v>TFT_with_emWin\TFT_with_emWin\Header Files\GUIDRV_FlexColor.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Header Files\LCDConf.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Header Files\screens.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\task.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Header Files\tft.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\action_select.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\cute_mascot.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\cute_mascot_full.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\ds3231.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUI_X.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\GUIConf.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\LCDConf.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\main.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Source Files\start.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\sound.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\start_menu.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\task.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Source Files\tft.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_INT.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_AMux</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk\ADC_DelSig_1_Ext_CP_Clk.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_IRQ</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_IRQ\ADC_DelSig_1_IRQ.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_IRQ\ADC_DelSig_1_IRQ.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_theACLK</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_theACLK\ADC_DelSig_1_theACLK.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_theACLK\ADC_DelSig_1_theACLK.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Clock_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
@@ -65,6 +91,10 @@
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DAC_OUT</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DAC_OUT\DAC_OUT.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DAC_OUT\DAC_OUT.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DAC_OUT\DAC_OUT_aliases.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC\DC.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC\DC.h</v>
@@ -95,6 +125,14 @@
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED\LED.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED\LED.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED\LED_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1\LED_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1\LED_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_1\LED_1_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_3</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_3\LED_3.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_3\LED_3.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\LED_3\LED_3_aliases.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO\MISO.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MISO\MISO.h</v>
@@ -103,14 +141,14 @@
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI\MOSI.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI\MOSI.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\MOSI\MOSI_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Pin_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Pin_1\Pin_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Pin_1\Pin_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Pin_1\Pin_1_aliases.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET\RESET.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET\RESET.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RESET\RESET_aliases.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT\RTC_PIN_INT.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT\RTC_PIN_INT.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\RTC_PIN_INT\RTC_PIN_INT_aliases.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SCL</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SCL\SCL.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SCL\SCL.h</v>
@@ -136,9 +174,53 @@
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SS\SS.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SS\SS.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SS\SS_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SwInt</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SwInt\SwInt.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\SwInt\SwInt.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Switches</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Switches\Switches.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Switches\Switches.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Switches\Switches_aliases.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\tick_isr</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\tick_isr\tick_isr.c</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\tick_isr\tick_isr.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Timer_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Timer_1\Timer_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Timer_1\Timer_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\Timer_1\Timer_1_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\timer_clock</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\timer_clock\timer_clock.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\timer_clock\timer_clock.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1\UART_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1\UART_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1\UART_1_BOOT.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1\UART_1_INT.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1\UART_1_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1_IntClock</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WAVE_SELECTOR</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WAVE_SELECTOR\WAVE_SELECTOR.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WAVE_SELECTOR\WAVE_SELECTOR.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WAVE_SELECTOR\WAVE_SELECTOR_aliases.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1\WaveDAC8_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1\WaveDAC8_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1\WaveDAC8_1_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_DacClk</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_DacClk\WaveDAC8_1_DacClk.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_DacClk\WaveDAC8_1_DacClk.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_VDAC8</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_VDAC8\WaveDAC8_1_VDAC8.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_VDAC8\WaveDAC8_1_VDAC8.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_VDAC8\WaveDAC8_1_VDAC8_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_Wave1_DMA</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_Wave1_DMA\WaveDAC8_1_Wave1_DMA_dma.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_Wave1_DMA\WaveDAC8_1_Wave1_DMA_dma.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_Wave2_DMA</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_Wave2_DMA\WaveDAC8_1_Wave2_DMA_dma.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\WaveDAC8_1_Wave2_DMA\WaveDAC8_1_Wave2_DMA_dma.h</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cycodeshareexport.ld</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cycodeshareimport.ld</v>
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cycodeshareimport.scat</v>
@@ -161,41 +243,42 @@
 <v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\BACK_BTN\BACK_BTN_aliases.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cypins.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC\DC.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC\DC.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\DC\DC_aliases.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\FORWARD_BTN</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\FORWARD_BTN\FORWARD_BTN.c</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\FORWARD_BTN\FORWARD_BTN.h</v>
-<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\FORWARD_BTN\FORWARD_BTN_aliases.h</v>
+<v>TFT_with_emWin</v>
+<v>TFT_with_emWin\TFT_with_emWin</v>
+<v>TFT_with_emWin\TFT_with_emWin\TopDesign</v>
+<v>TFT_with_emWin\TFT_with_emWin\TFT_with_emWin.cydwr</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\cyapicallbacks.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\ds3231.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\GUIDRV_FlexColor.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\LCDConf.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\screens.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\task.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Header Files\tft.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\action_select.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\cute_mascot.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\cute_mascot_full.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\ds3231.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\GUI_X.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\GUIConf.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\LCDConf.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\main.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\sound.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\start_menu.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\task.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Source Files\tft.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_INT.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1\ADC_DelSig_1_PM.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_AMux</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.c</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_AMux\ADC_DelSig_1_AMux.h</v>
+<v>TFT_with_emWin\TFT_with_emWin\Generated_Source\PSoC5\ADC_DelSig_1_Ext_CP_Clk</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="TFT_with_emWin">
@@ -220,8 +303,19 @@
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\action_select.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_AMux.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_Ext_CP_Clk.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_INT.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_IRQ.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_PM.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ADC_DelSig_1_theACLK.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\BACK_BTN.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Clock_1.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cute_mascot.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cute_mascot_full.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
@@ -231,6 +325,7 @@
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\DAC_OUT.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\DC.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ds3231.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\FORWARD_BTN.lst</v>
@@ -248,22 +343,44 @@
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_Char_1_PM.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCDConf.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LED.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_1.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_3.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\MISO.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\MOSI.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Pin_1.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\RESET.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\RTC_PIN_INT.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SCL.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SCLK.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SDA.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\sound.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_INT.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_IntClock.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_PM.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SS.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\start.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\start_menu.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\SwInt.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Switches.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\task.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\tft.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\tick_isr.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_1.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\timer_clock.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_BOOT.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_INT.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_IntClock.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\UART_1_PM.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WAVE_SELECTOR.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1_DacClk.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1_PM.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1_VDAC8.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1_VDAC8_PM.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1_Wave1_DMA_dma.lst</v>
+<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\WaveDAC8_1_Wave2_DMA_dma.lst</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\TFT_with_emWin.elf</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\TFT_with_emWin.hex</v>
 <v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\TFT_with_emWin.map</v>
@@ -274,39 +391,6 @@
 <VisibleNodeIds>
 <v>TFT_with_emWin</v>
 <v>TFT_with_emWin\TFT_with_emWin</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\BACK_BTN.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\DC.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\ds3231.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\FORWARD_BTN.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\GUI_X.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\GUIConf.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_BOOT.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_INT.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_MASTER.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_PM.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\I2CRTC_SLAVE.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_Char_1.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_Char_1_CustChars.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_Char_1_LCDPort.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_Char_1_PM.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LCDConf.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\LED.lst</v>
-<v>TFT_with_emWin\TFT_with_emWin\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -322,16 +406,25 @@
 <v>TFT_with_emWin\TFT_with_emWin\CY8C58LP Family Datasheet</v>
 <v>TFT_with_emWin\TFT_with_emWin\System Reference Guides</v>
 <v>TFT_with_emWin\TFT_with_emWin\System Reference Guides\cy_boot_v5_20</v>
+<v>TFT_with_emWin\TFT_with_emWin\ADC_DelSig_v3_20.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\CharLCD_v2_20.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_clock_v2_20</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_constant_v1_0</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>TFT_with_emWin\TFT_with_emWin\cy_isr_v1_70.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_isr_v1_70</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_10</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_20</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\Debouncer_v1_0.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\I2C_v3_50.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\SPI_Master_v2_50.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\Timer_v2_70.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\UART_v2_50.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\WaveDAC8_v2_10.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>TFT_with_emWin</v>
@@ -340,38 +433,52 @@
 <v>TFT_with_emWin\TFT_with_emWin\CY8C58LP Family Datasheet</v>
 <v>TFT_with_emWin\TFT_with_emWin\System Reference Guides</v>
 <v>TFT_with_emWin\TFT_with_emWin\System Reference Guides\cy_boot_v5_20</v>
+<v>TFT_with_emWin\TFT_with_emWin\ADC_DelSig_v3_20.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\CharLCD_v2_20.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_clock_v2_20</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_constant_v1_0</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>TFT_with_emWin\TFT_with_emWin\cy_isr_v1_70.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_isr_v1_70</v>
+<v>TFT_with_emWin\TFT_with_emWin\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_10</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_10\cy_pins_v2_10.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_20</v>
 <v>TFT_with_emWin\TFT_with_emWin\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\Debouncer_v1_0.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\I2C_v3_50.pdf</v>
 <v>TFT_with_emWin\TFT_with_emWin\SPI_Master_v2_50.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\Timer_v2_70.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\UART_v2_50.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\WaveDAC8_v2_10.pdf</v>
+<v>TFT_with_emWin\TFT_with_emWin\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
 </dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\TFT_with_emWin.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\TFT_with_emWin.cydsn\TFT_with_emWin.cydwr" />
 <name v=".\TFT_with_emWin.cydsn\main.c" />
+<name v=".\TFT_with_emWin.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\TFT_with_emWin.cydsn\ds3231.c" />
 <name v=".\TFT_with_emWin.cydsn\ds3231.h" />
 <name v=".\TFT_with_emWin.cydsn\start.c" />
 <name v=".\TFT_with_emWin.cydsn\screens.h" />
-<name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\SS.c" />
-<name v="..\emWinGraphics_v5_46\Code\Include\PSoC4_5\GUI.h" />
-<name v="..\emWinGraphics_v5_46\Code\Include\PSoC4_5\DIALOG_Intern.h" />
-<name v=".\TFT_with_emWin.cydsn\tft.h" />
-<name v=".\TFT_with_emWin.cydsn\LCDConf.h" />
-<name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\SPIM_1.c" />
+<name v=".\TFT_with_emWin.cydsn\action_select.c" />
+<name v=".\TFT_with_emWin.cydsn\LCDConf.c" />
+<name v=".\TFT_with_emWin.cydsn\task.c" />
+<name v=".\TFT_with_emWin.cydsn\task.h" />
+<name v=".\TFT_with_emWin.cydsn\Generated_Source\PSoC5\ADC_DelSig_1_PM.c" />
+<name v=".\TFT_with_emWin.cydsn\cute_mascot_full.c" />
 </OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />

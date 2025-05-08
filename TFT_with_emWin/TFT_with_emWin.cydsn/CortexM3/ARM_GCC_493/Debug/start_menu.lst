@@ -1,0 +1,1105 @@
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"start_menu.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.mainTask,"ax",%progbits
+  19              		.align	2
+  20              		.global	mainTask
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	mainTask, %function
+  24              	mainTask:
+  25              	.LFB64:
+  26              		.file 1 ".\\start_menu.c"
+   1:.\start_menu.c **** /* ========================================
+   2:.\start_menu.c ****  *
+   3:.\start_menu.c ****  * Copyright YOUR COMPANY, THE YEAR
+   4:.\start_menu.c ****  * All Rights Reserved
+   5:.\start_menu.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\start_menu.c ****  *
+   7:.\start_menu.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\start_menu.c ****  * WHICH IS THE PROPERTY OF your company.
+   9:.\start_menu.c ****  *
+  10:.\start_menu.c ****  * ========================================
+  11:.\start_menu.c **** */
+  12:.\start_menu.c **** 
+  13:.\start_menu.c **** /* [] END OF FILE */
+  14:.\start_menu.c **** 
+  15:.\start_menu.c **** #include "GUI.h"
+  16:.\start_menu.c **** #include "DIALOG.h"
+  17:.\start_menu.c **** #include <project.h>
+  18:.\start_menu.c **** #include "tft.h"
+  19:.\start_menu.c **** #include "screens.h"
+  20:.\start_menu.c **** #include "WM.h"
+  21:.\start_menu.c **** // array of strings holding the names of the actions.
+  22:.\start_menu.c **** #define NUM_ACTIONS 6
+  23:.\start_menu.c **** 
+  24:.\start_menu.c **** char * menuOptions[] = {
+  25:.\start_menu.c ****  "Back",
+  26:.\start_menu.c ****  "Input Task",
+  27:.\start_menu.c ****  "Start Task",
+  28:.\start_menu.c ****  "Schedule a Task",
+  29:.\start_menu.c ****  "View Today's Calendar",
+  30:.\start_menu.c ****  "View Metrics"
+  31:.\start_menu.c **** };
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 2
+
+
+  32:.\start_menu.c **** 
+  33:.\start_menu.c **** int start(){
+  34:.\start_menu.c ****     return mainTask();
+  35:.\start_menu.c **** }
+  36:.\start_menu.c **** //GUI_DispStringHCenterAt("Start Screen \nshows how to use a WINDOW widget", CENTERX, 5)
+  37:.\start_menu.c **** 
+  38:.\start_menu.c **** 
+  39:.\start_menu.c **** int mainTask(void) {
+  27              		.loc 1 39 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 3, -8
+  34              		.cfi_offset 14, -4
+  40:.\start_menu.c **** 
+  41:.\start_menu.c ****  GUI_Init();
+  35              		.loc 1 41 0
+  36 0002 FFF7FEFF 		bl	GUI_Init
+  37              	.LVL0:
+  42:.\start_menu.c ****  //WM_SetDesktopColor(GUI_BLACK);
+  43:.\start_menu.c ****     GUI_DispStringHCenterAt("Start Screen \n Welcome to PEPE\n\n Productivity Assistant", CENTERX, 
+  38              		.loc 1 43 0
+  39 0006 0A48     		ldr	r0, .L5
+  40 0008 7821     		movs	r1, #120
+  41 000a 0522     		movs	r2, #5
+  42 000c FFF7FEFF 		bl	GUI_DispStringHCenterAt
+  43              	.LVL1:
+  44:.\start_menu.c ****     ADC_DelSig_1_Start();				// start the ADC_DelSig_1
+  44              		.loc 1 44 0
+  45 0010 FFF7FEFF 		bl	ADC_DelSig_1_Start
+  46              	.LVL2:
+  45:.\start_menu.c **** 	ADC_DelSig_1_StartConvert();		// start the ADC_DelSig_1 conversion
+  47              		.loc 1 45 0
+  48 0014 FFF7FEFF 		bl	ADC_DelSig_1_StartConvert
+  49              	.LVL3:
+  46:.\start_menu.c ****     int status = action_select(menuOptions,NUM_ACTIONS);
+  50              		.loc 1 46 0
+  51 0018 0648     		ldr	r0, .L5+4
+  52 001a 0621     		movs	r1, #6
+  53 001c FFF7FEFF 		bl	action_select
+  54              	.LVL4:
+  47:.\start_menu.c **** //    while (1) {
+  48:.\start_menu.c **** //        acti
+  49:.\start_menu.c **** //        
+  50:.\start_menu.c **** //        if (FORWARD_BTN_Read() == 0 || BACK_BTN_Read() == 0){
+  51:.\start_menu.c **** //            GUI_Clear();
+  52:.\start_menu.c **** //            GUI_DispStringHCenterAt("Dialog has been closed", CENTERX, 5);
+  53:.\start_menu.c **** //            GUI_Delay(1000);
+  54:.\start_menu.c **** //            GUI_Clear();
+  55:.\start_menu.c **** //            return HOME;
+  56:.\start_menu.c **** //        }
+  57:.\start_menu.c **** //    }
+  58:.\start_menu.c ****     if (status == ERROR){
+  55              		.loc 1 58 0
+  56 0020 0428     		cmp	r0, #4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 3
+
+
+  57 0022 03D1     		bne	.L2
+  59:.\start_menu.c ****         error("Error in start.c");
+  58              		.loc 1 59 0
+  59 0024 0448     		ldr	r0, .L5+8
+  60              	.LVL5:
+  61 0026 FFF7FEFF 		bl	error
+  62              	.LVL6:
+  60:.\start_menu.c ****         return ERROR;
+  63              		.loc 1 60 0
+  64 002a 0420     		movs	r0, #4
+  65              	.L2:
+  61:.\start_menu.c ****     }
+  62:.\start_menu.c ****     return status;
+  63:.\start_menu.c ****     
+  64:.\start_menu.c **** }...
+  66              		.loc 1 64 0
+  67 002c 08BD     		pop	{r3, pc}
+  68              	.L6:
+  69 002e 00BF     		.align	2
+  70              	.L5:
+  71 0030 00000000 		.word	.LC0
+  72 0034 00000000 		.word	.LANCHOR0
+  73 0038 38000000 		.word	.LC1
+  74              		.cfi_endproc
+  75              	.LFE64:
+  76              		.size	mainTask, .-mainTask
+  77              		.section	.text.start,"ax",%progbits
+  78              		.align	2
+  79              		.global	start
+  80              		.thumb
+  81              		.thumb_func
+  82              		.type	start, %function
+  83              	start:
+  84              	.LFB63:
+  33:.\start_menu.c **** int start(){
+  85              		.loc 1 33 0
+  86              		.cfi_startproc
+  87              		@ args = 0, pretend = 0, frame = 0
+  88              		@ frame_needed = 0, uses_anonymous_args = 0
+  89 0000 08B5     		push	{r3, lr}
+  90              		.cfi_def_cfa_offset 8
+  91              		.cfi_offset 3, -8
+  92              		.cfi_offset 14, -4
+  34:.\start_menu.c ****     return mainTask();
+  93              		.loc 1 34 0
+  94 0002 FFF7FEFF 		bl	mainTask
+  95              	.LVL7:
+  35:.\start_menu.c **** }
+  96              		.loc 1 35 0
+  97 0006 08BD     		pop	{r3, pc}
+  98              		.cfi_endproc
+  99              	.LFE63:
+ 100              		.size	start, .-start
+ 101              		.global	menuOptions
+ 102              		.data
+ 103              		.align	2
+ 104              		.set	.LANCHOR0,. + 0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 4
+
+
+ 105              		.type	menuOptions, %object
+ 106              		.size	menuOptions, 24
+ 107              	menuOptions:
+ 108 0000 4C000000 		.word	.LC2
+ 109 0004 54000000 		.word	.LC3
+ 110 0008 60000000 		.word	.LC4
+ 111 000c 6C000000 		.word	.LC5
+ 112 0010 7C000000 		.word	.LC6
+ 113 0014 94000000 		.word	.LC7
+ 114              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 115              		.align	2
+ 116              	.LC0:
+ 117 0000 53746172 		.ascii	"Start Screen \012 Welcome to PEPE\012\012 Productiv"
+ 117      74205363 
+ 117      7265656E 
+ 117      200A2057 
+ 117      656C636F 
+ 118 002a 69747920 		.ascii	"ity Assistant\000"
+ 118      41737369 
+ 118      7374616E 
+ 118      7400
+ 119              	.LC1:
+ 120 0038 4572726F 		.ascii	"Error in start.c\000"
+ 120      7220696E 
+ 120      20737461 
+ 120      72742E63 
+ 120      00
+ 121 0049 000000   		.space	3
+ 122              	.LC2:
+ 123 004c 4261636B 		.ascii	"Back\000"
+ 123      00
+ 124 0051 000000   		.space	3
+ 125              	.LC3:
+ 126 0054 496E7075 		.ascii	"Input Task\000"
+ 126      74205461 
+ 126      736B00
+ 127 005f 00       		.space	1
+ 128              	.LC4:
+ 129 0060 53746172 		.ascii	"Start Task\000"
+ 129      74205461 
+ 129      736B00
+ 130 006b 00       		.space	1
+ 131              	.LC5:
+ 132 006c 53636865 		.ascii	"Schedule a Task\000"
+ 132      64756C65 
+ 132      20612054 
+ 132      61736B00 
+ 133              	.LC6:
+ 134 007c 56696577 		.ascii	"View Today's Calendar\000"
+ 134      20546F64 
+ 134      61792773 
+ 134      2043616C 
+ 134      656E6461 
+ 135 0092 0000     		.space	2
+ 136              	.LC7:
+ 137 0094 56696577 		.ascii	"View Metrics\000"
+ 137      204D6574 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 5
+
+
+ 137      72696373 
+ 137      00
+ 138 00a1 000000   		.text
+ 139              	.Letext0:
+ 140              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 141              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\3.3\\psoc creator\\import\\gnu\\arm\\4.9.
+ 142              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+ 143              		.file 5 "Generated_Source\\PSoC5/ADC_DelSig_1.h"
+ 144              		.file 6 "..\\..\\emWinGraphics_v5_46\\Code\\Include\\PSoC4_5/GUI.h"
+ 145              		.file 7 ".\\screens.h"
+ 146              		.section	.debug_info,"",%progbits
+ 147              	.Ldebug_info0:
+ 148 0000 23020000 		.4byte	0x223
+ 149 0004 0400     		.2byte	0x4
+ 150 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 151 000a 04       		.byte	0x4
+ 152 000b 01       		.uleb128 0x1
+ 153 000c AA000000 		.4byte	.LASF28
+ 154 0010 01       		.byte	0x1
+ 155 0011 78000000 		.4byte	.LASF29
+ 156 0015 EF010000 		.4byte	.LASF30
+ 157 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 158 001d 00000000 		.4byte	0
+ 159 0021 00000000 		.4byte	.Ldebug_line0
+ 160 0025 02       		.uleb128 0x2
+ 161 0026 04       		.byte	0x4
+ 162 0027 05       		.byte	0x5
+ 163 0028 696E7400 		.ascii	"int\000"
+ 164 002c 03       		.uleb128 0x3
+ 165 002d 04       		.byte	0x4
+ 166 002e 07       		.byte	0x7
+ 167 002f 4B010000 		.4byte	.LASF0
+ 168 0033 03       		.uleb128 0x3
+ 169 0034 04       		.byte	0x4
+ 170 0035 07       		.byte	0x7
+ 171 0036 53000000 		.4byte	.LASF1
+ 172 003a 03       		.uleb128 0x3
+ 173 003b 02       		.byte	0x2
+ 174 003c 05       		.byte	0x5
+ 175 003d A1010000 		.4byte	.LASF2
+ 176 0041 03       		.uleb128 0x3
+ 177 0042 01       		.byte	0x1
+ 178 0043 08       		.byte	0x8
+ 179 0044 66010000 		.4byte	.LASF3
+ 180 0048 03       		.uleb128 0x3
+ 181 0049 01       		.byte	0x1
+ 182 004a 08       		.byte	0x8
+ 183 004b 45000000 		.4byte	.LASF4
+ 184 004f 03       		.uleb128 0x3
+ 185 0050 04       		.byte	0x4
+ 186 0051 05       		.byte	0x5
+ 187 0052 B4010000 		.4byte	.LASF5
+ 188 0056 04       		.uleb128 0x4
+ 189 0057 04       		.byte	0x4
+ 190 0058 5C000000 		.4byte	0x5c
+ 191 005c 05       		.uleb128 0x5
+ 192 005d 41000000 		.4byte	0x41
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 6
+
+
+ 193 0061 03       		.uleb128 0x3
+ 194 0062 02       		.byte	0x2
+ 195 0063 07       		.byte	0x7
+ 196 0064 65000000 		.4byte	.LASF6
+ 197 0068 03       		.uleb128 0x3
+ 198 0069 01       		.byte	0x1
+ 199 006a 06       		.byte	0x6
+ 200 006b 72020000 		.4byte	.LASF7
+ 201 006f 04       		.uleb128 0x4
+ 202 0070 04       		.byte	0x4
+ 203 0071 41000000 		.4byte	0x41
+ 204 0075 03       		.uleb128 0x3
+ 205 0076 04       		.byte	0x4
+ 206 0077 07       		.byte	0x7
+ 207 0078 84010000 		.4byte	.LASF8
+ 208 007c 06       		.uleb128 0x6
+ 209 007d 00000000 		.4byte	.LASF11
+ 210 0081 02       		.byte	0x2
+ 211 0082 3F       		.byte	0x3f
+ 212 0083 4F000000 		.4byte	0x4f
+ 213 0087 03       		.uleb128 0x3
+ 214 0088 08       		.byte	0x8
+ 215 0089 05       		.byte	0x5
+ 216 008a 93010000 		.4byte	.LASF9
+ 217 008e 03       		.uleb128 0x3
+ 218 008f 08       		.byte	0x8
+ 219 0090 07       		.byte	0x7
+ 220 0091 29000000 		.4byte	.LASF10
+ 221 0095 06       		.uleb128 0x6
+ 222 0096 7C010000 		.4byte	.LASF12
+ 223 009a 03       		.byte	0x3
+ 224 009b 2C       		.byte	0x2c
+ 225 009c 7C000000 		.4byte	0x7c
+ 226 00a0 03       		.uleb128 0x3
+ 227 00a1 04       		.byte	0x4
+ 228 00a2 04       		.byte	0x4
+ 229 00a3 23000000 		.4byte	.LASF13
+ 230 00a7 03       		.uleb128 0x3
+ 231 00a8 08       		.byte	0x8
+ 232 00a9 04       		.byte	0x4
+ 233 00aa A3000000 		.4byte	.LASF14
+ 234 00ae 07       		.uleb128 0x7
+ 235 00af 01       		.byte	0x1
+ 236 00b0 07       		.byte	0x7
+ 237 00b1 13       		.byte	0x13
+ 238 00b2 D5000000 		.4byte	0xd5
+ 239 00b6 08       		.uleb128 0x8
+ 240 00b7 9D000000 		.4byte	.LASF15
+ 241 00bb 00       		.sleb128 0
+ 242 00bc 08       		.uleb128 0x8
+ 243 00bd 40000000 		.4byte	.LASF16
+ 244 00c1 01       		.sleb128 1
+ 245 00c2 08       		.uleb128 0x8
+ 246 00c3 7E020000 		.4byte	.LASF17
+ 247 00c7 02       		.sleb128 2
+ 248 00c8 08       		.uleb128 0x8
+ 249 00c9 6B010000 		.4byte	.LASF18
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 7
+
+
+ 250 00cd 03       		.sleb128 3
+ 251 00ce 08       		.uleb128 0x8
+ 252 00cf 76010000 		.4byte	.LASF19
+ 253 00d3 04       		.sleb128 4
+ 254 00d4 00       		.byte	0
+ 255 00d5 09       		.uleb128 0x9
+ 256 00d6 94000000 		.4byte	.LASF20
+ 257 00da 01       		.byte	0x1
+ 258 00db 27       		.byte	0x27
+ 259 00dc 25000000 		.4byte	0x25
+ 260 00e0 00000000 		.4byte	.LFB64
+ 261 00e4 3C000000 		.4byte	.LFE64-.LFB64
+ 262 00e8 01       		.uleb128 0x1
+ 263 00e9 9C       		.byte	0x9c
+ 264 00ea 6A010000 		.4byte	0x16a
+ 265 00ee 0A       		.uleb128 0xa
+ 266 00ef 10000000 		.4byte	.LASF31
+ 267 00f3 01       		.byte	0x1
+ 268 00f4 2E       		.byte	0x2e
+ 269 00f5 25000000 		.4byte	0x25
+ 270 00f9 00000000 		.4byte	.LLST0
+ 271 00fd 0B       		.uleb128 0xb
+ 272 00fe 06000000 		.4byte	.LVL0
+ 273 0102 BF010000 		.4byte	0x1bf
+ 274 0106 0C       		.uleb128 0xc
+ 275 0107 10000000 		.4byte	.LVL1
+ 276 010b CB010000 		.4byte	0x1cb
+ 277 010f 28010000 		.4byte	0x128
+ 278 0113 0D       		.uleb128 0xd
+ 279 0114 01       		.uleb128 0x1
+ 280 0115 52       		.byte	0x52
+ 281 0116 01       		.uleb128 0x1
+ 282 0117 35       		.byte	0x35
+ 283 0118 0D       		.uleb128 0xd
+ 284 0119 01       		.uleb128 0x1
+ 285 011a 51       		.byte	0x51
+ 286 011b 02       		.uleb128 0x2
+ 287 011c 08       		.byte	0x8
+ 288 011d 78       		.byte	0x78
+ 289 011e 0D       		.uleb128 0xd
+ 290 011f 01       		.uleb128 0x1
+ 291 0120 50       		.byte	0x50
+ 292 0121 05       		.uleb128 0x5
+ 293 0122 03       		.byte	0x3
+ 294 0123 00000000 		.4byte	.LC0
+ 295 0127 00       		.byte	0
+ 296 0128 0B       		.uleb128 0xb
+ 297 0129 14000000 		.4byte	.LVL2
+ 298 012d E7010000 		.4byte	0x1e7
+ 299 0131 0B       		.uleb128 0xb
+ 300 0132 18000000 		.4byte	.LVL3
+ 301 0136 EE010000 		.4byte	0x1ee
+ 302 013a 0C       		.uleb128 0xc
+ 303 013b 20000000 		.4byte	.LVL4
+ 304 013f F5010000 		.4byte	0x1f5
+ 305 0143 56010000 		.4byte	0x156
+ 306 0147 0D       		.uleb128 0xd
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 8
+
+
+ 307 0148 01       		.uleb128 0x1
+ 308 0149 51       		.byte	0x51
+ 309 014a 01       		.uleb128 0x1
+ 310 014b 36       		.byte	0x36
+ 311 014c 0D       		.uleb128 0xd
+ 312 014d 01       		.uleb128 0x1
+ 313 014e 50       		.byte	0x50
+ 314 014f 05       		.uleb128 0x5
+ 315 0150 03       		.byte	0x3
+ 316 0151 00000000 		.4byte	.LANCHOR0
+ 317 0155 00       		.byte	0
+ 318 0156 0E       		.uleb128 0xe
+ 319 0157 2A000000 		.4byte	.LVL6
+ 320 015b 15020000 		.4byte	0x215
+ 321 015f 0D       		.uleb128 0xd
+ 322 0160 01       		.uleb128 0x1
+ 323 0161 50       		.byte	0x50
+ 324 0162 05       		.uleb128 0x5
+ 325 0163 03       		.byte	0x3
+ 326 0164 38000000 		.4byte	.LC1
+ 327 0168 00       		.byte	0
+ 328 0169 00       		.byte	0
+ 329 016a 09       		.uleb128 0x9
+ 330 016b 0A000000 		.4byte	.LASF21
+ 331 016f 01       		.byte	0x1
+ 332 0170 21       		.byte	0x21
+ 333 0171 25000000 		.4byte	0x25
+ 334 0175 00000000 		.4byte	.LFB63
+ 335 0179 08000000 		.4byte	.LFE63-.LFB63
+ 336 017d 01       		.uleb128 0x1
+ 337 017e 9C       		.byte	0x9c
+ 338 017f 8D010000 		.4byte	0x18d
+ 339 0183 0B       		.uleb128 0xb
+ 340 0184 06000000 		.4byte	.LVL7
+ 341 0188 D5000000 		.4byte	0xd5
+ 342 018c 00       		.byte	0
+ 343 018d 0F       		.uleb128 0xf
+ 344 018e 87000000 		.4byte	.LASF22
+ 345 0192 04       		.byte	0x4
+ 346 0193 2A06     		.2byte	0x62a
+ 347 0195 99010000 		.4byte	0x199
+ 348 0199 10       		.uleb128 0x10
+ 349 019a 95000000 		.4byte	0x95
+ 350 019e 11       		.uleb128 0x11
+ 351 019f 6F000000 		.4byte	0x6f
+ 352 01a3 AE010000 		.4byte	0x1ae
+ 353 01a7 12       		.uleb128 0x12
+ 354 01a8 75000000 		.4byte	0x75
+ 355 01ac 05       		.byte	0x5
+ 356 01ad 00       		.byte	0
+ 357 01ae 13       		.uleb128 0x13
+ 358 01af 17000000 		.4byte	.LASF23
+ 359 01b3 01       		.byte	0x1
+ 360 01b4 18       		.byte	0x18
+ 361 01b5 9E010000 		.4byte	0x19e
+ 362 01b9 05       		.uleb128 0x5
+ 363 01ba 03       		.byte	0x3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 9
+
+
+ 364 01bb 00000000 		.4byte	menuOptions
+ 365 01bf 14       		.uleb128 0x14
+ 366 01c0 AB010000 		.4byte	.LASF32
+ 367 01c4 06       		.byte	0x6
+ 368 01c5 6D01     		.2byte	0x16d
+ 369 01c7 25000000 		.4byte	0x25
+ 370 01cb 15       		.uleb128 0x15
+ 371 01cc D7010000 		.4byte	.LASF26
+ 372 01d0 06       		.byte	0x6
+ 373 01d1 0703     		.2byte	0x307
+ 374 01d3 E7010000 		.4byte	0x1e7
+ 375 01d7 16       		.uleb128 0x16
+ 376 01d8 56000000 		.4byte	0x56
+ 377 01dc 16       		.uleb128 0x16
+ 378 01dd 25000000 		.4byte	0x25
+ 379 01e1 16       		.uleb128 0x16
+ 380 01e2 25000000 		.4byte	0x25
+ 381 01e6 00       		.byte	0
+ 382 01e7 17       		.uleb128 0x17
+ 383 01e8 38010000 		.4byte	.LASF24
+ 384 01ec 05       		.byte	0x5
+ 385 01ed 3A       		.byte	0x3a
+ 386 01ee 17       		.uleb128 0x17
+ 387 01ef BD010000 		.4byte	.LASF25
+ 388 01f3 05       		.byte	0x5
+ 389 01f4 3D       		.byte	0x3d
+ 390 01f5 18       		.uleb128 0x18
+ 391 01f6 58010000 		.4byte	.LASF33
+ 392 01fa 07       		.byte	0x7
+ 393 01fb 16       		.byte	0x16
+ 394 01fc 25000000 		.4byte	0x25
+ 395 0200 0F020000 		.4byte	0x20f
+ 396 0204 16       		.uleb128 0x16
+ 397 0205 0F020000 		.4byte	0x20f
+ 398 0209 16       		.uleb128 0x16
+ 399 020a 25000000 		.4byte	0x25
+ 400 020e 00       		.byte	0
+ 401 020f 04       		.uleb128 0x4
+ 402 0210 04       		.byte	0x4
+ 403 0211 6F000000 		.4byte	0x6f
+ 404 0215 19       		.uleb128 0x19
+ 405 0216 8D010000 		.4byte	.LASF27
+ 406 021a 07       		.byte	0x7
+ 407 021b 1B       		.byte	0x1b
+ 408 021c 25000000 		.4byte	0x25
+ 409 0220 16       		.uleb128 0x16
+ 410 0221 6F000000 		.4byte	0x6f
+ 411 0225 00       		.byte	0
+ 412 0226 00       		.byte	0
+ 413              		.section	.debug_abbrev,"",%progbits
+ 414              	.Ldebug_abbrev0:
+ 415 0000 01       		.uleb128 0x1
+ 416 0001 11       		.uleb128 0x11
+ 417 0002 01       		.byte	0x1
+ 418 0003 25       		.uleb128 0x25
+ 419 0004 0E       		.uleb128 0xe
+ 420 0005 13       		.uleb128 0x13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 10
+
+
+ 421 0006 0B       		.uleb128 0xb
+ 422 0007 03       		.uleb128 0x3
+ 423 0008 0E       		.uleb128 0xe
+ 424 0009 1B       		.uleb128 0x1b
+ 425 000a 0E       		.uleb128 0xe
+ 426 000b 55       		.uleb128 0x55
+ 427 000c 17       		.uleb128 0x17
+ 428 000d 11       		.uleb128 0x11
+ 429 000e 01       		.uleb128 0x1
+ 430 000f 10       		.uleb128 0x10
+ 431 0010 17       		.uleb128 0x17
+ 432 0011 00       		.byte	0
+ 433 0012 00       		.byte	0
+ 434 0013 02       		.uleb128 0x2
+ 435 0014 24       		.uleb128 0x24
+ 436 0015 00       		.byte	0
+ 437 0016 0B       		.uleb128 0xb
+ 438 0017 0B       		.uleb128 0xb
+ 439 0018 3E       		.uleb128 0x3e
+ 440 0019 0B       		.uleb128 0xb
+ 441 001a 03       		.uleb128 0x3
+ 442 001b 08       		.uleb128 0x8
+ 443 001c 00       		.byte	0
+ 444 001d 00       		.byte	0
+ 445 001e 03       		.uleb128 0x3
+ 446 001f 24       		.uleb128 0x24
+ 447 0020 00       		.byte	0
+ 448 0021 0B       		.uleb128 0xb
+ 449 0022 0B       		.uleb128 0xb
+ 450 0023 3E       		.uleb128 0x3e
+ 451 0024 0B       		.uleb128 0xb
+ 452 0025 03       		.uleb128 0x3
+ 453 0026 0E       		.uleb128 0xe
+ 454 0027 00       		.byte	0
+ 455 0028 00       		.byte	0
+ 456 0029 04       		.uleb128 0x4
+ 457 002a 0F       		.uleb128 0xf
+ 458 002b 00       		.byte	0
+ 459 002c 0B       		.uleb128 0xb
+ 460 002d 0B       		.uleb128 0xb
+ 461 002e 49       		.uleb128 0x49
+ 462 002f 13       		.uleb128 0x13
+ 463 0030 00       		.byte	0
+ 464 0031 00       		.byte	0
+ 465 0032 05       		.uleb128 0x5
+ 466 0033 26       		.uleb128 0x26
+ 467 0034 00       		.byte	0
+ 468 0035 49       		.uleb128 0x49
+ 469 0036 13       		.uleb128 0x13
+ 470 0037 00       		.byte	0
+ 471 0038 00       		.byte	0
+ 472 0039 06       		.uleb128 0x6
+ 473 003a 16       		.uleb128 0x16
+ 474 003b 00       		.byte	0
+ 475 003c 03       		.uleb128 0x3
+ 476 003d 0E       		.uleb128 0xe
+ 477 003e 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 11
+
+
+ 478 003f 0B       		.uleb128 0xb
+ 479 0040 3B       		.uleb128 0x3b
+ 480 0041 0B       		.uleb128 0xb
+ 481 0042 49       		.uleb128 0x49
+ 482 0043 13       		.uleb128 0x13
+ 483 0044 00       		.byte	0
+ 484 0045 00       		.byte	0
+ 485 0046 07       		.uleb128 0x7
+ 486 0047 04       		.uleb128 0x4
+ 487 0048 01       		.byte	0x1
+ 488 0049 0B       		.uleb128 0xb
+ 489 004a 0B       		.uleb128 0xb
+ 490 004b 3A       		.uleb128 0x3a
+ 491 004c 0B       		.uleb128 0xb
+ 492 004d 3B       		.uleb128 0x3b
+ 493 004e 0B       		.uleb128 0xb
+ 494 004f 01       		.uleb128 0x1
+ 495 0050 13       		.uleb128 0x13
+ 496 0051 00       		.byte	0
+ 497 0052 00       		.byte	0
+ 498 0053 08       		.uleb128 0x8
+ 499 0054 28       		.uleb128 0x28
+ 500 0055 00       		.byte	0
+ 501 0056 03       		.uleb128 0x3
+ 502 0057 0E       		.uleb128 0xe
+ 503 0058 1C       		.uleb128 0x1c
+ 504 0059 0D       		.uleb128 0xd
+ 505 005a 00       		.byte	0
+ 506 005b 00       		.byte	0
+ 507 005c 09       		.uleb128 0x9
+ 508 005d 2E       		.uleb128 0x2e
+ 509 005e 01       		.byte	0x1
+ 510 005f 3F       		.uleb128 0x3f
+ 511 0060 19       		.uleb128 0x19
+ 512 0061 03       		.uleb128 0x3
+ 513 0062 0E       		.uleb128 0xe
+ 514 0063 3A       		.uleb128 0x3a
+ 515 0064 0B       		.uleb128 0xb
+ 516 0065 3B       		.uleb128 0x3b
+ 517 0066 0B       		.uleb128 0xb
+ 518 0067 27       		.uleb128 0x27
+ 519 0068 19       		.uleb128 0x19
+ 520 0069 49       		.uleb128 0x49
+ 521 006a 13       		.uleb128 0x13
+ 522 006b 11       		.uleb128 0x11
+ 523 006c 01       		.uleb128 0x1
+ 524 006d 12       		.uleb128 0x12
+ 525 006e 06       		.uleb128 0x6
+ 526 006f 40       		.uleb128 0x40
+ 527 0070 18       		.uleb128 0x18
+ 528 0071 9742     		.uleb128 0x2117
+ 529 0073 19       		.uleb128 0x19
+ 530 0074 01       		.uleb128 0x1
+ 531 0075 13       		.uleb128 0x13
+ 532 0076 00       		.byte	0
+ 533 0077 00       		.byte	0
+ 534 0078 0A       		.uleb128 0xa
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 12
+
+
+ 535 0079 34       		.uleb128 0x34
+ 536 007a 00       		.byte	0
+ 537 007b 03       		.uleb128 0x3
+ 538 007c 0E       		.uleb128 0xe
+ 539 007d 3A       		.uleb128 0x3a
+ 540 007e 0B       		.uleb128 0xb
+ 541 007f 3B       		.uleb128 0x3b
+ 542 0080 0B       		.uleb128 0xb
+ 543 0081 49       		.uleb128 0x49
+ 544 0082 13       		.uleb128 0x13
+ 545 0083 02       		.uleb128 0x2
+ 546 0084 17       		.uleb128 0x17
+ 547 0085 00       		.byte	0
+ 548 0086 00       		.byte	0
+ 549 0087 0B       		.uleb128 0xb
+ 550 0088 898201   		.uleb128 0x4109
+ 551 008b 00       		.byte	0
+ 552 008c 11       		.uleb128 0x11
+ 553 008d 01       		.uleb128 0x1
+ 554 008e 31       		.uleb128 0x31
+ 555 008f 13       		.uleb128 0x13
+ 556 0090 00       		.byte	0
+ 557 0091 00       		.byte	0
+ 558 0092 0C       		.uleb128 0xc
+ 559 0093 898201   		.uleb128 0x4109
+ 560 0096 01       		.byte	0x1
+ 561 0097 11       		.uleb128 0x11
+ 562 0098 01       		.uleb128 0x1
+ 563 0099 31       		.uleb128 0x31
+ 564 009a 13       		.uleb128 0x13
+ 565 009b 01       		.uleb128 0x1
+ 566 009c 13       		.uleb128 0x13
+ 567 009d 00       		.byte	0
+ 568 009e 00       		.byte	0
+ 569 009f 0D       		.uleb128 0xd
+ 570 00a0 8A8201   		.uleb128 0x410a
+ 571 00a3 00       		.byte	0
+ 572 00a4 02       		.uleb128 0x2
+ 573 00a5 18       		.uleb128 0x18
+ 574 00a6 9142     		.uleb128 0x2111
+ 575 00a8 18       		.uleb128 0x18
+ 576 00a9 00       		.byte	0
+ 577 00aa 00       		.byte	0
+ 578 00ab 0E       		.uleb128 0xe
+ 579 00ac 898201   		.uleb128 0x4109
+ 580 00af 01       		.byte	0x1
+ 581 00b0 11       		.uleb128 0x11
+ 582 00b1 01       		.uleb128 0x1
+ 583 00b2 31       		.uleb128 0x31
+ 584 00b3 13       		.uleb128 0x13
+ 585 00b4 00       		.byte	0
+ 586 00b5 00       		.byte	0
+ 587 00b6 0F       		.uleb128 0xf
+ 588 00b7 34       		.uleb128 0x34
+ 589 00b8 00       		.byte	0
+ 590 00b9 03       		.uleb128 0x3
+ 591 00ba 0E       		.uleb128 0xe
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 13
+
+
+ 592 00bb 3A       		.uleb128 0x3a
+ 593 00bc 0B       		.uleb128 0xb
+ 594 00bd 3B       		.uleb128 0x3b
+ 595 00be 05       		.uleb128 0x5
+ 596 00bf 49       		.uleb128 0x49
+ 597 00c0 13       		.uleb128 0x13
+ 598 00c1 3F       		.uleb128 0x3f
+ 599 00c2 19       		.uleb128 0x19
+ 600 00c3 3C       		.uleb128 0x3c
+ 601 00c4 19       		.uleb128 0x19
+ 602 00c5 00       		.byte	0
+ 603 00c6 00       		.byte	0
+ 604 00c7 10       		.uleb128 0x10
+ 605 00c8 35       		.uleb128 0x35
+ 606 00c9 00       		.byte	0
+ 607 00ca 49       		.uleb128 0x49
+ 608 00cb 13       		.uleb128 0x13
+ 609 00cc 00       		.byte	0
+ 610 00cd 00       		.byte	0
+ 611 00ce 11       		.uleb128 0x11
+ 612 00cf 01       		.uleb128 0x1
+ 613 00d0 01       		.byte	0x1
+ 614 00d1 49       		.uleb128 0x49
+ 615 00d2 13       		.uleb128 0x13
+ 616 00d3 01       		.uleb128 0x1
+ 617 00d4 13       		.uleb128 0x13
+ 618 00d5 00       		.byte	0
+ 619 00d6 00       		.byte	0
+ 620 00d7 12       		.uleb128 0x12
+ 621 00d8 21       		.uleb128 0x21
+ 622 00d9 00       		.byte	0
+ 623 00da 49       		.uleb128 0x49
+ 624 00db 13       		.uleb128 0x13
+ 625 00dc 2F       		.uleb128 0x2f
+ 626 00dd 0B       		.uleb128 0xb
+ 627 00de 00       		.byte	0
+ 628 00df 00       		.byte	0
+ 629 00e0 13       		.uleb128 0x13
+ 630 00e1 34       		.uleb128 0x34
+ 631 00e2 00       		.byte	0
+ 632 00e3 03       		.uleb128 0x3
+ 633 00e4 0E       		.uleb128 0xe
+ 634 00e5 3A       		.uleb128 0x3a
+ 635 00e6 0B       		.uleb128 0xb
+ 636 00e7 3B       		.uleb128 0x3b
+ 637 00e8 0B       		.uleb128 0xb
+ 638 00e9 49       		.uleb128 0x49
+ 639 00ea 13       		.uleb128 0x13
+ 640 00eb 3F       		.uleb128 0x3f
+ 641 00ec 19       		.uleb128 0x19
+ 642 00ed 02       		.uleb128 0x2
+ 643 00ee 18       		.uleb128 0x18
+ 644 00ef 00       		.byte	0
+ 645 00f0 00       		.byte	0
+ 646 00f1 14       		.uleb128 0x14
+ 647 00f2 2E       		.uleb128 0x2e
+ 648 00f3 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 14
+
+
+ 649 00f4 3F       		.uleb128 0x3f
+ 650 00f5 19       		.uleb128 0x19
+ 651 00f6 03       		.uleb128 0x3
+ 652 00f7 0E       		.uleb128 0xe
+ 653 00f8 3A       		.uleb128 0x3a
+ 654 00f9 0B       		.uleb128 0xb
+ 655 00fa 3B       		.uleb128 0x3b
+ 656 00fb 05       		.uleb128 0x5
+ 657 00fc 27       		.uleb128 0x27
+ 658 00fd 19       		.uleb128 0x19
+ 659 00fe 49       		.uleb128 0x49
+ 660 00ff 13       		.uleb128 0x13
+ 661 0100 3C       		.uleb128 0x3c
+ 662 0101 19       		.uleb128 0x19
+ 663 0102 00       		.byte	0
+ 664 0103 00       		.byte	0
+ 665 0104 15       		.uleb128 0x15
+ 666 0105 2E       		.uleb128 0x2e
+ 667 0106 01       		.byte	0x1
+ 668 0107 3F       		.uleb128 0x3f
+ 669 0108 19       		.uleb128 0x19
+ 670 0109 03       		.uleb128 0x3
+ 671 010a 0E       		.uleb128 0xe
+ 672 010b 3A       		.uleb128 0x3a
+ 673 010c 0B       		.uleb128 0xb
+ 674 010d 3B       		.uleb128 0x3b
+ 675 010e 05       		.uleb128 0x5
+ 676 010f 27       		.uleb128 0x27
+ 677 0110 19       		.uleb128 0x19
+ 678 0111 3C       		.uleb128 0x3c
+ 679 0112 19       		.uleb128 0x19
+ 680 0113 01       		.uleb128 0x1
+ 681 0114 13       		.uleb128 0x13
+ 682 0115 00       		.byte	0
+ 683 0116 00       		.byte	0
+ 684 0117 16       		.uleb128 0x16
+ 685 0118 05       		.uleb128 0x5
+ 686 0119 00       		.byte	0
+ 687 011a 49       		.uleb128 0x49
+ 688 011b 13       		.uleb128 0x13
+ 689 011c 00       		.byte	0
+ 690 011d 00       		.byte	0
+ 691 011e 17       		.uleb128 0x17
+ 692 011f 2E       		.uleb128 0x2e
+ 693 0120 00       		.byte	0
+ 694 0121 3F       		.uleb128 0x3f
+ 695 0122 19       		.uleb128 0x19
+ 696 0123 03       		.uleb128 0x3
+ 697 0124 0E       		.uleb128 0xe
+ 698 0125 3A       		.uleb128 0x3a
+ 699 0126 0B       		.uleb128 0xb
+ 700 0127 3B       		.uleb128 0x3b
+ 701 0128 0B       		.uleb128 0xb
+ 702 0129 27       		.uleb128 0x27
+ 703 012a 19       		.uleb128 0x19
+ 704 012b 3C       		.uleb128 0x3c
+ 705 012c 19       		.uleb128 0x19
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 15
+
+
+ 706 012d 00       		.byte	0
+ 707 012e 00       		.byte	0
+ 708 012f 18       		.uleb128 0x18
+ 709 0130 2E       		.uleb128 0x2e
+ 710 0131 01       		.byte	0x1
+ 711 0132 3F       		.uleb128 0x3f
+ 712 0133 19       		.uleb128 0x19
+ 713 0134 03       		.uleb128 0x3
+ 714 0135 0E       		.uleb128 0xe
+ 715 0136 3A       		.uleb128 0x3a
+ 716 0137 0B       		.uleb128 0xb
+ 717 0138 3B       		.uleb128 0x3b
+ 718 0139 0B       		.uleb128 0xb
+ 719 013a 27       		.uleb128 0x27
+ 720 013b 19       		.uleb128 0x19
+ 721 013c 49       		.uleb128 0x49
+ 722 013d 13       		.uleb128 0x13
+ 723 013e 3C       		.uleb128 0x3c
+ 724 013f 19       		.uleb128 0x19
+ 725 0140 01       		.uleb128 0x1
+ 726 0141 13       		.uleb128 0x13
+ 727 0142 00       		.byte	0
+ 728 0143 00       		.byte	0
+ 729 0144 19       		.uleb128 0x19
+ 730 0145 2E       		.uleb128 0x2e
+ 731 0146 01       		.byte	0x1
+ 732 0147 3F       		.uleb128 0x3f
+ 733 0148 19       		.uleb128 0x19
+ 734 0149 03       		.uleb128 0x3
+ 735 014a 0E       		.uleb128 0xe
+ 736 014b 3A       		.uleb128 0x3a
+ 737 014c 0B       		.uleb128 0xb
+ 738 014d 3B       		.uleb128 0x3b
+ 739 014e 0B       		.uleb128 0xb
+ 740 014f 27       		.uleb128 0x27
+ 741 0150 19       		.uleb128 0x19
+ 742 0151 49       		.uleb128 0x49
+ 743 0152 13       		.uleb128 0x13
+ 744 0153 3C       		.uleb128 0x3c
+ 745 0154 19       		.uleb128 0x19
+ 746 0155 00       		.byte	0
+ 747 0156 00       		.byte	0
+ 748 0157 00       		.byte	0
+ 749              		.section	.debug_loc,"",%progbits
+ 750              	.Ldebug_loc0:
+ 751              	.LLST0:
+ 752 0000 20000000 		.4byte	.LVL4
+ 753 0004 26000000 		.4byte	.LVL5
+ 754 0008 0100     		.2byte	0x1
+ 755 000a 50       		.byte	0x50
+ 756 000b 00000000 		.4byte	0
+ 757 000f 00000000 		.4byte	0
+ 758              		.section	.debug_aranges,"",%progbits
+ 759 0000 24000000 		.4byte	0x24
+ 760 0004 0200     		.2byte	0x2
+ 761 0006 00000000 		.4byte	.Ldebug_info0
+ 762 000a 04       		.byte	0x4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 16
+
+
+ 763 000b 00       		.byte	0
+ 764 000c 0000     		.2byte	0
+ 765 000e 0000     		.2byte	0
+ 766 0010 00000000 		.4byte	.LFB64
+ 767 0014 3C000000 		.4byte	.LFE64-.LFB64
+ 768 0018 00000000 		.4byte	.LFB63
+ 769 001c 08000000 		.4byte	.LFE63-.LFB63
+ 770 0020 00000000 		.4byte	0
+ 771 0024 00000000 		.4byte	0
+ 772              		.section	.debug_ranges,"",%progbits
+ 773              	.Ldebug_ranges0:
+ 774 0000 00000000 		.4byte	.LFB64
+ 775 0004 3C000000 		.4byte	.LFE64
+ 776 0008 00000000 		.4byte	.LFB63
+ 777 000c 08000000 		.4byte	.LFE63
+ 778 0010 00000000 		.4byte	0
+ 779 0014 00000000 		.4byte	0
+ 780              		.section	.debug_line,"",%progbits
+ 781              	.Ldebug_line0:
+ 782 0000 CC010000 		.section	.debug_str,"MS",%progbits,1
+ 782      02009B01 
+ 782      00000201 
+ 782      FB0E0D00 
+ 782      01010101 
+ 783              	.LASF11:
+ 784 0000 5F5F696E 		.ascii	"__int32_t\000"
+ 784      7433325F 
+ 784      7400
+ 785              	.LASF21:
+ 786 000a 73746172 		.ascii	"start\000"
+ 786      7400
+ 787              	.LASF31:
+ 788 0010 73746174 		.ascii	"status\000"
+ 788      757300
+ 789              	.LASF23:
+ 790 0017 6D656E75 		.ascii	"menuOptions\000"
+ 790      4F707469 
+ 790      6F6E7300 
+ 791              	.LASF13:
+ 792 0023 666C6F61 		.ascii	"float\000"
+ 792      7400
+ 793              	.LASF10:
+ 794 0029 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 794      206C6F6E 
+ 794      6720756E 
+ 794      7369676E 
+ 794      65642069 
+ 795              	.LASF16:
+ 796 0040 484F4D45 		.ascii	"HOME\000"
+ 796      00
+ 797              	.LASF4:
+ 798 0045 756E7369 		.ascii	"unsigned char\000"
+ 798      676E6564 
+ 798      20636861 
+ 798      7200
+ 799              	.LASF1:
+ 800 0053 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 17
+
+
+ 800      20756E73 
+ 800      69676E65 
+ 800      6420696E 
+ 800      7400
+ 801              	.LASF6:
+ 802 0065 73686F72 		.ascii	"short unsigned int\000"
+ 802      7420756E 
+ 802      7369676E 
+ 802      65642069 
+ 802      6E7400
+ 803              	.LASF29:
+ 804 0078 2E5C7374 		.ascii	".\\start_menu.c\000"
+ 804      6172745F 
+ 804      6D656E75 
+ 804      2E6300
+ 805              	.LASF22:
+ 806 0087 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 806      52784275 
+ 806      66666572 
+ 806      00
+ 807              	.LASF20:
+ 808 0094 6D61696E 		.ascii	"mainTask\000"
+ 808      5461736B 
+ 808      00
+ 809              	.LASF15:
+ 810 009d 53544152 		.ascii	"START\000"
+ 810      5400
+ 811              	.LASF14:
+ 812 00a3 646F7562 		.ascii	"double\000"
+ 812      6C6500
+ 813              	.LASF28:
+ 814 00aa 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 814      4320342E 
+ 814      392E3320 
+ 814      32303135 
+ 814      30333033 
+ 815 00dd 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 815      20726576 
+ 815      6973696F 
+ 815      6E203232 
+ 815      31323230 
+ 816 0110 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 816      66756E63 
+ 816      74696F6E 
+ 816      2D736563 
+ 816      74696F6E 
+ 817              	.LASF24:
+ 818 0138 4144435F 		.ascii	"ADC_DelSig_1_Start\000"
+ 818      44656C53 
+ 818      69675F31 
+ 818      5F537461 
+ 818      727400
+ 819              	.LASF0:
+ 820 014b 756E7369 		.ascii	"unsigned int\000"
+ 820      676E6564 
+ 820      20696E74 
+ 820      00
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 18
+
+
+ 821              	.LASF33:
+ 822 0158 61637469 		.ascii	"action_select\000"
+ 822      6F6E5F73 
+ 822      656C6563 
+ 822      7400
+ 823              	.LASF3:
+ 824 0166 63686172 		.ascii	"char\000"
+ 824      00
+ 825              	.LASF18:
+ 826 016b 5441534B 		.ascii	"TASK_START\000"
+ 826      5F535441 
+ 826      525400
+ 827              	.LASF19:
+ 828 0176 4552524F 		.ascii	"ERROR\000"
+ 828      5200
+ 829              	.LASF12:
+ 830 017c 696E7433 		.ascii	"int32_t\000"
+ 830      325F7400 
+ 831              	.LASF8:
+ 832 0184 73697A65 		.ascii	"sizetype\000"
+ 832      74797065 
+ 832      00
+ 833              	.LASF27:
+ 834 018d 6572726F 		.ascii	"error\000"
+ 834      7200
+ 835              	.LASF9:
+ 836 0193 6C6F6E67 		.ascii	"long long int\000"
+ 836      206C6F6E 
+ 836      6720696E 
+ 836      7400
+ 837              	.LASF2:
+ 838 01a1 73686F72 		.ascii	"short int\000"
+ 838      7420696E 
+ 838      7400
+ 839              	.LASF32:
+ 840 01ab 4755495F 		.ascii	"GUI_Init\000"
+ 840      496E6974 
+ 840      00
+ 841              	.LASF5:
+ 842 01b4 6C6F6E67 		.ascii	"long int\000"
+ 842      20696E74 
+ 842      00
+ 843              	.LASF25:
+ 844 01bd 4144435F 		.ascii	"ADC_DelSig_1_StartConvert\000"
+ 844      44656C53 
+ 844      69675F31 
+ 844      5F537461 
+ 844      7274436F 
+ 845              	.LASF26:
+ 846 01d7 4755495F 		.ascii	"GUI_DispStringHCenterAt\000"
+ 846      44697370 
+ 846      53747269 
+ 846      6E674843 
+ 846      656E7465 
+ 847              	.LASF30:
+ 848 01ef 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 848      73657273 
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccUIvSsS.s 			page 19
+
+
+ 848      5C6A616F 
+ 848      68655C45 
+ 848      67686F73 
+ 849 021d 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 849      7072696E 
+ 849      67203230 
+ 849      32355C36 
+ 849      2E313135 
+ 850 024c 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 850      545F7769 
+ 850      74685F65 
+ 850      6D57696E 
+ 850      5C544654 
+ 851              	.LASF7:
+ 852 0272 7369676E 		.ascii	"signed char\000"
+ 852      65642063 
+ 852      68617200 
+ 853              	.LASF17:
+ 854 027e 5441534B 		.ascii	"TASK_SELECT\000"
+ 854      5F53454C 
+ 854      45435400 
+ 855              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

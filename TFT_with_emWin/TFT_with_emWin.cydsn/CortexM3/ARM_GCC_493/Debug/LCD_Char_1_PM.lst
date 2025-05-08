@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
   29:.\Generated_Source\PSoC5/LCD_Char_1_PM.c **** *
   30:.\Generated_Source\PSoC5/LCD_Char_1_PM.c **** * Parameters:
   31:.\Generated_Source\PSoC5/LCD_Char_1_PM.c **** *  None.
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/LCD_Char_1_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
   55              		.global	LCD_Char_1_Sleep
   56              		.thumb
   57              		.thumb_func
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 3
 
 
   58              		.type	LCD_Char_1_Sleep, %function
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
   87              		.section	.text.LCD_Char_1_Wakeup,"ax",%progbits
   88              		.align	2
   89              		.global	LCD_Char_1_Wakeup
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 4
 
 
   90              		.thumb
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  113              	.L11:
  114              		.align	2
  115              	.L10:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 5
 
 
  116 0010 00000000 		.word	.LANCHOR0
@@ -266,14 +266,14 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  138 000c F7000000 		.4byte	.LASF20
  139 0010 01       		.byte	0x1
  140 0011 B5000000 		.4byte	.LASF21
- 141 0015 15020000 		.4byte	.LASF22
+ 141 0015 F3010000 		.4byte	.LASF22
  142 0019 00000000 		.4byte	.Ldebug_ranges0+0
  143 001d 00000000 		.4byte	0
  144 0021 00000000 		.4byte	.Ldebug_line0
  145 0025 02       		.uleb128 0x2
  146 0026 01       		.byte	0x1
  147 0027 06       		.byte	0x6
- 148 0028 09020000 		.4byte	.LASF0
+ 148 0028 76020000 		.4byte	.LASF0
  149 002c 02       		.uleb128 0x2
  150 002d 01       		.byte	0x1
  151 002e 08       		.byte	0x8
@@ -281,7 +281,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  153 0033 02       		.uleb128 0x2
  154 0034 02       		.byte	0x2
  155 0035 05       		.byte	0x5
- 156 0036 E4010000 		.4byte	.LASF2
+ 156 0036 CE010000 		.4byte	.LASF2
  157 003a 02       		.uleb128 0x2
  158 003b 02       		.byte	0x2
  159 003c 07       		.byte	0x7
@@ -289,7 +289,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  161 0041 02       		.uleb128 0x2
  162 0042 04       		.byte	0x4
  163 0043 05       		.byte	0x5
- 164 0044 F4010000 		.4byte	.LASF4
+ 164 0044 DE010000 		.4byte	.LASF4
  165 0048 02       		.uleb128 0x2
  166 0049 04       		.byte	0x4
  167 004a 07       		.byte	0x7
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  170 0050 08       		.byte	0x8
  171 0051 05       		.byte	0x5
  172 0052 BB010000 		.4byte	.LASF6
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 6
 
 
  173 0056 02       		.uleb128 0x2
@@ -314,7 +314,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  183 0066 07       		.byte	0x7
  184 0067 85010000 		.4byte	.LASF8
  185 006b 04       		.uleb128 0x4
- 186 006c EE010000 		.4byte	.LASF12
+ 186 006c D8010000 		.4byte	.LASF12
  187 0070 02       		.byte	0x2
  188 0071 C2       		.byte	0xc2
  189 0072 2C000000 		.4byte	0x2c
@@ -329,14 +329,14 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  198 0084 02       		.uleb128 0x2
  199 0085 01       		.byte	0x1
  200 0086 08       		.byte	0x8
- 201 0087 DF010000 		.4byte	.LASF11
+ 201 0087 C9010000 		.4byte	.LASF11
  202 008b 05       		.uleb128 0x5
  203 008c 01       		.byte	0x1
  204 008d 03       		.byte	0x3
  205 008e 2C       		.byte	0x2c
  206 008f A0000000 		.4byte	0xa0
  207 0093 06       		.uleb128 0x6
- 208 0094 FD010000 		.4byte	.LASF23
+ 208 0094 E7010000 		.4byte	.LASF23
  209 0098 03       		.byte	0x3
  210 0099 2E       		.byte	0x2e
  211 009a 6B000000 		.4byte	0x6b
@@ -348,7 +348,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  217 00a6 2F       		.byte	0x2f
  218 00a7 8B000000 		.4byte	0x8b
  219 00ab 07       		.uleb128 0x7
- 220 00ac C9010000 		.4byte	.LASF14
+ 220 00ac 82020000 		.4byte	.LASF14
  221 00b0 01       		.byte	0x1
  222 00b1 25       		.byte	0x25
  223 00b2 00000000 		.4byte	.LFB0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  227 00bc 07       		.uleb128 0x7
  228 00bd 47000000 		.4byte	.LASF15
  229 00c1 01       		.byte	0x1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 7
 
 
  230 00c2 38       		.byte	0x38
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  284              	.Ldebug_abbrev0:
  285 0000 01       		.uleb128 0x1
  286 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 8
 
 
  287 0002 01       		.byte	0x1
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  341 0038 01       		.byte	0x1
  342 0039 0B       		.uleb128 0xb
  343 003a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 9
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 9
 
 
  344 003b 3A       		.uleb128 0x3a
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  398 0072 0B       		.uleb128 0xb
  399 0073 3B       		.uleb128 0x3b
  400 0074 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 10
 
 
  401 0075 27       		.uleb128 0x27
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  455 00ae 00       		.byte	0
  456 00af 0C       		.uleb128 0xc
  457 00b0 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 11
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 11
 
 
  458 00b1 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  508 0000 4C43445F 		.ascii	"LCD_Char_1_Sleep\000"
  508      43686172 
  508      5F315F53 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 12
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 12
 
 
  508      6C656570 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  529              	.LASF21:
  530 00b5 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\LCD_Char_1_PM.c\000"
  530      6E657261 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 13
 
 
  530      7465645F 
@@ -768,54 +768,51 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 1
  544      206C6F6E 
  544      6720696E 
  544      7400
- 545              	.LASF14:
- 546 01c9 4C43445F 		.ascii	"LCD_Char_1_SaveConfig\000"
- 546      43686172 
- 546      5F315F53 
- 546      61766543 
- 546      6F6E6669 
- 547              	.LASF11:
- 548 01df 63686172 		.ascii	"char\000"
- 548      00
- 549              	.LASF2:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccMBB2Kp.s 			page 14
+ 545              	.LASF11:
+ 546 01c9 63686172 		.ascii	"char\000"
+ 546      00
+ 547              	.LASF2:
+ 548 01ce 73686F72 		.ascii	"short int\000"
+ 548      7420696E 
+ 548      7400
+ 549              	.LASF12:
+ 550 01d8 75696E74 		.ascii	"uint8\000"
+ 550      3800
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccIl4IRF.s 			page 14
 
 
- 550 01e4 73686F72 		.ascii	"short int\000"
- 550      7420696E 
- 550      7400
- 551              	.LASF12:
- 552 01ee 75696E74 		.ascii	"uint8\000"
- 552      3800
- 553              	.LASF4:
- 554 01f4 6C6F6E67 		.ascii	"long int\000"
- 554      20696E74 
- 554      00
- 555              	.LASF23:
- 556 01fd 656E6162 		.ascii	"enableState\000"
- 556      6C655374 
- 556      61746500 
- 557              	.LASF0:
- 558 0209 7369676E 		.ascii	"signed char\000"
- 558      65642063 
- 558      68617200 
- 559              	.LASF22:
- 560 0215 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
- 560      73657273 
- 560      5C6A616F 
- 560      68655C45 
- 560      67686F73 
- 561 0243 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\TFT_Tutorial"
- 561      7072696E 
- 561      67203230 
- 561      32355C36 
- 561      2E313135 
- 562 0272 5F323032 		.ascii	"_2022\\TFT_Tutorial_2022\\TFT_with_emWin\\TFT_with_"
- 562      325C5446 
- 562      545F5475 
- 562      746F7269 
- 562      616C5F32 
- 563 02a2 656D5769 		.ascii	"emWin.cydsn\000"
- 563      6E2E6379 
- 563      64736E00 
- 564              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 551              	.LASF4:
+ 552 01de 6C6F6E67 		.ascii	"long int\000"
+ 552      20696E74 
+ 552      00
+ 553              	.LASF23:
+ 554 01e7 656E6162 		.ascii	"enableState\000"
+ 554      6C655374 
+ 554      61746500 
+ 555              	.LASF22:
+ 556 01f3 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 556      73657273 
+ 556      5C6A616F 
+ 556      68655C45 
+ 556      67686F73 
+ 557 0221 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 557      7072696E 
+ 557      67203230 
+ 557      32355C36 
+ 557      2E313135 
+ 558 0250 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 558      545F7769 
+ 558      74685F65 
+ 558      6D57696E 
+ 558      5C544654 
+ 559              	.LASF0:
+ 560 0276 7369676E 		.ascii	"signed char\000"
+ 560      65642063 
+ 560      68617200 
+ 561              	.LASF14:
+ 562 0282 4C43445F 		.ascii	"LCD_Char_1_SaveConfig\000"
+ 562      43686172 
+ 562      5F315F53 
+ 562      61766543 
+ 562      6F6E6669 
+ 563              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

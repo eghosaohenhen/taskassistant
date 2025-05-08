@@ -1,0 +1,1057 @@
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"Switches.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.Switches_Write,"ax",%progbits
+  19              		.align	2
+  20              		.global	Switches_Write
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	Switches_Write, %function
+  24              	Switches_Write:
+  25              	.LFB0:
+  26              		.file 1 ".\\Generated_Source\\PSoC5\\Switches.c"
+   1:.\Generated_Source\PSoC5/Switches.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/Switches.c **** * File Name: Switches.c  
+   3:.\Generated_Source\PSoC5/Switches.c **** * Version 2.20
+   4:.\Generated_Source\PSoC5/Switches.c **** *
+   5:.\Generated_Source\PSoC5/Switches.c **** * Description:
+   6:.\Generated_Source\PSoC5/Switches.c **** *  This file contains API to enable firmware control of a Pins component.
+   7:.\Generated_Source\PSoC5/Switches.c **** *
+   8:.\Generated_Source\PSoC5/Switches.c **** * Note:
+   9:.\Generated_Source\PSoC5/Switches.c **** *
+  10:.\Generated_Source\PSoC5/Switches.c **** ********************************************************************************
+  11:.\Generated_Source\PSoC5/Switches.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC5/Switches.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:.\Generated_Source\PSoC5/Switches.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:.\Generated_Source\PSoC5/Switches.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC5/Switches.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC5/Switches.c **** 
+  17:.\Generated_Source\PSoC5/Switches.c **** #include "cytypes.h"
+  18:.\Generated_Source\PSoC5/Switches.c **** #include "Switches.h"
+  19:.\Generated_Source\PSoC5/Switches.c **** 
+  20:.\Generated_Source\PSoC5/Switches.c **** /* APIs are not generated for P15[7:6] on PSoC 5 */
+  21:.\Generated_Source\PSoC5/Switches.c **** #if !(CY_PSOC5A &&\
+  22:.\Generated_Source\PSoC5/Switches.c **** 	 Switches__PORT == 15 && ((Switches__MASK & 0xC0) != 0))
+  23:.\Generated_Source\PSoC5/Switches.c **** 
+  24:.\Generated_Source\PSoC5/Switches.c **** 
+  25:.\Generated_Source\PSoC5/Switches.c **** /*******************************************************************************
+  26:.\Generated_Source\PSoC5/Switches.c **** * Function Name: Switches_Write
+  27:.\Generated_Source\PSoC5/Switches.c **** ****************************************************************************//**
+  28:.\Generated_Source\PSoC5/Switches.c **** *
+  29:.\Generated_Source\PSoC5/Switches.c **** * \brief Writes the value to the physical port (data output register), masking
+  30:.\Generated_Source\PSoC5/Switches.c **** *  and shifting the bits appropriately. 
+  31:.\Generated_Source\PSoC5/Switches.c **** *
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 2
+
+
+  32:.\Generated_Source\PSoC5/Switches.c **** * The data output register controls the signal applied to the physical pin in 
+  33:.\Generated_Source\PSoC5/Switches.c **** * conjunction with the drive mode parameter. This function avoids changing 
+  34:.\Generated_Source\PSoC5/Switches.c **** * other bits in the port by using the appropriate method (read-modify-write or
+  35:.\Generated_Source\PSoC5/Switches.c **** * bit banding).
+  36:.\Generated_Source\PSoC5/Switches.c **** *
+  37:.\Generated_Source\PSoC5/Switches.c **** * <b>Note</b> This function should not be used on a hardware digital output pin 
+  38:.\Generated_Source\PSoC5/Switches.c **** * as it is driven by the hardware signal attached to it.
+  39:.\Generated_Source\PSoC5/Switches.c **** *
+  40:.\Generated_Source\PSoC5/Switches.c **** * \param value
+  41:.\Generated_Source\PSoC5/Switches.c **** *  Value to write to the component instance.
+  42:.\Generated_Source\PSoC5/Switches.c **** *
+  43:.\Generated_Source\PSoC5/Switches.c **** * \return 
+  44:.\Generated_Source\PSoC5/Switches.c **** *  None 
+  45:.\Generated_Source\PSoC5/Switches.c **** *
+  46:.\Generated_Source\PSoC5/Switches.c **** * \sideeffect
+  47:.\Generated_Source\PSoC5/Switches.c **** *  If you use read-modify-write operations that are not atomic; the Interrupt 
+  48:.\Generated_Source\PSoC5/Switches.c **** *  Service Routines (ISR) can cause corruption of this function. An ISR that 
+  49:.\Generated_Source\PSoC5/Switches.c **** *  interrupts this function and performs writes to the Pins component data 
+  50:.\Generated_Source\PSoC5/Switches.c **** *  register can cause corrupted port data. To avoid this issue, you should 
+  51:.\Generated_Source\PSoC5/Switches.c **** *  either use the Per-Pin APIs (primary method) or disable interrupts around 
+  52:.\Generated_Source\PSoC5/Switches.c **** *  this function.
+  53:.\Generated_Source\PSoC5/Switches.c **** *
+  54:.\Generated_Source\PSoC5/Switches.c **** * \funcusage
+  55:.\Generated_Source\PSoC5/Switches.c **** *  \snippet Switches_SUT.c usage_Switches_Write
+  56:.\Generated_Source\PSoC5/Switches.c **** *******************************************************************************/
+  57:.\Generated_Source\PSoC5/Switches.c **** void Switches_Write(uint8 value)
+  58:.\Generated_Source\PSoC5/Switches.c **** {
+  27              		.loc 1 58 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              	.LVL0:
+  59:.\Generated_Source\PSoC5/Switches.c ****     uint8 staticBits = (Switches_DR & (uint8)(~Switches_MASK));
+  33              		.loc 1 59 0
+  34 0000 044A     		ldr	r2, .L2
+  35 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  36 0004 03F07F03 		and	r3, r3, #127
+  37              	.LVL1:
+  60:.\Generated_Source\PSoC5/Switches.c ****     Switches_DR = staticBits | ((uint8)(value << Switches_SHIFT) & Switches_MASK);
+  38              		.loc 1 60 0
+  39 0008 C001     		lsls	r0, r0, #7
+  40              	.LVL2:
+  41 000a C0B2     		uxtb	r0, r0
+  42 000c 0343     		orrs	r3, r3, r0
+  43              	.LVL3:
+  44 000e 1370     		strb	r3, [r2]
+  45 0010 7047     		bx	lr
+  46              	.L3:
+  47 0012 00BF     		.align	2
+  48              	.L2:
+  49 0014 30510040 		.word	1073762608
+  50              		.cfi_endproc
+  51              	.LFE0:
+  52              		.size	Switches_Write, .-Switches_Write
+  53              		.section	.text.Switches_SetDriveMode,"ax",%progbits
+  54              		.align	2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 3
+
+
+  55              		.global	Switches_SetDriveMode
+  56              		.thumb
+  57              		.thumb_func
+  58              		.type	Switches_SetDriveMode, %function
+  59              	Switches_SetDriveMode:
+  60              	.LFB1:
+  61:.\Generated_Source\PSoC5/Switches.c **** }
+  62:.\Generated_Source\PSoC5/Switches.c **** 
+  63:.\Generated_Source\PSoC5/Switches.c **** 
+  64:.\Generated_Source\PSoC5/Switches.c **** /*******************************************************************************
+  65:.\Generated_Source\PSoC5/Switches.c **** * Function Name: Switches_SetDriveMode
+  66:.\Generated_Source\PSoC5/Switches.c **** ****************************************************************************//**
+  67:.\Generated_Source\PSoC5/Switches.c **** *
+  68:.\Generated_Source\PSoC5/Switches.c **** * \brief Sets the drive mode for each of the Pins component's pins.
+  69:.\Generated_Source\PSoC5/Switches.c **** * 
+  70:.\Generated_Source\PSoC5/Switches.c **** * <b>Note</b> This affects all pins in the Pins component instance. Use the
+  71:.\Generated_Source\PSoC5/Switches.c **** * Per-Pin APIs if you wish to control individual pin's drive modes.
+  72:.\Generated_Source\PSoC5/Switches.c **** *
+  73:.\Generated_Source\PSoC5/Switches.c **** * \param mode
+  74:.\Generated_Source\PSoC5/Switches.c **** *  Mode for the selected signals. Valid options are documented in 
+  75:.\Generated_Source\PSoC5/Switches.c **** *  \ref driveMode.
+  76:.\Generated_Source\PSoC5/Switches.c **** *
+  77:.\Generated_Source\PSoC5/Switches.c **** * \return
+  78:.\Generated_Source\PSoC5/Switches.c **** *  None
+  79:.\Generated_Source\PSoC5/Switches.c **** *
+  80:.\Generated_Source\PSoC5/Switches.c **** * \sideeffect
+  81:.\Generated_Source\PSoC5/Switches.c **** *  If you use read-modify-write operations that are not atomic, the ISR can
+  82:.\Generated_Source\PSoC5/Switches.c **** *  cause corruption of this function. An ISR that interrupts this function 
+  83:.\Generated_Source\PSoC5/Switches.c **** *  and performs writes to the Pins component Drive Mode registers can cause 
+  84:.\Generated_Source\PSoC5/Switches.c **** *  corrupted port data. To avoid this issue, you should either use the Per-Pin
+  85:.\Generated_Source\PSoC5/Switches.c **** *  APIs (primary method) or disable interrupts around this function.
+  86:.\Generated_Source\PSoC5/Switches.c **** *
+  87:.\Generated_Source\PSoC5/Switches.c **** * \funcusage
+  88:.\Generated_Source\PSoC5/Switches.c **** *  \snippet Switches_SUT.c usage_Switches_SetDriveMode
+  89:.\Generated_Source\PSoC5/Switches.c **** *******************************************************************************/
+  90:.\Generated_Source\PSoC5/Switches.c **** void Switches_SetDriveMode(uint8 mode)
+  91:.\Generated_Source\PSoC5/Switches.c **** {
+  61              		.loc 1 91 0
+  62              		.cfi_startproc
+  63              		@ args = 0, pretend = 0, frame = 0
+  64              		@ frame_needed = 0, uses_anonymous_args = 0
+  65              		@ link register save eliminated.
+  66              	.LVL4:
+  92:.\Generated_Source\PSoC5/Switches.c **** 	CyPins_SetPinDriveMode(Switches_0, mode);
+  67              		.loc 1 92 0
+  68 0000 044A     		ldr	r2, .L5
+  69 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  70 0004 03F0F103 		and	r3, r3, #241
+  71 0008 00F00E00 		and	r0, r0, #14
+  72              	.LVL5:
+  73 000c 1843     		orrs	r0, r0, r3
+  74 000e 1070     		strb	r0, [r2]
+  75 0010 7047     		bx	lr
+  76              	.L6:
+  77 0012 00BF     		.align	2
+  78              	.L5:
+  79 0014 1F500040 		.word	1073762335
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 4
+
+
+  80              		.cfi_endproc
+  81              	.LFE1:
+  82              		.size	Switches_SetDriveMode, .-Switches_SetDriveMode
+  83              		.section	.text.Switches_Read,"ax",%progbits
+  84              		.align	2
+  85              		.global	Switches_Read
+  86              		.thumb
+  87              		.thumb_func
+  88              		.type	Switches_Read, %function
+  89              	Switches_Read:
+  90              	.LFB2:
+  93:.\Generated_Source\PSoC5/Switches.c **** }
+  94:.\Generated_Source\PSoC5/Switches.c **** 
+  95:.\Generated_Source\PSoC5/Switches.c **** 
+  96:.\Generated_Source\PSoC5/Switches.c **** /*******************************************************************************
+  97:.\Generated_Source\PSoC5/Switches.c **** * Function Name: Switches_Read
+  98:.\Generated_Source\PSoC5/Switches.c **** ****************************************************************************//**
+  99:.\Generated_Source\PSoC5/Switches.c **** *
+ 100:.\Generated_Source\PSoC5/Switches.c **** * \brief Reads the associated physical port (pin status register) and masks 
+ 101:.\Generated_Source\PSoC5/Switches.c **** *  the required bits according to the width and bit position of the component
+ 102:.\Generated_Source\PSoC5/Switches.c **** *  instance. 
+ 103:.\Generated_Source\PSoC5/Switches.c **** *
+ 104:.\Generated_Source\PSoC5/Switches.c **** * The pin's status register returns the current logic level present on the 
+ 105:.\Generated_Source\PSoC5/Switches.c **** * physical pin.
+ 106:.\Generated_Source\PSoC5/Switches.c **** *
+ 107:.\Generated_Source\PSoC5/Switches.c **** * \return 
+ 108:.\Generated_Source\PSoC5/Switches.c **** *  The current value for the pins in the component as a right justified number.
+ 109:.\Generated_Source\PSoC5/Switches.c **** *
+ 110:.\Generated_Source\PSoC5/Switches.c **** * \funcusage
+ 111:.\Generated_Source\PSoC5/Switches.c **** *  \snippet Switches_SUT.c usage_Switches_Read  
+ 112:.\Generated_Source\PSoC5/Switches.c **** *******************************************************************************/
+ 113:.\Generated_Source\PSoC5/Switches.c **** uint8 Switches_Read(void)
+ 114:.\Generated_Source\PSoC5/Switches.c **** {
+  91              		.loc 1 114 0
+  92              		.cfi_startproc
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95              		@ link register save eliminated.
+ 115:.\Generated_Source\PSoC5/Switches.c ****     return (Switches_PS & Switches_MASK) >> Switches_SHIFT;
+  96              		.loc 1 115 0
+  97 0000 014B     		ldr	r3, .L8
+  98 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 116:.\Generated_Source\PSoC5/Switches.c **** }
+  99              		.loc 1 116 0
+ 100 0004 C009     		lsrs	r0, r0, #7
+ 101 0006 7047     		bx	lr
+ 102              	.L9:
+ 103              		.align	2
+ 104              	.L8:
+ 105 0008 31510040 		.word	1073762609
+ 106              		.cfi_endproc
+ 107              	.LFE2:
+ 108              		.size	Switches_Read, .-Switches_Read
+ 109              		.section	.text.Switches_ReadDataReg,"ax",%progbits
+ 110              		.align	2
+ 111              		.global	Switches_ReadDataReg
+ 112              		.thumb
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 5
+
+
+ 113              		.thumb_func
+ 114              		.type	Switches_ReadDataReg, %function
+ 115              	Switches_ReadDataReg:
+ 116              	.LFB3:
+ 117:.\Generated_Source\PSoC5/Switches.c **** 
+ 118:.\Generated_Source\PSoC5/Switches.c **** 
+ 119:.\Generated_Source\PSoC5/Switches.c **** /*******************************************************************************
+ 120:.\Generated_Source\PSoC5/Switches.c **** * Function Name: Switches_ReadDataReg
+ 121:.\Generated_Source\PSoC5/Switches.c **** ****************************************************************************//**
+ 122:.\Generated_Source\PSoC5/Switches.c **** *
+ 123:.\Generated_Source\PSoC5/Switches.c **** * \brief Reads the associated physical port's data output register and masks 
+ 124:.\Generated_Source\PSoC5/Switches.c **** *  the correct bits according to the width and bit position of the component 
+ 125:.\Generated_Source\PSoC5/Switches.c **** *  instance. 
+ 126:.\Generated_Source\PSoC5/Switches.c **** *
+ 127:.\Generated_Source\PSoC5/Switches.c **** * The data output register controls the signal applied to the physical pin in 
+ 128:.\Generated_Source\PSoC5/Switches.c **** * conjunction with the drive mode parameter. This is not the same as the 
+ 129:.\Generated_Source\PSoC5/Switches.c **** * preferred Switches_Read() API because the 
+ 130:.\Generated_Source\PSoC5/Switches.c **** * Switches_ReadDataReg() reads the data register instead of the status 
+ 131:.\Generated_Source\PSoC5/Switches.c **** * register. For output pins this is a useful function to determine the value 
+ 132:.\Generated_Source\PSoC5/Switches.c **** * just written to the pin.
+ 133:.\Generated_Source\PSoC5/Switches.c **** *
+ 134:.\Generated_Source\PSoC5/Switches.c **** * \return 
+ 135:.\Generated_Source\PSoC5/Switches.c **** *  The current value of the data register masked and shifted into a right 
+ 136:.\Generated_Source\PSoC5/Switches.c **** *  justified number for the component instance.
+ 137:.\Generated_Source\PSoC5/Switches.c **** *
+ 138:.\Generated_Source\PSoC5/Switches.c **** * \funcusage
+ 139:.\Generated_Source\PSoC5/Switches.c **** *  \snippet Switches_SUT.c usage_Switches_ReadDataReg 
+ 140:.\Generated_Source\PSoC5/Switches.c **** *******************************************************************************/
+ 141:.\Generated_Source\PSoC5/Switches.c **** uint8 Switches_ReadDataReg(void)
+ 142:.\Generated_Source\PSoC5/Switches.c **** {
+ 117              		.loc 1 142 0
+ 118              		.cfi_startproc
+ 119              		@ args = 0, pretend = 0, frame = 0
+ 120              		@ frame_needed = 0, uses_anonymous_args = 0
+ 121              		@ link register save eliminated.
+ 143:.\Generated_Source\PSoC5/Switches.c ****     return (Switches_DR & Switches_MASK) >> Switches_SHIFT;
+ 122              		.loc 1 143 0
+ 123 0000 014B     		ldr	r3, .L11
+ 124 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 144:.\Generated_Source\PSoC5/Switches.c **** }
+ 125              		.loc 1 144 0
+ 126 0004 C009     		lsrs	r0, r0, #7
+ 127 0006 7047     		bx	lr
+ 128              	.L12:
+ 129              		.align	2
+ 130              	.L11:
+ 131 0008 30510040 		.word	1073762608
+ 132              		.cfi_endproc
+ 133              	.LFE3:
+ 134              		.size	Switches_ReadDataReg, .-Switches_ReadDataReg
+ 135              		.section	.text.Switches_SetInterruptMode,"ax",%progbits
+ 136              		.align	2
+ 137              		.global	Switches_SetInterruptMode
+ 138              		.thumb
+ 139              		.thumb_func
+ 140              		.type	Switches_SetInterruptMode, %function
+ 141              	Switches_SetInterruptMode:
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 6
+
+
+ 142              	.LFB4:
+ 145:.\Generated_Source\PSoC5/Switches.c **** 
+ 146:.\Generated_Source\PSoC5/Switches.c **** 
+ 147:.\Generated_Source\PSoC5/Switches.c **** /* If interrupt is connected for this Pins component */ 
+ 148:.\Generated_Source\PSoC5/Switches.c **** #if defined(Switches_INTSTAT) 
+ 149:.\Generated_Source\PSoC5/Switches.c **** 
+ 150:.\Generated_Source\PSoC5/Switches.c ****     /*******************************************************************************
+ 151:.\Generated_Source\PSoC5/Switches.c ****     * Function Name: Switches_SetInterruptMode
+ 152:.\Generated_Source\PSoC5/Switches.c ****     ****************************************************************************//**
+ 153:.\Generated_Source\PSoC5/Switches.c ****     *
+ 154:.\Generated_Source\PSoC5/Switches.c ****     * \brief Configures the interrupt mode for each of the Pins component's
+ 155:.\Generated_Source\PSoC5/Switches.c ****     *  pins. Alternatively you may set the interrupt mode for all the pins
+ 156:.\Generated_Source\PSoC5/Switches.c ****     *  specified in the Pins component.
+ 157:.\Generated_Source\PSoC5/Switches.c ****     *
+ 158:.\Generated_Source\PSoC5/Switches.c ****     *  <b>Note</b> The interrupt is port-wide and therefore any enabled pin
+ 159:.\Generated_Source\PSoC5/Switches.c ****     *  interrupt may trigger it.
+ 160:.\Generated_Source\PSoC5/Switches.c ****     *
+ 161:.\Generated_Source\PSoC5/Switches.c ****     * \param position
+ 162:.\Generated_Source\PSoC5/Switches.c ****     *  The pin position as listed in the Pins component. You may OR these to be 
+ 163:.\Generated_Source\PSoC5/Switches.c ****     *  able to configure the interrupt mode of multiple pins within a Pins 
+ 164:.\Generated_Source\PSoC5/Switches.c ****     *  component. Or you may use Switches_INTR_ALL to configure the
+ 165:.\Generated_Source\PSoC5/Switches.c ****     *  interrupt mode of all the pins in the Pins component.       
+ 166:.\Generated_Source\PSoC5/Switches.c ****     *  - Switches_0_INTR       (First pin in the list)
+ 167:.\Generated_Source\PSoC5/Switches.c ****     *  - Switches_1_INTR       (Second pin in the list)
+ 168:.\Generated_Source\PSoC5/Switches.c ****     *  - ...
+ 169:.\Generated_Source\PSoC5/Switches.c ****     *  - Switches_INTR_ALL     (All pins in Pins component)
+ 170:.\Generated_Source\PSoC5/Switches.c ****     *
+ 171:.\Generated_Source\PSoC5/Switches.c ****     * \param mode
+ 172:.\Generated_Source\PSoC5/Switches.c ****     *  Interrupt mode for the selected pins. Valid options are documented in
+ 173:.\Generated_Source\PSoC5/Switches.c ****     *  \ref intrMode.
+ 174:.\Generated_Source\PSoC5/Switches.c ****     *
+ 175:.\Generated_Source\PSoC5/Switches.c ****     * \return 
+ 176:.\Generated_Source\PSoC5/Switches.c ****     *  None
+ 177:.\Generated_Source\PSoC5/Switches.c ****     *  
+ 178:.\Generated_Source\PSoC5/Switches.c ****     * \sideeffect
+ 179:.\Generated_Source\PSoC5/Switches.c ****     *  It is recommended that the interrupt be disabled before calling this 
+ 180:.\Generated_Source\PSoC5/Switches.c ****     *  function to avoid unintended interrupt requests. Note that the interrupt
+ 181:.\Generated_Source\PSoC5/Switches.c ****     *  type is port wide, and therefore will trigger for any enabled pin on the 
+ 182:.\Generated_Source\PSoC5/Switches.c ****     *  port.
+ 183:.\Generated_Source\PSoC5/Switches.c ****     *
+ 184:.\Generated_Source\PSoC5/Switches.c ****     * \funcusage
+ 185:.\Generated_Source\PSoC5/Switches.c ****     *  \snippet Switches_SUT.c usage_Switches_SetInterruptMode
+ 186:.\Generated_Source\PSoC5/Switches.c ****     *******************************************************************************/
+ 187:.\Generated_Source\PSoC5/Switches.c ****     void Switches_SetInterruptMode(uint16 position, uint16 mode)
+ 188:.\Generated_Source\PSoC5/Switches.c ****     {
+ 143              		.loc 1 188 0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147              		@ link register save eliminated.
+ 148              	.LVL6:
+ 189:.\Generated_Source\PSoC5/Switches.c **** 		if((position & Switches_0_INTR) != 0u) 
+ 149              		.loc 1 189 0
+ 150 0000 00F08000 		and	r0, r0, #128
+ 151              	.LVL7:
+ 152 0004 80B2     		uxth	r0, r0
+ 153 0006 10B1     		cbz	r0, .L13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 7
+
+
+ 190:.\Generated_Source\PSoC5/Switches.c **** 		{ 
+ 191:.\Generated_Source\PSoC5/Switches.c **** 			 Switches_0_INTTYPE_REG = (uint8)mode; 
+ 154              		.loc 1 191 0
+ 155 0008 C9B2     		uxtb	r1, r1
+ 156              	.LVL8:
+ 157 000a 014B     		ldr	r3, .L15
+ 158 000c 1970     		strb	r1, [r3]
+ 159              	.L13:
+ 160 000e 7047     		bx	lr
+ 161              	.L16:
+ 162              		.align	2
+ 163              	.L15:
+ 164 0010 1F450040 		.word	1073759519
+ 165              		.cfi_endproc
+ 166              	.LFE4:
+ 167              		.size	Switches_SetInterruptMode, .-Switches_SetInterruptMode
+ 168              		.section	.text.Switches_ClearInterrupt,"ax",%progbits
+ 169              		.align	2
+ 170              		.global	Switches_ClearInterrupt
+ 171              		.thumb
+ 172              		.thumb_func
+ 173              		.type	Switches_ClearInterrupt, %function
+ 174              	Switches_ClearInterrupt:
+ 175              	.LFB5:
+ 192:.\Generated_Source\PSoC5/Switches.c **** 		}
+ 193:.\Generated_Source\PSoC5/Switches.c ****     }
+ 194:.\Generated_Source\PSoC5/Switches.c ****     
+ 195:.\Generated_Source\PSoC5/Switches.c ****     
+ 196:.\Generated_Source\PSoC5/Switches.c ****     /*******************************************************************************
+ 197:.\Generated_Source\PSoC5/Switches.c ****     * Function Name: Switches_ClearInterrupt
+ 198:.\Generated_Source\PSoC5/Switches.c ****     ****************************************************************************//**
+ 199:.\Generated_Source\PSoC5/Switches.c ****     *
+ 200:.\Generated_Source\PSoC5/Switches.c ****     * \brief Clears any active interrupts attached with the component and returns 
+ 201:.\Generated_Source\PSoC5/Switches.c ****     *  the value of the interrupt status register allowing determination of which
+ 202:.\Generated_Source\PSoC5/Switches.c ****     *  pins generated an interrupt event.
+ 203:.\Generated_Source\PSoC5/Switches.c ****     *
+ 204:.\Generated_Source\PSoC5/Switches.c ****     * \return 
+ 205:.\Generated_Source\PSoC5/Switches.c ****     *  The right-shifted current value of the interrupt status register. Each pin 
+ 206:.\Generated_Source\PSoC5/Switches.c ****     *  has one bit set if it generated an interrupt event. For example, bit 0 is 
+ 207:.\Generated_Source\PSoC5/Switches.c ****     *  for pin 0 and bit 1 is for pin 1 of the Pins component.
+ 208:.\Generated_Source\PSoC5/Switches.c ****     *  
+ 209:.\Generated_Source\PSoC5/Switches.c ****     * \sideeffect
+ 210:.\Generated_Source\PSoC5/Switches.c ****     *  Clears all bits of the physical port's interrupt status register, not just
+ 211:.\Generated_Source\PSoC5/Switches.c ****     *  those associated with the Pins component.
+ 212:.\Generated_Source\PSoC5/Switches.c ****     *
+ 213:.\Generated_Source\PSoC5/Switches.c ****     * \funcusage
+ 214:.\Generated_Source\PSoC5/Switches.c ****     *  \snippet Switches_SUT.c usage_Switches_ClearInterrupt
+ 215:.\Generated_Source\PSoC5/Switches.c ****     *******************************************************************************/
+ 216:.\Generated_Source\PSoC5/Switches.c ****     uint8 Switches_ClearInterrupt(void)
+ 217:.\Generated_Source\PSoC5/Switches.c ****     {
+ 176              		.loc 1 217 0
+ 177              		.cfi_startproc
+ 178              		@ args = 0, pretend = 0, frame = 0
+ 179              		@ frame_needed = 0, uses_anonymous_args = 0
+ 180              		@ link register save eliminated.
+ 218:.\Generated_Source\PSoC5/Switches.c ****         return (Switches_INTSTAT & Switches_MASK) >> Switches_SHIFT;
+ 181              		.loc 1 218 0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 8
+
+
+ 182 0000 014B     		ldr	r3, .L18
+ 183 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 219:.\Generated_Source\PSoC5/Switches.c ****     }
+ 184              		.loc 1 219 0
+ 185 0004 C009     		lsrs	r0, r0, #7
+ 186 0006 7047     		bx	lr
+ 187              	.L19:
+ 188              		.align	2
+ 189              	.L18:
+ 190 0008 83450040 		.word	1073759619
+ 191              		.cfi_endproc
+ 192              	.LFE5:
+ 193              		.size	Switches_ClearInterrupt, .-Switches_ClearInterrupt
+ 194              		.text
+ 195              	.Letext0:
+ 196              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 197              		.section	.debug_info,"",%progbits
+ 198              	.Ldebug_info0:
+ 199 0000 70010000 		.4byte	0x170
+ 200 0004 0400     		.2byte	0x4
+ 201 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 202 000a 04       		.byte	0x4
+ 203 000b 01       		.uleb128 0x1
+ 204 000c BD000000 		.4byte	.LASF24
+ 205 0010 01       		.byte	0x1
+ 206 0011 4B010000 		.4byte	.LASF25
+ 207 0015 E7010000 		.4byte	.LASF26
+ 208 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 209 001d 00000000 		.4byte	0
+ 210 0021 00000000 		.4byte	.Ldebug_line0
+ 211 0025 02       		.uleb128 0x2
+ 212 0026 01       		.byte	0x1
+ 213 0027 06       		.byte	0x6
+ 214 0028 6A020000 		.4byte	.LASF0
+ 215 002c 02       		.uleb128 0x2
+ 216 002d 01       		.byte	0x1
+ 217 002e 08       		.byte	0x8
+ 218 002f 42000000 		.4byte	.LASF1
+ 219 0033 02       		.uleb128 0x2
+ 220 0034 02       		.byte	0x2
+ 221 0035 05       		.byte	0x5
+ 222 0036 C5010000 		.4byte	.LASF2
+ 223 003a 02       		.uleb128 0x2
+ 224 003b 02       		.byte	0x2
+ 225 003c 07       		.byte	0x7
+ 226 003d 67000000 		.4byte	.LASF3
+ 227 0041 02       		.uleb128 0x2
+ 228 0042 04       		.byte	0x4
+ 229 0043 05       		.byte	0x5
+ 230 0044 DE010000 		.4byte	.LASF4
+ 231 0048 02       		.uleb128 0x2
+ 232 0049 04       		.byte	0x4
+ 233 004a 07       		.byte	0x7
+ 234 004b 55000000 		.4byte	.LASF5
+ 235 004f 02       		.uleb128 0x2
+ 236 0050 08       		.byte	0x8
+ 237 0051 05       		.byte	0x5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 9
+
+
+ 238 0052 B2010000 		.4byte	.LASF6
+ 239 0056 02       		.uleb128 0x2
+ 240 0057 08       		.byte	0x8
+ 241 0058 07       		.byte	0x7
+ 242 0059 7C010000 		.4byte	.LASF7
+ 243 005d 03       		.uleb128 0x3
+ 244 005e 04       		.byte	0x4
+ 245 005f 05       		.byte	0x5
+ 246 0060 696E7400 		.ascii	"int\000"
+ 247 0064 02       		.uleb128 0x2
+ 248 0065 04       		.byte	0x4
+ 249 0066 07       		.byte	0x7
+ 250 0067 6F010000 		.4byte	.LASF8
+ 251 006b 04       		.uleb128 0x4
+ 252 006c CF010000 		.4byte	.LASF9
+ 253 0070 02       		.byte	0x2
+ 254 0071 C2       		.byte	0xc2
+ 255 0072 2C000000 		.4byte	0x2c
+ 256 0076 04       		.uleb128 0x4
+ 257 0077 A8000000 		.4byte	.LASF10
+ 258 007b 02       		.byte	0x2
+ 259 007c C3       		.byte	0xc3
+ 260 007d 3A000000 		.4byte	0x3a
+ 261 0081 02       		.uleb128 0x2
+ 262 0082 04       		.byte	0x4
+ 263 0083 04       		.byte	0x4
+ 264 0084 3C000000 		.4byte	.LASF11
+ 265 0088 02       		.uleb128 0x2
+ 266 0089 08       		.byte	0x8
+ 267 008a 04       		.byte	0x4
+ 268 008b 89000000 		.4byte	.LASF12
+ 269 008f 02       		.uleb128 0x2
+ 270 0090 01       		.byte	0x1
+ 271 0091 08       		.byte	0x8
+ 272 0092 C0010000 		.4byte	.LASF13
+ 273 0096 05       		.uleb128 0x5
+ 274 0097 50000000 		.4byte	.LASF14
+ 275 009b 02       		.byte	0x2
+ 276 009c 6C01     		.2byte	0x16c
+ 277 009e A2000000 		.4byte	0xa2
+ 278 00a2 06       		.uleb128 0x6
+ 279 00a3 6B000000 		.4byte	0x6b
+ 280 00a7 07       		.uleb128 0x7
+ 281 00a8 7A000000 		.4byte	.LASF15
+ 282 00ac 01       		.byte	0x1
+ 283 00ad 39       		.byte	0x39
+ 284 00ae 00000000 		.4byte	.LFB0
+ 285 00b2 18000000 		.4byte	.LFE0-.LFB0
+ 286 00b6 01       		.uleb128 0x1
+ 287 00b7 9C       		.byte	0x9c
+ 288 00b8 DB000000 		.4byte	0xdb
+ 289 00bc 08       		.uleb128 0x8
+ 290 00bd 2B000000 		.4byte	.LASF17
+ 291 00c1 01       		.byte	0x1
+ 292 00c2 39       		.byte	0x39
+ 293 00c3 6B000000 		.4byte	0x6b
+ 294 00c7 00000000 		.4byte	.LLST0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 10
+
+
+ 295 00cb 09       		.uleb128 0x9
+ 296 00cc 31000000 		.4byte	.LASF27
+ 297 00d0 01       		.byte	0x1
+ 298 00d1 3B       		.byte	0x3b
+ 299 00d2 6B000000 		.4byte	0x6b
+ 300 00d6 21000000 		.4byte	.LLST1
+ 301 00da 00       		.byte	0
+ 302 00db 07       		.uleb128 0x7
+ 303 00dc 15000000 		.4byte	.LASF16
+ 304 00e0 01       		.byte	0x1
+ 305 00e1 5A       		.byte	0x5a
+ 306 00e2 00000000 		.4byte	.LFB1
+ 307 00e6 18000000 		.4byte	.LFE1-.LFB1
+ 308 00ea 01       		.uleb128 0x1
+ 309 00eb 9C       		.byte	0x9c
+ 310 00ec 00010000 		.4byte	0x100
+ 311 00f0 08       		.uleb128 0x8
+ 312 00f1 93010000 		.4byte	.LASF18
+ 313 00f5 01       		.byte	0x1
+ 314 00f6 5A       		.byte	0x5a
+ 315 00f7 6B000000 		.4byte	0x6b
+ 316 00fb 34000000 		.4byte	.LLST2
+ 317 00ff 00       		.byte	0
+ 318 0100 0A       		.uleb128 0xa
+ 319 0101 AF000000 		.4byte	.LASF19
+ 320 0105 01       		.byte	0x1
+ 321 0106 71       		.byte	0x71
+ 322 0107 6B000000 		.4byte	0x6b
+ 323 010b 00000000 		.4byte	.LFB2
+ 324 010f 0C000000 		.4byte	.LFE2-.LFB2
+ 325 0113 01       		.uleb128 0x1
+ 326 0114 9C       		.byte	0x9c
+ 327 0115 0A       		.uleb128 0xa
+ 328 0116 00000000 		.4byte	.LASF20
+ 329 011a 01       		.byte	0x1
+ 330 011b 8D       		.byte	0x8d
+ 331 011c 6B000000 		.4byte	0x6b
+ 332 0120 00000000 		.4byte	.LFB3
+ 333 0124 0C000000 		.4byte	.LFE3-.LFB3
+ 334 0128 01       		.uleb128 0x1
+ 335 0129 9C       		.byte	0x9c
+ 336 012a 07       		.uleb128 0x7
+ 337 012b 98010000 		.4byte	.LASF21
+ 338 012f 01       		.byte	0x1
+ 339 0130 BB       		.byte	0xbb
+ 340 0131 00000000 		.4byte	.LFB4
+ 341 0135 14000000 		.4byte	.LFE4-.LFB4
+ 342 0139 01       		.uleb128 0x1
+ 343 013a 9C       		.byte	0x9c
+ 344 013b 5E010000 		.4byte	0x15e
+ 345 013f 08       		.uleb128 0x8
+ 346 0140 D5010000 		.4byte	.LASF22
+ 347 0144 01       		.byte	0x1
+ 348 0145 BB       		.byte	0xbb
+ 349 0146 76000000 		.4byte	0x76
+ 350 014a 55000000 		.4byte	.LLST3
+ 351 014e 08       		.uleb128 0x8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 11
+
+
+ 352 014f 93010000 		.4byte	.LASF18
+ 353 0153 01       		.byte	0x1
+ 354 0154 BB       		.byte	0xbb
+ 355 0155 76000000 		.4byte	0x76
+ 356 0159 76000000 		.4byte	.LLST4
+ 357 015d 00       		.byte	0
+ 358 015e 0A       		.uleb128 0xa
+ 359 015f 90000000 		.4byte	.LASF23
+ 360 0163 01       		.byte	0x1
+ 361 0164 D8       		.byte	0xd8
+ 362 0165 6B000000 		.4byte	0x6b
+ 363 0169 00000000 		.4byte	.LFB5
+ 364 016d 0C000000 		.4byte	.LFE5-.LFB5
+ 365 0171 01       		.uleb128 0x1
+ 366 0172 9C       		.byte	0x9c
+ 367 0173 00       		.byte	0
+ 368              		.section	.debug_abbrev,"",%progbits
+ 369              	.Ldebug_abbrev0:
+ 370 0000 01       		.uleb128 0x1
+ 371 0001 11       		.uleb128 0x11
+ 372 0002 01       		.byte	0x1
+ 373 0003 25       		.uleb128 0x25
+ 374 0004 0E       		.uleb128 0xe
+ 375 0005 13       		.uleb128 0x13
+ 376 0006 0B       		.uleb128 0xb
+ 377 0007 03       		.uleb128 0x3
+ 378 0008 0E       		.uleb128 0xe
+ 379 0009 1B       		.uleb128 0x1b
+ 380 000a 0E       		.uleb128 0xe
+ 381 000b 55       		.uleb128 0x55
+ 382 000c 17       		.uleb128 0x17
+ 383 000d 11       		.uleb128 0x11
+ 384 000e 01       		.uleb128 0x1
+ 385 000f 10       		.uleb128 0x10
+ 386 0010 17       		.uleb128 0x17
+ 387 0011 00       		.byte	0
+ 388 0012 00       		.byte	0
+ 389 0013 02       		.uleb128 0x2
+ 390 0014 24       		.uleb128 0x24
+ 391 0015 00       		.byte	0
+ 392 0016 0B       		.uleb128 0xb
+ 393 0017 0B       		.uleb128 0xb
+ 394 0018 3E       		.uleb128 0x3e
+ 395 0019 0B       		.uleb128 0xb
+ 396 001a 03       		.uleb128 0x3
+ 397 001b 0E       		.uleb128 0xe
+ 398 001c 00       		.byte	0
+ 399 001d 00       		.byte	0
+ 400 001e 03       		.uleb128 0x3
+ 401 001f 24       		.uleb128 0x24
+ 402 0020 00       		.byte	0
+ 403 0021 0B       		.uleb128 0xb
+ 404 0022 0B       		.uleb128 0xb
+ 405 0023 3E       		.uleb128 0x3e
+ 406 0024 0B       		.uleb128 0xb
+ 407 0025 03       		.uleb128 0x3
+ 408 0026 08       		.uleb128 0x8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 12
+
+
+ 409 0027 00       		.byte	0
+ 410 0028 00       		.byte	0
+ 411 0029 04       		.uleb128 0x4
+ 412 002a 16       		.uleb128 0x16
+ 413 002b 00       		.byte	0
+ 414 002c 03       		.uleb128 0x3
+ 415 002d 0E       		.uleb128 0xe
+ 416 002e 3A       		.uleb128 0x3a
+ 417 002f 0B       		.uleb128 0xb
+ 418 0030 3B       		.uleb128 0x3b
+ 419 0031 0B       		.uleb128 0xb
+ 420 0032 49       		.uleb128 0x49
+ 421 0033 13       		.uleb128 0x13
+ 422 0034 00       		.byte	0
+ 423 0035 00       		.byte	0
+ 424 0036 05       		.uleb128 0x5
+ 425 0037 16       		.uleb128 0x16
+ 426 0038 00       		.byte	0
+ 427 0039 03       		.uleb128 0x3
+ 428 003a 0E       		.uleb128 0xe
+ 429 003b 3A       		.uleb128 0x3a
+ 430 003c 0B       		.uleb128 0xb
+ 431 003d 3B       		.uleb128 0x3b
+ 432 003e 05       		.uleb128 0x5
+ 433 003f 49       		.uleb128 0x49
+ 434 0040 13       		.uleb128 0x13
+ 435 0041 00       		.byte	0
+ 436 0042 00       		.byte	0
+ 437 0043 06       		.uleb128 0x6
+ 438 0044 35       		.uleb128 0x35
+ 439 0045 00       		.byte	0
+ 440 0046 49       		.uleb128 0x49
+ 441 0047 13       		.uleb128 0x13
+ 442 0048 00       		.byte	0
+ 443 0049 00       		.byte	0
+ 444 004a 07       		.uleb128 0x7
+ 445 004b 2E       		.uleb128 0x2e
+ 446 004c 01       		.byte	0x1
+ 447 004d 3F       		.uleb128 0x3f
+ 448 004e 19       		.uleb128 0x19
+ 449 004f 03       		.uleb128 0x3
+ 450 0050 0E       		.uleb128 0xe
+ 451 0051 3A       		.uleb128 0x3a
+ 452 0052 0B       		.uleb128 0xb
+ 453 0053 3B       		.uleb128 0x3b
+ 454 0054 0B       		.uleb128 0xb
+ 455 0055 27       		.uleb128 0x27
+ 456 0056 19       		.uleb128 0x19
+ 457 0057 11       		.uleb128 0x11
+ 458 0058 01       		.uleb128 0x1
+ 459 0059 12       		.uleb128 0x12
+ 460 005a 06       		.uleb128 0x6
+ 461 005b 40       		.uleb128 0x40
+ 462 005c 18       		.uleb128 0x18
+ 463 005d 9742     		.uleb128 0x2117
+ 464 005f 19       		.uleb128 0x19
+ 465 0060 01       		.uleb128 0x1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 13
+
+
+ 466 0061 13       		.uleb128 0x13
+ 467 0062 00       		.byte	0
+ 468 0063 00       		.byte	0
+ 469 0064 08       		.uleb128 0x8
+ 470 0065 05       		.uleb128 0x5
+ 471 0066 00       		.byte	0
+ 472 0067 03       		.uleb128 0x3
+ 473 0068 0E       		.uleb128 0xe
+ 474 0069 3A       		.uleb128 0x3a
+ 475 006a 0B       		.uleb128 0xb
+ 476 006b 3B       		.uleb128 0x3b
+ 477 006c 0B       		.uleb128 0xb
+ 478 006d 49       		.uleb128 0x49
+ 479 006e 13       		.uleb128 0x13
+ 480 006f 02       		.uleb128 0x2
+ 481 0070 17       		.uleb128 0x17
+ 482 0071 00       		.byte	0
+ 483 0072 00       		.byte	0
+ 484 0073 09       		.uleb128 0x9
+ 485 0074 34       		.uleb128 0x34
+ 486 0075 00       		.byte	0
+ 487 0076 03       		.uleb128 0x3
+ 488 0077 0E       		.uleb128 0xe
+ 489 0078 3A       		.uleb128 0x3a
+ 490 0079 0B       		.uleb128 0xb
+ 491 007a 3B       		.uleb128 0x3b
+ 492 007b 0B       		.uleb128 0xb
+ 493 007c 49       		.uleb128 0x49
+ 494 007d 13       		.uleb128 0x13
+ 495 007e 02       		.uleb128 0x2
+ 496 007f 17       		.uleb128 0x17
+ 497 0080 00       		.byte	0
+ 498 0081 00       		.byte	0
+ 499 0082 0A       		.uleb128 0xa
+ 500 0083 2E       		.uleb128 0x2e
+ 501 0084 00       		.byte	0
+ 502 0085 3F       		.uleb128 0x3f
+ 503 0086 19       		.uleb128 0x19
+ 504 0087 03       		.uleb128 0x3
+ 505 0088 0E       		.uleb128 0xe
+ 506 0089 3A       		.uleb128 0x3a
+ 507 008a 0B       		.uleb128 0xb
+ 508 008b 3B       		.uleb128 0x3b
+ 509 008c 0B       		.uleb128 0xb
+ 510 008d 27       		.uleb128 0x27
+ 511 008e 19       		.uleb128 0x19
+ 512 008f 49       		.uleb128 0x49
+ 513 0090 13       		.uleb128 0x13
+ 514 0091 11       		.uleb128 0x11
+ 515 0092 01       		.uleb128 0x1
+ 516 0093 12       		.uleb128 0x12
+ 517 0094 06       		.uleb128 0x6
+ 518 0095 40       		.uleb128 0x40
+ 519 0096 18       		.uleb128 0x18
+ 520 0097 9742     		.uleb128 0x2117
+ 521 0099 19       		.uleb128 0x19
+ 522 009a 00       		.byte	0
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 14
+
+
+ 523 009b 00       		.byte	0
+ 524 009c 00       		.byte	0
+ 525              		.section	.debug_loc,"",%progbits
+ 526              	.Ldebug_loc0:
+ 527              	.LLST0:
+ 528 0000 00000000 		.4byte	.LVL0
+ 529 0004 0A000000 		.4byte	.LVL2
+ 530 0008 0100     		.2byte	0x1
+ 531 000a 50       		.byte	0x50
+ 532 000b 0A000000 		.4byte	.LVL2
+ 533 000f 18000000 		.4byte	.LFE0
+ 534 0013 0400     		.2byte	0x4
+ 535 0015 F3       		.byte	0xf3
+ 536 0016 01       		.uleb128 0x1
+ 537 0017 50       		.byte	0x50
+ 538 0018 9F       		.byte	0x9f
+ 539 0019 00000000 		.4byte	0
+ 540 001d 00000000 		.4byte	0
+ 541              	.LLST1:
+ 542 0021 08000000 		.4byte	.LVL1
+ 543 0025 0E000000 		.4byte	.LVL3
+ 544 0029 0100     		.2byte	0x1
+ 545 002b 53       		.byte	0x53
+ 546 002c 00000000 		.4byte	0
+ 547 0030 00000000 		.4byte	0
+ 548              	.LLST2:
+ 549 0034 00000000 		.4byte	.LVL4
+ 550 0038 0C000000 		.4byte	.LVL5
+ 551 003c 0100     		.2byte	0x1
+ 552 003e 50       		.byte	0x50
+ 553 003f 0C000000 		.4byte	.LVL5
+ 554 0043 18000000 		.4byte	.LFE1
+ 555 0047 0400     		.2byte	0x4
+ 556 0049 F3       		.byte	0xf3
+ 557 004a 01       		.uleb128 0x1
+ 558 004b 50       		.byte	0x50
+ 559 004c 9F       		.byte	0x9f
+ 560 004d 00000000 		.4byte	0
+ 561 0051 00000000 		.4byte	0
+ 562              	.LLST3:
+ 563 0055 00000000 		.4byte	.LVL6
+ 564 0059 04000000 		.4byte	.LVL7
+ 565 005d 0100     		.2byte	0x1
+ 566 005f 50       		.byte	0x50
+ 567 0060 04000000 		.4byte	.LVL7
+ 568 0064 14000000 		.4byte	.LFE4
+ 569 0068 0400     		.2byte	0x4
+ 570 006a F3       		.byte	0xf3
+ 571 006b 01       		.uleb128 0x1
+ 572 006c 50       		.byte	0x50
+ 573 006d 9F       		.byte	0x9f
+ 574 006e 00000000 		.4byte	0
+ 575 0072 00000000 		.4byte	0
+ 576              	.LLST4:
+ 577 0076 00000000 		.4byte	.LVL6
+ 578 007a 0A000000 		.4byte	.LVL8
+ 579 007e 0100     		.2byte	0x1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 15
+
+
+ 580 0080 51       		.byte	0x51
+ 581 0081 0A000000 		.4byte	.LVL8
+ 582 0085 14000000 		.4byte	.LFE4
+ 583 0089 0400     		.2byte	0x4
+ 584 008b F3       		.byte	0xf3
+ 585 008c 01       		.uleb128 0x1
+ 586 008d 51       		.byte	0x51
+ 587 008e 9F       		.byte	0x9f
+ 588 008f 00000000 		.4byte	0
+ 589 0093 00000000 		.4byte	0
+ 590              		.section	.debug_aranges,"",%progbits
+ 591 0000 44000000 		.4byte	0x44
+ 592 0004 0200     		.2byte	0x2
+ 593 0006 00000000 		.4byte	.Ldebug_info0
+ 594 000a 04       		.byte	0x4
+ 595 000b 00       		.byte	0
+ 596 000c 0000     		.2byte	0
+ 597 000e 0000     		.2byte	0
+ 598 0010 00000000 		.4byte	.LFB0
+ 599 0014 18000000 		.4byte	.LFE0-.LFB0
+ 600 0018 00000000 		.4byte	.LFB1
+ 601 001c 18000000 		.4byte	.LFE1-.LFB1
+ 602 0020 00000000 		.4byte	.LFB2
+ 603 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 604 0028 00000000 		.4byte	.LFB3
+ 605 002c 0C000000 		.4byte	.LFE3-.LFB3
+ 606 0030 00000000 		.4byte	.LFB4
+ 607 0034 14000000 		.4byte	.LFE4-.LFB4
+ 608 0038 00000000 		.4byte	.LFB5
+ 609 003c 0C000000 		.4byte	.LFE5-.LFB5
+ 610 0040 00000000 		.4byte	0
+ 611 0044 00000000 		.4byte	0
+ 612              		.section	.debug_ranges,"",%progbits
+ 613              	.Ldebug_ranges0:
+ 614 0000 00000000 		.4byte	.LFB0
+ 615 0004 18000000 		.4byte	.LFE0
+ 616 0008 00000000 		.4byte	.LFB1
+ 617 000c 18000000 		.4byte	.LFE1
+ 618 0010 00000000 		.4byte	.LFB2
+ 619 0014 0C000000 		.4byte	.LFE2
+ 620 0018 00000000 		.4byte	.LFB3
+ 621 001c 0C000000 		.4byte	.LFE3
+ 622 0020 00000000 		.4byte	.LFB4
+ 623 0024 14000000 		.4byte	.LFE4
+ 624 0028 00000000 		.4byte	.LFB5
+ 625 002c 0C000000 		.4byte	.LFE5
+ 626 0030 00000000 		.4byte	0
+ 627 0034 00000000 		.4byte	0
+ 628              		.section	.debug_line,"",%progbits
+ 629              	.Ldebug_line0:
+ 630 0000 B7000000 		.section	.debug_str,"MS",%progbits,1
+ 630      02004700 
+ 630      00000201 
+ 630      FB0E0D00 
+ 630      01010101 
+ 631              	.LASF20:
+ 632 0000 53776974 		.ascii	"Switches_ReadDataReg\000"
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 16
+
+
+ 632      63686573 
+ 632      5F526561 
+ 632      64446174 
+ 632      61526567 
+ 633              	.LASF16:
+ 634 0015 53776974 		.ascii	"Switches_SetDriveMode\000"
+ 634      63686573 
+ 634      5F536574 
+ 634      44726976 
+ 634      654D6F64 
+ 635              	.LASF17:
+ 636 002b 76616C75 		.ascii	"value\000"
+ 636      6500
+ 637              	.LASF27:
+ 638 0031 73746174 		.ascii	"staticBits\000"
+ 638      69634269 
+ 638      747300
+ 639              	.LASF11:
+ 640 003c 666C6F61 		.ascii	"float\000"
+ 640      7400
+ 641              	.LASF1:
+ 642 0042 756E7369 		.ascii	"unsigned char\000"
+ 642      676E6564 
+ 642      20636861 
+ 642      7200
+ 643              	.LASF14:
+ 644 0050 72656738 		.ascii	"reg8\000"
+ 644      00
+ 645              	.LASF5:
+ 646 0055 6C6F6E67 		.ascii	"long unsigned int\000"
+ 646      20756E73 
+ 646      69676E65 
+ 646      6420696E 
+ 646      7400
+ 647              	.LASF3:
+ 648 0067 73686F72 		.ascii	"short unsigned int\000"
+ 648      7420756E 
+ 648      7369676E 
+ 648      65642069 
+ 648      6E7400
+ 649              	.LASF15:
+ 650 007a 53776974 		.ascii	"Switches_Write\000"
+ 650      63686573 
+ 650      5F577269 
+ 650      746500
+ 651              	.LASF12:
+ 652 0089 646F7562 		.ascii	"double\000"
+ 652      6C6500
+ 653              	.LASF23:
+ 654 0090 53776974 		.ascii	"Switches_ClearInterrupt\000"
+ 654      63686573 
+ 654      5F436C65 
+ 654      6172496E 
+ 654      74657272 
+ 655              	.LASF10:
+ 656 00a8 75696E74 		.ascii	"uint16\000"
+ 656      313600
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 17
+
+
+ 657              	.LASF19:
+ 658 00af 53776974 		.ascii	"Switches_Read\000"
+ 658      63686573 
+ 658      5F526561 
+ 658      6400
+ 659              	.LASF24:
+ 660 00bd 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 660      4320342E 
+ 660      392E3320 
+ 660      32303135 
+ 660      30333033 
+ 661 00f0 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 661      20726576 
+ 661      6973696F 
+ 661      6E203232 
+ 661      31323230 
+ 662 0123 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 662      66756E63 
+ 662      74696F6E 
+ 662      2D736563 
+ 662      74696F6E 
+ 663              	.LASF25:
+ 664 014b 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\Switches.c\000"
+ 664      6E657261 
+ 664      7465645F 
+ 664      536F7572 
+ 664      63655C50 
+ 665              	.LASF8:
+ 666 016f 756E7369 		.ascii	"unsigned int\000"
+ 666      676E6564 
+ 666      20696E74 
+ 666      00
+ 667              	.LASF7:
+ 668 017c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 668      206C6F6E 
+ 668      6720756E 
+ 668      7369676E 
+ 668      65642069 
+ 669              	.LASF18:
+ 670 0193 6D6F6465 		.ascii	"mode\000"
+ 670      00
+ 671              	.LASF21:
+ 672 0198 53776974 		.ascii	"Switches_SetInterruptMode\000"
+ 672      63686573 
+ 672      5F536574 
+ 672      496E7465 
+ 672      72727570 
+ 673              	.LASF6:
+ 674 01b2 6C6F6E67 		.ascii	"long long int\000"
+ 674      206C6F6E 
+ 674      6720696E 
+ 674      7400
+ 675              	.LASF13:
+ 676 01c0 63686172 		.ascii	"char\000"
+ 676      00
+ 677              	.LASF2:
+ 678 01c5 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 18
+
+
+ 678      7420696E 
+ 678      7400
+ 679              	.LASF9:
+ 680 01cf 75696E74 		.ascii	"uint8\000"
+ 680      3800
+ 681              	.LASF22:
+ 682 01d5 706F7369 		.ascii	"position\000"
+ 682      74696F6E 
+ 682      00
+ 683              	.LASF4:
+ 684 01de 6C6F6E67 		.ascii	"long int\000"
+ 684      20696E74 
+ 684      00
+ 685              	.LASF26:
+ 686 01e7 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 686      73657273 
+ 686      5C6A616F 
+ 686      68655C45 
+ 686      67686F73 
+ 687 0215 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 687      7072696E 
+ 687      67203230 
+ 687      32355C36 
+ 687      2E313135 
+ 688 0244 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 688      545F7769 
+ 688      74685F65 
+ 688      6D57696E 
+ 688      5C544654 
+ 689              	.LASF0:
+ 690 026a 7369676E 		.ascii	"signed char\000"
+ 690      65642063 
+ 690      68617200 
+ 691              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

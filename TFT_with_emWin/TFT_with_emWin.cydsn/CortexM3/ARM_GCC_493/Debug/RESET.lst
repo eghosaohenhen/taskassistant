@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
   29:.\Generated_Source\PSoC5/RESET.c **** * Summary:
   30:.\Generated_Source\PSoC5/RESET.c **** *  Assign a new value to the digital port's data output register.  
   31:.\Generated_Source\PSoC5/RESET.c **** *
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/RESET.c **** * Parameters:  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
   53:.\Generated_Source\PSoC5/RESET.c **** * Parameters:  
   54:.\Generated_Source\PSoC5/RESET.c **** *  mode:  Change the pins to one of the following drive modes.
   55:.\Generated_Source\PSoC5/RESET.c **** *
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 3
 
 
   56:.\Generated_Source\PSoC5/RESET.c **** *  RESET_DM_STRONG     Strong Drive 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
   80:.\Generated_Source\PSoC5/RESET.c **** *  Read the current value on the pins of the Digital Port in right justified 
   81:.\Generated_Source\PSoC5/RESET.c **** *  form.
   82:.\Generated_Source\PSoC5/RESET.c **** *
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 4
 
 
   83:.\Generated_Source\PSoC5/RESET.c **** * Parameters:  
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  111:.\Generated_Source\PSoC5/RESET.c **** *  
  112:.\Generated_Source\PSoC5/RESET.c **** *******************************************************************************/
  113:.\Generated_Source\PSoC5/RESET.c **** uint8 RESET_ReadDataReg(void) 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 5
 
 
  114:.\Generated_Source\PSoC5/RESET.c **** {
@@ -275,14 +275,14 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  144 000c 73000000 		.4byte	.LASF20
  145 0010 01       		.byte	0x1
  146 0011 2A010000 		.4byte	.LASF21
- 147 0015 A2010000 		.4byte	.LASF22
+ 147 0015 96010000 		.4byte	.LASF22
  148 0019 00000000 		.4byte	.Ldebug_ranges0+0
  149 001d 00000000 		.4byte	0
  150 0021 00000000 		.4byte	.Ldebug_line0
  151 0025 02       		.uleb128 0x2
  152 0026 01       		.byte	0x1
  153 0027 06       		.byte	0x6
- 154 0028 96010000 		.4byte	.LASF0
+ 154 0028 19020000 		.4byte	.LASF0
  155 002c 02       		.uleb128 0x2
  156 002d 01       		.byte	0x1
  157 002e 08       		.byte	0x8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  167 0041 02       		.uleb128 0x2
  168 0042 04       		.byte	0x4
  169 0043 05       		.byte	0x5
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 6
 
 
  170 0044 7A010000 		.4byte	.LASF4
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  224 00b1 08       		.uleb128 0x8
  225 00b2 00000000 		.4byte	.LASF16
  226 00b6 01       		.byte	0x1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 7
 
 
  227 00b7 27       		.byte	0x27
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  281 0006 0B       		.uleb128 0xb
  282 0007 03       		.uleb128 0x3
  283 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 8
 
 
  284 0009 1B       		.uleb128 0x1b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  338 003f 49       		.uleb128 0x49
  339 0040 13       		.uleb128 0x13
  340 0041 00       		.byte	0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 9
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 9
 
 
  341 0042 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  395 0079 0B       		.uleb128 0xb
  396 007a 3B       		.uleb128 0x3b
  397 007b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 10
 
 
  398 007c 49       		.uleb128 0x49
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  452 0030 18000000 		.4byte	.LFE1
  453 0034 0400     		.2byte	0x4
  454 0036 F3       		.byte	0xf3
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 11
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 11
 
 
  455 0037 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  500      676E6564 
  500      20636861 
  500      7200
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 12
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 12
 
 
  501              	.LASF13:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  520      65642069 
  521              	.LASF17:
  522 0125 6D6F6465 		.ascii	"mode\000"
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 13
 
 
  522      00
@@ -757,30 +757,27 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 1
  538      74447269 
  538      76654D6F 
  538      646500
- 539              	.LASF0:
- 540 0196 7369676E 		.ascii	"signed char\000"
- 540      65642063 
- 540      68617200 
- 541              	.LASF22:
- 542 01a2 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
- 542      73657273 
- 542      5C6A616F 
- 542      68655C45 
- 542      67686F73 
- 543 01d0 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\TFT_Tutorial"
- 543      7072696E 
- 543      67203230 
- 543      32355C36 
- 543      2E313135 
- 544 01ff 5F323032 		.ascii	"_2022\\TFT_Tutorial_2022\\TFT_with_emWin\\TFT_with_"
- 544      325C5446 
- 544      545F5475 
- 544      746F7269 
- 544      616C5F32 
- 545 022f 656D5769 		.ascii	"emWin.cydsn\000"
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccvt4d8s.s 			page 14
+ 539              	.LASF22:
+ 540 0196 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 540      73657273 
+ 540      5C6A616F 
+ 540      68655C45 
+ 540      67686F73 
+ 541 01c4 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 541      7072696E 
+ 541      67203230 
+ 541      32355C36 
+ 541      2E313135 
+ 542 01f3 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 542      545F7769 
+ 542      74685F65 
+ 542      6D57696E 
+ 542      5C544654 
+ 543              	.LASF0:
+ 544 0219 7369676E 		.ascii	"signed char\000"
+ 544      65642063 
+ 544      68617200 
+ 545              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccJREdeI.s 			page 14
 
 
- 545      6E2E6379 
- 545      64736E00 
- 546              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 1
 
 
    1              		.syntax unified
@@ -47,7 +47,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
   18:.\start.c     **** #include "tft.h"
   19:.\start.c     **** #include "screens.h"
   20:.\start.c     **** #include "WM.h"
-  21:.\start.c     **** int mainTask(void);
+  21:.\start.c     **** 
   22:.\start.c     **** int start(){
   23:.\start.c     ****     return mainTask();
   24:.\start.c     **** }
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
   27              		.loc 1 28 0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 2
 
 
   30              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -118,13 +118,13 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
   42:.\start.c     ****         }
   43:.\start.c     ****         
   44:.\start.c     **** 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 3
 
 
   45:.\start.c     ****     }
   46:.\start.c     ****     error("Error in start.c");
   47:.\start.c     ****     return ERROR;
-  48:.\start.c     **** }
+  48:.\start.c     **** }...
   71              		.loc 1 48 0
   72 0038 0120     		movs	r0, #1
   73 003a 08BD     		pop	{r3, pc}
@@ -144,7 +144,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
   87              		.type	start, %function
   88              	start:
   89              	.LFB63:
-  22:.\start.c     ****     return mainTask();
+  22:.\start.c     **** int start(){
   90              		.loc 1 22 0
   91              		.cfi_startproc
   92              		@ args = 0, pretend = 0, frame = 0
@@ -153,11 +153,11 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
   95              		.cfi_def_cfa_offset 8
   96              		.cfi_offset 3, -8
   97              		.cfi_offset 14, -4
-  23:.\start.c     **** }
+  23:.\start.c     ****     return mainTask();
   98              		.loc 1 23 0
   99 0002 FFF7FEFF 		bl	mainTask
  100              	.LVL8:
-  24:.\start.c     **** //GUI_DispStringHCenterAt("Start Screen \nshows how to use a WINDOW widget", CENTERX, 5)
+  24:.\start.c     **** }
  101              		.loc 1 24 0
  102 0006 08BD     		pop	{r3, pc}
  103              		.cfi_endproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  111              	.LC1:
  112 0038 4469616C 		.ascii	"Dialog has been closed\000"
  112      6F672068 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 4
 
 
  112      61732062 
@@ -204,7 +204,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  130 000c AC000000 		.4byte	.LASF26
  131 0010 01       		.byte	0x1
  132 0011 2D000000 		.4byte	.LASF27
- 133 0015 E7010000 		.4byte	.LASF28
+ 133 0015 C1010000 		.4byte	.LASF28
  134 0019 00000000 		.4byte	.Ldebug_ranges0+0
  135 001d 00000000 		.4byte	0
  136 0021 00000000 		.4byte	.Ldebug_line0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  164 0052 A0010000 		.4byte	.LASF5
  165 0056 04       		.uleb128 0x4
  166 0057 04       		.byte	0x4
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 5
 
 
  167 0058 5C000000 		.4byte	0x5c
@@ -251,7 +251,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  174 0068 03       		.uleb128 0x3
  175 0069 01       		.byte	0x1
  176 006a 06       		.byte	0x6
- 177 006b C1010000 		.4byte	.LASF7
+ 177 006b 44020000 		.4byte	.LASF7
  178 006f 03       		.uleb128 0x3
  179 0070 04       		.byte	0x4
  180 0071 07       		.byte	0x7
@@ -298,11 +298,11 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  221 00c1 08       		.uleb128 0x8
  222 00c2 5B000000 		.4byte	.LASF17
  223 00c6 01       		.sleb128 1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 6
 
 
  224 00c7 08       		.uleb128 0x8
- 225 00c8 CD010000 		.4byte	.LASF18
+ 225 00c8 50020000 		.4byte	.LASF18
  226 00cc 02       		.sleb128 2
  227 00cd 08       		.uleb128 0x8
  228 00ce 4C010000 		.4byte	.LASF19
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  278 0139 0B       		.uleb128 0xb
  279 013a 2C000000 		.4byte	.LVL5
  280 013e BA010000 		.4byte	0x1ba
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 7
 
 
  281 0142 5B010000 		.4byte	0x15b
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  335 01aa 8F000000 		.4byte	0x8f
  336 01ae 0F       		.uleb128 0xf
  337 01af 97010000 		.4byte	.LASF23
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 8
 
 
  338 01b3 05       		.byte	0x5
@@ -442,7 +442,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  356 01dc 29       		.byte	0x29
  357 01dd 9A000000 		.4byte	0x9a
  358 01e1 12       		.uleb128 0x12
- 359 01e2 D9010000 		.4byte	.LASF25
+ 359 01e2 5C020000 		.4byte	.LASF25
  360 01e6 07       		.byte	0x7
  361 01e7 29       		.byte	0x29
  362 01e8 9A000000 		.4byte	0x9a
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  392 000f 10       		.uleb128 0x10
  393 0010 17       		.uleb128 0x17
  394 0011 00       		.byte	0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 9
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 9
 
 
  395 0012 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  449 0048 01       		.byte	0x1
  450 0049 0B       		.uleb128 0xb
  451 004a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 10
 
 
  452 004b 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  506 0084 898201   		.uleb128 0x4109
  507 0087 01       		.byte	0x1
  508 0088 11       		.uleb128 0x11
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 11
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 11
 
 
  509 0089 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  563 00c2 13       		.uleb128 0x13
  564 00c3 3C       		.uleb128 0x3c
  565 00c4 19       		.uleb128 0x19
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 12
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 12
 
 
  566 00c5 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  620 00fb 3A       		.uleb128 0x3a
  621 00fc 0B       		.uleb128 0xb
  622 00fd 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 13
 
 
  623 00fe 05       		.uleb128 0x5
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  673              	.LASF11:
  674 0000 5F5F696E 		.ascii	"__int32_t\000"
  674      7433325F 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 14
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 14
 
 
  674      7400
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  701              	.LASF16:
  702 0094 53544152 		.ascii	"START\000"
  702      5400
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 15
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 15
 
 
  703              	.LASF1:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  726 0186 464F5257 		.ascii	"FORWARD_BTN_Read\000"
  726      4152445F 
  726      42544E5F 
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 16
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccs4dFmj.s 			page 16
 
 
  726      52656164 
@@ -917,36 +917,33 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccfbucKh.s 			page 1
  732      53747269 
  732      6E674843 
  732      656E7465 
- 733              	.LASF7:
- 734 01c1 7369676E 		.ascii	"signed char\000"
- 734      65642063 
- 734      68617200 
- 735              	.LASF18:
- 736 01cd 5441534B 		.ascii	"TASK_SELECT\000"
- 736      5F53454C 
- 736      45435400 
- 737              	.LASF25:
- 738 01d9 4241434B 		.ascii	"BACK_BTN_Read\000"
- 738      5F42544E 
- 738      5F526561 
- 738      6400
- 739              	.LASF28:
- 740 01e7 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
- 740      73657273 
- 740      5C6A616F 
- 740      68655C45 
- 740      67686F73 
- 741 0215 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\TFT_Tutorial"
- 741      7072696E 
- 741      67203230 
- 741      32355C36 
- 741      2E313135 
- 742 0244 5F323032 		.ascii	"_2022\\TFT_Tutorial_2022\\TFT_with_emWin\\TFT_with_"
- 742      325C5446 
- 742      545F5475 
- 742      746F7269 
- 742      616C5F32 
- 743 0274 656D5769 		.ascii	"emWin.cydsn\000"
- 743      6E2E6379 
- 743      64736E00 
- 744              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 733              	.LASF28:
+ 734 01c1 433A5C55 		.ascii	"C:\\Users\\jaohe\\EghosaOneDrive\\OneDrive\\Documen"
+ 734      73657273 
+ 734      5C6A616F 
+ 734      68655C45 
+ 734      67686F73 
+ 735 01ef 74735C53 		.ascii	"ts\\Spring 2025\\6.115\\final_project\\taskassistan"
+ 735      7072696E 
+ 735      67203230 
+ 735      32355C36 
+ 735      2E313135 
+ 736 021e 745C5446 		.ascii	"t\\TFT_with_emWin\\TFT_with_emWin.cydsn\000"
+ 736      545F7769 
+ 736      74685F65 
+ 736      6D57696E 
+ 736      5C544654 
+ 737              	.LASF7:
+ 738 0244 7369676E 		.ascii	"signed char\000"
+ 738      65642063 
+ 738      68617200 
+ 739              	.LASF18:
+ 740 0250 5441534B 		.ascii	"TASK_SELECT\000"
+ 740      5F53454C 
+ 740      45435400 
+ 741              	.LASF25:
+ 742 025c 4241434B 		.ascii	"BACK_BTN_Read\000"
+ 742      5F42544E 
+ 742      5F526561 
+ 742      6400
+ 743              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
