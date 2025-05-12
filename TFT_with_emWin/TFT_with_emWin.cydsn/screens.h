@@ -13,13 +13,21 @@
 #include "DIALOG.h"
 #include <project.h>
 #include "tft.h"
+#include "task.h"
 
 
 
-enum {START, HOME, TASK_SELECT, TASK_START, ERROR};
+enum Screens {MENU, HOME, TASK_START, TASK_SCHEDULER, VIEW_METRICS, ERROR};
+
 
 int start (void);
 int action_select(char* actions[], int num_actions);
+
+// this is for user initated tasks 
+int user_start_task(); 
+
+// this is for alarmed tasks
+int system_start_task(TimedTask task); 
 
 
 //helper functions 
@@ -27,21 +35,30 @@ int action_select(char* actions[], int num_actions);
 int error(char*);
 void print(char*);
 int mainTask(void);
+void notification(char* message);
 
 
 //===== Eghosa UI widgets ====== 
 
 // makes an widget with a list of string labels 
 int createActionList(const char* actions[], int num_actions);
+void updateSelection(WM_HWIN hListWheel, int inputValue,  char* actions[], int num_actions);
 
 //screen related globals
 
-// since TFT is 240 by 360 pixels 
+// since TFT is 240 by 320 pixels 
 #define CENTERX 120
 #define CENTERY 160
+#define UI_H 240
+#define UI_W 220
+#define MAX_X 240
+#define MAX_Y 320
+#define UI_PADDING 10
 
-
-
+// === Fonts ===
+#define TITLE_TXT	&GUI_Font8x16x2x2
+#define NORMAL_TXT  &GUI_Font8x16_ASCII
+#define EXTENDED_TXT &GUI_Font8x16
 // === Primary UI Colors ===
 #define COLOR_ACCENT_PURPLE     0x834DC4  // Deep violet (highlights, accents)
 #define COLOR_NEUTRAL_GRAYBLUE  0x868EA6  // Grayish blue (borders, secondary accents)

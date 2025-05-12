@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
   29:.\Generated_Source\PSoC5/Switches.c **** * \brief Writes the value to the physical port (data output register), masking
   30:.\Generated_Source\PSoC5/Switches.c **** *  and shifting the bits appropriately. 
   31:.\Generated_Source\PSoC5/Switches.c **** *
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 2
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/Switches.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
   52              		.size	Switches_Write, .-Switches_Write
   53              		.section	.text.Switches_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 3
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 3
 
 
   55              		.global	Switches_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 1F500040 		.word	1073762335
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 4
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  110              		.align	2
  111              		.global	Switches_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 5
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  139              		.thumb_func
  140              		.type	Switches_SetInterruptMode, %function
  141              	Switches_SetInterruptMode:
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 6
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 6
 
 
  142              	.LFB4:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  151              	.LVL7:
  152 0004 80B2     		uxth	r0, r0
  153 0006 10B1     		cbz	r0, .L13
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 7
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 7
 
 
  190:.\Generated_Source\PSoC5/Switches.c **** 		{ 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  180              		@ link register save eliminated.
  218:.\Generated_Source\PSoC5/Switches.c ****         return (Switches_INTSTAT & Switches_MASK) >> Switches_SHIFT;
  181              		.loc 1 218 0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 8
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 8
 
 
  182 0000 014B     		ldr	r3, .L18
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  235 004f 02       		.uleb128 0x2
  236 0050 08       		.byte	0x8
  237 0051 05       		.byte	0x5
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 9
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 9
 
 
  238 0052 B2010000 		.4byte	.LASF6
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  292 00c2 39       		.byte	0x39
  293 00c3 6B000000 		.4byte	0x6b
  294 00c7 00000000 		.4byte	.LLST0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 10
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 10
 
 
  295 00cb 09       		.uleb128 0x9
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  349 0146 76000000 		.4byte	0x76
  350 014a 55000000 		.4byte	.LLST3
  351 014e 08       		.uleb128 0x8
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 11
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 11
 
 
  352 014f 93010000 		.4byte	.LASF18
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  406 0024 0B       		.uleb128 0xb
  407 0025 03       		.uleb128 0x3
  408 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 12
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 12
 
 
  409 0027 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  463 005d 9742     		.uleb128 0x2117
  464 005f 19       		.uleb128 0x19
  465 0060 01       		.uleb128 0x1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 13
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 13
 
 
  466 0061 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  520 0097 9742     		.uleb128 0x2117
  521 0099 19       		.uleb128 0x19
  522 009a 00       		.byte	0
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 14
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 14
 
 
  523 009b 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  577 0076 00000000 		.4byte	.LVL6
  578 007a 0A000000 		.4byte	.LVL8
  579 007e 0100     		.2byte	0x1
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 15
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 15
 
 
  580 0080 51       		.byte	0x51
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  630      01010101 
  631              	.LASF20:
  632 0000 53776974 		.ascii	"Switches_ReadDataReg\000"
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 16
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 16
 
 
  632      63686573 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  655              	.LASF10:
  656 00a8 75696E74 		.ascii	"uint16\000"
  656      313600
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 17
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 17
 
 
  657              	.LASF19:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 1
  676      00
  677              	.LASF2:
  678 01c5 73686F72 		.ascii	"short int\000"
-ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccH9klS0.s 			page 18
+ARM GAS  C:\Users\jaohe\AppData\Local\Temp\ccDqxAFX.s 			page 18
 
 
  678      7420696E 

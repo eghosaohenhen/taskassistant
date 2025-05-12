@@ -47,7 +47,7 @@
           <File BuildType="BUILD" Toolchain="">.\action_select.c</File>
           <File BuildType="BUILD" Toolchain="">.\cute_mascot.c</File>
           <File BuildType="BUILD" Toolchain="">.\task.c</File>
-          <File BuildType="BUILD" Toolchain="">.\cute_mascot_full.c</File>
+          <File BuildType="BUILD" Toolchain="">.\cute_mascot_closed.c</File>
           <File BuildType="BUILD" Toolchain="">.\cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">.\tft.h</File>
           <File BuildType="BUILD" Toolchain="">.\GUIDRV_FlexColor.h</File>
@@ -218,6 +218,13 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SwInt.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RecieveInt.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RecieveInt.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SentInt.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SentInt.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_ENABLE_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_ENABLE.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_ENABLE.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\Export\ARM_GCC_Generic">

@@ -1,6 +1,6 @@
 // ======================================================================
 // TFT_with_emWin.v generated from TopDesign.cysch
-// 05/08/2025 at 17:14
+// 05/11/2025 at 19:07
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1118,6 +1118,7 @@ endmodule
 // top
 module top ;
 
+          wire  Net_301;
           wire  Net_278;
           wire  Net_282;
           wire  Net_281;
@@ -1126,8 +1127,6 @@ module top ;
           wire  Net_251;
           wire  Net_250;
           wire  Net_249;
-          wire  Net_248;
-          wire  Net_247;
           wire  Net_246;
           wire  Net_245;
           wire  Net_244;
@@ -1167,6 +1166,8 @@ module top ;
           wire  Net_29;
           wire  Net_28;
           wire  Net_27;
+          wire  Net_293;
+          wire  Net_292;
           wire  Net_267;
           wire  Net_279;
           wire  Net_268;
@@ -2391,8 +2392,8 @@ module top ;
         .clock(1'b0),
         .reset(1'b0),
         .rx(Net_231),
-        .tx_interrupt(Net_247),
-        .rx_interrupt(Net_248),
+        .tx_interrupt(Net_292),
+        .rx_interrupt(Net_293),
         .tx_data(Net_249),
         .tx_clk(Net_250),
         .rx_data(Net_251),
@@ -2738,6 +2739,97 @@ module top ;
 		Clock_1
 		 (.clock_out(Net_268));
 
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		RecieveInt
+		 (.int_signal(Net_292));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		SentInt
+		 (.int_signal(Net_293));
+
+
+	wire [0:0] tmpOE__UART_ENABLE_net;
+	wire [0:0] tmpFB_0__UART_ENABLE_net;
+	wire [0:0] tmpIO_0__UART_ENABLE_net;
+	wire [0:0] tmpINTERRUPT_0__UART_ENABLE_net;
+	electrical [0:0] tmpSIOVREF__UART_ENABLE_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("db3e3ed6-9b27-4a76-8269-43516d7ff9a3"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		UART_ENABLE
+		 (.oe(tmpOE__UART_ENABLE_net),
+		  .y({Net_301}),
+		  .fb({tmpFB_0__UART_ENABLE_net[0:0]}),
+		  .io({tmpIO_0__UART_ENABLE_net[0:0]}),
+		  .siovref(tmpSIOVREF__UART_ENABLE_net),
+		  .interrupt({tmpINTERRUPT_0__UART_ENABLE_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__UART_ENABLE_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+    assign Net_301 = 1'h0;
 
 
 

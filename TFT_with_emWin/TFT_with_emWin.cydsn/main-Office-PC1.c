@@ -239,17 +239,17 @@ int error(char* message)
     CyDelay(1000);
     return ERROR;
 }
-void print(char* message)
+
+void print_tft(char* message)
 {
     
-    LCD_Char_1_Position(0, 0);
-    LCD_Char_1_PrintString("                    ");	
-    LCD_Char_1_Position(0, 0);
-    LCD_Char_1_PrintString(message);
-    CyDelay(1000);
-//    GUI_Clear();
-//    GUI_SetFont(&GUI_Font8x16);
-//    GUI_DispStringHCenterAt(message, 5,5);
+    GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_BG_LIGHT));
+    GUI_Clear();
+    GUI_SetFont(&GUI_Font8x16);
+    GUI_SetColor(GUI_MAKE_COLOR(COLOR_TEXT_PRIMARY));
+    
+    GUI_DispStringHCenterAt(message, CENTERX,CENTERY);
+
 }
 void MainTask()
 {
