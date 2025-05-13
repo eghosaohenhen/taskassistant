@@ -31,6 +31,18 @@
   <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\TX_aliases.h" value="NONE;TX" />
   <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\TX.c" value="ARM_C_FILE;TX" />
   <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\TX.h" value="NONE;TX" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\isr_1.c" value="ARM_C_FILE;isr_1" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\isr_1.h" value="NONE;isr_1" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\TASK_LED_aliases.h" value="NONE;TASK_LED" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\TASK_LED.c" value="ARM_C_FILE;TASK_LED" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\TASK_LED.h" value="NONE;TASK_LED" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\Switches_aliases.h" value="NONE;Switches" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\Switches.c" value="ARM_C_FILE;Switches" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\Switches.h" value="NONE;Switches" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\SwInt.c" value="ARM_C_FILE;SwInt" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\SwInt.h" value="NONE;SwInt" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
   <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\UART_BT_IntClock.c" value="ARM_C_FILE;UART_BT_IntClock" />
   <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\UART_BT_IntClock.h" value="NONE;UART_BT_IntClock" />
   <file name="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TaskHub\TaskHub.cydsn\codegentemp\cycodeshareimport.ld" value="NONE;" />

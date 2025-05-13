@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: UART_ENABLE.h  
+* File Name: JOYSTICK_U.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_UART_ENABLE_ALIASES_H) /* Pins UART_ENABLE_ALIASES_H */
-#define CY_PINS_UART_ENABLE_ALIASES_H
+#if !defined(CY_PINS_JOYSTICK_U_ALIASES_H) /* Pins JOYSTICK_U_ALIASES_H */
+#define CY_PINS_JOYSTICK_U_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define UART_ENABLE_0			(UART_ENABLE__0__PC)
-#define UART_ENABLE_0_INTR	((uint16)((uint16)0x0001u << UART_ENABLE__0__SHIFT))
+#define JOYSTICK_U_0			(JOYSTICK_U__0__PC)
+#define JOYSTICK_U_0_INTR	((uint16)((uint16)0x0001u << JOYSTICK_U__0__SHIFT))
 
-#define UART_ENABLE_INTR_ALL	 ((uint16)(UART_ENABLE_0_INTR))
+#define JOYSTICK_U_INTR_ALL	 ((uint16)(JOYSTICK_U_0_INTR))
 
-#endif /* End Pins UART_ENABLE_ALIASES_H */
+#endif /* End Pins JOYSTICK_U_ALIASES_H */
 
 
 /* [] END OF FILE */

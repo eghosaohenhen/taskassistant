@@ -26,7 +26,11 @@ void sendCommand(const char* cmd) {
     UART_BT_PutString(cmd);
     CyDelay(1000);
 }
-
+char * buff;
+int i = 0;
+uint16 numSeconds = 0;
+enum State {IDLE, HAS_TASK, IN_TASK, END_TASK};
+enum State state = IDLE;
 void printResponse() {
     char response[64];
     int i = 0;
@@ -42,13 +46,62 @@ void printResponse() {
     response[i] = '\0';
     UART_BT_PutString(response);
 }
+// l = linked to a task 
+// p = 
+// 
+CY_ISR(UART_RX_Handler){
+    char key = UART_BT_GetChar();
+    if (key == 'l'){
+        state = HAS_TASK;
+        
+    }
+//    while (UART_BT_GetRxBufferSize() > 0) {
+//        buff[i++] = UART_BT_GetChar();
+//        CyDelay(20);
+//    }
+}
 
-
+CY_ISR(Btn_Handler){
+    if(state == HAS_TASK){
+        state = IN_TASK;
+    }else if (state == IN_TASK){
+        state = END_TASK;
+        
+    }
+    
+//    while (UART_BT_GetRxBufferSize() > 0) {
+//        buff[i++] = UART_BT_GetChar();
+//        CyDelay(20);
+//    }
+}
 
 int main()
 {
+    isr_1_ClearPending();
     CyGlobalIntEnable; /* Enable global interrupts. */
     UART_BT_Start();
+    isr_1_StartEx(UART_RX_Handler);
+    
+    SwInt_StartEx(Btn_Handler);
+    
+    
+    
+    for (;;){
+        if (state == IDLE){
+            TASK_LED_Write(0);
+        }else if (state == HAS_TASK){
+            TASK_LED_Write(~TASK_LED_Read());
+        }else if (state == IN_TASK) {
+            TASK_LED_Write(1);
+            // count the number of seconds spent in the task
+            numSeconds++;
+            CyDelay(1000);
+        }else if (state == END_TASK){
+            numSeconds = 0;
+            state = IDLE;
+        }
+            
+    }
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     // Slave Configuration Steps

@@ -36,7 +36,7 @@ typedef struct {
 }DayTime;
 
 typedef struct {
-    DayTime duration_est;      ///< Task Time 
+    DayTime time;      ///< Task Time 
     bool isOn;                /// whether the duration is used for task purposes or not (countdown display) 
 }TaskDuration;
 
@@ -49,6 +49,7 @@ typedef struct {
 
 } TimedTask;
 
+// free tasks are on the secondary module
 typedef struct {
     char * name;            ///< Task Name 
     enum TaskState status; // Task Status 
@@ -75,7 +76,7 @@ DayTime snooze_alarm(DayTime dt, int snooze_amt);
 
 // === Task Related Constants ===
 
-#define ALARM_SW_FREQ 2 // number of seconds between alarm pulses 
+#define ALARM_SW_FREQ 1 // number of seconds between alarm pulses 
 
 #define NUM_TASKS_PER_SCREEN 3
 

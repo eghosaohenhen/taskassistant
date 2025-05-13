@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: RecieveInt.c  
+* File Name: isr_1.c  
 * Version 1.70
 *
 *  Description:
@@ -18,15 +18,15 @@
 
 #include <cydevice_trm.h>
 #include <CyLib.h>
-#include <RecieveInt.h>
+#include <isr_1.h>
 #include "cyapicallbacks.h"
 
-#if !defined(RecieveInt__REMOVED) /* Check for removal by optimization */
+#if !defined(isr_1__REMOVED) /* Check for removal by optimization */
 
 /*******************************************************************************
 *  Place your includes, defines and code here 
 ********************************************************************************/
-/* `#START RecieveInt_intc` */
+/* `#START isr_1_intc` */
 
 /* `#END` */
 
@@ -42,7 +42,7 @@ CY_ISR_PROTO(IntDefaultHandler);
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_Start
+* Function Name: isr_1_Start
 ********************************************************************************
 *
 * Summary:
@@ -58,24 +58,24 @@ CY_ISR_PROTO(IntDefaultHandler);
 *   None
 *
 *******************************************************************************/
-void RecieveInt_Start(void)
+void isr_1_Start(void)
 {
     /* For all we know the interrupt is active. */
-    RecieveInt_Disable();
+    isr_1_Disable();
 
-    /* Set the ISR to point to the RecieveInt Interrupt. */
-    RecieveInt_SetVector(&RecieveInt_Interrupt);
+    /* Set the ISR to point to the isr_1 Interrupt. */
+    isr_1_SetVector(&isr_1_Interrupt);
 
     /* Set the priority. */
-    RecieveInt_SetPriority((uint8)RecieveInt_INTC_PRIOR_NUMBER);
+    isr_1_SetPriority((uint8)isr_1_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    RecieveInt_Enable();
+    isr_1_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_StartEx
+* Function Name: isr_1_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -101,24 +101,24 @@ void RecieveInt_Start(void)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_StartEx(cyisraddress address)
+void isr_1_StartEx(cyisraddress address)
 {
     /* For all we know the interrupt is active. */
-    RecieveInt_Disable();
+    isr_1_Disable();
 
-    /* Set the ISR to point to the RecieveInt Interrupt. */
-    RecieveInt_SetVector(address);
+    /* Set the ISR to point to the isr_1 Interrupt. */
+    isr_1_SetVector(address);
 
     /* Set the priority. */
-    RecieveInt_SetPriority((uint8)RecieveInt_INTC_PRIOR_NUMBER);
+    isr_1_SetPriority((uint8)isr_1_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    RecieveInt_Enable();
+    isr_1_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_Stop
+* Function Name: isr_1_Stop
 ********************************************************************************
 *
 * Summary:
@@ -131,22 +131,22 @@ void RecieveInt_StartEx(cyisraddress address)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_Stop(void)
+void isr_1_Stop(void)
 {
     /* Disable this interrupt. */
-    RecieveInt_Disable();
+    isr_1_Disable();
 
     /* Set the ISR to point to the passive one. */
-    RecieveInt_SetVector(&IntDefaultHandler);
+    isr_1_SetVector(&IntDefaultHandler);
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_Interrupt
+* Function Name: isr_1_Interrupt
 ********************************************************************************
 *
 * Summary:
-*   The default Interrupt Service Routine for RecieveInt.
+*   The default Interrupt Service Routine for isr_1.
 *
 *   Add custom code between the coments to keep the next version of this file
 *   from over writting your code.
@@ -157,27 +157,27 @@ void RecieveInt_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(RecieveInt_Interrupt)
+CY_ISR(isr_1_Interrupt)
 {
-    #ifdef RecieveInt_INTERRUPT_INTERRUPT_CALLBACK
-        RecieveInt_Interrupt_InterruptCallback();
-    #endif /* RecieveInt_INTERRUPT_INTERRUPT_CALLBACK */ 
+    #ifdef isr_1_INTERRUPT_INTERRUPT_CALLBACK
+        isr_1_Interrupt_InterruptCallback();
+    #endif /* isr_1_INTERRUPT_INTERRUPT_CALLBACK */ 
 
     /*  Place your Interrupt code here. */
-    /* `#START RecieveInt_Interrupt` */
+    /* `#START isr_1_Interrupt` */
 
     /* `#END` */
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_SetVector
+* Function Name: isr_1_SetVector
 ********************************************************************************
 *
 * Summary:
-*   Change the ISR vector for the Interrupt. Note calling RecieveInt_Start
+*   Change the ISR vector for the Interrupt. Note calling isr_1_Start
 *   will override any effect this method would have had. To set the vector 
-*   before the component has been started use RecieveInt_StartEx instead.
+*   before the component has been started use isr_1_StartEx instead.
 * 
 *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
 *   used to provide consistent definition across compilers:
@@ -197,18 +197,18 @@ CY_ISR(RecieveInt_Interrupt)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_SetVector(cyisraddress address)
+void isr_1_SetVector(cyisraddress address)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    ramVectorTable[CYINT_IRQ_BASE + (uint32)RecieveInt__INTC_NUMBER] = address;
+    ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_1__INTC_NUMBER] = address;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_GetVector
+* Function Name: isr_1_GetVector
 ********************************************************************************
 *
 * Summary:
@@ -221,26 +221,26 @@ void RecieveInt_SetVector(cyisraddress address)
 *   Address of the ISR in the interrupt vector table.
 *
 *******************************************************************************/
-cyisraddress RecieveInt_GetVector(void)
+cyisraddress isr_1_GetVector(void)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    return ramVectorTable[CYINT_IRQ_BASE + (uint32)RecieveInt__INTC_NUMBER];
+    return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_1__INTC_NUMBER];
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_SetPriority
+* Function Name: isr_1_SetPriority
 ********************************************************************************
 *
 * Summary:
 *   Sets the Priority of the Interrupt. 
 *
-*   Note calling RecieveInt_Start or RecieveInt_StartEx will 
+*   Note calling isr_1_Start or isr_1_StartEx will 
 *   override any effect this API would have had. This API should only be called
-*   after RecieveInt_Start or RecieveInt_StartEx has been called. 
+*   after isr_1_Start or isr_1_StartEx has been called. 
 *   To set the initial priority for the component, use the Design-Wide Resources
 *   Interrupt Editor.
 *
@@ -255,14 +255,14 @@ cyisraddress RecieveInt_GetVector(void)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_SetPriority(uint8 priority)
+void isr_1_SetPriority(uint8 priority)
 {
-    *RecieveInt_INTC_PRIOR = priority << 5;
+    *isr_1_INTC_PRIOR = priority << 5;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_GetPriority
+* Function Name: isr_1_GetPriority
 ********************************************************************************
 *
 * Summary:
@@ -277,19 +277,19 @@ void RecieveInt_SetPriority(uint8 priority)
 *    PSoC 4: Priority is from 0 to 3.
 *
 *******************************************************************************/
-uint8 RecieveInt_GetPriority(void)
+uint8 isr_1_GetPriority(void)
 {
     uint8 priority;
 
 
-    priority = *RecieveInt_INTC_PRIOR >> 5;
+    priority = *isr_1_INTC_PRIOR >> 5;
 
     return priority;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_Enable
+* Function Name: isr_1_Enable
 ********************************************************************************
 *
 * Summary:
@@ -304,15 +304,15 @@ uint8 RecieveInt_GetPriority(void)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_Enable(void)
+void isr_1_Enable(void)
 {
     /* Enable the general interrupt. */
-    *RecieveInt_INTC_SET_EN = RecieveInt__INTC_MASK;
+    *isr_1_INTC_SET_EN = isr_1__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_GetState
+* Function Name: isr_1_GetState
 ********************************************************************************
 *
 * Summary:
@@ -325,15 +325,15 @@ void RecieveInt_Enable(void)
 *   1 if enabled, 0 if disabled.
 *
 *******************************************************************************/
-uint8 RecieveInt_GetState(void)
+uint8 isr_1_GetState(void)
 {
     /* Get the state of the general interrupt. */
-    return ((*RecieveInt_INTC_SET_EN & (uint32)RecieveInt__INTC_MASK) != 0u) ? 1u:0u;
+    return ((*isr_1_INTC_SET_EN & (uint32)isr_1__INTC_MASK) != 0u) ? 1u:0u;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_Disable
+* Function Name: isr_1_Disable
 ********************************************************************************
 *
 * Summary:
@@ -346,15 +346,15 @@ uint8 RecieveInt_GetState(void)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_Disable(void)
+void isr_1_Disable(void)
 {
     /* Disable the general interrupt. */
-    *RecieveInt_INTC_CLR_EN = RecieveInt__INTC_MASK;
+    *isr_1_INTC_CLR_EN = isr_1__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_SetPending
+* Function Name: isr_1_SetPending
 ********************************************************************************
 *
 * Summary:
@@ -373,14 +373,14 @@ void RecieveInt_Disable(void)
 *   interrupts).
 *
 *******************************************************************************/
-void RecieveInt_SetPending(void)
+void isr_1_SetPending(void)
 {
-    *RecieveInt_INTC_SET_PD = RecieveInt__INTC_MASK;
+    *isr_1_INTC_SET_PD = isr_1__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: RecieveInt_ClearPending
+* Function Name: isr_1_ClearPending
 ********************************************************************************
 *
 * Summary:
@@ -398,9 +398,9 @@ void RecieveInt_SetPending(void)
 *   None
 *
 *******************************************************************************/
-void RecieveInt_ClearPending(void)
+void isr_1_ClearPending(void)
 {
-    *RecieveInt_INTC_CLR_PD = RecieveInt__INTC_MASK;
+    *isr_1_INTC_CLR_PD = isr_1__INTC_MASK;
 }
 
 #endif /* End check for removal by optimization */

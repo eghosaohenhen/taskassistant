@@ -218,13 +218,32 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SwInt.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Clock_1.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RecieveInt.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RecieveInt.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SentInt.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SentInt.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_ENABLE_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_ENABLE.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_ENABLE.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RecieveStick.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RecieveStick.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SentStick.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SentStick.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2_BOOT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2_IntClock.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_2_IntClock.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_U_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_U.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_U.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_M_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_M.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_M.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_R_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_R.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_R.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_L_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_L.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_L.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_D_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_D.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\JOYSTICK_D.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jaohe\EghosaOneDrive\OneDrive\Documents\Spring 2025\6.115\final_project\taskassistant\TFT_with_emWin\TFT_with_emWin.cydsn\Export\ARM_GCC_Generic">

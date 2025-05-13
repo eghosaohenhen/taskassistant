@@ -1,6 +1,6 @@
 -- ======================================================================
 -- TFT_with_emWin.ctl generated from TFT_with_emWin
--- 05/11/2025 at 19:07
+-- 05/12/2025 at 21:17
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

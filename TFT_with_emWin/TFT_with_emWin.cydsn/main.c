@@ -71,7 +71,7 @@ Requirements: WindowManager - (x)
 # define JUMP_BOUND 5 
 extern GUI_CONST_STORAGE GUI_BITMAP bmcute_mascot_closed;
 Alarm alarms[] = {
-    {{11, 41}, 
+    {{21, 50}, 
     BEFORE_TIME}, 
     {{3, 48}, 
     BEFORE_TIME}
@@ -101,10 +101,12 @@ int numTasks = 3;
 
 void MainTask(void);
 int home(void);
+int menu(void);
 void configure_rtc_tick(void);
 
 int alarmCheck(DateTime now);
 int fsmState;
+int task_complete();
 
 Alarm current_alarm;
 TaskStats current_task;
@@ -153,7 +155,7 @@ CY_ISR(Timer_1_Handler)
 	LCD_Char_1_Position(1, 0);
     LCD_Char_1_PrintString(line);
     
-    if (alarmCheck(now)){
+    if (alarmCheck(now) && current_alarm.state != HANDLED){
         LED_1_Write(~LED_1_Read());
         current_alarm.state = ON;
         
@@ -190,7 +192,7 @@ CY_ISR(Timer_1_Handler)
         }
     // if the task is finished and the alarm is going off we need to 
     // 1. count the time taken to acknowledge the alarm in the task time 
-    }else if (current_task.task.status == FINISHED && in_alarm == true){
+    }else if (current_task.task.status == FINISHED && in_alarm){
         current_task.time_left += 1;
     }
     Timer_1_ReadStatusRegister();
@@ -218,7 +220,7 @@ CY_ISR(Snooze_Btn_Handler)
         }
         
         
-    }elif (current_task.task.status == IN_PROGRESS){
+    }else if (current_task.task.status == IN_PROGRESS){
         current_task.task.status = FINISHED;
         print("Ended Task !!!");
     }
@@ -288,6 +290,9 @@ int main(){
     LCD_Char_1_PrintString("Time: "); // 6. Print basic layout
     UART_1_Init();
     UART_1_Start();
+    
+    UART_2_Init();
+    UART_2_Start();
 //    DateTime now = {
 //        25, ///< Year offset from 2000
 //        05,    ///< Month 1-12
@@ -315,7 +320,7 @@ int main(){
         
         switch(fsmState){
             case MENU:
-                fsmState = user_start_task();
+                fsmState = menu();
                 //fsmState = start();
                 break;
             case HOME:
@@ -325,14 +330,61 @@ int main(){
                 break;
             case TASK_START:
                 fsmState = user_start_task();
-                break;
+                break; 
             case VIEW_METRICS:
                 break;
+            case SECOND_MOVE:
+                fsmState = user_start_task();
             case ERROR:
                 break;
                
         }
     }                              // loop
+}
+int menu(void){
+    GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_BG_LIGHT));
+    GUI_Clear();
+    GUI_SetFont(TITLE_TXT);
+    GUI_SetColor(COLOR_TEXT_PRIMARY);
+    GUI_DispStringAt("Main Menu", 5,5);
+    int i;
+    char *menu_options[3] = {
+        "Start Task",
+        "Move Task 2 Stick",
+        "Input An Alarm"
+    };
+    
+    DrawTaskList(menu_options);
+    uint8 selected = 0;
+    for (;;){
+        if (JOYSTICK_U_Read() == 0){
+            DrawUnselectedListItem(selected, menu_options[selected]);
+            selected--;
+            selected %=3;
+            DrawSelectedListItem(selected, menu_options[selected]);
+        } else if (JOYSTICK_D_Read() == 0){
+            DrawUnselectedListItem(selected, menu_options[selected]);
+            selected++;
+            selected %=3;
+            DrawSelectedListItem(selected, menu_options[selected]);
+        }else if (JOYSTICK_M_Read() == 0){
+            if (selected == 0){
+                return TASK_START;
+            } else if (selected == 1){
+                return SECOND_MOVE;
+            }
+        }
+           
+    }
+    
+    
+    
+    ADC_DelSig_1_Start();				// start the ADC_DelSig_1
+	ADC_DelSig_1_StartConvert();		// start the ADC_DelSig_1 conversion
+    
+}
+int send_2_second(TimedTask task){
+    UART_1_PutString(task.name);
 }
 int user_start_task(void){
     GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_BG_LIGHT));
@@ -358,8 +410,13 @@ int user_start_task(void){
             char line[50];
             sprintf(line, "Selected Task : %s", task_names[selected]);
             notification(line);
-            CyDelay(2000);
-            system_start_task(tasks[selected]);
+            CyDelay(1000);
+            if (fsmState == TASK_START){
+                return system_start_task(tasks[selected]);
+            }else if (fsmState == SECOND_MOVE){
+                return send_2_second(tasks[selected]);
+            }
+            
             for(;;){}
            
         }
@@ -388,56 +445,10 @@ int user_start_task(void){
             
         }
     }
+   
     return IN_PROGRESS;
 }
 
-int menu(void){
-    GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_BG_LIGHT));
-    GUI_Clear();
-    GUI_SetFont(TITLE_TXT);
-    GUI_SetColor(COLOR_TEXT_PRIMARY);
-    GUI_DispStringAt("Choose a Task", 5,5);
-    int i;
-    char * task_names[numTasks];
-    for(i = 0; i < numTasks; i++){
-        task_names[i] = tasks[i].name;
-    }
-    DrawTaskList(task_names);
-    uint16 adcResult = 0;
-    int selected = 0;
-    for (;;){
-        if (FORWARD_BTN_Read() == 0){
-            char line[50];
-            sprintf(line, "Selected Task : %s", task_names[selected]);
-            notification(line);
-            system_start_task(tasks[selected]);
-        }
-        if( ADC_DelSig_1_IsEndConversion(ADC_DelSig_1_WAIT_FOR_RESULT) )
-		{
-            
-			DrawUnselectedListItem(selected, task_names[selected]); // first unselect the item
-			adcResult = ADC_DelSig_1_GetResult16();		// read the adc and assign the value adcResult 
-       		if (adcResult & 0x8000)
-       		{
-        		adcResult = 0;       // ignore negative ADC results
-       		}
-       		else if (adcResult >= 0xfff)
-       		{
-        		adcResult = 0xfff;      // ignore high ADC results
-       		}
-            uint16 segment = adcResult / 1365;
-            selected = segment; 
-            
-            
-            DrawSelectedListItem(selected, task_names[selected]); // select the item
-            
-           
-            
-            
-        }
-    }
-    return IN_PROGRESS;
-}
 void DrawButton(int x, int y, int w, int h, char* label) {
     GUI_SetColor(GUI_MAKE_COLOR(COLOR_ACCENT_PURPLE));
     GUI_FillRect(x, y, x + w - 1, y + h - 1);
@@ -471,65 +482,71 @@ int system_start_task(TimedTask task){
     
     current_task.task = task;
     current_task.act_start = act_start;
-    current_task.time_left = task.time_est.duration_est.hh * 3600 + task.time_est.duration_est.mm * 60;
-    if (task.time_est.isOn){
-        // start the task, countdown timer
+    current_task.time_left = task.time_est.time.hh * 3600 + task.time_est.time.mm * 60;
+    
+    // start the task, countdown timer
 
-        GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_BG_DARK));
-        GUI_Clear();
-        GUI_SetFont(TITLE_TXT);
+    GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_BG_DARK));
+    GUI_Clear();
+    GUI_SetFont(NORMAL_TXT);
 
-        GUI_RECT Rect = {  UI_PADDING, UI_PADDING, MAX_X - UI_PADDING,  MAX_Y*1/6};
-        GUI_SetColor(GUI_WHITE);
+    GUI_RECT Rect = {  UI_PADDING, UI_PADDING, MAX_X - UI_PADDING,  MAX_Y*1/6};
+    GUI_SetColor(GUI_WHITE);
+
+
+    GUI_DispStringInRectWrap("Task in Progress", &Rect, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
+    GUI_SetFont(NORMAL_TXT);
+    
+    GUI_RECT rectangle = { UI_PADDING,MAX_Y*1/6, MAX_X - UI_PADDING,  MAX_Y*2/6};
+    GUI_DispStringInRectWrap(task.name, &rectangle, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
+    
+    char line[27];
+    
+    
     
 
-        GUI_DispStringInRectWrap("Task in Progress", &Rect, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
-        GUI_SetFont(NORMAL_TXT);
-        GUI_SetColor(GUI_MAKE_COLOR(COLOR_TEXT_SECONDARY));
-        GUI_RECT rectangle = { UI_PADDING,MAX_Y*1/6, MAX_X - UI_PADDING,  MAX_Y/3};
-        GUI_DispStringInRectWrap(task.name, &rectangle, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
-        
-        char line[27];
-        
-        
+    current_task.task.status = IN_PROGRESS;
 
-        current_task.task.status = IN_PROGRESS;
+    DrawButton(UI_PADDING, MAX_Y *5/6, MAX_X - UI_PADDING, MAX_Y - UI_PADDING, "End Task");
 
-        DrawButton(UI_PADDING, MAX_Y *5/6, MAX_X - UI_PADDING, MAX_Y - UI_PADDING, "End Task");
-
-        
-        while (current_task.task.status == IN_PROGRESS) {
+    
+    while (current_task.task.status == IN_PROGRESS) {
+        // if the task is not a timed task and we have gotten over the estimated time , make time red 
+        if (current_task.task.time_est.isOn == false && current_task.overtime > 0){
+            int hours = current_task.overtime / 3600;
+            int minutes = (current_task.overtime % 3600) / 60;
+            int seconds = current_task.overtime % 60;
+            GUI_SetColor(GUI_MAKE_COLOR(COLOR_ERROR));
+            sprintf(line, "%02d:%02d:%02d", hours, minutes, seconds);
+        }else{
             int hours = current_task.time_left / 3600;
             int minutes = (current_task.time_left % 3600) / 60;
             int seconds = current_task.time_left % 60;
-        
-            sprintf(line, "%02d:%02d:%02d", hours, minutes, seconds);
-        
-            // Display the countdown text in a defined area
-            GUI_RECT time_rect = { UI_PADDING,MAX_Y/3, MAX_X - UI_PADDING,  MAX_Y *5/6};
-            GUI_SetFont(TITLE_TXT);
             GUI_SetColor(GUI_WHITE);
-            
-            GUI_ClearRectEx(&time_rect);  // Clear just the time area
-            GUI_DispStringInRectWrap(line, &time_rect, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
-    
+            sprintf(line, "%02d:%02d:%02d", hours, minutes, seconds);
         }
-        // TODO process the tasks stats and send them to the UART once done 
-        // char line[50];
-        // sprintf(line, "Task: %s", task.name);
-        // notification(line);
-        return task_complete();
         
-    }else{
-        // start the task, no countdown timer just count up timer
-        notification("Not Implemented Yet");
-        for(;;){
-        }
+        // Display the countdown text in a defined area
+        GUI_RECT time_rect = { UI_PADDING,MAX_Y/3, MAX_X - UI_PADDING,  MAX_Y *5/6};
+        GUI_SetFont(TITLE_TXT);
+        
+        
+        GUI_ClearRectEx(&time_rect);  // Clear just the time area
+        GUI_DispStringInRectWrap(line, &time_rect, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
+
     }
+    // process the tasks stats and send them to the UART once done 
+    // char line[50];
+    // sprintf(line, "Task: %s", task.name);
+    // notification(line);
+    return task_complete();
+        
 
 }
+
+
 // NOT IMPLEMENTED YET TODO 
-// uses the current task to compute whatever metrics are needed
+// process the tasks stats and send them to the UART once done 
 int task_complete(){
     // draw the task complete screen
     GUI_SetBkColor(GUI_MAKE_COLOR(COLOR_SUCCESS));
@@ -540,7 +557,7 @@ int task_complete(){
     GUI_SetColor(GUI_MAKE_COLOR(COLOR_TEXT_PRIMARY));
     GUI_RECT Rect = {  UI_PADDING, UI_PADDING, MAX_X - UI_PADDING,  MAX_Y*1/6};
     char line[50];
-    sprintf(line, "Task: %s COMPLETE", task.name);
+    sprintf(line, "Task: %s COMPLETE", current_task.task.name);
     GUI_DispStringInRectWrap("line", &Rect, GUI_TA_HCENTER | GUI_TA_VCENTER, GUI_WRAPMODE_WORD);
 
     GUI_SetFont(NORMAL_TXT);
@@ -550,19 +567,43 @@ int task_complete(){
 
     // calculate the task metrics
     char buffer[128];
-    DayTime time_spent = time_spent(current_task);
+    DayTime t = time_spent(current_task);
     snprintf(buffer, sizeof(buffer), 
         "Estimated Time: %02uh %02um\nActual: %02uh %02um\nOver Time: %02uh %02um\n",
-        current_task.task.time_est.hh, 
-        current_task.task.time_est.mm, 
-        time_spent.hh,
-        time_spent.mm,
+        current_task.task.time_est.time.hh, 
+        current_task.task.time_est.time.mm, 
+        t.hh,
+        t.mm,
         current_task.overtime / 3600,
         current_task.overtime % 3600 / 60);
     DrawTaskMetric(0, buffer, "Time Spent");
+    char terminal_buff [256];
 
+
+    snprintf(terminal_buff , sizeof(terminal_buff ),
+        "\r\n==== Task Metrics: Time Spent ====\r\n"
+        "Task Name      : %s\r\n"
+        "-------------------------------\r\n"
+        "Estimated Time : %02uh %02um\r\n"
+        "Actual Time    : %02uh %02um\r\n"
+        "Over Time      : %02uh %02um\r\n"
+        "=================================\r\n",
+        current_task.task.name,
+        current_task.task.time_est.time.hh, 
+        current_task.task.time_est.time.mm, 
+        t.hh,
+        t.mm,
+        current_task.overtime / 3600,
+        (current_task.overtime % 3600) / 60
+    );
+    UART_2_PutString(terminal_buff);
+    UART_2_PutCRLF('\n');
+    UART_2_PutCRLF('\n');
+    UART_2_PutString("==== PRESS Forward Btn => Home ====\n");
+    
     for(;;){
         if (FORWARD_BTN_Read() == 0){
+            
             return HOME;
         }
     }
@@ -589,9 +630,9 @@ int home(){
 //    sendCommand("AT+ADDR?\r\n");
 //    printResponse();
     for(;;){
-        if(UART_1_GetRxBufferSize() > 0){
-            uint8 c = UART_1_GetChar();
-            UART_1_PutChar(c);
+        if(UART_2_GetRxBufferSize() > 0){
+            uint8 c = UART_2_GetChar();
+            UART_2_PutChar(c);
             LCD_Char_1_Position(0, 0);
             LCD_Char_1_PrintString((char *) &c);
             //  sendCommand("AT+ADDR?\r\n");
@@ -603,7 +644,8 @@ int home(){
 
         // sendCommand("AT+ROLE?\r\n");
         // printResponse();
-        
+//        sendCommand("AT+ROLE=0\r\n");
+//        printResponse();
          
     
         y += a;

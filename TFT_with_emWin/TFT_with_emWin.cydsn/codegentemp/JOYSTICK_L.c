@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: UART_ENABLE.c  
+* File Name: JOYSTICK_L.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "UART_ENABLE.h"
+#include "JOYSTICK_L.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 UART_ENABLE__PORT == 15 && ((UART_ENABLE__MASK & 0xC0) != 0))
+	 JOYSTICK_L__PORT == 15 && ((JOYSTICK_L__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: UART_ENABLE_Write
+* Function Name: JOYSTICK_L_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet UART_ENABLE_SUT.c usage_UART_ENABLE_Write
+*  \snippet JOYSTICK_L_SUT.c usage_JOYSTICK_L_Write
 *******************************************************************************/
-void UART_ENABLE_Write(uint8 value)
+void JOYSTICK_L_Write(uint8 value)
 {
-    uint8 staticBits = (UART_ENABLE_DR & (uint8)(~UART_ENABLE_MASK));
-    UART_ENABLE_DR = staticBits | ((uint8)(value << UART_ENABLE_SHIFT) & UART_ENABLE_MASK);
+    uint8 staticBits = (JOYSTICK_L_DR & (uint8)(~JOYSTICK_L_MASK));
+    JOYSTICK_L_DR = staticBits | ((uint8)(value << JOYSTICK_L_SHIFT) & JOYSTICK_L_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: UART_ENABLE_SetDriveMode
+* Function Name: JOYSTICK_L_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void UART_ENABLE_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet UART_ENABLE_SUT.c usage_UART_ENABLE_SetDriveMode
+*  \snippet JOYSTICK_L_SUT.c usage_JOYSTICK_L_SetDriveMode
 *******************************************************************************/
-void UART_ENABLE_SetDriveMode(uint8 mode)
+void JOYSTICK_L_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(UART_ENABLE_0, mode);
+	CyPins_SetPinDriveMode(JOYSTICK_L_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: UART_ENABLE_Read
+* Function Name: JOYSTICK_L_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void UART_ENABLE_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet UART_ENABLE_SUT.c usage_UART_ENABLE_Read  
+*  \snippet JOYSTICK_L_SUT.c usage_JOYSTICK_L_Read  
 *******************************************************************************/
-uint8 UART_ENABLE_Read(void)
+uint8 JOYSTICK_L_Read(void)
 {
-    return (UART_ENABLE_PS & UART_ENABLE_MASK) >> UART_ENABLE_SHIFT;
+    return (JOYSTICK_L_PS & JOYSTICK_L_MASK) >> JOYSTICK_L_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: UART_ENABLE_ReadDataReg
+* Function Name: JOYSTICK_L_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 UART_ENABLE_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred UART_ENABLE_Read() API because the 
-* UART_ENABLE_ReadDataReg() reads the data register instead of the status 
+* preferred JOYSTICK_L_Read() API because the 
+* JOYSTICK_L_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 UART_ENABLE_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet UART_ENABLE_SUT.c usage_UART_ENABLE_ReadDataReg 
+*  \snippet JOYSTICK_L_SUT.c usage_JOYSTICK_L_ReadDataReg 
 *******************************************************************************/
-uint8 UART_ENABLE_ReadDataReg(void)
+uint8 JOYSTICK_L_ReadDataReg(void)
 {
-    return (UART_ENABLE_DR & UART_ENABLE_MASK) >> UART_ENABLE_SHIFT;
+    return (JOYSTICK_L_DR & JOYSTICK_L_MASK) >> JOYSTICK_L_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(UART_ENABLE_INTSTAT) 
+#if defined(JOYSTICK_L_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: UART_ENABLE_SetInterruptMode
+    * Function Name: JOYSTICK_L_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 UART_ENABLE_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use UART_ENABLE_INTR_ALL to configure the
+    *  component. Or you may use JOYSTICK_L_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - UART_ENABLE_0_INTR       (First pin in the list)
-    *  - UART_ENABLE_1_INTR       (Second pin in the list)
+    *  - JOYSTICK_L_0_INTR       (First pin in the list)
+    *  - JOYSTICK_L_1_INTR       (Second pin in the list)
     *  - ...
-    *  - UART_ENABLE_INTR_ALL     (All pins in Pins component)
+    *  - JOYSTICK_L_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 UART_ENABLE_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet UART_ENABLE_SUT.c usage_UART_ENABLE_SetInterruptMode
+    *  \snippet JOYSTICK_L_SUT.c usage_JOYSTICK_L_SetInterruptMode
     *******************************************************************************/
-    void UART_ENABLE_SetInterruptMode(uint16 position, uint16 mode)
+    void JOYSTICK_L_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & UART_ENABLE_0_INTR) != 0u) 
+		if((position & JOYSTICK_L_0_INTR) != 0u) 
 		{ 
-			 UART_ENABLE_0_INTTYPE_REG = (uint8)mode; 
+			 JOYSTICK_L_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: UART_ENABLE_ClearInterrupt
+    * Function Name: JOYSTICK_L_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 UART_ENABLE_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet UART_ENABLE_SUT.c usage_UART_ENABLE_ClearInterrupt
+    *  \snippet JOYSTICK_L_SUT.c usage_JOYSTICK_L_ClearInterrupt
     *******************************************************************************/
-    uint8 UART_ENABLE_ClearInterrupt(void)
+    uint8 JOYSTICK_L_ClearInterrupt(void)
     {
-        return (UART_ENABLE_INTSTAT & UART_ENABLE_MASK) >> UART_ENABLE_SHIFT;
+        return (JOYSTICK_L_INTSTAT & JOYSTICK_L_MASK) >> JOYSTICK_L_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

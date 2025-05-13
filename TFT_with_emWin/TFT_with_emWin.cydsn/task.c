@@ -35,7 +35,7 @@ static int count = 0;
 void endAlarm(){
     WaveDAC8_1_Stop();
     
-    handled = true;
+    
     count = 0;
     segment = TONE_A;
 }
@@ -49,7 +49,7 @@ DayTime snooze_alarm(DayTime dt, int snooze_amt){
     return dt;
 }
 DayTime time_spent(TaskStats task_stats){
-    int time = calculate_time_left(task_stats.task.time_est.hh, task_stats.task.time_est.mm, 0);
+    int time = calculate_time_left(task_stats.task.time_est.time.hh, task_stats.task.time_est.time.mm, 0);
     time += task_stats.overtime; // add the overtime to the time spent
     DayTime time_spent = {time / 3600, (time % 3600) / 60};
     return time_spent;
@@ -90,7 +90,7 @@ int calculate_time_left(int hh, int mm, int ss){
 void startSound(){
     
     count ++;
-    if (handled & isOn){
+    if (in_alarm){
         WaveDAC8_1_Stop();
         return;
     }
@@ -247,9 +247,9 @@ void DrawTaskMetric(int i, char * metric_info, char * label){
 
     // Draw label
     GUI_SetColor(GUI_MAKE_COLOR(COLOR_BG_LIGHT));
-    GUI_RECT labelRect = {PADDING, y0 + PADDING + label_offset, UI_W - PADDING, y1 - PADDING};
+    GUI_RECT metricRect = {PADDING, y0 + PADDING + label_offset, UI_W - PADDING, y1 - PADDING};
     GUI_SetTextMode(GUI_TM_TRANS); 
     
-    GUI_DispStringInRect(metric_info, &labelRect, GUI_TA_LEFT | GUI_TA_VCENTER);
+    GUI_DispStringInRect(metric_info, &metricRect, GUI_TA_LEFT | GUI_TA_VCENTER);
 
 }
